@@ -1,0 +1,1 @@
+INSERT IGNORE INTO `engine4_core_modules` (`name`, `title`, `description`, `version`, `enabled`, `type`) VALUES  ('heemoticon', 'Emoticon extension for Wall Plugin', 'Emoticon extension for Wall Plugin', '4.0.2p1', 1, 'extra') ;

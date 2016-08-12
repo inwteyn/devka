@@ -1,0 +1,117 @@
+/* $Id: main.css 2011-04-26 11:18:13 mirlan $ */
+.like_button_container{
+  float: left;
+  position: relative;
+  margin-left: 10px;
+}
+[dir="rtl"] .like_button_container{
+  float: right;
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+button.like_button{
+  padding: 1px 5px;
+}
+
+button.unlike_button{
+  padding: 1px 5px;
+}
+.like_status_header {
+  float: left;
+}
+
+[dir="rtl"] .like_status_header {
+  float: right;
+}
+
+.layout_touch_activity_feed .like_action_container .left {
+  float:left;
+  margin-right: 10px;
+}
+[dir="rtl"] .layout_touch_activity_feed .like_action_container .left {
+  float:right;
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.layout_touch_activity_feed .like_action_container .likes {
+  padding-bottom: 5px;
+}
+
+.layout_touch_activity_feed .like_action_container img.thumb_profile {
+  max-height: 100px;
+  max-width: 100px;
+}
+
+.layout_touch_activity_feed .like_action_container .item {
+  float:left;
+  margin-right:5px;
+}
+
+.layout_touch_activity_feed .like_action_container div.item > a {
+  display:block;
+  width: 48px;
+  height: 48px;
+}
+
+.like_button_link{
+  display: block;
+  padding: 1px 4px;
+  margin-top: 4px;
+  border-color: #999999 #999999 #888888;
+  border-style: solid;
+  border-width: 1px;
+  color:#333333;
+  cursor:pointer;
+  background: url(~/application/modules/Touch/modules/Like/externals/images/like_button_bg.png);
+  float: left;
+  text-decoration: none;
+  +shadow(0px, 0px, 2px, 0px, #000000);
+}
+
+.like_button{
+  background: url(~/application/modules/Touch/modules/Like/externals/images/like_button.png) no-repeat left 0px;
+  padding-left: 16px;
+  font-weight: normal;
+  font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+  font-size: 11px;
+  color: #333333;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+[dir="rtl"] .like_button{
+  padding-left: 0;
+  padding-right: 16px;
+  background-position: right top;
+}
+
+.unlike_button{
+  background: url(~/application/modules/Touch/externals/images/unlike_button.png) no-repeat left 0px;
+  padding-left: 16px;
+  font-weight: normal;
+  font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+  font-size: 11px;
+  color: #333333;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.like_button_link:hover{
+  border: 1px solid #aaa;
+  text-decoration: none;
+}
+
+div.like_button_loader {
+  background: transparent url(~/application/modules/Core/externals/images/loading.gif) no-repeat;
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin-top: 8px;
+}
+
+.like_action_container .right .count {
+  font-size: 11px;
+  color: $theme_font_color_light;
+}

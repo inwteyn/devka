@@ -1,0 +1,98 @@
+/* $Id: main.css 2011-04-26 11:18:13 mirlan $ */
+ul.classifieds_entrylist
+{
+  padding-top: 10px;
+}
+ul.classifieds_entrylist > li
+{
+  padding-bottom: 10px;
+}
+ul.classifieds_entrylist h3
+{
+  margin-bottom: 1px;
+}
+ul.classifieds_entrylist .classified_entrylist_entry_date
+{
+  font-size: 8pt;
+  margin-bottom: 5px;
+  color: $theme_font_color_light;
+}
+ul.classifieds_entrylist .classified_entrylist_entry_body
+{
+  line-height: 1.5em;
+  padding: 5px 5px 5px 0px;
+}
+ul.classifieds_entrylist .classified_entrylist_entry_body img
+{
+  max-width: 100%;
+}
+ul.classifieds_entrylist .classified_entrylist_entry_body + .buttonlink
+{
+  margin-top: 5px;
+}
+ul.classifieds_entrylist + .comments
+{
+  padding-top: 10px;
+}
+div.classifieds_gutter .classifieds_gutter_photo
+{
+  display: block;
+}
+div.classifieds_gutter .classifieds_gutter_photo img
+{
+  display: block;
+  width: 98%;
+}
+div.classifieds_gutter .classifieds_gutter_name
+{
+  display: block;
+  font-weight: bold;
+  margin: 3px 0px 15px 0px;
+  font-size: 1em;
+}
+div.classifieds_gutter .buttonlink
+{
+  padding-top: 2px;
+  padding-bottom: 1px;
+}
+div.classifieds_gutter h4
+{
+  margin: 20px 0px 5px 0px;
+  text-transform: uppercase;
+}
+div.classifieds_gutter > ul > li
+{
+  margin-bottom: 2px;
+}
+div.classifieds_gutter ul.classifieds_gutter_options > li
+{
+  font-size: .8em;
+  margin: 3px 0px 3px 0px;
+}
+ul.classified_thumbs > li img
+{
+  max-width: 50%;
+  max-height: 50%;
+  margin: 15px 15px 15px 0px;
+  border: 1px solid $theme_photo_border_color;
+}
+.classified_stats
+{
+  margin-bottom: 15px;
+  border-bottom-width: 1px;
+  padding-bottom: 10px;
+}
+.classified_stats > a
+{
+  font-weight: bold;
+}
+
+
+ul.classifieds_profile_tab .classifieds_profile_tab_title > a
+{
+  font-weight: bold;
+}
+ul.classifieds_profile_tab .classifieds_browse_info_blurb
+{
+  margin-top: 7px;
+}

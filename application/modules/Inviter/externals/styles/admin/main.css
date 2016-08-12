@@ -1,0 +1,11 @@
+/* $Id: main.css 2010-07-02 01:29 ermek $*/
+@include "~/application/modules/Core/externals/styles/admin/constants.css";
+
+#global_page_inviter-admin-stats-index .admin_home_right {
+    width: auto;
+}
+
+#global_page_inviter-admin-stats-index .admin_home_left {
+    width: auto;
+    float: none;
+}

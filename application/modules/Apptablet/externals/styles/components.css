@@ -1,0 +1,238 @@
+/**
+* Example don't forget about ".tablet" for all styles
+
+.tablet .component-feed {
+
+}
+
+*/
+.tablet .component-feed .attachment_thumbs{
+  padding: 0 5px;
+}
+.tablet .component-feed .attachment_thumbs li {
+  float: left;
+  margin: 10px 5px 0;
+}
+
+/*.tablet #wall-feed-menu {*/
+  /*left: 10%;*/
+/*}*/
+.tablet #feed-share-modal,
+.tablet #feed-comment-modal {
+  left: 20%;
+  right: 20%;
+}
+.tablet #feed-composer-panel {
+  top: 10%;
+  /*border-radius: 5px 0 0 5px;*/
+  height: auto;
+}
+.tablet #feed-tools .body {
+  height: 250px;
+  min-height: 250px;
+}
+.tablet .component-feed .body .hashtags {
+  margin-right: -12px;
+}
+.tablet div.active_hashtags a.ht-menu {
+  font-size: 16px;
+  padding: 14px 0;
+}
+
+/*timeline cover*/
+.tablet .component-timelineCover .timeline-cover-icon {
+  font-size: 48px;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+}
+
+/*timeline cover*/
+/*timeline*/
+
+.tablet .component-timelineCover .display_actions_list .ui-controlgroup-horizontal .ui-controlgroup-controls {
+  margin-left: 30px;
+}
+
+.tablet .cover_actions_wrapper {
+  right: 28px;
+}
+
+.tablet .component-timelineCover div.cover_actions {
+  margin-bottom: 10px;
+  vertical-align: top;
+}
+
+/*rate*/
+.tablet_timeline .ui-content.ui-body-d .component-rate {
+  position: inherit !important;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+.tablet .tablet_timeline .ui-content.ui-body-d .component-like {
+  padding: 0 0 5px 12px;
+}
+
+/*rate*/
+.tablet .component-timelineCover .subject_photo {
+  min-height: 140px;
+  margin-left: 5px;
+  margin-top: -100px;
+}
+
+.tablet .component-timelineCover .subject_photo a {
+  max-height: none;
+  max-width: none;
+}
+
+.tablet .component-timelineCover .subject_photo img {
+  max-height: 150px;
+  height: 150px;
+  max-width: 200px;
+}
+
+.tablet .component-timelineCover .subject_title {
+  margin: 10px 0 0 13px !important;
+  font-size: 28px;
+}
+
+/*timeline*/
+
+/* Subject Photo */
+.tablet .component-subjectPhoto .subject_photo img {
+  max-height: 150px;
+  height: 150px;
+  max-width: 200px;
+}
+
+.tablet .component-subjectPhoto .subject_title {
+  margin: -23px 0 0 220px;
+  font-size: 24px;
+  /*margin: -30px 0 0 215px;*/
+}
+
+.tablet .ui-content.ui-body-d .component-like {
+  padding: 0;
+}
+
+.tablet .ui-content.ui-body-d .component-rate {
+  /*position: absolute;*/
+  /*left: 290px;*/
+  padding: 0;
+}
+
+.tablet .component-like .ui-block-a {
+  max-width: 209px;
+}
+
+.tablet .component-rate .item_rate_info {
+  font-size: 17px;
+  padding-top: 5px;
+}
+
+.tablet .component-rate .he_rate_cont .rate_stars_cont {
+  width: 170px;
+}
+
+.tablet .review_stars .rate {
+  background-position: 0 -29px !important;
+}
+
+.tablet .review_stars .rated {
+  background-position: 0 -57px;
+}
+
+.tablet .review_stars > div.pagereview_element {
+  width: 160px !important;
+}
+
+.tablet .review_stars .form-element > div {
+  width: 160px !important;
+}
+
+.tablet .small_rate_star > div.pagereview_element {
+  width: 160px !important;
+}
+
+.tablet .small_rate_star .rate_star {
+  height: 20px;
+  width: 24px;
+  background-size: 20px 120px;
+}
+
+.tablet .small_rate_star .rated {
+  background-position: 0 -20px;
+}
+
+.tablet .small_rate_star .half_rated {
+  background-position: 0 -80px;
+}
+
+.tablet .small_rate_star .quarter_rated {
+  background-position: 0px -60px;
+}
+
+.tablet .small_rate_star .fquarter_rated {
+  background-position: 0px -100px;
+}
+
+.tablet .component-rate .he_rate_cont .rate_star, .rate_star, .review_stars .rate_star {
+  background-size: 32px 170px;
+  height: 28px;
+  width: 32px;
+}
+
+.tablet .component-rate .he_rate_cont .no_rate {
+  background-position: 0 1px;
+}
+
+.tablet .component-rate .he_rate_cont .rated {
+  background-position: 0px -28px;
+}
+
+.tablet .component-rate .he_rate_cont .half_rated {
+  background-position: 0px -84px;
+}
+
+.tablet .component-rate .he_rate_cont .quarter_rated {
+  background-position: 0px -112px;
+}
+
+.tablet .component-rate .he_rate_cont .fquarter_rated {
+  background-position: 0px -140px;
+}
+
+.tablet .component-rate .he_rate_cont .rate {
+  background-position: 0 -56px;
+}
+
+/* Subject Photo */
+
+/******* Galery ******/
+
+.tablet .component-gallery.ui-navbar .thumbs li {
+  width: 33%;
+  display: inline-block;
+  float: none;
+}
+
+.tablet .component-gallery.ui-navbar .thumbs .thumbs_photo .ui-btn-text span {
+  /*width: 197px;*/
+  height: 230px;
+}
+
+.tablet .component-gallery.ui-navbar > ul {
+  text-align: center;
+}
+
+.tablet .component-gallery.ui-navbar {
+  margin-bottom: 0 !important;
+}
+
+/* Ad campaign Styles { */
+.tablet .component-adCampaign.adv-fixed {
+  left: 65px;
+  right: 0;
+}
+/* } Ad campaign Styles */

@@ -1,0 +1,22 @@
+# Jetbrains
+.idea/
+/application/languages/
+/application/libraries/
+/application/packages/
+/application/plugins/
+/application/settings/
+/application/themes/
+/application/index.php
+/application/.htaccess
+/application/lite.php
+/application/maintenance.html
+/application/cli.php
+/application/offline.html
+/application/css.php
+/.htaccess
+/index.php
+/crossdomain.xml
+/rpx_xdcomm.html
+/xd_receiver.htm
+/robots.txt
+/README.html

@@ -1,0 +1,173 @@
+
+/* $Id: main.css 2010-07-30 18:00 vadim $ */
+
+.he_usernote_item *, .usernotes_body * {
+  outline: none;
+}
+.usernotes_body button {
+  border: none;
+}
+
+/* Owner Notes List */
+.he_usernote_item {
+  position: relative;
+  +foreground;
+  +rounded;
+  border-radius: 3px; /* CSS3 */
+  border: 1px solid $theme_foreground_border_color;
+  padding: 7px;
+  width: 445px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+.usernote_rightitem {
+  float: right;
+  margin: 0;
+}
+.he_usernote_item .usernotes_photo {
+  float: left;
+  width: 60px;
+}
+.he_usernote_item .he_usernotes_date {
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+.he_usernote_item .usernotes_body {
+  width: 340px;
+}
+.he_usernote_item .usernotes_menu {
+  white-space: nowrap;
+  width: 80px;
+  float: right;
+  padding-right: 10px;
+}
+.usernotes_menu a {
+  display: block;
+  margin: 0 0 0 4px;
+  height: 16px;
+  width: 16px;
+}
+.he_usernote_item  .usernotes_menu a{
+  padding-left: 19px;
+}
+.usernotes_delete {
+  background: url(~/application/modules/Usernotes/externals/images/btn_delete.png) no-repeat left;
+}
+.usernotes_edit {
+  background: url(~/application/modules/Usernotes/externals/images/btn_edit.png) no-repeat left;
+}
+.usernotes_help {
+  background: url(~/application/modules/Usernotes/externals/images/btn_help.png) no-repeat left;
+}
+.layout_usernotes_profile_usernotes {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.layout_usernotes_profile_usernotes > ul {
+  +foreground;
+  +rounded;
+  border: 1px solid $theme_foreground_border_color;
+  padding: 10px;
+  min-height: 175px;
+}
+
+/* PROFILE WIDGET */
+.usernotes_body {
+  position: relative;
+}
+.usernotes_profile_sidebar .usernotes_menu {
+  position: absolute;
+  right: -3px;
+  top: -3px;
+}
+
+.usernotes_profile_sidebar .usernotes_menu a {
+  float: left;
+}
+.usernotes_profile_sidebar .usernotes_menu a:hover {
+  text-decoration: none;
+}
+.he_usernotes_profile_form {
+  padding-top: 1px;
+}
+.he_usernotes_profile_form #he_usernotes_save-label, .he_usernotes_profile_form #he_usernotes_cancel-label {
+  display: none;
+}
+.usernotes_body #he_usernotes_text {
+  line-height: 20px;
+  text-align: justify;
+}
+.usernotes_body .timestamp {
+  font-size: 0.8em;
+}
+
+[dir="rtl"] .usernotes_body .timestamp {
+    float: left;
+}
+
+#he_usernotes_save-wrapper, #he_usernotes_cancel-wrapper{
+  float: left;
+  margin: 0;
+  width: 49%;
+}
+.he_usernotes_profile_form #he_usernotes_save {
+  +rounded;
+  height: 21px;
+  padding: 0 5px 5px;
+  background: url(~/application/modules/Core/externals/images/buttonbg.png) repeat-x 0px 1px $theme_button_background_color;
+  border: 1px solid $theme_button_border_color;
+  font-weight: bold;
+  color: $theme_button_font_color;
+}
+.he_usernotes_profile_form #he_usernotes_save:hover {
+  background-color: #7eb6d5;
+  cursor: pointer;
+}
+.he_usernotes_profile_form #he_usernotes_cancel {
+  height: 21px;
+  padding: 0 5px 5px;
+  margin: 0px;
+}
+
+/* IE 7 hack */
+*+html #he_usernotes_save-wrapper {
+  margin-right: 6px;
+}
+
+*+html .he_usernotes_profile_form #he_usernotes_save {
+  padding: 0 4px 5px;
+}
+
+*+html .he_usernotes_profile_form #he_usernotes_cancel {
+  padding: 0 4px 5px;
+}
+
+.he_usernotes_profile_form #note {
+  width: 94%;
+  height: 112px;
+  margin-bottom: 5px;
+}
+#he_usernotes_form {
+  position: absolute;
+  top: 0px;
+}
+#usernotes_info {
+}
+.usernotes_text {
+  padding-top: 10px;
+}
+table.admin_table tbody tr td {
+  white-space: nowrap;
+}
+.layout_usernotes_profile_usernotes h3 {
+  font-size:1em;
+  font-weight:bold;
+  letter-spacing:normal;
+}
+[dir="rtl"] div.usernotes_body #he_usernotes_text {
+    clear: both;
+}
+
+[dir="rtl"] div.usernotes_body .optional {
+    float: left;
+}

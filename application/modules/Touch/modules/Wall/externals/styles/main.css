@@ -1,0 +1,2044 @@
+.wallFeed {
+}
+.wallFeed .wall-stream-header {
+  overflow: hidden;
+}
+.wallFeed .wall-stream-types {
+  overflow: hidden;
+  float: left;
+  width: 75%;
+}
+  [dir="rtl"] .wallFeed .wall-stream-types {
+    float: right;
+  }
+.wallFeed .wall-stream-types > li {
+  float: left;
+  width:33.33333%;
+  /*margin-right: 8px;*/
+}
+  [dir="rtl"] .wallFeed .wall-stream-types > li {
+    float: right;
+  }
+ /* ulan {*/
+ .wall-action-item  .feed_item_body  .feed_item_icon ul li {
+   float: left;
+ }
+ .wall-action-item  .feed_item_body  .comments{
+clear: both;
+ }
+ .likes .item {
+ float: left;
+ }
+  [dir="rtl"] .likes .item {
+    float: right;
+  }
+ /* }ulan */
+ .wallFeed .wall-stream-types > li + li  a {
+   border-left:  none;
+ }
+.wallFeed .wall-stream-types > li a {
+  background-color: $theme_body_background_color;
+  border: 1px solid $theme_border_medium_color;
+  display: block;
+  height: 30px;
+  line-height: 27px;
+  padding: 0 10px;
+  background-image: url("~/application/modules/Touch/modules/Wall/externals/images/button.png");
+  color:$theme_font_color;
+  text-decoration: none;
+  padding-bottom: 4px;
+  text-align: center;
+  /*+shadow(0px, 0px, 5px, 0px, $theme_border_color);*/
+}
+.wallFeed .wall-stream-types > li a:hover,
+.wallFeed .wall-stream-types > li a.is_active {
+  +shadow(0px, 0px, 5px, 0px, $theme_border_color);
+  text-decoration: none;
+  background-color: $theme_border_color;
+}
+.wallFeed .wall-stream-options {
+  float: right;
+  width: 25%;
+}
+  [dir="rtl"] .wallFeed .wall-stream-options{
+    float: left;
+  }
+a.wall-button {
+  background-color: $theme_body_background_color;
+  border: 1px solid $theme_border_medium_color;
+  display: block;
+  height: 26px;
+  line-height: 23px;
+  padding: 4px 7px;
+  background-image: url("~/application/modules/Touch/modules/Wall/externals/images/button.png");
+  color:$theme_font_color !important;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 10px;
+  /*+shadow(0px, 0px, 5px, 0px, $theme_border_color);*/
+}
+a.wall-button:hover {
+  /*+shadow(0px, 0px, 5px, 0px, $theme_border_color);*/
+  text-decoration: none;
+  background-color: $theme_border_color;
+}
+a.wall-button .icon {
+  padding:9px;
+  background-repeat:no-repeat;
+  background-position:left center;
+  margin-right: 0px;
+}
+.wallFeed .checkinWallShareLocation,
+.wallFeed .submitMenu {
+  overflow: hidden;
+  margin-top: -1px;
+  border-left: none;
+  border-right: none;
+}
+.wallFeed .submitMenu > * {
+  display: block;
+  float: left;
+}
+  [dir="rtl"] .wallFeed .submitMenu > *{
+    float: right;
+  }
+
+.wallComposer {
+  /*margin: 10px 0;*/
+}
+.wallComposer button {
+  font-size: 11pt;
+  border-radius: 0;
+}
+.wallComposer .textareaBox {
+  display: none;
+  margin: 10px;
+}
+.wallComposer textarea {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width:100%;
+  min-height: 70px;
+  background-color: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+}
+.wallComposer textarea:focus {
+  outline: none;
+}
+
+.wallComposer .labelBox {
+  height: 100%;
+  line-height: 46px;
+  vertical-align: middle;
+  width: 100%;
+  color:$theme_font_color_light;
+}
+.wallComposer .labelBox > span {
+  margin-left:10px;
+}
+  [dir="rtl"] .wallComposer .labelBox > span{
+    margin-left:0;
+    margin-right:10px;
+  }
+.wallComposer .toolsBoxContainer {
+}
+.wallComposer .toolsBox {
+  position: absolute;
+  right:12px;
+  bottom:7px;
+  overflow: hidden;
+}
+  [dir="rtl"] .wallComposer .toolsBox{
+    right:auto;
+    left: 12px;
+  }
+.wallComposer .toolsBox a {
+  background-position: 0 0px;
+  display: block;
+  float: left;
+  /*margin-left: 16px;*/
+  margin-right: 0;
+  margin-top: 1px;
+  width: 32px;
+  height: 32px;
+  text-decoration: none;
+}
+  [dir="rtl"] .wallComposer .toolsBox a{
+    float: right;
+
+  }
+.wallComposer .toolsBox a.delimiter {
+  width: 8px;
+  display: inline;
+}
+
+.wallComposer .close {
+  display: block;
+  height: 24px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 24px;
+  background-image: url("~/application/modules/Touch/modules/Wall/externals/images/close.png");
+}
+  [dir="rtl"] .wallComposer .close{
+    right: auto;
+    left: 5px;
+  }
+.wallComposer .inputBox {
+  display: block;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  cursor: text;
+  overflow: hidden;
+}
+.wallFeed .wallTextareaContainer {
+  background-color: $theme_body_background_color;
+  border:$theme_border_medium_color 1px solid;
+  border-width: 1px 0;
+  position: relative;
+}
+.wallFeed .textareaBox,
+.wallFeed .labelBox,
+.wallFeed .submitMenu,
+.wallFeed .wall-stream-options > li,
+.wall-stream {
+  display: none;
+}
+.wallFeed .textareaBox.is_active,
+.wallFeed .labelBox.is_active,
+.wallFeed .submitMenu.is_active,
+.wallFeed .wall-stream-options > li.is_active,
+.wall-stream.is_active {
+  display: block;
+}
+
+.wallFeed a.share-facebook {
+  background-image: url("~/application/modules/Touch/modules/Wall/externals/images/services/facebook_icon16.png");
+}
+.wallFeed a.share-twitter {
+  background-image: url("~/application/modules/Touch/modules/Wall/externals/images/services/twitter_icon16.png");
+}
+
+.wall-stream-type-social .icon {
+  padding-left: 24px;
+  padding-bottom: 8px;
+  background-image: url("~/application/modules/Touch/modules/Wall/externals/images/services/social24.png");
+  background-repeat: no-repeat;
+}
+.wall-stream-type-facebook .icon {
+  padding-left: 24px;
+  padding-bottom: 8px;
+  background-image: url("~/application/modules/Touch/modules/Wall/externals/images/services/facebook24.png");
+  background-repeat: no-repeat;
+}
+.wall-stream-type-twitter .icon {
+  padding-left: 24px;
+  padding-bottom: 8px;
+  background-image: url("~/application/modules/Touch/modules/Wall/externals/images/services/twitter24.png");
+  background-repeat: no-repeat;
+}
+
+.wallFeed .wall-list-button .icon {
+  margin-right: 10px;
+  padding-left: 16px;
+  background-image: url("~/application/modules/Touch/modules/Wall/externals/images/list.png");
+}
+  [dir="rtl"] .wallFeed .wall-list-button .icon{
+    margin-right: 0;
+    padding-left: 0;
+    margin-left: 10px;
+    padding-right: 16px;
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+  }
+.wallFeed .wall-refresh {
+  margin-right: 10px;
+  padding-left: 16px;
+  background-image: url("~/application/modules/Touch/modules/Wall/externals/images/refresh.png");
+}
+
+
+.wallFeed .utility-viewall {
+}
+
+.wallFeed .utility-viewall .pagination a {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: inline-block;
+  font-weight: bold;
+  padding-left: 21px;
+  background-image: url("~/application/modules/Touch/externals/images/viewmore.png");
+}
+  [dir="rtl"] .wallFeed .utility-viewall .pagination a{
+    padding-left: 0;
+    background-position: right;
+    padding-right: 21px;
+  }
+
+.wallFeed .utility-viewall .loader {
+  overflow: hidden;
+}
+.wallFeed .utility-viewall .loader .text {
+  float: left;
+  margin-left: 5px;
+}
+.wallFeed .tip > span {
+  margin-bottom: 0;
+}
+
+
+
+.wall-most-recent {
+  background-image:url("~/application/modules/Touch/modules/Wall/externals/images/types/most_recent.png");
+}
+.wall-type-page {
+  background-image:url("~/application/modules/Touch/externals/images/page.png");
+}
+.wall-type-friend {
+  background-image:url("~/application/modules/Touch/externals/images/add_friend.png");
+}
+.wall-type-photo {
+  background-image:url("~/application/modules/Touch/externals/images/upload_photo.png");
+}
+.wall-type-status {
+  background-image:url("~/application/modules/Touch/externals/images/post.png");
+}
+.wall-list-new {
+  background-image:url("~/application/modules/Touch/externals/images/add_friend.png");
+}
+
+  .wall-type-group {
+    background-image:url("~/application/modules/Touch/modules/Group/externals/images/types/group.png");
+  }
+  .wall-type-event {
+    background-image:url("~/application/modules/Touch/modules/Event/externals/images/types/event.png");
+  }
+  .wall-type-blog {
+    background-image:url("~/application/modules/Touch/externals/images/types/blog.png");
+  }
+  .wall-type-classified {
+    background-image:url("~/application/modules/Touch/externals/images/types/classified.png");
+  }
+  .wall-type-forum {
+    background-image:url("~/application/modules/Touch/modules/Page/externals/images/share.png");
+  }
+  .wall-type-poll {
+    background-image:url("~/application/modules/Touch/externals/images/types/poll.png");
+  }
+  .wall-type-music {
+    background-image:url("~/application/modules/Touch/externals/images/types/music.png");
+  }
+  .wall-type-video {
+    background-image:url("~/application/modules/Touch/modules/Pagevideo/externals/images/types/video.png");
+  }
+  .wall-type-signup {
+    background-image:url("~/application/modules/Touch/externals/images/add_friend.png");
+  }
+  .wall-type-popular {
+    background-image:url("~/application/modules/Touch/externals/images/rate/small_rated.png");
+  }
+
+
+
+
+.wall-types {
+  display:none;
+  z-index:100;
+  font-size:10pt;
+  background-color: $theme_body_background_color;
+  +rounded(3px);
+  margin-top: 2px;
+}
+.wall-types.is_active {
+  display:block;
+}
+.wall-types > li {
+  position:relative;
+}
+.wall-types > li.separator {
+ /* padding-top: 8px;
+  background-color: $theme_body_background_color;
+  border: 1px solid $theme_border_medium_color;
+  background-image: url("~/application/modules/Touch/modules/Wall/externals/images/button.png");
+  border-top: none;*/
+}
+.wall-types > li a.item {
+  background-color: $theme_body_background_color;
+  border: 1px solid $theme_border_medium_color;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 27px 0 15px;
+  background-image: url("~/application/modules/Touch/modules/Wall/externals/images/button.png");
+  color:$theme_font_color ;
+  text-decoration: none;
+  min-width: 135px;
+}
+.wall-types > li + li a.item  {
+  border-top: none;
+}
+
+.wall-types > li a.item .icon_active {
+  padding-left:20px;
+  background-repeat:no-repeat;
+  background-position:left center;
+  margin-right: 5px;
+}
+.wall-types > li a.item.is_active .icon_active {
+  background-image:url("~/application/modules/Touch/modules/Wall/externals/images/checked.gif");
+}
+
+.wall-types > li a.item .icon {
+  padding-left:20px;
+  background-repeat:no-repeat;
+  background-position:left center;
+}
+
+ .wall-types > li a.item .wall_icon {
+  padding-left:20px;
+  background-repeat:no-repeat;
+  background-position:left center;
+}
+
+.wall-types > li a.item:hover {
+  background-color: $theme_border_color;
+  text-decoration: none;
+}
+
+
+.wall-types > li .options {
+  overflow: hidden;
+  position: absolute;
+  right: 6px;
+  top: 2px;
+  display:none;
+  margin-left: 5px;
+}
+.wall-types > li .options.is_active {
+  display:block;
+}
+.wall-types > li .options a {
+  background-position: left center;
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+  height: 24px;
+  margin-left: 3px;
+  width: 24px;
+}
+.wall-types > li .options a.edit {
+  background-image:url("~/application/modules/Touch/externals/images/edit.png");
+}
+.wall-types > li .options a.remove {
+  background-image:url("~/application/modules/Touch/externals/images/delete.png");
+}
+.wall-lists {
+  position: relative;
+}
+.wall-button.loading .icon {
+  background-image:url("~/application/modules/Touch/externals/images/loader.gif");
+}
+
+.wallComposer .wall-compose-tray {
+  background-color: $theme_body_background_color;
+  border:$theme_border_medium_color 1px solid;
+  margin:10px 0;
+  padding: 10px;
+  display: none;
+}
+
+.wall-compose-photo-activator,
+.wall-compose-photo-menu div {
+  background-image: url("~/application/modules/Touch/modules/Wall/externals/images/composer/photo.png");
+}
+.wall-compose-link-activator,
+.wall-compose-link-menu div {
+  background-image: url("~/application/modules/Touch/modules/Wall/externals/images/composer/link.png");
+}
+/*
+.wall-compose-music-activator,
+.wall-compose-music-menu div {
+}
+*/
+.wall-compose-video-activator,
+.wall-compose-video-menu div {
+  background-image: url("~/application/modules/Touch/modules/Wall/externals/images/composer/video.png");
+}
+.wall-compose-avp-activator,
+.wall-compose-avp-menu div {
+  background-image: url("~/application/modules/Touch/modules/Wall/externals/images/composer/avp.png");
+}
+.wall-compose-container
+{
+  position:relative;
+  display: table-cell;
+  vertical-align: middle;
+}
+.wall-compose-container .overTxtLabel
+{
+  padding: 4px 0px 0px 3px;
+  color: $theme_font_color_light;
+}
+.wall-compose-content
+{
+  background-color: $theme_input_background_color;
+  color: $theme_input_font_color;
+  +rounded(3px);
+  border-width: 1px;
+  border-color: $theme_input_border_colors;
+  cursor: text;
+  padding: 5px;
+  clear: both;
+  outline: none;
+  -moz-outline-style: none;
+}
+.wall-compose-container .wall-compose-content div
+{
+  clear: both;
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+div.wall-compose-menu a.wall-compose-activator
+{
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  float: left;
+  text-decoration: none;
+  width: 32px;
+  height: 32px;
+  +rounded(3px);
+  margin-right: 8px;
+}
+div.wall-compose-menu a.wall-compose-activator:hover {
+  background-color: $theme_topbar_minimenu_link_hover_background_color;
+  color: $theme_topbar_minimenu_link_hover_color;
+}
+html[dir="rtl"] div.wall-compose-menu a.wall-compose-activator
+{
+  background-position: 100% 50%;
+  margin-left: 0px;
+  margin-right: 14px;
+  padding-left: 0px;
+  padding-right: 21px;
+}
+.wall-compose-tray
+{
+  overflow: hidden;
+  padding: 8px;
+}
+.wall-compose-body
+{
+  display: block;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.wall-compose-container
+{
+  overflow: hidden;
+}
+.wall-compose-tray .wall-compose-container > div
+{
+  background-repeat: no-repeat;
+  padding-left: 35px;
+  height: 32px;
+  display: table-cell;
+  vertical-align: middle;
+}
+html[dir="rtl"] .wall-compose-tray .wall-compose-container > span
+{
+  padding-left: 0px;
+  padding-right: 20px;
+  background-position: 100% 50%;
+}
+.wall-compose-loading
+{
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+html[dir="rtl"] .wall-compose-loading
+{
+  background-position: 100% 0%;
+}
+.wall-compose-loading span
+{
+  margin-left: 22px;
+  display: block;
+}
+html[dir="rtl"] .wall-compose-loading span
+{
+  margin-left: 0px;
+  margin-right: 22px;
+}
+.wall-compose-loading img
+{
+  display: block;
+  float: left;
+}
+html[dir="rtl"] .wall-compose-loading img
+{
+  float: right;
+}
+.wall-compose-preview-image-invisible
+{
+  visibility : hidden;
+}
+.wall-compose-preview-image-hidden
+{
+  display: none;
+}
+.wall-compose-preview-image
+{
+  border: 1px solid $theme_photo_border_color;
+}
+.wall-compose-preview-info
+{
+  overflow: hidden;
+  padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+.wall-compose-photo-activator
+{
+  background-repeat: no-repeat;
+}
+.wall-compose-photo-menu span
+{
+  background-repeat: no-repeat;
+}
+.wall-compose-photo-preview-image
+{
+  max-width: 160px;
+}
+.wall-compose-photo-form-fancy-file
+{
+  background-image: url(~/application/modules/Touch/modules/Wall/externals/images/modules/album/add.png);
+}
+
+
+
+
+.wall-compose-link-activator
+{
+  background-repeat: no-repeat;
+}
+.wall-compose-link-menu span
+{
+  background-repeat: no-repeat;
+}
+.wall-compose-link-activator {
+  background-position: center center;
+}
+.wall-compose-link-form-input
+{
+  display: block;
+  margin-bottom: 7px;
+  width: 75%;
+}
+.wall-compose-link-preview-images
+{
+  float: left;
+  overflow: hidden;
+  vertical-align: top;
+  display: block;
+}
+.wall-compose-link-preview-images img
+{
+  border: 1px solid $theme_photo_border_color;
+  width: 100px;
+}
+.wall-compose-link-preview-title
+{
+  margin-bottom: 4px;
+}
+.wall-compose-link-preview-title a
+{
+  font-weight: bold;
+}
+.wall-compose-link-preview-description
+{
+  font-size: .8em;
+}
+.wall-compose-link-preview-options,
+.wall-compose-link-preview-options-choose
+{
+  font-size: .8em;
+  margin: 8px 0px 8px 0px;
+  font-weight: bold;
+}
+.wall-compose-link-preview-options-choose span
+{
+  padding-right: 5px;
+}
+.wall-compose-link-preview-options-none
+{
+  font-size: .8em;
+}
+.wall-compose-link-preview-options-none input[type=checkbox]
+{
+  display: block;
+  float: left;
+}
+.wall-compose-link-preview-options-none label
+{
+  display: block;
+  float: left;
+}
+
+
+
+.wall-compose-music-activator
+{
+  background-repeat: no-repeat;
+}
+.wall-compose-music-menu span
+{
+  background-repeat: no-repeat;
+}
+a.wall-compose-music-link-playing
+{
+  background-image: url(~/application/modules/Core/externals/images/loading.gif);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+html[dir="rtl"] a.wall-compose-music-link,
+html[dir="rtl"] a.wall-compose-music-link-playing
+{
+  background-position: 100% 0%;
+  padding-left: 0px;
+  padding-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.wall-compose-video-body .wall-compose-preview-image
+{
+  float: left;
+  margin-right: 2px;
+  border: 1px solid $theme_photo_border_color;
+}
+html[dir="rtl"] .wall-compose-video-body .wall-compose-preview-image
+{
+  float: right;
+  margin-right: 0px;
+  margin-left: 2px;
+}
+.wall-compose-video-body .wall-compose-preview-info
+{
+  overflow: hidden;
+}
+.wall-compose-video-body .wall-compose-preview-info a
+{
+  font-weight: bold;
+  display: block;
+  margin-bottom: 2px;
+}
+.wall-compose-video-body .wall-compose-preview-info > div
+{
+  font-size: .8em;
+}
+.wall-compose-video-activator
+{
+  background-repeat: no-repeat;
+}
+.wall-compose-video-menu span
+{
+  background-repeat: no-repeat;
+}
+.wall-compose-video-form-input
+{
+  width: 300px;
+  margin-top: 5px;
+}
+.wall-compose-video-form-submit
+{
+  margin-top: 5px;
+  clear: both;
+}
+
+
+
+.wall_grouped_feed_item {
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin-top: 3px;
+  padding: 1px 0 2px 20px;
+  margin-left: 57px;
+}
+
+
+.wall-list {
+  width:630px;
+  padding:20px;
+}
+.wall-list .tabs-container {
+  overflow:hidden;
+  margin:10px 0;
+}
+.wall-list .tabs-container .search-form  {
+  float:right;
+  margin-left:30px;
+}
+.wall-list .tabs-container > ul {
+  overflow:hidden;
+  float:left;
+}
+.wall-list .tabs-container ul > li {
+  float:left;
+  margin-right:3px;
+}
+.wall-list .tabs-container ul > li a {
+  +rounded(3px);
+  padding: 3px 10px 3px 10px;
+  display:block;
+  background-repeat:no-repeat;
+  background-position:5px 5px;
+  color: $theme_topbar_minimenu_link_color;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.wall-list .tabs-container ul > li a:hover {
+  background-color: $theme_topbar_minimenu_link_hover_background_color;
+  color: $theme_topbar_minimenu_link_hover_color;
+  text-decoration: $theme_topbar_minimenu_link_hover_decoration;
+}
+.wall-list .tabs-container ul > li a.is_active {
+  background-color: $theme_topbar_minimenu_link_hover_background_color;
+  color: $theme_topbar_minimenu_link_hover_color;
+  text-decoration: $theme_topbar_minimenu_link_hover_decoration;
+}
+.wall-list .search {
+  +rounded(3px);
+  background-color: $theme_input_background_color;
+  color: $theme_input_font_color;
+  border-width: 1px;
+  border-color: $theme_input_border_colors;
+  border-style: solid;
+  padding: 2px;
+  font-size: 10pt;
+  resize: none;
+  width:175px;
+  overflow:hidden;
+}
+.wall-list .search input {
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  float: left;
+  font-size: 11pt;
+  height: 17px;
+  width: 146px;
+}
+.wall-list .search input:focus {
+  outline: none;
+}
+.wall-list .search a {
+  display: block;
+  float: left;
+  height: 20px;
+  width: 20px;
+  background: transparent url("~/application/modules/Touch/modules/Wall/externals/images/search.png") no-repeat center center;
+}
+
+
+.wall-list .prev {
+  width:100%;
+}
+.wall-list .prev a {
+  display:block;
+  width:25px;
+  height:16px;
+  background: transparent url("~/application/modules/Touch/modules/Wall/externals/images/vertical_nav.png") no-repeat;
+  background-position:0 -16px;
+  margin-left: 284px;
+}
+.wall-list .prev.disabled a {
+  background-position:-24px -16px ;
+}
+.wall-list .prev a:hover {
+  background-position:-48px -16px;
+}
+.wall-list .prev.disabled a:hover {
+  background-position:-24px -16px ;
+}
+
+
+.wall-list .next {
+  width:100%;
+}
+.wall-list .next a {
+  display:block;
+  width:25px;
+  height:16px;
+  background: transparent url("~/application/modules/Touch/modules/Wall/externals/images/vertical_nav.png") no-repeat;
+  background-position:0 0;
+  margin-left: 284px;
+}
+.wall-list .next.disabled a {
+  background-position:-24px 0;
+}
+.wall-list .next a:hover {
+  background-position:-48px 0;
+}
+.wall-list .next.disabled a:hover {
+  background-position:-24px 0;
+}
+
+
+.wall-list .elements {
+  overflow:hidden;
+  margin:10px 0;
+}
+.wall-list .elements > div {
+  float:left;
+  margin-bottom:3px;
+}
+.wall-list .elements .items-container {
+  width:582px;
+  height:304px;
+  position:relative;
+  overflow:hidden;
+  border: 1px solid $theme_foreground_border_color;
+  +rounded;
+}
+.wall-list .container {
+  width:100%;
+  height:100%;
+}
+.wall-list .items {
+  overflow:hidden;
+  position:absolute;
+  top:0;
+  width:100%;
+}
+.wall-list .items > li.item {
+  background-color: $theme_foreground_background_color;
+  border: 1px solid $theme_foreground_border_color;
+  +rounded;
+  float: left;
+  height: 62px;
+  margin: 3px;
+  overflow: hidden;
+  padding: 3px;
+  width: 180px;
+  cursor:pointer;
+}
+.wall-list .items > li.item .item_photo {
+  float: left;
+  margin: 3px;
+}
+
+.wall-list .items > li.item.is_active .item_photo .inner {
+  background: url("~/application/modules/Touch/modules/Wall/externals/images/checked.gif") no-repeat bottom left;
+  display: block;
+  height: 14px;
+  width: 13px;
+  position: relative;
+  top: -15px;
+  border: 1px solid $theme_foreground_border_color;
+  border-left-style:none;
+  border-top-style:solid;
+  border-right-style:solid;
+  border-bottom-style:none;
+  background-color:$theme_foreground_background_color;
+}
+.wall-list .items > li.item .item_photo img {
+  display: block;
+  height: 54px;
+  width: 54px;
+}
+.wall-list .items > li.item .item_body {
+  float:left;
+  margin: 3px;
+}
+.wall-list .container > div {
+  display:none;
+}
+.wall-list .container > div.is_active {
+  display:block;
+}
+.wall-list .items > li.message {
+  width:100%;
+  text-align:center;
+  margin-top:137px;
+}
+.wall-list .items > li.message > div {
+  background-repeat: no-repeat;
+  background-position: 6px 6px;
+  padding: 6px 6px 6px 27px;
+  text-align:center;
+  width: 70%;
+  margin: 0 auto;
+}
+.wall-list .form-container {
+  margin:20px 0;
+}
+
+
+
+
+
+
+
+
+.wall-slideshow .close {
+position: absolute;
+right: 0px;
+top: -20px;
+width: 16px;
+height: 16px;
+display: block;
+background: transparent url("~/application/modules/Touch/modules/Wall/externals/images/close_slideshow.png") center center no-repeat;
+}
+.wall-slideshow .navigation {
+position: absolute;
+top: 200px;
+width: 16px;
+height: 16px;
+display: block;
+}
+.wall-slideshow .prev,
+.wall-slideshow .next {
+display: block;
+float: left;
+margin: 0 1px;
+/*margin-top:34px;*/
+background-repeat: no-repeat;
+background-position: center center;
+opacity: 0.7;
+background-color: rgba(255, 255, 255, 0.8);
+height: 30px;
+width: 31px;
+-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
++rounded(2px 2px 2px 2px);
+border-color: #999999 #999999 #888888;
+border-style: solid;
+border-width: 1px;
+}
+
+.wall-slideshow.night_theme .prev,
+.wall-slideshow.night_theme .next {
+-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+background-color: rgba(50, 50, 50, 0.5);
+border-color: #999999 #999999 #888888;
+border-style: solid;
+border-width: 1px;
+}
+
+.wall-slideshow .prev {
+background-image: url("~/application/modules/Touch/modules/Wall/externals/images/previous.png");
+left:-30px;
+}
+.wall-slideshow .next {
+background-image: url("~/application/modules/Touch/modules/Wall/externals/images/next.png");
+right:-30px;
+}
+.wall-slideshow .prev.disabled,
+.wall-slideshow .next.disabled {
+display: none;
+}
+.wall-slideshow .prev:hover,
+.wall-slideshow .next:hover {
+opacity: 1;
+}
+
+
+.wall-slideshow .header {
+background: url("~/application/modules/Touch/modules/Wall/externals/images/white.png") repeat scroll 0 0 transparent;
+display: block;
+left: 30px;
+opacity: 0.7;
+padding: 5px 20px;
+position: absolute;
+top: 30px;
+z-index: 1;
+}
+.wall-slideshow .title {
+color: #555555;
+font-size: 15pt;
+}
+.wall-slideshow .description {
+color: #777777;
+font-size: 11pt;
+margin: 3px 0;
+}
+
+.wall-slideshow.night_theme .header {
+background: url("~/application/modules/Touch/modules/Wall/externals/images/black.png") repeat scroll 0 0 transparent;
+opacity: 0.7;
+}
+.wall-slideshow.night_theme .title {
+color: #FFFFFF;
+}
+.wall-slideshow.night_theme .description {
+color: #EEEEEE;
+}
+
+.wall-slideshow .photo .item,
+     .wall-slideshow .preview {
+       display: none;
+       /*background-color: #F6F6F6;*/
+       text-align: center;
+     }
+
+     .wall-slideshow .photo .item img,
+     .wall-slideshow .preview img {
+          image-rendering: optimizequality;
+          display: inline-block;
+         text-align: center;
+     }
+
+     .wall-window .container {
+      -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.25), 0 1px 5px 3px rgba(0, 0, 0, 0.05), 0 5px 4px -3px rgba(0, 0, 0, 0.06);
+      -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.25), 0 1px 5px 3px rgba(0, 0, 0, 0.05), 0 5px 4px -3px rgba(0, 0, 0, 0.06);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.25), 0 1px 5px 3px rgba(0, 0, 0, 0.05), 0 5px 4px -3px rgba(0, 0, 0, 0.06);
+      z-index: 100;
+      min-height: 125px;
+      background-color: #FFF;
+      padding: 12px;
+    }
+
+.wall-slideshow.night_theme .photo .item,
+.wall-slideshow.night_theme .preview {
+background-color: #111519;
+}
+
+.wall-slideshow .photo .item.is_active,
+.wall-slideshow .preview.is_active {
+display: block;
+  text-align: center;
+}
+.wall-slideshow .photo .item a,
+.wall-slideshow .preview a {
+display: inline-block;
+position: relative;
+}
+
+.wall-slideshow .photo a {
+}
+.wall-slideshow .photos_info .item {
+}
+
+
+.wall-slideshow .photos_info {
+margin: 10px 0;
+}
+
+.wall_hidescrool, .wall_hidescrool body {
+overflow-x: hidden;
+overflow-y: hidden;
+}
+
+.wall-slideshow .photo_details .options {
+overflow: hidden;
+}
+.wall-slideshow .photo_details .options .tags {
+font-size: 0.8em;
+margin-top: 5px;
+}
+.wall-slideshow .photo_details .options .date {
+float: left;
+font-size: 0.8em;
+margin-top: 5px;
+}
+.wall-slideshow .comments {
+margin-top: 15px;
+}
+
+._img{
+  text-align: center;
+}
+
+.wall-slideshow .body {
+margin: 0 auto;
+padding:10px 0;
+}
+.wall-slideshow .container {
+}
+.wall-slideshow .photo .item,
+.wall-slideshow .preview {
+background-color: #F6F6F6;
+text-align: center;
+}
+
+ .wall-slideshow .container .content {
+     display: none;
+ }
+ .wall-slideshow .container .content.is_active {
+     display: block;
+ }
+
+ .wall-slideshow .container .content
+  .body .photos_info .item .comments .comments_options {
+     font-size: 11px;
+     margin: 0 auto;
+ }
+ .wall-slideshow .container .content
+  .body .photos_info .item .comments .comments_options span{
+     font-size: 11px;
+ }
+ .wall-slideshow .container .content
+  .body .photos_info .item .comments .comments_options a.post-comment{
+     font-size: 11px;
+ }
+ .wall-slideshow .container .content
+  .body .photos_info .item .comments .comments_options a.like{
+     font-size: 11px;
+ }
+
+
+
+.wall-window {
+  background: url("~/application/modules/Touch/modules/Wall/externals/images/white.png") repeat scroll 0 0 transparent;
+  overflow-x: auto;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.wall-stream-twitter .service-feed {
+  clear: both;
+}
+.wall-stream-twitter .service-feed > li {
+  padding: 0px 0px 10px 0px;
+  position:relative;
+  overflow: hidden;
+}
+.wall-stream-twitter .service-feed > li + li {
+  padding-top: 10px;
+  border-top-width: 1px;
+}
+.wall-stream-twitter .item_photo {
+  float: left;
+  overflow: hidden;
+  margin-right: 10px;
+  line-height: 0px;
+  font-size: 0px;
+}
+html[dir="rtl"] .wall-stream-twitter .item_photo
+{
+  float: right;
+  margin-right: 0px;
+  margin-left: 7px;
+}
+.wall-stream-twitter .item_photo > a {
+  text-decoration: none;
+}
+.wall-stream-twitter .item_photo > a > img {
+  display: block;
+}
+.wall-stream-twitter .item_body {
+  overflow: hidden;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-size: 9pt;
+}
+.wall-stream-twitter .item_title {
+  line-height: 15px;
+  margin-bottom: 10px;
+}
+.wall-stream-twitter .item_line {
+  overflow: hidden;
+  margin-top: 10px;
+  line-height: 16px;
+}
+.wall-stream-twitter .item_line > div {
+  float: left;
+  margin-right:5px;
+}
+.wall-stream-twitter .item_date {
+  color: $theme_font_color_light;
+  font-size: 9pt;
+}
+.wall-stream-twitter .screen_name {
+  font-size: 15px;
+  font-weight: bold;
+}
+.wall-stream-twitter .item_title .name {
+  color: $theme_font_color_light;
+  padding-top: 1px;
+  font-size: 10pt;
+}
+.wall-stream-twitter .item_text {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 9pt;
+}
+.wall-stream-twitter .item_icon {
+  width:16px;
+  height: 16px;
+  background: url("~/application/modules/Touch/modules/Wall/externals/images/services/twitter_stream16.png") center center transparent no-repeat;
+}
+.wall-stream-twitter .item_options {
+  overflow: hidden;
+}
+.wall-stream-twitter .item_options > a {
+  padding-left:21px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+  font-size: 9pt;
+}
+.wall-stream-twitter .item_options > a.tweet {
+  background-image: url("~/application/modules/Touch/modules/Wall/externals/images/services/reply.png");
+}
+.wall-stream-twitter .item_options > a.retweet {
+  background-image: url("~/application/modules/Touch/modules/Wall/externals/images/services/retweet.png");
+}
+.wall-stream-twitter .item_options > a.favorite {
+  background-image: url("~/application/modules/Touch/modules/Wall/externals/images/services/favorite.png");
+}
+
+
+
+
+
+.wall-stream-facebook .service-feed {
+  clear: both;
+}
+.wall-stream-facebook .service-feed > li {
+  overflow: hidden;
+  padding: 0 0 10px;
+  position: relative;
+}
+.wall-stream-facebook .service-feed > li + li {
+  border-top-width: 1px;
+  padding-top: 10px;
+}
+.wall-stream-facebook .item_photo {
+  float: left;
+  font-size: 0;
+  line-height: 0;
+  margin-right: 10px;
+  overflow: hidden;
+}
+html[dir="rtl"] .wall-stream-facebook .item_photo {
+  float: right;
+  margin-left: 7px;
+  margin-right: 0;
+}
+.wall-stream-facebook .item_photo > a {
+  text-decoration: none;
+}
+.wall-stream-facebook .item_photo > a > img {
+  display: block;
+}
+.wall-stream-facebook .item_body {
+  overflow: hidden;
+}
+.wall-stream-facebook .item_text .body {
+  font-size: 9pt;
+  margin: 10px 0;
+}
+.wall-stream-facebook .item_title {
+  line-height: 15px;
+}
+.wall-stream-facebook .item_line {
+  line-height: 16px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+.wall-stream-facebook .item_line > div {
+  float: left;
+  margin-right: 5px;
+}
+.wall-stream-facebook .item_date {
+  color: $theme_font_color_light;
+  font-size: 9pt;
+}
+.wall-stream-facebook .item_title .name {
+  font-size: 10pt;
+  font-weight: bold;
+}
+.wall-stream-facebook .item_text {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.wall-stream-facebook .item_icon {
+  background: url("~/application/modules/Touch/modules/Wall/externals/images/services/facebook_icon16.png") no-repeat scroll center center transparent;
+  height: 16px;
+  width: 16px;
+}
+.wall-stream-facebook .item_options {
+  overflow: hidden;
+}
+.wall-stream-facebook .item_options > li {
+  background-position: left center;
+  background-repeat: no-repeat;
+  color: #999999;
+  color: $theme_font_color_light;
+  float: left;
+  font-size: 9pt;
+  margin-right: 5px;
+}
+.wall-stream-facebook .item_options > li a {
+}
+.wall-stream-facebook .count_container {
+  overflow: hidden;
+}
+.wall-stream-facebook .count_comments {
+  background: url("~/application/modules/Touch/modules/Wall/externals/images/services/facebook_utilites.png") no-repeat scroll 0 0 transparent;
+  display: block;
+  float: left;
+  height: 16px;
+  line-height: 16px;
+  margin-right: 5px;
+  padding-left: 18px;
+}
+.wall-stream-facebook .count_likes {
+  background: url("~/application/modules/Touch/modules/Wall/externals/images/services/facebook_utilites.png") no-repeat scroll 0 -16px transparent;
+  display: block;
+  float: left;
+  height: 16px;
+  line-height: 16px;
+  margin-right: 5px;
+  padding-left: 18px;
+}
+.wall-stream-facebook .attachment {
+  overflow: hidden;
+}
+.wall-stream-facebook .attachment .media {
+  margin: 5px 0;
+  overflow: hidden;
+}
+.wall-stream-facebook .attachment .media_content {
+  padding-left: 10px;
+}
+.wall-stream-facebook .attachment .media_photo {
+  float: left;
+}
+.wall-stream-facebook .attachment .media_photo a {
+  display: block;
+  text-decoration: none;
+}
+.wall-stream-facebook .attachment .media_photo img {
+  display: block;
+  max-width: 121px;
+}
+.wall-stream-facebook .media_content {
+  overflow: hidden;
+}
+.wall-stream-facebook .media_content .name {
+  font-size: 10pt;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.wall-stream-facebook .media_content .caption {
+  font-size: 9pt;
+  margin-bottom: 5px;
+}
+.wall-stream-facebook .media_content .description {
+  color: $theme_font_color_light;
+  font-size: 9pt;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+.wall-stream-facebook-composer {
+  +foreground;
+  +rounded(3px);
+  padding: 4px;
+  margin:10px 0;
+  overflow: hidden;
+}
+.wall-stream-facebook-composer textarea {
+  width:99%;
+  margin:5px 0;
+  height: 22px;
+  max-height: 22px;
+}
+.wall-stream-facebook-composer textarea.overTxtLabel {
+  color: $theme_font_color_light;
+}
+.wall-stream-facebook-composer button {
+}
+
+.wall-stream-twitter-composer {
+  +foreground;
+  +rounded(3px);
+  padding: 4px;
+  margin:10px 0;
+  overflow: hidden;
+}
+.wall-stream-twitter-composer textarea {
+  width:99%;
+  margin:5px 0;
+  height: 22px;
+  max-height: 22px;
+}
+.wall-stream-twitter-composer textarea.overTxtLabel {
+  color: $theme_font_color_light;
+}
+.wall-stream-twitter-composer button {
+}
+
+
+.wall-stream {
+  margin: -1px 0;
+}
+
+
+.wall-tips {
+  position: absolute;
+  opacity: .9;
+  overflow: hidden;
+  z-index: 100;
+}
+.wall-tips .container {
+  background-color: #2f2f2f;
+  +rounded(3px);
+}
+.wall-tips.night_theme .container {
+  background-color: #555;
+}
+
+.wall-tips .data  {
+  padding: 5px 10px;
+  font-size: 8pt;
+  color: #fff;
+  max-width: 300px;
+}
+.wall-tips .data .title,
+.wall-tips .data .title a,
+.wall-tips .data .title a:hover {
+  color: #fff;
+}
+.wall-tips .arrow_container {
+  width: 100%;
+  height: 5px;
+  position: relative;
+}
+.wall-tips .arrow {
+  background-image: url("~/application/modules/Touch/modules/Wall/externals/images/arrows.png");
+  position: absolute;
+}
+.wall-tips.night_theme .arrow {
+  background-image: url("~/application/modules/Touch/modules/Wall/externals/images/arrows_night.png");
+}
+
+.wall-tips .arrow.top {
+  background-position: left top;
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 5px;
+}
+.wall-tips .arrow.bottom {
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 5px;
+}
+
+
+.wall-liketips {
+  opacity: 1;
+}
+.wall-liketips .container {
+  font-size: 10pt;
+  overflow: hidden;
+  width: 320px;
+  background-color: $theme_body_background_color;
+  border:#555 1px solid;
+  +rounded(3px);
+}
+.wall-liketips.night_theme .container {
+  background-color: $theme_body_background_color;
+  border:#555 1px solid;
+
+}
+.wall-liketips .data {
+  color:$theme_font_color;
+}
+.wall-liketips .item_photo {
+  float: left;
+  margin-left:10px;
+  margin-top:10px;
+}
+.wall-liketips .item_photo img {
+  max-width: 90px;
+  max-height: 80px;
+}
+.wall-liketips .item_body {
+  float: left;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+.wall-liketips .item_title {
+  font-size: 14pt;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.wall-liketips .item_description {
+  font-size: 9pt;
+}
+.wall-liketips .items {
+  overflow: hidden;
+}
+.wall-liketips .items > li {
+  float: left;
+  margin-right: 2px;
+}
+.wall-liketips .items > li a {
+  display: block;
+}
+.wall-liketips .items > li a img {
+  width:32px;
+  height:32px;
+  display: block;
+}
+.wall-liketips .members_description {
+  font-size: 9pt;
+  margin: 5px 0;
+}
+.wall-liketips .item_photo a {
+  display: block;
+  min-height: 70px;
+}
+.wall-liketips .item_photo a img {
+  display: block;
+}
+.wall-liketips .content {
+  overflow: hidden;
+}
+.wall-liketips .item_options {
+  border-top: 1px solid $theme_border_medium_color;
+  background-color: $theme_border_color;
+  display: block;
+  font-size: 9pt;
+  margin-top: 10px;
+  padding: 7px;
+  min-height: 8px;
+}
+.wall-liketips .item_options ul {
+  overflow: hidden;
+}
+.wall-liketips .item_options ul > li {
+  float: left;
+  margin-right: 10px;
+}
+.wall-liketips .item_options .buttonlink {
+  font-size: 9pt;
+  line-height: 16px;
+}
+.wall_like_container {
+  background-image: url("~/application/modules/Touch/modules/Wall/externals/images/like_button.png");
+}
+.wall_like_container.unlike {
+  background-image: url("~/application/modules/Touch/externals/images/unlike_button.png");
+}
+
+
+
+.wall-items {
+  padding:20px;
+}
+.wall-items .search-form  {
+  float:right;
+  margin-left:30px;
+}
+.wall-items .search {
+  +rounded(3px);
+  background-color: $theme_input_background_color;
+  color: $theme_input_font_color;
+  border-width: 1px;
+  border-color: $theme_input_border_colors;
+  padding: 2px;
+  font-size: 10pt;
+  resize: none;
+  width:175px;
+  overflow:hidden;
+}
+.wall-items .search input {
+  background:none;
+  border:none;
+  float: left;
+  width: 150px;
+}
+.wall-items .search a {
+  display: block;
+  float: left;
+  height: 20px;
+  width: 20px;
+  background: transparent url("~/application/modules/Touch/modules/Wall/externals/images/search.png") no-repeat center center;
+}
+
+
+.wall-items .prev {
+  width:100%;
+}
+.wall-items .prev a {
+  display:block;
+  width:25px;
+  height:16px;
+  background: transparent url("~/application/modules/Touch/modules/Wall/externals/images/vertical_nav.png") no-repeat;
+  background-position:0 -16px;
+  margin-left: 284px;
+}
+.wall-items .prev.disabled a {
+  background-position:-24px -16px ;
+}
+.wall-items .prev a:hover {
+  background-position:-96px -32px;
+  /*background-position:-48px -16px;*/
+}
+.wall-items .prev.disabled a:hover {
+  background-position:-24px -16px ;
+}
+
+
+.wall-items .next {
+  width:100%;
+}
+.wall-items .next a {
+  display:block;
+  width:25px;
+  height:16px;
+  background: transparent url("~/application/modules/Touch/modules/Wall/externals/images/vertical_nav.png") no-repeat;
+  background-position:0 0;
+  margin-left: 284px;
+}
+.wall-items .next.disabled a {
+  background-position:-24px 0;
+}
+.wall-items .next a:hover {
+  background-position:-48px 0;
+}
+.wall-items .next.disabled a:hover {
+  background-position:-24px 0;
+}
+
+
+.wall-items .elements {
+  overflow:hidden;
+  margin:10px 0;
+}
+.wall-items .elements > div {
+  float:left;
+  margin-bottom:3px;
+}
+.wall-items .elements .items-container {
+  width:582px;
+  height:304px;
+  position:relative;
+  overflow:hidden;
+  border: 1px solid $theme_foreground_border_color;
+  +rounded;
+}
+.wall-items .container {
+  width:100%;
+  height:100%;
+}
+.wall-items .items {
+  overflow:hidden;
+  position:absolute;
+  top:0;
+  width:100%;
+}
+.wall-items .items > li.item {
+  background-color: $theme_foreground_background_color;
+  border: 1px solid $theme_foreground_border_color;
+  +rounded;
+  float: left;
+  height: 62px;
+  margin: 3px;
+  overflow: hidden;
+  padding: 3px;
+  width: 180px;
+  cursor:pointer;
+}
+.wall-items .items > li.item .item_photo {
+  float: left;
+  margin: 3px;
+}
+
+.wall-items .items > li.item.is_active .item_photo .inner {
+  background: url("~/application/modules/Touch/modules/Wall/externals/images/checked.gif") no-repeat bottom left;
+  display: block;
+  height: 14px;
+  width: 13px;
+  position: relative;
+  top: -15px;
+  border: 1px solid $theme_foreground_border_color;
+  border-left-style:none;
+  border-top-style:solid;
+  border-right-style:solid;
+  border-bottom-style:none;
+  background-color:$theme_foreground_background_color;
+}
+.wall-items .items > li.item .item_photo img {
+  display: block;
+  height: 54px;
+  width: 54px;
+}
+.wall-items .items > li.item .item_body {
+  float:left;
+  margin: 3px;
+}
+.wall-items .items > li.message {
+  width:100%;
+  text-align:center;
+  margin-top:137px;
+}
+.wall-items .items > li.message > div {
+  background-repeat: no-repeat;
+  background-position: 6px 6px;
+  padding: 6px 6px 6px 27px;
+  text-align:center;
+  width: 70%;
+  margin: 0 auto;
+}
+.wall-items .form-container {
+  margin:20px 0;
+}
+.wall-items .total-header {
+  overflow: hidden;
+}
+.wall-items .header {
+  float:left;
+}
+.wall-items .header-title {
+  font-size: 15pt;
+}
+
+
+
+.wall-overloader {
+  opacity: 0.8;
+  background-color:$theme_foreground_background_color;
+}
+.wall-overloader.loader1 .icon {
+  background-image: url("~/application/modules/Touch/externals/images/loader.gif");
+  width:16px;
+  height: 16px;
+}
+.wall-overloader.loader2 .icon {
+  background-image: url("~/application/modules/Touch/modules/Wall/externals/images/loading64.gif");
+  width:48px;
+  height: 48px;
+    float: left;
+}
+.wall-loading {
+  background-image: url("~/application/modules/Touch/externals/images/loader.gif");
+  padding-left:16px;
+  margin-right: 5px;
+  font-size: 10pt;
+}
+
+.wallShareMenu {
+  overflow: hidden;
+}
+.wallShareMenu > li {
+  float: left;
+}
+.wallShareMenu a {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.wallShareMenu a:hover {
+  background-position: 0 -24px;
+}
+.wallShareMenu a.disabled {
+  background-position: 0 -48px;
+}
+
+.wall-share-facebook {
+  background-image: url("~/application/modules/Touch/modules/Wall/externals/images/services/facebook24multi.png");
+}
+.wall-share-twitter {
+  background-image: url("~/application/modules/Touch/modules/Wall/externals/images/services/twitter24multi.png");
+}
+
+
+.wall-window.night_theme .container {
+  background-color: #191F28;
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.25), 0 1px 5px 3px rgba(0, 0, 0, 0.05), 0 5px 4px -3px rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.25), 0 1px 5px 3px rgba(0, 0, 0, 0.05), 0 5px 4px -3px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.25), 0 1px 5px 3px rgba(0, 0, 0, 0.05), 0 5px 4px -3px rgba(0, 0, 0, 0.06);
+}
+.wall-window.night_theme {
+  background: url("~/application/modules/Touch/modules/Wall/externals/images/black.png") repeat scroll 0 0 transparent;
+}
+.wall-window.ie .container {
+  border: #ccc 1px solid;
+}
+.wall-mobile {
+  background-image: url("~/application/modules/Touch/modules/Wall/externals/images/mobile.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-size: 10px;
+  margin-left: 5px;
+  padding-left: 16px;
+}
+
+.wall_theme_color {
+  display: none;
+}
+.wall-theme-background {
+  background-color: $theme_body_background_color;
+}
+.wall-theme-foreground {
+  background-color: $theme_foreground_background_color;
+}
+.wall-feed .utility-viewall {
+  border-left: medium none;
+  border-right: medium none;
+  min-height: inherit;
+  padding-top: 15px;
+}
+
+/* fix */
+ul.feed.wall-feed .comments textarea + button {
+  display: block;
+}
+
+.wall-hide{
+display: none;
+}
+
+/* Privacy Styles */
+.wall-privacy-link {
+  display: block;
+  line-height: 24px;
+  overflow: hidden;
+  text-decoration: none;
+  color: $theme_button_font_color;
+}
+.wall-privacy-link .wall_privacy {
+  background: url("~/application/modules/Touch/modules/Wall/externals/images/privacy.png") no-repeat scroll center center transparent;
+  display: block;
+  float: left;
+  height: 24px;
+  width: 24px;
+}
+
+.wall-privacy-link:hover,
+.wall-privacy-link.is_active{
+  text-decoration: none;
+}
+.wall-icon-expand {
+  font-size: 16px;
+  margin-left: 2px;
+  padding-left: 8px;
+}
+
+
+
+.wall-privacy {
+  display:none;
+  z-index:100;
+  font-size:10pt;
+  margin-top:4px;
+  width:100%;
+}
+.wall-privacy.is_active {
+  display:block;
+}
+.wall-privacy > li {
+  position:relative;
+  width:100%;
+}
+.wall-privacy > li a.item {
+  background-color: $theme_list_background_color;
+  border: 1px solid $theme_border_medium_color;
+  background-image: url("~/application/modules/Touch/modules/Wall/externals/images/button.png");
+  color:$theme_font_color ;
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 0 0 5px;
+  text-decoration: none;
+}
+  [dir="rtl"] .wall-privacy > li a.item{
+    padding: 0 5px 0 0;
+  }
+.wall-privacy > li + li a.item  {
+  border-top: none;
+}
+
+.wall-privacy > li a.item .wall_icon_active {
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 10px;
+}
+  [dir="rtl"] .wall-privacy > li a.item .wall_icon_active{
+    background-position: right center;
+    padding-left: 0;
+    padding-right: 10px;
+  }
+
+.wall-privacy > li a.item.is_active .wall_icon_active {
+  background-image:url("~/application/modules/Touch/modules/Wall/externals/images/checked.gif");
+}
+.wall-privacy > li a.item:hover {
+  background-color: $theme_list_background_color_hover;
+  text-decoration: none;
+}
+
+.wall-action-item {
+  position: relative;
+}
+.wall-action-item > .wall-privacy-container {
+  right: 0;
+  top:0;
+  overflow: hidden;
+  /*float: right;*/
+  clear: both;
+  margin-bottom: -7px;
+  margin-top: 6px;
+}
+
+
+.wall-privacy-action-link {
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+  background: url("~/application/modules/Touch/modules/Wall/externals/images/change_privacy.png") no-repeat scroll left transparent;
+  height: 20px;
+  padding-left: 18px;
+  font-size: 10px;
+  line-height: 20px;
+}
+  [dir="rtl"] .wall-privacy-action-link{
+    padding-left: 0;
+    padding-right: 18px;
+    background-position: right;
+  }
+.wall-privacy-action-link:hover,
+.wall-privacy-action-link.is_active{
+  text-decoration: none;
+}
+/* Privacy Styles */

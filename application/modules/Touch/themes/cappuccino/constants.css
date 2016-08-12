@@ -1,0 +1,147 @@
+/* $Id: constants.css 2011-04-26 11:18:13 mirlan $ */
+@constants
+{
+  theme_topbar_width: 100%;
+  theme_topbar_minimenu_width: 100%;
+  theme_topbar_menu_width: 100%;
+  theme_footer_width: 98%;
+  theme_content_width: 98%;
+  theme_body_background_color: #F0F0F0;
+
+  theme_topbar_background_color: #FDFDFD;
+  theme_topbar_menu_background_color: #757575;
+  theme_topbar_menu_background_color_selected: #d1a04c;
+  theme_topbar_menu_link_color: #fff;
+  theme_topbar_menu_link_decoration: none;
+  theme_topbar_menu_link_size: 1em;
+  theme_topbar_menu_link_background_color: #757575;
+  theme_topbar_minimenu_background_color: #fff;
+  theme_topbar_minimenu_border: 1px solid #686868;
+  theme_topbar_menu_border: 1px solid #f7f7f7;
+
+  theme_font_family: arial, verdana, sans-serif;
+  theme_font_size: inherit;
+  theme_font_color: #4C5153;
+  theme_font_color_light: #69706E;
+  theme_text_align: left;
+  theme_link_color: #d1a04c;
+  theme_link_decoration: none;
+  theme_headline_color: #717171;
+  theme_headline_size_large: 1.3em;
+  theme_headline_size_medium: 1.1em;
+  theme_layout_header_font_size: 1em;
+
+  theme_border_color: #ccc;
+  theme_border_light_color: #DDD;
+  theme_border_medium_color: #DFDFDF;
+  theme_border_dark_color: #bbb;
+  theme_active_color: #F0F0F0;
+
+  theme_foreground_border_color: #363636;
+  theme_foreground_border_color_light: #d7e8f1;
+  theme_foreground_background_color: #fff;
+
+  theme_input_background_color: #F0F0EF;
+  theme_input_font_color: #555;
+  theme_input_border_colors: #8E8E8E #E8E8E8 #E8E8E8 #8E8E8E;
+  theme_button_background_color: #cecdad;
+  theme_button_font_color: #fff;
+  theme_button_border_color: transparent;
+
+  theme_photo_border_color: #ddd;
+
+  theme_form_border_color: #D8D8D8;
+  theme_form_background_color: #fff;
+  theme_form_label_font_color: #777;
+
+
+  /*MINE*/
+  theme_widget_bg_color: #fff;
+  theme_widget_tl_color: #fff;
+	theme_widget_bd_color: #fff;
+
+  theme_shadow_dark_color: #4B4B4B;
+  theme_shadow_light_color: #aaa;
+
+	theme_navigation_bg_color: #363636;
+	theme_navigation_border: 1px solid #6BA6C6;
+	theme_navigation_font_color: #fff;
+
+	theme_photo_box_background_color: #000;
+	theme_photo_box_header_font_color: #fff;
+	theme_photo_box_header_font_size: .9em;
+
+	theme_notifications_active_color: #fff;
+	theme_unread_background_color: #E6E6E6;
+	theme_box_padding: 4px;
+}
+
+img.thumb_normal
+{
+  max-width: 60px;
+	max-height: 70px;
+}
+
+img.thumb_profile{
+	max-width: 80px;
+	max-height: 160px;
+}
+
+img.thumb_icon{
+  width: 48px;
+  height: 48px;
+}
+
+img.main,
+img.thumb_normal,
+img.thumb_profile,
+img.thumb_icon{
+  border: 1px solid $theme_photo_border_color;
+}
+
+
+/* Gives an element a background and/or border */
+=foreground
+{
+  background-color: $theme_foreground_background_color;
+}
+
+/* Gives an element a drop shadow */
+=shadow($offset_x = 0, $offset_y = 0, $blur_radius = 0, $spread_radius = 0, $shadow_color = "#aaa"){
+  -moz-box-shadow: $offset_x $offset_y $blur_radius $spread_radius $shadow_color;
+  -webkit-box-shadow: $offset_x $offset_y $blur_radius $spread_radius $shadow_color;
+  box-shadow: $offset_x $offset_y $blur_radius $spread_radius $shadow_color;
+}
+
+/* Gives an element rounded corners. */
+=rounded($radius = 3px, $hidecorner1 = false, $hidecorner2 = false, $hidecorner3 = false, $hidecorner4 = false)
+{
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+
+  @if($hidecorner1 == true)
+  {
+    -moz-border-radius-topleft: 0px;
+    -webkit-border-top-left-radius: 0px;
+    border-radius-topleft: 0px;
+  }
+  @if($hidecorner2 == true)
+  {
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-right-radius: 0px;
+    border-radius-topright: 0px;
+  }
+  @if($hidecorner3 == true)
+  {
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    border-radius-bottomright: 0px;
+  }
+  @if($hidecorner4 == true)
+  {
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    border-radius-bottomleft: 0px;
+  }
+}

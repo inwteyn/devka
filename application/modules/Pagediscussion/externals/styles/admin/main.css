@@ -1,0 +1,4 @@
+ul.admin_home_dashboard_links >li li.page_admin_main_discussion a
+{
+    background-image:url("~/application/modules/Pagediscussion/externals/images/post.png");
+}

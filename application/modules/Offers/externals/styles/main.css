@@ -1,0 +1,2067 @@
+.activity_icon_page_offer_new {
+    background-image: url(~/application/modules/Offers/externals/images/activity_page_offer_new.png);
+}
+
+.offer_price_free {
+    color: #006400;
+    font-weight: bold;
+}
+
+/* Browse Offers */
+
+.layout_active_theme_bamboo .offers .offer_item {
+    /*border: 1px solid transparent;*/
+    float: left;
+    margin: 3px 0 30px 0;
+    min-height: 265px;
+    padding: 2px;
+    /*width: 235px;*/
+}
+
+.layout_active_theme_bamboo #offers .tab_list ul.offers .offer_item {
+    width: 234px;
+}
+
+.layout_active_theme_bamboo .offer_profile_photo > img {
+    max-height: 290px;
+    max-width: 160px;
+}
+
+.layout_offers_profile_offers div#offers_navigation, .layout_offers_profile_offers div#offers {
+    margin-left: 5px;
+}
+
+div#offers {
+    margin-top: 10px;
+}
+
+/*.offers .offer_item:hover, .my_offers .offer_item:hover {
+    box-shadow: 1px 3px 12px #AAAAAA;
+    -webkit-box-shadow: 1px 3px 12px #AAAAAA;
+    -moz-box-shadow: 1px 3px 12px #AAAAAA;
+}*/
+
+/*
+.offers .offer_item {
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
+    float: left;
+    margin: 3px 1% 15px;
+    width: 31%;
+}
+*/
+
+.offers li.third {
+    margin-right: 0;
+}
+
+.tab .offers .offer_item {
+    margin: 3px 30px 10px 2px;
+}
+
+.my_offers .offer_item {
+    float: left;
+    width: 97%;
+    margin: 3px 4px 30px 3px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
+    padding: 8px 8px 5px 8px;
+}
+
+.offers li.third {
+    margin-right: 0;
+}
+
+.offers .offer_photo, .print_offer_photo {
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.offer_view_button {
+    float: right;
+    margin: 0 10px;
+}
+
+.my_offers .offer_photo {
+    height: 200px;
+    width: 220px;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    margin-right: 14px;
+}
+
+.offers .offer_photo img {
+    border: none;
+    height: 200px;
+    width: 100%;
+    max-height: 200px;
+    max-width: 220px;
+}
+
+.my_offers .offer_photo img {
+    border: none;
+    height: 200px;
+    width: 100%;
+    max-height: 200px;
+    max-width: 220px;
+}
+
+.my_offers .btn_view_offer {
+    clear: both;
+    float: right;
+    margin-right: 12px;
+}
+
+.my_offers .offer_info span {
+    font-weight: bold;
+    line-height: 18px;
+}
+
+ul.offers button.btn_view_offer {
+    float: right;
+}
+
+.offer_title h3 {
+    font-size: 11pt;
+    line-height: 20px;
+    margin-top: 10px;
+    background: none;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+}
+.offer_title .wp_init{
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+.offer_company {
+    font-weight: bold;
+    line-height: 18px;
+    margin-bottom: 4px;
+    min-height: 18px;
+}
+
+.offer_info {
+    padding: 0 5px;
+}
+
+.my_offers .offer_info {
+    padding: 0 5px;
+    float: left;
+    width: 304px;
+}
+
+.offer_options {
+    float: left;
+    width: 135px;
+    padding-left: 10px;
+}
+
+.offer_options .offer-price {
+    color: #AF3706;
+    font-weight: bold;
+}
+
+.my_offers .offer_options {
+    width: 157px;
+    float: right;
+    margin-top: 30px;
+}
+
+.offer_options label {
+    color: #999;
+    font-size: 9pt;
+}
+
+.offer_options span {
+    font-size: 9pt;
+}
+
+.offer_loader {
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.offer_navigation_loader {
+    margin-top: 8px;
+    margin-left: 333px;
+}
+
+.offer_last_day, .offer_no_relevant {
+    color: #AF3706;
+}
+
+/* Offer View */
+
+.view_offer_options {
+    float: left;
+    margin-right: 15px;
+}
+
+.accept_offer {
+    float: right;
+    width: 420px;
+}
+
+.view_offer_desc {
+    position: relative;
+    float: left;
+    width: 60%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.view_offer_options label {
+    color: #999;
+    line-height: 18px;
+    margin-right: 6px;
+}
+
+.view_offer_options span {
+    font-weight: bold;
+    line-height: 18px;
+}
+
+.view_offer_options .offer_price {
+    color: #AF3706;
+}
+
+.my_offers .offer_options > ul > li > a {
+    margin-bottom: 5px;
+}
+
+.view_offer_options div {
+    padding: 2px 0 2px 26px;
+}
+
+.view_offer_options .offer_price, .favorite_offer .offer_price {
+    background: url(~/application/modules/Offers/externals/images/price.png) no-repeat bottom left;
+}
+
+.view_offer_options .discount, .favorite_offer .discount {
+    background: url(~/application/modules/Offers/externals/images/discount.png) no-repeat bottom left;
+}
+
+.view_offer_options .count, .favorite_offer .count {
+    background: url(~/application/modules/Offers/externals/images/coupons.png) no-repeat bottom left;
+  clear: both;
+}
+
+.view_offer_options .time_left, .favorite_offer .time_left {
+    background: url(~/application/modules/Offers/externals/images/time_left.png) no-repeat bottom left;
+}
+
+.view_offer_options .redeem {
+    background: url(~/application/modules/Offers/externals/images/redeem.png) no-repeat bottom left;
+}
+
+.view_offer_options .present_by {
+    background: url(~/application/modules/Offers/externals/images/presentedby.png) no-repeat bottom left;
+}
+
+.view_offer_options .item_price {
+    background: url(~/application/modules/Offers/externals/images/price_item.png) no-repeat bottom left;
+}
+
+.layout_hecore_featured_members {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+.layout_hecore_featured_members > .list {
+    background-color: #E9F4FA;
+    background-image: url("~/application/modules/Core/externals/images/foreground_bg.png");
+    background-repeat: repeat-x;
+    border: 1px solid #D0E2EC;
+    border-radius: 3px 3px 3px 3px;
+    margin: 0;
+    padding: 4px;
+}
+
+.offer_photos .photo_item {
+    float: left;
+    height: 160px;
+    margin-right: 12px;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+}
+
+.offer_photos .photo_item:hover {
+    border: 1px solid #CAD9E1;
+    box-shadow: 0 2px 3px #CAD9E1;
+}
+
+.offer_photos img.thumb_normal {
+    min-height: 190px;
+    min-width: 240px;
+}
+
+div#offer_products {
+    float: left;
+    width: 280px;
+    margin-left: 10px;
+}
+
+div#offer_products > span {
+    font-size: 18px;
+}
+
+div#offer_products div.view_products_offer ul {
+    margin-top: 5px;
+    padding: 5px;
+    border-color: $ theme_foreground_border_color_light;
+    border-radius: 3px 3px 3px 3px;
+    border-width: 10px;
+    margin-top: 5px;
+}
+
+div#offer_products div.view_products_offer li {
+    height: 50px;
+    border-bottom-width: 1px;
+    margin-bottom: 6px;
+    padding-bottom: 4px;
+}
+
+div#offer_products div.view_products_offer li:last-child {
+    border-bottom-width: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.large_map {
+    width: 640px;
+    height: 460px;
+    margin: 10px 0 0 10px;
+}
+
+.offer_large_map_head {
+    margin: 0 0 0 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.layout_offers_offer_contacts, .layout_offers_offer_participants {
+    margin-top: 15px;
+}
+
+.offer_large_map {
+    background: url("~/application/modules//Offers/externals/images/view_larger_map.gif") no-repeat scroll left top transparent;
+    display: block;
+    font-size: 9pt;
+    height: 16px;
+    margin-top: 2px;
+    padding-left: 20px;
+    float: right;
+}
+
+#offer_address {
+    background: url("~/application/modules//Offers/externals/images/map.png") no-repeat scroll left top transparent;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+#offer_contact {
+    background: url("~/application/modules//Offers/externals/images/phone.png") no-repeat scroll left top transparent;
+    padding-left: 20px;
+}
+
+#offer_website {
+    background: url("~/application/modules//Offers/externals/images/website.png") no-repeat scroll left top transparent;
+    padding-left: 20px;
+}
+
+.accept_offer_desc {
+    float: right;
+    font-size: 9pt;
+    color: #999;
+    width: 270px;
+}
+
+.disabled {
+    background-color: #BBBBBB;
+    border-color: #BBBBBB;
+}
+
+div#offer_products div.view_products_offer span.offer_product_photo {
+    float: left;
+    margin-right: 4px;
+}
+
+div#offer_products div.view_products_offer span.offer_product_title {
+    display: block;
+    margin-bottom: 2px;
+}
+
+div#offer_products div.view_products_offer span.offer_product_price {
+    color: #AF3706;
+    font-weight: 700;
+}
+
+ul.offer_list_user_sub {
+    background-image: url("~/application/modules/Core/externals/images/foreground_bg.png");
+    background-color: $ theme_foreground_background_color;
+    border: 1px solid $ theme_foreground_border_color;
+    background-repeat: repeat-x;
+    float: left;
+    border-radius: 3px 3px 3px 3px;
+    padding: 5px;
+    min-width: 180px;
+}
+
+ul.offer_list_user_sub li {
+    display: block;
+    font-size: 8pt;
+    margin-left: 5px;
+    margin-top: 2px;
+    width: 50px;
+    float: left;
+}
+
+/* Browse Offers on the Page */
+
+div.offers .tab_list ul.offers .offer_item img {
+    width: 215px;
+    height: 190px;
+}
+
+/* Offer Create Form on the Page */
+.choose_oftype {
+    margin: 7px 0 15px;
+    overflow: hidden;
+}
+
+#choose_oftype > div > img {
+    float: left;
+    height: 64px;
+    margin: 0 10px 0 0;
+    width: 64px;
+}
+
+span.title_oftype {
+    font-weight: bold;
+    font-size: 1.2em;
+    position: absolute;
+    top: 20px;
+}
+
+.choose_oftype p.form_oftype_help {
+    font-size: 0.85em;
+    font-style: italic;
+    padding-top: 4px;
+}
+
+.choose_oftype div > p {
+    padding-bottom: 0 !important;
+}
+
+.choose_oftype > div:not(:last-child):hover, .choose_oftype > div.active {
+    background-color: $ theme_buttontabs_background_color_active;
+    border: 1px solid $ theme_border_color;
+    color: $ theme_buttontabs_font_color_active;
+    border-bottom: 5px solid #3498DB;
+    padding-bottom: 15px;
+}
+
+.layout_active_theme_clean .choose_oftype div {
+    background-color: #eee;
+}
+
+.layout_active_theme_clean .choose_oftype > div:hover, .layout_active_theme_clean .choose_oftype > div.active {
+    background-color: $ theme_tabs_background_color_active;
+    border: 1px solid $ theme_border_color;
+    color: $ theme_tabs_font_color_active;
+}
+
+#form-offers .global_form div.form-label {
+    padding-top: 0 !important;
+}
+
+#form-offers input[type="checkbox"], input[type="radio"] {
+    margin-top: 4px !important;
+}
+
+.oftype_free, .oftype_paid, .oftype_reward, .oftype_store {
+    background-color: $ theme_buttontabs_background_color;
+    border: 1px solid $ theme_border_color;
+    float: left;
+    margin: 5px;
+    width: 23%;
+    cursor: pointer;
+    position: relative;
+}
+
+.offers_form_container form {
+    background-color: $ theme_foreground_background_color;
+    border-radius: 7px 7px 7px 7px;
+    float: left;
+    width: 100%;
+}
+
+#form-upload-offers #offer_description-element {
+    overflow: visible;
+}
+
+#add_photo_offer .offers_form_container form {
+    width: 60%;
+    position: relative;
+}
+
+.offers_form_container form > div {
+    width: 100%;
+}
+
+.offers_form_container form .form-wrapper {
+    clear: both;
+    padding: 5px 0;
+}
+
+.offers_form_container p.form-description {
+    margin: 0 0 0 33px;
+}
+
+.offers_form_container .form-label {
+    clear: left;
+    float: left;
+    font-weight: bold;
+    padding-right: 15px;
+    width: 150px;
+    text-align: right;
+}
+
+/* Add Product Element */
+.offers_form_container #popup_products-wrapper {
+    display: none;
+}
+
+.offers_form_container #link_add_product {
+    background-image: url(~/application/modules/Offers/externals/images/add_product.png);
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+/* Price Element */
+.offers_form_container form #price {
+    display: none;
+    text-align: right;
+}
+
+.offers_form_container form #price_offer-wrapper {
+    display: none;
+}
+
+.offers_form_container form #allow_credit-wrapper {
+    display: none;
+}
+
+/* Time Left and Redeem Elements */
+.offers_form_container #starttime-wrapper, .offers_form_container #endtime-wrapper,
+.offers_form_container #redeem_starttime-wrapper, .offers_form_container #redeem_endtime-wrapper {
+    display: none;
+    margin-left: 160px;
+}
+
+.offers_form_container #starttime-wrapper, .offers_form_container #redeem_starttime-wrapper {
+    display: none;
+    margin-left: 165px;
+    width: 280px;
+    clear: none;
+    float: left;
+}
+
+.offers_form_container #endtime-wrapper, .offers_form_container #redeem_endtime-wrapper {
+    display: none;
+    width: 280px;
+    clear: none;
+}
+
+.offers_form_container #starttime-wrapper .form-label, .offers_form_container #endtime-wrapper .form-label,
+.offers_form_container #redeem_starttime-wrapper .form-label, .offers_form_container #redeem_endtime-wrapper .form-label {
+    font-weight: normal;
+    width: 75px;
+    padding: 4px 0 0 0 !important;
+    text-align: left;
+}
+
+/* Coupons count Element */
+.offers_form_container #coupons_count-wrapper {
+    display: none;
+}
+
+.offers_form_container #coupons_count-wrapper label {
+    font-weight: normal;
+}
+
+/* Coupons Code Element */
+.offers_form_container #coupons_code-wrapper, .offers_form_container #enable_unique_code-wrapper {
+    display: none;
+}
+
+/* Button Generate Code for Coupons Code Element */
+.offers_form_container #generate_code {
+    float: right;
+    margin-left: 10px;
+    padding: 5px;
+    position: relative;
+}
+
+/* loading gif*/
+.offers_form_container #generateCode_loading {
+    float: left;
+    margin-left: 360px;
+    margin-top: -40px;
+    display: none;
+}
+
+/* Require */
+.offers_form_container #offers_require {
+    display: none;
+}
+
+.offers_list_require {
+    margin-left: 165px;
+}
+
+.offers_require_checkbox, .offers_require_label, .offers_require_count {
+    float: left;
+}
+
+.offers_require_label {
+    width: 215px;
+    vertical-align: text-bottom;
+    margin-top: 5px;
+}
+
+.offers_require_checkbox {
+    /*margin-top: 5px;*/
+    /*margin-left: 7px;*/
+    margin: 5px;
+}
+
+.offers_require_count {
+    margin: 0 30px 0 5px;
+}
+
+.accept_offer .item_require {
+    margin: 30px 0;
+    overflow: hidden;
+}
+
+.accept_offer .item_require ul {
+    padding: 0;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+html[dir=rtl] .accept_offer .item_require ul {
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+.accept_offer .item_require ul > li {
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+.accept_offer .item_require ul > li .item_title {
+    float: left;
+    font-size: 14pt;
+    font-weight: normal;
+    overflow: hidden;
+    color: $ theme_tabs_font_color_active;
+    line-height: 18pt;
+}
+
+html[dir=rtl] .accept_offer .item_require ul > li .item_title {
+    float: right;
+}
+
+.accept_offer .item_require ul > li .item_title > * {
+    float: left;
+    display: block;
+}
+
+html[dir=rtl] .accept_offer .item_require ul > li .item_title > * {
+    float: right;
+}
+
+.accept_offer .item_require ul > li .item_title .item_counter {
+    background-color: $ theme_tabs_background_color_active;
+    border: 1px solid $ theme_tabs_border_color_hover;
+    color: $ theme_tabs_font_color_active;
++ rounded(15 px);
+    font-size: 12pt;
+    font-weight: 700;
+    height: 23px;
+    line-height: 21px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 16px;
+    padding: 0 5px;
+}
+
+.accept_offer .item_require ul > li span.complete {
+    text-decoration: line-through;
+    color: $ theme_tabs_font_color;
+}
+
+/* FancyUpload  */
+.swiff-uploader-box a {
+    display: none !important;
+}
+
+#offers-demo-status.hide {
+    display: none;
+}
+
+#multidelete_form {
+    overflow: auto;
+}
+
+.offers_form_container #file-label {
+    width: 0;
+}
+
+.offers_form_container #demo-status {
+    margin-left: 60px;
+}
+
+.offers_form_container #demo-list {
+    margin-left: 60px;
+}
+
+#offers-demo-status {
+    width: 420px;
+    margin: 10px auto;
+}
+
+#offers-demo-status > div {
+    margin: 15px 0 0 0;
+}
+
+#offers-demo-status > div:first-child {
+    margin: 0 0 15px 0;
+}
+
+#offers-demo-status .current-text,
+#offers-demo-status .demo-status-overall {
+    display: none;
+}
+
+#offers-demo-status .overall-title,
+#offers-demo-status .current-title {
+    font-size: .7em;
+    text-transform: uppercase;
+}
+
+#offers-demo-status .progress {
+    background-position: 50% 0;
+    margin-right: 0.5em;
+    vertical-align: middle;
+    background-image: url(~/externals/fancyupload/assets/progress-bar/progress.gif);
+}
+
+#offers-demo-status .progress-text {
+    font-size: 0.9em;
+}
+
+#offers-demo-list {
+    display: none;
+    list-style: none;
+    width: 450px;
+    margin: 10px auto;
+    overflow-y: auto;
+    background-color: $ theme_body_background_color;
+    border: 1px solid $ theme_foreground_border_color;
++ rounded(3 px);
+}
+
+#offers-demo-list li.validation-error {
+    padding: 8px;
+    font-size: .8em;
+    font-weight: normal;
+    background-color: $ theme_body_background_color;
+    background-repeat: no-repeat;
+    background-position: 6px 7px;
+    padding-left: 28px;
+    background-image: url(~/externals/fancyupload/assets/error.png);
+    border-bottom: 1px solid $ theme_foreground_border_color;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#offers-demo-list li.file {
+    padding: 8px;
+    font-size: .8em;
+    font-weight: normal;
+    background-color: $ theme_body_background_color;
+    background-repeat: no-repeat;
+    background-position: 6px 7px;
+    padding-left: 28px;
+    background-repeat: no-repeat;
+}
+
+#offers-demo-list li.file + li.file {
+    border-top: 1px solid $ theme_foreground_border_color;
+}
+
+#offers-demo-list li.file span {
+    display: none;
+}
+
+#offers-demo-list li.file-uploading {
+    background-image: url(~/externals/fancyupload/assets/loading.gif);
+    background-repeat: no-repeat;
+}
+
+#offers-demo-list li.file-success {
+    background-repeat: no-repeat;
+}
+
+#offers-demo-list li.file .file-name {
+    display: block;
+    clear: left;
+    font-weight: bold;
+}
+
+#offers-demo-list li.file .file-size {
+    display: none;
+}
+
+#offers-demo-list li.file .file-info {
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+
+#offers-demo-list li.file .file-remove {
+    clear: right;
+    float: right;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.swiff-uploader-box a {
+    display: none !important;
+}
+
+#offers-demo-status.hide {
+    display: none;
+}
+
+#offers-demo-status {
+    width: 420px;
+}
+
+#offers-demo-status > div {
+    margin: 15px 0 0 0;
+    text-align: center;
+    width: 100%;
+}
+
+#offers-demo-status > div:first-child {
+    margin: 0 0 15px 0;
+}
+
+#offers-demo-status .current-text,
+#offers-demo-status .demo-status-overall {
+    display: none;
+}
+
+#offers-demo-status .overall-title,
+#offers-demo-status .current-title {
+    font-size: .7em;
+    text-transform: uppercase;
+}
+
+#offers-demo-status .progress {
+    background-position: 50% 0;
+    margin-right: 0.5em;
+    vertical-align: middle;
+    background-image: url("~/externals/fancyupload/assets/progress-bar/progress.gif");
+}
+
+#offers-demo-status .progress-text {
+    font-size: 0.9em;
+}
+
+#offers-demo-list {
+    display: none;
+    list-style: none;
+    width: 450px;
+    margin-top: 15px;
+    overflow-y: auto;
+    background-color: $ theme_body_background_color;
+    border: 1px solid $ theme_foreground_border_color;
++ rounded(3 px);
+}
+
+#offers-demo-list li.validation-error {
+    padding: 8px;
+    font-size: .8em;
+    font-weight: normal;
+    background-color: $ theme_body_background_color;
+    background-repeat: no-repeat;
+    background-position: 6px 7px;
+    padding-left: 28px;
+    background-image: url(~/externals/fancyupload/assets/error.png);
+    border-bottom: 1px solid $ theme_foreground_border_color;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#offers-demo-list li.file {
+    padding: 8px;
+    font-size: .8em;
+    font-weight: normal;
+    background-color: $ theme_body_background_color;
+    background-repeat: no-repeat;
+    background-position: 6px 7px;
+    padding-left: 28px;
+    background-image: url(~/externals/fancyupload/assets/waiting.png);
+    background-repeat: no-repeat;
+}
+
+#offers-demo-list li.file + li.file {
+    border-top: 1px solid $ theme_foreground_border_color;
+}
+
+#offers-demo-list li.file span {
+    display: none;
+}
+
+#offers-demo-list li.file-uploading {
+    background-image: url(~/externals/fancyupload/assets/loading.gif);
+    background-repeat: no-repeat;
+}
+
+#offers-demo-list li.file-success {
+    background-image: url(~/externals/fancyupload/assets/finished.png);
+    background-repeat: no-repeat;
+}
+
+#offers-demo-list li.file .file-name {
+    display: block;
+    clear: left;
+    font-weight: bold;
+}
+
+#offers-demo-list li.file .file-size {
+    display: none;
+}
+
+#offers-demo-list li.file .file-info {
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+
+#offers-demo-list li.file .file-info img {
+    margin: 5px 0;
+}
+
+#offers-demo-list li.file .file-remove {
+    clear: right;
+    float: right;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.icon_offers_image_new {
+    background-image: url("~/application/modules/Offers/externals/images/add.png");
+    background-repeat: no-repeat;
+}
+
+/* End styles for creation form page offer */
+
+/* Manage photos */
+
+ul.offers_editphotos {
+    width: 600px;
+    float: left;
+}
+
+ul.offers_editphotos > li {
+    padding-top: 15px;
+    clear: both;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+ul.offers_editphotos > li .offers_editphotos_photo {
+    float: left;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+ul.offers_editphotos > li .offers_editphotos_photo img {
+    display: block;
+    margin: 3px;
+    width: auto;
+    float: left;
+}
+
+ul.offers_editphotos > li .offers_editphotos_info {
+    overflow: hidden;
+}
+
+ul.offers_editphotos > li .offers_editphotos_title_input input,
+ul.offers_editphotos > li .offers_editphotos_caption_input textarea {
+    margin: 2px 0 6px 0;
+    width: 25em;
+}
+
+ul.offers_editphotos > li .offers_editphotos_caption_input textarea {
+    height: 2.5em;
+}
+
+ul.offers_editphotos > li .offers_editphotos_label {
+    float: left;
+}
+
+ul.offers_editphotos > li .offers_editphotos_cover {
+    float: left;
+    overflow: hidden;
+}
+
+ul.offers_editphotos > li .photo-delete-wrapper {
+    float: left;
+    margin-right: 15px;
+}
+
+ul.offers_editphotos > li .photo-delete-wrapper > label {
+    display: block;
+    float: left;
+}
+
+/* Edit Offer */
+
+div#offer_edit .offers_form_container {
+    width: 85%;
+}
+
+div#offer_edit .offers_add_photo_form_container {
+    width: 460px;
+    margin-left: 155px;
+    float: left;
+}
+
+div#offer_edit .offers_add_photo_form_container .global_form {
+    overflow: visible !important;
+}
+
+.offers_navigation_editor {
+    float: right;
+    width: 220px;
+}
+
+.offers_navigation_editor ul li {
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 0 !important;
+}
+
+.offers_navigation_editor a {
+    margin-left: 5px;
+}
+
+a.menu_offer_edit {
+    padding: 0.3em 2em !important;
+    background-position: 5px;
+}
+
+.layout_offers_offer_categories {
++ rounded();
++ foreground();
+    padding: 7px;
+    border-width: 0;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border: 1px solid $ theme_foreground_border_color_light;
+}
+
+.layout_offers_hot_offers,
+.layout_offers_offer_search,
+.layout_offers_offer_search,
+.layout_offers_recent_offers,
+.layout_offers_offer_participants,
+.layout_offers_offer_contacts {
+    margin: 15px 0;
+}
+
+ul.offer-categories {
+    background-color: $ theme_body_background_color;
+    padding: 5px;
+    border: 1px solid $ theme_foreground_border_color_light;
+    list-style: none;
+}
+
+ul.offer-categories > li {
+    padding: 5px;
+    overflow: hidden;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+ul.offer-categories > li:last-child {
+    border-bottom-width: 0px;
+}
+
+.my_offers .offer_how_to_get {
+    background: none repeat scroll 0 0 $ theme_foreground_background_color;
+    border: 1px solid $ theme_foreground_border_color;
+    border-radius: 3px 3px 3px 3px;
+    margin-top: 10px;
+    padding: 6px;
+    width: 290px;
+    float: left;
+}
+
+.my_offers .offer_how_to_get div {
+    font-size: 0.8em;
+    padding-bottom: 4px;
+}
+
+.my_offers .offer_address {
+    background: no-repeat scroll left top transparent url(~/application/modules/Offers/externals/images/map.png);
+    padding-left: 20px;
+}
+
+.my_offers .offer_contacts {
+    background: no-repeat scroll left top transparent url(~/application/modules/Offers/externals/images/phone.png);
+    padding-left: 20px;
+}
+
+.my_offers .offer_website {
+    background: no-repeat scroll left top transparent url(~/application/modules/Offers/externals/images/website.png);
+    padding-left: 20px;
+}
+
+.my_offers .offer_title {
+    margin-bottom: 12px;
+}
+
+.my_offers span.offer-price {
+    color: #AF3706;
+}
+
+.my_offers_description {
+    float: left;
+    width: 80%;
+}
+
+.my_offers_navigation {
+    float: right;
+    margin-bottom: 14px;
+}
+
+.my_offers_navigation > ul > li {
+    display: inline-block;
+}
+
+.my_offers_navigation > ul > li > a.active, .my_offers_navigation > ul > li > a:hover {
+    background: none repeat scroll 0 0 $ theme_link_color;
+    border-color: $ theme_link_color;
+    color: $ theme_body_background_color;
+}
+
+.my_offers_navigation > ul > li > a {
+    border-radius: 3px 3px 3px 3px;
+    display: block;
+    margin-right: 4px;
+    padding: 5px 10px;
+    text-decoration: none;
+    background: none repeat scroll 0 0 $ theme_foreground_background_color;
+    border: 1px solid $ theme_foreground_background_color;
+}
+
+.my_offers .print_offer {
+    background: no-repeat scroll left top transparent url(~/application/modules/Offers/externals/images/print_offer.png);
+}
+
+.my_offers .mark_as_used {
+    background: no-repeat scroll left top transparent url(~/application/modules/Offers/externals/images/check.png);
+}
+
+.my_offers .email_offer {
+    background: no-repeat scroll left top transparent url(~/application/modules/Offers/externals/images/email.png);
+}
+
+.my_offers .offer_status span.expired {
+    color: #CC1A1A;
+}
+
+.my_offers .offer_profile_suggest {
+    margin-bottom: 5px;
+    background: no-repeat scroll left top transparent url(~/application/modules/Offers/externals/images/suggest.png);
+}
+
+.offers-credit-price {
+    font-weight: bold;
+    margin-left: 18px;
+}
+
+.offers_credit_icon {
+    background-image: url(~/application/modules/Offers/externals/images/credits.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin-top: 3px;
+}
+
+/**/
+
+.datepicker_container input {
+    background: url("~/application/modules/Offers/externals/images/calendar.png") no-repeat scroll 128px center transparent !important;
+    width: 145px !important;
+}
+
+.datepicker_vista {
+    background-color: #fff !important;
+    border-radius: 2px;
+    box-shadow: 0 0 8px rgba(64, 64, 64, 0.7);
+    color: #000;
+    font-family: Tahoma,sans-serif;
+    font-size: 10px;
+    height: 135px;
+    line-height: normal;
+    padding: 14px;
+    position: absolute;
+    width: 172px;
+    z-index: 5;
+    background-image: none !important;
+}
+
+/* header
+********************************************************/
+.datepicker_vista .header {
+    position: relative;
+    height: 15px;
+    margin-bottom: 5px;
+    padding-top: 1px;
+}
+
+.datepicker_vista .header .title {
+    text-align: center;
+    margin: 0 18px 0 18px;
+    color: #444;
+}
+
+.datepicker_vista .header .titleText {
+}
+
+.datepicker_vista .header .previous,
+.datepicker_vista .header .next,
+.datepicker_vista .header .closeButton {
+    position: absolute;
+    cursor: pointer;
+    text-indent: -40px;
+    overflow: hidden;
+    width: 12px;
+    height: 12px;
+    top: 2px;
+    background-image: url(~/application/modules/Offers/externals/images/buttons.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+.datepicker_vista .header .previous {
+    left: 4px;
+}
+
+.datepicker_vista .header .previous:hover {
+    background-position: left bottom;
+}
+
+.datepicker_vista .header .next {
+    right: 4px;
+    background-position: -13px top;
+}
+
+.datepicker_vista .header .next:hover {
+    background-position: -13px bottom;
+}
+
+.datepicker_vista .header .closeButton {
+    display: none;
+    right: 0;
+    top: 0;
+    background-position: right top;
+}
+
+.datepicker_vista .header .closeButton:hover {
+    background-position: right bottom;
+}
+
+/* body
+********************************************************/
+.datepicker_vista .body {
+    position: relative;
+    top: 0;
+    left: 2px;
+    width: 168px;
+    height: 112px;
+    overflow: hidden;
+}
+
+/* time
+********************************************************/
+.datepicker_vista .time {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.datepicker_vista .time .hour,
+.datepicker_vista .time .separator,
+.datepicker_vista .time .minutes {
+    border: 1px solid #ccc;
+    background: #fff;
+    width: 50px;
+    font-size: 32px;
+    position: absolute;
+    top: 10px;
+    text-align: center;
+    color: #444;
+    padding: 2px;
+}
+
+.datepicker_vista .time .hour input,
+.datepicker_vista .time .minutes input {
+    font-size: 32px;
+}
+
+.datepicker_vista .time .hour {
+    left: 15px;
+}
+
+.datepicker_vista .time .separator {
+    background: transparent;
+    border: 0;
+    width: 10px;
+    left: 76px;
+}
+
+.datepicker_vista .time .minutes {
+    left: 95px;
+}
+
+.datepicker_vista .time .ok {
+    border-radius: 2px;
+    background-color: $theme_button_background_color;
+    border: 1px solid $theme_button_border_color;
+    color: $theme_button_font_color;
+    position: absolute;
+    top: 65px;
+    width: 136px;
+    left: 15px;
+    font-size: 20px;
+}
+
+.datepicker_vista .time .ok:hover {
+    background-color: $theme_button_background_color_hover;
+    cursor: pointer;
+}
+
+/* days-grid
+********************************************************/
+.datepicker_vista .days {
+    z-index: 6;
+}
+
+.datepicker_vista .days .day {
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    width: 23px;
+    height: 15px;
+    margin: 0 1px 1px 0;
+    color: #444;
+    font-size: 12px;
+    border-radius: 2px;
+}
+
+.datepicker_vista .days .titles {
+    height: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 1px;
+}
+
+.datepicker_vista .days .day0 {
+    margin-right: 0;
+}
+
+.datepicker_vista .days .week5 .day {
+    margin-bottom: 0;
+}
+
+/* days-colors
+********************************************************/
+.datepicker_vista .days .week .day {
+    cursor: pointer;
+}
+
+.datepicker_vista .days .week .day:hover {
+    background-color: $theme_button_background_color_hover !important;
+    cursor: pointer;
+    color: $theme_button_font_color !important;
+    background-image: none !important;
+}
+
+.datepicker_vista .days .otherMonth {
+    color: #aaa;
+}
+
+.datepicker_vista .days .selected {
+    background-color: $theme_button_background_color !important;
+    color: $theme_button_font_color !important;
+    background-image: none !important;
+}
+
+/* months-grid
+********************************************************/
+.datepicker_vista .months .month {
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 6px;
+    width: 55px;
+    overflow: hidden;
+    height: 21px;
+    margin: 0 1px 1px 0;
+    color: #444;
+    font-size: 12px;
+}
+
+.datepicker_vista .months .month3,
+.datepicker_vista .months .month6,
+.datepicker_vista .months .month9,
+.datepicker_vista .months .month12 {
+    margin-right: 0;
+}
+
+.datepicker_vista .months .month10,
+.datepicker_vista .months .month11,
+.datepicker_vista .months .month12 {
+    margin-bottom: 0;
+}
+
+/* months-colors
+********************************************************/
+.datepicker_vista .months .month:hover {
+    background: url(~/application/modules/Offers/externals/images/months.png) left top no-repeat;
+    color: #0084AA;
+}
+
+.datepicker_vista .months .selected {
+    background: url(~/application/modules/Offers/externals/images/months.png) left bottom no-repeat;
+    color: #316879;
+}
+
+/* years-grid
+********************************************************/
+.datepicker_vista .years .year {
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 6px;
+    width: 32px;
+    overflow: hidden;
+    height: 21px;
+    margin: 0 1px 1px 0;
+    color: #444;
+    font-size: 12px;
+}
+
+.datepicker_vista .years .year4,
+.datepicker_vista .years .year9,
+.datepicker_vista .years .year14,
+.datepicker_vista .years .year19 {
+    margin-right: 0;
+}
+
+.datepicker_vista .years .year15,
+.datepicker_vista .years .year16,
+.datepicker_vista .years .year17,
+.datepicker_vista .years .year18,
+.datepicker_vista .years .year19 {
+    margin-bottom: 0;
+}
+
+/* years-colors
+********************************************************/
+.datepicker_vista .years .year:hover {
+    background: url(~/application/modules/Offers/externals/images/years.png) left top no-repeat;
+    color: #0084AA;
+}
+
+.datepicker_vista .years .selected {
+    background: url(~/application/modules/Offers/externals/images/years.png) left bottom no-repeat;
+    color: #316879;
+}
+
+div.edit_contacts_offer {
+    float: left;
+    margin-left: 155px;
+}
+
+/* global
+********************************************************/
+.datepicker_vista .unavailable {
+    background: none !important;
+    color: #fbb !important;
+    cursor: default !important;
+}
+
+html[dir="rtl"] .float_left, .float_right {
+    float: right;
+}
+
+html[dir="rtl"] .float_right, .float_left {
+    float: left;
+}
+
+.offers_list {
+    clear: both;
+    overflow: auto;
+    width: 100%;
+}
+
+.offers_list > ul {
++ foreground;
++ rounded;
+    padding: 5px;
+}
+
+.offers_list > ul > li {
+    clear: both;
+    overflow: hidden;
+    padding: 3px 5px;
+}
+
+.offers_list a.item_thumb {
+    float: left;
+    display: block;
+    width: 62px;
+}
+
+.offers_list a.item_thumb > img {
+    width: 60px;
+    height: 60px;
+    display: block;
+}
+
+.offers_list .item_info {
+    overflow: hidden;
+    padding: 0 0 0 6px;
+}
+
+.offers_list .item_name {
+    font-weight: 700;
+    margin-top: -3px;
+    font-size: 15px;
+}
+
+.offers_list .item_details {
+    color: #555555;
+    font-size: 0.8em;
+    margin-top: 2px;
+}
+
+.offers_list .item_days_left {
+    color: #CC1A1A;
+    font-size: 0.8em;
+    font-weight: bolder;
+    margin-top: 4px;
+}
+
+.my_offers .past_photo img {
+    opacity: 0.7;
+}
+
+.my_offers .past_photo img:hover {
+    opacity: 1;
+}
+
+table.offer-gateways-list {
+    width: 720px;
+    background: none;
+    padding: 0
+}
+
+table.offer-gateways-list thead tr th {
+    background-color: $ theme_topbar_background_color;
+    border-bottom: 1px solid $ theme_photo_border_color_hover;
+    font-weight: 700;
+    padding: 7px 10px;
+    white-space: nowrap;
+}
+
+th.table_short {
+    width: 1%;
+}
+
+table.offer-gateways-list tbody tr td {
+    border-bottom: 1px solid $ theme_list_background_color_hover;
+    font-size: 0.9em;
+    padding: 7px 10px;
+    vertical-align: middle;
+    white-space: normal;
+}
+
+.disabled_button {
+    background-color: #868686;
+    border-color: #868686;
+}
+
+.disabled_button:hover {
+    background-color: #868686;
+    border-color: #868686;
+}
+
+.offer_back {
+    background-image: url(~/application/modules/Core/externals/images/back.png);
+}
+
+.favorite_offer .item_details {
+    padding: 2px 0 2px 22px;
+    width: 145px;
+}
+
+.favorite_offer .value {
+    color: #006400;
+}
+
+.favorite_offer ul.generic_list_widget_large_photo .info {
+    padding: 0px;
+}
+
+.favorite_offer img.thumb_normal {
+    width: 100%;
+    max-width: 170px;
+}
+
+.offers_filter_form {
++ foreground;
+    background: $ theme_body_background_color;
++ rounded;
+    padding: 5px;
+    display: inline-block;
+}
+
+.offers_filter_form > div {
+    float: left;
+    padding: 2px;
+}
+
+.offers-list-result {
+    margin-bottom: 10px;
+}
+
+.offers-list-result > div {
+    float: left;
+    display: inline-block;
+    padding: 10px;
+}
+
+table.offers-list {
+    width: 100%;
+    background: none;
+    padding: 0
+}
+
+table.offers-list thead tr th {
+    background-color: $ theme_topbar_background_color;
+    border-bottom: 1px solid $ theme_photo_border_color_hover;
+    font-weight: 700;
+    padding: 7px 10px;
+    white-space: nowrap;
+}
+
+th.table_short {
+    width: 1%;
+}
+
+table.offers-list tbody tr td {
+    border-bottom: 1px solid $ theme_list_background_color_hover;
+    font-size: 0.9em;
+    padding: 7px 10px;
+    vertical-align: middle;
+    white-space: normal;
+}
+
+#email_address-label {
+    margin-top: 12px;
+}
+
+/* print offer
+********************************************************/
+
+.print_offer_preview {
+    clear: both;
+    padding: 15px;
+}
+
+.print_offer_title {
+    border-bottom-style: solid;
+    font-size: 20px;
+    font-weight: bold;
+    overflow: auto;
+    padding: 5px;
+    text-align: center;
+}
+
+.accept_offer .offer-price {
+    color: #AF3706;
+    float: left;
+    font-weight: 700;
+    line-height: 26px;
+}
+.item_price.with_main_price {
+  color: #AF3706;
+  float: left;
+  font-weight: 700;
+  line-height: 26px;
+}
+.line_overline_price_parent{
+  position: relative;
+  font-weight: normal;
+  color: $theme_font_color;
+}
+
+
+.accept_offer .offer_profile_price {
+    font-size: 18px;
+}
+
+.accept_offer button {
+    margin-left: 10px;
+}
+
+/*
+FEED ITEMS
+Styles page attachments in the feed.
+*/
+.feed_attachment_offer > div {
+    overflow: hidden;
+}
+
+.feed_attachment_offer > div > a {
+    display: inline-block;
+    float: left;
+    margin-right: 7px;
+}
+
+.feed_attachment_offer > div > a > img {
+    display: block;
+    max-width: 120px;
+    max-height: 120px;
+}
+
+
+
+/* View Album */
+.offer_thumbs_nocaptions {
+    float: left;
+    text-align: center;
+    border: 1px solid $ theme_border_dark_color;
+    background-color: $ theme_border_color;
+    margin: 15px;
++ rounded();
+}
+
+.offers_list .item_price div {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.offers_list .item_price .item_price_before {
+    float: left;
+    text-decoration: line-through;
+    margin-right: 8px;
+}
+
+.offers_list .item_price .item_price_after {
+    color: #DB5C5C;
+}
+
+.offers_list ul li {
+    padding: 0 !important;
+    position: relative;
+    margin: 0 0 10px 0;
+
+}
+
+.offers_list .item_discount {
+    position: absolute;
+    left: -23px;
+    top: 3px;
+    color: white;
+    width: 70px;
+    background-color: #2ECC71;
+    text-align: center;
+    font-size: 11px;
+    transform: rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+}
+
+.offer_profile_photo > img {
+    max-width: 190px;
+    max-height: 290px;
+}
+
+.activity_icon_offers_accept,
+.activity_icon_offers_purchase,
+.activity_icon_offer_new,
+.activity_icon_page_offers_accept,
+.activity_icon_page_offers_purchase,
+.activity_icon_page_offer_new {
+    background-image: url(~/application/modules/Offers/externals/images/offer_feed_icon.png);
+}
+
+.layout_active_theme_bamboo .layout_offers_offer_participants, .layout_offers_offer_participants > h3 {
+    float: left;
+}
+
+.layout_active_theme_bamboo .offer_list_user_sub {
+    background: none;
+    border: none;
+}
+
+body[class*=layout_active_theme_grid-] .offers_navigation_editor a {
+    background-color: $ theme_topbar_menu_background_color;
+}
+
+body[class*=layout_active_theme_grid-] .offers .offer_item {
+    margin: 3px 0 30px;
+}
+
+.layout_active_theme_slipstream #offer_edit .tabs > ul li {
+    background: url("~/application/themes/slipstream/images/ss_tab_bg.png") repeat scroll 0 0 transparent;
+    border-radius: 6px;
+}
+
+.layout_active_theme_slipstream #offer_edit .tabs > ul li > a {
+    background-repeat: no-repeat;
+    background-position: 5px center;
+}
+
+.flasher_for_offer_button {
+    background-color: #AF3706;
+    border: 1px solid #AF0807;
+}
+
+/*List Subscribers*/
+.table_list_subscribers {
+    width: 100%;
+}
+
+.list_subscribers .table_list_subscribers tr th {
++ foreground;
+    padding: 10px;
+    border-bottom: 1px solid #aaa;
+    font-weight: bold;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    white-space: nowrap;
+}
+
+table.table_list_subscribers thead tr th.table_ordering > a,
+table.table_list_subscribers tr th > a.table_ordering {
+    font-style: italic;
+    padding-right: 20px;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+}
+
+table.table_list_subscribers thead tr th a {
+    font-weight: bold;
+}
+
+table.table_list_subscribers tbody tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+table.table_list_subscribers tbody tr td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: .9em;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    vertical-align: top;
+    white-space: normal;
+}
+
+table.table_list_subscribers tbody tr td.nowrap {
+    white-space: nowrap;
+}
+
+table.table_list_subscribers tbody tr td:last-child {
+    white-space: nowrap;
+}
+
+table.table_list_subscribers tbody tr td.wrap {
+    white-space: normal;
+}
+
+th.table_list_subscribers_short {
+    width: 1%;
+}
+
+td.table_list_subscribers_options {
+    color: #ccc;
+}
+
+.table_list_subscribers_centered {
+    text-align: center;
+}
+
+.table_list_subscribers_bold,
+.table_list_subscribers_bold a {
+    font-weight: bold;
+}
+
+td.subscriber_options > span.sep {
+    display: none;
+}
+
+td.subscriber_options > a + span.sep {
+    display: inline;
+}
+
+.table_list_subscribers_email {
+    white-space: normal !important;
+    max-width: 140px;
+    word-wrap: break-word;
+
+}
+
+.table_list_subscribers_user {
+    white-space: normal !important;
+    max-width: 140px;
+    word-wrap: break-word;
+}
+
+.table_list_subscribers_form {
+    overflow: auto;
+}
+
+div.total_subscribers {z
+    margin-top: 10px;
+}
+
+.total_subscribers span {
+    font-weight: bold;
+}
+.offers {
+    overflow: auto;
+
+}
+.line_overline_price{
+  background-color: #930000;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  top: 9px;
+  width: 100%;
+}
+.offer_discount {
+  background-color: #2ecc71;
+  border-radius: 70%;
+  color: white;
+  left: 5px;
+  padding: 12px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 5px;
+  min-height: 30px;
+  min-width: 30px;
+}
+.offer_item {
+  position: relative;
+}
+
+.offer_discount span {
+  font-family: "Open Sans",sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0;
+  position: relative;
+  top: 5px;
+}
+
+div#form-offers .mce-panel {
+    border-radius: 2px;
+    border-width: 1px;
+    border: 0px solid rgba(0, 0, 0, 0.05);
+}
+
+.offer_type_desc {
+    padding: 10px 10px 10px 32px;
+    width: 97.1%;
+}
+
+.offer_type_desc p {
+    max-width: none !important;
+}
+
+.offers_require_count input {
+    width: 35px !important;
+}
+
+.offers_require_item{
+    float: left;
+    display: inline;
+}
+
+#form-upload-offers h3 {
+    margin-left: 33px;
+
+}
+.featured_offers_status {
+  background-color: #d11718;
+  border-bottom-left-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 1px 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.popular_offers_status {
+  background: none repeat scroll 0 0 #d11718;
+  border-top-left-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 1px 10px;
+  position: absolute;
+  right: 0;
+  top: 182px;
+}
+.paginationControl.offers_pagination {
+  height: 40px;
+  text-align: center;
+  width: 99%;
+}
+.paginationControl.offers_pagination > li {
+  float: none;
+  margin: 4px;
+  overflow: hidden;
+}

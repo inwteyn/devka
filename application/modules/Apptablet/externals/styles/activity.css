@@ -1,0 +1,188 @@
+
+/*#wall-feed-menu {*/
+  /*-moz-box-sizing: padding-box;*/
+  /*box-sizing: padding-box;*/
+/*}*/
+
+.tablet .attachment_item {
+  margin: 0 10px 10px;
+  /*overflow: hidden;*/
+}
+
+.tablet .attachment_item .thumb {
+  float: left;
+  margin-right: 10px;
+}
+
+.tablet .attachment_item .thumb img {
+  /*border-color: #EEEEEE #BBBBBB #888888 #DDDDDD;*/
+  border-image: none;
+  border-style: solid;
+  /*border-width: 1px;*/
+  max-height: 90px;
+  max-width: 90px;
+}
+
+.tablet .attachment_item.big {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.tablet .attachment_item.big .thumb {
+  float: none;
+  margin: 0;
+}
+
+.tablet .attachment_item.big .thumb img {
+  max-height: none;
+  max-width: none;
+  width: 100%;
+}
+
+.tablet .attachment_item .details {
+  float: none;
+}
+
+.tablet .attachment_item .title {
+}
+
+.tablet .attachment_item .description {
+  margin-top: 5px;
+}
+
+.tablet .richContent {
+  margin: 10px 0;
+  overflow: hidden;
+}
+.tablet .component-feed .feedItem embed {
+  width: 100%;
+}
+
+.tablet .richContent a.play_button {
+  color: #FFFFFF !important;
+  display: block;
+  font-size: 72px;
+  left: 50%;
+  margin-left: -45px;
+  margin-top: -37px;
+  opacity: 0.5;
+  position: absolute;
+  text-decoration: none;
+  text-shadow: 0 0 3px #000000 !important;
+  top: 50%;
+}
+
+.tablet .richContent a.play_button:hover, .tablet .richContent a.play_button:active {
+  color: #FFF;
+}
+
+.tablet .richContent .thumb {
+  /*float: left;*/
+  position: relative;
+  /*margin-right: 10px;*/
+}
+
+.tablet .richContent .thumb iframe {
+  display: none;
+  width: 100%;
+}
+.tablet .richContent .thumb img {
+  border: 1px solid #CCCCCC;
+  width: 100%;
+}
+.tablet .richContent .details {
+  float: none;
+  margin: 0 10px;
+}
+
+.tablet .richContent .title {
+}
+
+.tablet .richContent .description {
+  margin-top: 5px;
+}
+
+.tablet .component-feed .feedItem .thumbnail img {
+  max-height: 60px;
+  max-width: 60px;
+  height: 60px;
+  width: 60px;
+}
+
+.tablet .component-feed .feedItem {
+  background-color: #FFF;
+  padding-top: 11px;
+  box-shadow: none;
+
+}
+.tablet .component-feed .feedItem + li {
+  padding-top: 10px;
+}
+
+.tablet .component-feed .component-feed .feedList {
+  overflow: hidden;
+}
+
+.buttonAnimate {
+
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  position: fixed;
+  top: 50%;
+  z-index: 99;
+  font-size: 100px;
+  text-shadow: none !important;
+  color: #555 !important;
+
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+
+}
+
+.buttonAnimate.active {
+  opacity: 0;
+
+  -moz-transform: scale(5);
+  -webkit-transform: scale(5);
+  transform: scale(5);
+
+  transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+}
+
+.tablet .component-feed .feedItem .thumbnail {
+  float: left;
+  padding: 0 10px;
+}
+
+.tablet .component-feed .feedItem .body {
+  padding: 5px 10px;
+}
+
+.tablet .component-feed .feedItem .poster {
+  color: #999;
+}
+
+.tablet .component-feed .feedItem .options .left {
+  float: left;
+}
+
+.tablet .component-feed .feedItem .options .right {
+  margin-right: 5px;
+}
+
+.tablet .feedItemMenu,
+.tablet .feedItemMenu.ui-icon-angle-down.ui-link {
+  line-height: 16px;
+  right: 10px;
+  top: 0 !important;
+}
+
+.tablet .attachment_item .title a{
+  font-size: 17px;
+}

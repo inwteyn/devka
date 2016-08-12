@@ -1,0 +1,117 @@
+/* $Id: main.css 2011-04-26 11:18:13 mirlan $ */
+.event_discussions_replies {
+  float: left;
+  overflow: hidden;
+  text-align: center;
+  margin-right: 10px;
+  width: 40px;
+  padding: 7px 10px 7px 10px;
+  color: $theme_font_color_light;
+  font-size: .8em;
+}
+
+.touch_event_rsvp {
+  clear:both;
+}
+.touch_event_rsvp > li {
+  display:block;
+  float:left;
+  margin:0 3px;
+  overflow: hidden;
+}
+.touch_event_rsvp > li a.active {
+  font-weight:bold;
+}
+.touch_event_stats {
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.touch_event_stats > li{
+  font-size: .8em;
+  overflow: hidden;
+}
+.touch_event_stats > ul > li:first-child
+{
+  margin-bottom: 10px;
+  font-size: .8em;
+}
+
+
+.touch_event_stats{
+  overflow: hidden;
+}
+.touch_event_stats > ul{
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.touch_event_stats > ul > li{
+  font-size: .8em;
+  overflow: hidden;
+}
+.touch_event_stats > ul > li:first-child{
+  margin-bottom: 10px;
+  font-size: .8em;
+}
+.touch_event_stats .event_date{
+  margin-bottom: 10px;
+}
+.touch_event_stats .event_date .label{
+ clear: both;
+}
+.touch_event_stats > ul > li + li{
+  margin-top: 5px;
+}
+.touch_event_stats > ul > li > div{
+  font-size: 1em;
+}
+.touch_event_stats .label{
+  width: 60px;
+}
+.touch_event_stats .event_stats_content{
+  font-weight: bold;
+}
+.touch_event_stats .label, .touch_event_stats .event_stats_content{
+  float: left;
+}
+
+.touch_event_stats .event_stats_title {
+  font-weight: bold;
+}
+.touch_event_stats .event_stats_title a {
+  display: block;
+  font-weight: normal;
+}
+.touch_event_stats .event_stats_staff {
+  margin-top: 8px;
+}
+.touch_event_stats .event_stats_info span{
+  font-weight: normal;
+}
+.layout_touch_event_profile_rsvp {
+  margin:10px 0;
+}
+.layout_touch_event_profile_photo {
+  margin:10px 0;                                                                                                             z
+}
+.layout_touch_event_profile_photo .title {
+  font-size:14pt;
+}
+
+
+/* NOTIFICATION TYPE ICONS */
+
+.notification_type_event_discussion_response,
+.notification_type_event_discussion_reply
+{
+  background-image: url(~/application/modules/Touch/externals/images/post.png);
+}
+
+.notification_type_event_invite,
+.notification_type_event_accepted
+{
+  background-image: url(~/application/modules/Touch/modules/Event/externals/images/types/event.png);
+}
+
+#starttime-hour, #starttime-minute, #endtime-hour, #endtime-minute {
+  width:60px;
+}

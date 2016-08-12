@@ -1,0 +1,2 @@
+INSERT IGNORE INTO `engine4_core_modules` (`name`, `title`, `description`, `version`, `enabled`, `type`) VALUES
+ ('storebundle', 'Store Bundle Products', 'Store Bundle Products plugin', '4.8.9', 1, 'extra') ;

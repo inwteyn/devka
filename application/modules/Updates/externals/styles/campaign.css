@@ -1,0 +1,273 @@
+/* $Id: main.css 2010-07-02 01:29 mirlan $ */
+
+.settings .form-label{
+	width:15%;
+	text-align: right;
+	padding:2px 10px 2px 0;
+	font-size: 11px;
+}
+
+.settings .form-wrapper {
+	padding: 10px 0px;
+	width: 100%;
+}
+
+.recievers_select label.optional{
+	font-weight: bold;
+	font-size: 11px;
+}
+
+.recievers_select .form-element{
+	width: 80%;
+}
+
+.recievers_select .form-options-wrapper{
+	font-size: 11px;
+}
+
+#profile_types-element .description{
+	margin: 0px;
+	font-weight: bold;
+	font-size: 11px;
+}
+.selectors{
+	display: block;
+  min-width: 280px;
+	padding: 3px;
+	margin: 3px 0px;
+	font-size: 11px;
+}
+
+.div_custom_labels{
+	margin-top: 5px;
+	padding: 3px 0px 3px 2px;
+}
+
+.profile_type_options .form-wrapper{
+	border: 0px;
+	padding: 5px 0px;
+}
+
+.profile_type_options	div.form-label label{
+	font-weight: normal;
+}
+
+.profile_type_options	.form-wrapper-heading{
+	font-weight: bold;
+	font-size: 12px;
+}
+
+#include_subscribers label{
+	color:green;
+	font-size:11px;
+	font-weight:bold;
+}
+
+span.template_icon, span.save_icon{
+	  -moz-border-radius: 1px;
+		border: 1px solid #86CA7D;
+    color: #546D50;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 0 0 24px;
+    width: 102px !important;
+	  line-height: 18px;
+}
+
+span.template_icon{
+	background: url("~/application/modules/Updates/externals/images/templates.png") no-repeat scroll 2px 0 !important;
+}
+
+span.save_icon{
+	background: url("~/application/modules/Updates/externals/images/save.png") no-repeat scroll 2px 0 !important;
+}
+
+span.save_icon:hover, span.template_icon:hover{
+	border-color:#0A246A;
+}
+
+div.admin_layoutbox  {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #AAAAAA;
+    height: 440px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 700px;
+}
+
+div.templates_cont{
+	  background: none repeat scroll 0 0 #E9F4FA;
+    border: 1px solid #D7E8F1;
+    max-height: 1000px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 5px 10px;
+    width: 210px;
+}
+div.template_item{
+	clear: both;
+	-moz-border-radius: 1px;
+	width: 190px;
+	padding: 5px;
+	background:#ffffff;
+	margin-bottom: 5px;
+	border: 1px solid #c8d8e0;
+	font-size: 12px;
+	font-weight:bold;
+}
+
+div.template_item .options{
+	float:right;
+}
+
+div.template_item .options a{
+	text-decoration:none;
+	float:right;
+	padding: 0px 2px 0px 2px;
+}
+
+div.template_item .options a:hover{
+	background:none repeat scroll 0 0 #B2BBD0;
+}
+div.template_item .options img{
+	width: 12px;
+	height: 12px;
+}
+
+div.template_item .description{
+	font-size:10px;
+	margin-top: 2px;
+}
+
+.settings td.varibale_item, td.varibale_item2{
+	font-weight: bold;
+	font-size: 11px;
+	min-width: 150px;
+}
+
+.settings td.varibale_module_title{
+	font-weight: normal;
+	font-size: 11px;
+	padding-bottom:2px;
+	padding-top:5px;
+}
+
+.settings td.varibale_item2{
+	min-width: 50px;
+}
+
+.settings td.varibale_item_description{
+	font-size: 11px;
+	padding-right: 20px;
+	padding-bottom: 5px;
+}
+
+.settings td.varibale_modules{
+	padding: 5px 0 5px 0;
+	font-size: 11px;
+}
+div.active_paginator_conteiner, div.schedule_paginator_conteiner, div.sent_paginator_conteiner{
+    -moz-border-radius: 3px 3px 3px 3px;
+    border: 1px solid;
+    padding: 10px;
+}
+
+div.active_paginator_conteiner{
+	border-color:#FFB3B3;
+	background: none repeat scroll 0 0 #FFF9F9;
+}
+
+div.schedule_paginator_conteiner{
+	border-color: #96D596;
+	background: none repeat scroll 0 0 #F9FFF9;
+}
+
+div.sent_paginator_conteiner{
+	border-color: #ADBACF;
+	background: none repeat scroll 0 0 #F8F9FB;
+}
+
+div.active_paginator_conteiner th{
+	background-color: #ffb3b3 !important;
+}
+
+div.schedule_paginator_conteiner th{
+	background-color: #c5eec5 !important;
+}
+
+div.sent_paginator_conteiner th{
+	background-color: #d0d7e2 !important;
+}
+
+div.active_paginator_conteiner table.admin_table tbody tr:nth-child(2n) {
+  background-color: #FFEFEF !important;
+}
+
+div.schedule_paginator_conteiner table.admin_table tbody tr:nth-child(2n) {
+  background-color: #F3FFF4;
+}
+
+div.schedule_paginator_conteiner table.admin_table tr.soon_schedule td{
+	background-color: #B7F3C3 !important;
+	font-weight:bold
+}
+
+
+div.sent_paginator_conteiner table.admin_table tbody tr:nth-child(2n) {
+  background-color: #ECF0F7 !important;
+}
+
+.settings .form-element .description{
+	font-size: 12px;
+	margin-bottom: 2px;
+}
+
+#planned_date-element .description{
+	font-weight:bold;
+	margin-bottom:5px;
+}
+
+.ajax_paginator_conteiner table.admin_table tbody tr td{
+	padding: 5px;
+}
+
+.browsemembers_criteria {
+  margin-left: 108px;
+  display: none;
+}
+
+html[dir="rtl"] .browsemembers_criteria > ul {
+  margin-right: 112px;
+}
+
+.browsemembers_criteria > ul > li > span {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.browsemembers_criteria > ul, .field_toggle {
+  margin-bottom: 10px;
+}
+
+.browsemembers_criteria > ul, .browse-range-wrapper {
+  margin-bottom: 15px;
+}
+
+.browsemembers_criteria > ul > li > .form-options-wrapper {
+  margin-bottom: 15px;
+}
+
+.settings > div {
+  float: left;
+}
+
+.settings #users {
+  float: left;
+}
+
+html[dir="rtl"] .settings #users {
+  float: right;
+  margin-left: 12px;
+}

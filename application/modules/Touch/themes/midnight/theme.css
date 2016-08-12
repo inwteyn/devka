@@ -1,0 +1,449 @@
+/* $Id: theme.css 2011-04-26 11:18:13 mirlan $ */
+@include "constants.css";
+@include "~/application/modules/Touch/themes/modules.css";
+@scan "application/modules" "externals/styles/touch.css" "Touch";
+/*
+GLOBAL FORM ELEMENTS
+Used for most forms throughout the site.
+*/
+button, #iPhone-file-button, .button
+{
+	+rounded;
+  padding: 6px;
+	font-size: 1.1em;
+  border: none;
+  border: 1px solid $theme_button_border_color;
+  background-image: url(~/application/modules/Touch/themes/midnight/images/buttonbg.png);;
+  background-position: 0px 0px;
+	text-shadow: 1px 1px 1px $theme_shadow_dark_color;
+}
+a.buttonlink
+{
+  font-weight: bold;
+}
+.tip > span
+{
+  +foreground;
+  background-color: $theme_widget_bg_color;
+  padding: 6px;
+  padding-left: 27px;
+}
+.touch_box {
+  margin:5px;
+}
+
+.smooth-close{
+	+rounded(5px);
+	font-size: 0.8em;
+}
+
+/*
+GENERAL LAYOUT
+*/
+.layout_middle
+{
+	overflow: hidden;
+  vertical-align: top;
+}
+
+/*NEW*/
+.content_global
+{
+	padding: 3px 0px;
+}
+
+#global_content_loading
+{
+	padding-bottom:15%
+}
+/*Item List*/
+ul.items{
+  border: 1px solid $theme_border_color;
+}
+ul.items > li > .item_body {
+  padding-right: 10px;
+  overflow: hidden;
+}
+
+ul.items > li > .item_body {
+	overflow: hidden;
+}
+/*Navigation Bar*/
+.touch-navigation > div{
+}
+
+.touch-navigation #navigation-selector{
+	+rounded();
+	text-shadow: $theme_shadow_dark_color 0.5px 0.5px 0.5px;
+	background-color:$theme_navigation_bg_color;
+	background-image: url(~/application/modules/Touch/themes/midnight/images/icons/dropdown.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+.touch-navigation .navigation-header{
+  background: $theme_widget_bg_color;
+	padding: .3em;
+}
+.touch-navigation #navigation-items{
+	position:absolute;
+}
+.touch-navigation #navigation-items{
+	+rounded(5px, true, true);
+	background-color: $theme_foreground_background_color;
+	border-width: 0px 2px 2px 2px;
+	position:absolute;
+}
+.touch-navigation #navigation-items .item{
+	margin: 0px 3px 3px;
+}
+
+.touch-navigation-paginator{
+	width: 44px;
+	padding:1px;
+}
+
+#multi-upload li.file
+{
+  background-color: $theme_body_background_color;
+}
+/* Header */
+.layout_page_header
+{
+  background-color: $theme_topbar_background_color;
+  padding: 0px;
+  border-bottom: $theme_topbar_border;
+  background-position: top center;
+}
+
+/* Footer */
+.layout_page_footer
+{
+	overflow: hidden;
+}
+.layout_page_footer .layout_main
+{
+  +foreground;
+  background: $theme_widget_bg_color;
+  margin: 10px auto 0px auto;
+  margin-top: 0px;
+  padding: 5px;
+}
+.notifications{
+	background-image: url(~/application/modules/Touch/themes/midnight/images/icons/updates.png);
+	color: $theme_notifications_active_color !important;
+}
+
+.notifications_active{
+	background-image: url(~/application/modules/Touch/themes/midnight/images/icons/updates_active.png);
+}
+.layout_touch_menu_main
+{
+  width: $theme_topbar_width;
+  margin: 0px auto 0px auto;
+  text-align: center;
+  background-color: $theme_topbar_menu_background_color;
+  border: $theme_topbar_menu_border;
+  border-left: none;
+  border-right: none;
+}
+.layout_touch_menu_main > ul > li
+{
+	background-image: url(~/application/modules/Touch/themes/midnight/images/topbar_menu_bg.png);
+}
+
+.layout_touch_menu_main > ul > li > a
+{
+	background-color: $theme_topbar_menu_link_background_color;
+	padding: .3em;
+}
+
+.layout_touch_menu_main ul a:link,
+.layout_touch_menu_main ul a:visited
+{
+	border-right: $theme_topbar_menu_border;
+}
+
+.layout_touch_menu_main li.selected
+{
+  background-color: $theme_topbar_menu_background_color_selected;
+	background-image: url(~/application/modules/Touch/themes/midnight/images/topbar_menu_selected_bg.png);
+}
+
+
+
+
+/*
+DASHBOARD
+*/
+.layout_touch_dashboard h3{
+	color: #3A94C4;
+}
+.core_dashboard_home > a{
+	background-image: url(~/application/modules/Touch/themes/midnight/images/dashboard/home.png);
+}
+
+.core_dashboard_profile > a{
+	background-image: url(~/application/modules/Touch/themes/midnight/images/dashboard/profile.png);
+}
+
+.core_dashboard_messages > a{
+	background-image: url(~/application/modules/Touch/themes/midnight/images/dashboard/messages.png);
+}
+
+.core_dashboard_updates > a{
+	background-image: url(~/application/modules/Touch/themes/midnight/images/dashboard/updates.png);
+}
+
+.core_dashboard_members > a{
+	background-image: url(~/application/modules/Touch/themes/midnight/images/dashboard/members.png);
+}
+
+.core_dashboard_album > a{
+	background-image: url(~/application/modules/Touch/themes/midnight/images/dashboard/album.png);
+}
+
+.core_dashboard_blog > a{
+	background-image: url(~/application/modules/Touch/themes/midnight/images/dashboard/blog.png);
+}
+
+.core_dashbaord_classified > a{
+	background-image: url(~/application/modules/Touch/themes/midnight/images/dashboard/classified.png);
+}
+
+.core_dashboard_event a{
+	background-image: url(~/application/modules/Touch/themes/midnight/images/dashboard/event.png);
+}
+.core_dashboard_group a{
+	background-image: url(~/application/modules/Touch/themes/midnight/images/dashboard/group.png);
+}
+.core_dashboard_video a{
+	background-image: url(~/application/modules/Touch/themes/midnight/images/dashboard/video.png);
+}
+.core_dashboard_search a{
+	background-image: url(~/application/modules/Touch/themes/midnight/images/dashboard/search.png);
+}
+
+
+.core_dashboard_page a{
+	background-image: url(~/application/modules/Touch/themes/midnight/images/dashboard/pages.png);
+}
+
+.core_dashboard_article a{
+	background-image: url(~/application/modules/Touch/themes/midnight/images/dashboard/article.png);
+}
+
+.core_dashboard_music a{
+	background-image: url(~/application/modules/Touch/themes/midnight/images/dashboard/music.png);
+}
+.core_dashboard_forum a{
+	background-image: url(~/application/modules/Touch/themes/midnight/images/dashboard/forum.png);
+}
+.core_mini_settings a{
+	background-image: url(~/application/modules/Touch/themes/midnight/images/dashboard/settings.png);
+}
+ul.form-errors > li,
+ul.form-notices > li
+{
+  +rounded;
+  padding: 5px;
+  padding-left: 30px;
+  padding-right: 10px;
+}
+ul.form-errors > li {
+  background-color: #262c36;
+}
+ul.form-notices > li {
+  +foreground;
+}
+/*
+LARGE BOX FORM
+These styles are for large forms that are given an exclusive page.
+They are not intended for smaller forms that are embedded elsewhere.
+Examples: Signup form, member settings form, etc.
+*/
+.global_form > div > div
+{
+  border: 2px solid $theme_form_border_color;
+  padding: 10px;
+}
+.global_form input[type=text],
+.global_form input[type=password]
+{
+  font-size: 1em;
+}
+/* all text inputs in form */
+.global_form_popup input[type=text],
+.global_form_popup input[type=password]
+{
+  font-size: 1em;
+}
+.global_form_box
+{
+	+rounded();
+  +foreground;
+  background: $theme_widget_bg_color;
+  padding: 3px;
+  width: auto;
+}
+
+
+.global_form_box > div > div{
+	padding: 10px;
+}
+.global_form_box input[type=text],
+.global_form_box input[type=password]
+{
+  font-size: 1em;
+}
+.comments > ul > li
+{
+  +foreground;
+  background: $theme_widget_bg_color;
+  background-image: none;
+  padding: 2px;
+  border-top: 1px solid $theme_foreground_border_color;
+  margin-bottom: 1px;
+}
+.comments > form
+{
+  background: $theme_widget_bg_color;
+}
+.tabs > ul > li > a{
+	border-color: $theme_border_color;
+	border-style: solid solid none;
+	border-width: 1px 1px 0;
+	display: block;
+}
+/* Player css*/
+/*----------------------=: Common Styles :=-----------------------*/
+.artist_name, .playlist_title, .audio_title, .audio_description, .duration_time {
+  color: $theme_button_font_color;
+}
+.duration_time .volume{
+  border-color: $theme_button_font_color;
+}
+.duration_time .volume div{
+  background-color: $theme_button_font_color;
+}
+/*----------------------=: End Common Styles :=-----------------------*/
+
+.album_art{
+    border-right-color: $theme_link_color;
+    color: $theme_buttontabs_background_color_active;
+}
+
+.playlist_info a:link, .playlist_info a:visited{
+  color: $theme_button_font_color;
+}
+.list_item_active .item_icon{
+	background-color: $theme_input_background_color;
+}
+.list_item{
+	color: $theme_foreground_background_color;
+	border-left-color: #424B55;
+	border-right-color: #424B55;
+  background-color: $theme_border_color;
+}
+.list_item + .list_item{
+	border-top-color: #424B55;
+}
+.list_item_active {
+	background-color: $theme_active_color;
+}
+
+.item_icon{
+	border-right-color: #424B55;
+  background-image: url(~/application/modules/Touch/modules/Music/externals/images/player/item_icon1.png);
+  background-color: $theme_widget_bg_color;
+}
+
+.audio_item_body{
+  color: $theme_font_color;
+}
+.list_item_active .audio_item_body{
+  color: $theme_navigation_font_color;
+}
+.item_duration{
+	border-left-color: #424B55;
+}
+.item_description{
+  color: $theme_input_background_color;
+}
+
+.player_controls{
+    border-top-color: $theme_navigation_bg_color;
+    border-bottom-color:transparent;
+}
+
+.contol_main, .playlist_header{
+ 	border-bottom-color: $theme_navigation_bg_color;
+  background-image: url(~/application/modules/Touch/modules/Music/externals/images/player/hf_bg.png);
+  background-color: $theme_widget_bg_color;
+ 	background: -moz-linear-gradient(center top , $theme_link_color, $theme_topbar_menu_background_color) repeat scroll 0 0 $theme_widget_bg_color;
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0,$theme_link_color),color-stop(1, $theme_topbar_menu_background_color));
+  text-shadow: 1px 1px 0.5px $theme_shadow_dark_color;
+}
+
+.btn_bar{
+    border-right-color: $theme_link_color;
+}
+
+.playing {
+  background-image: url(~/application/modules/Touch/themes/midnight/images/player/pause.png);
+  background-color: $theme_form_label_font_color;
+}
+.paused {
+  background-image: url(~/application/modules/Touch/themes/midnight/images/player/play.png);
+  background-color: $theme_form_label_font_color;
+}
+.duration_time .time{
+  border-color: $theme_navigation_bg_color;
+}
+.duration_time, .player_pop_in_out_btn{
+    border-left-color: $theme_link_color;
+}
+.progressbar{
+  background-color: $theme_border_color;
+}
+.progressbar .progress_value_bar{
+    background-image: url(~/application/modules/Touch/modules/Music/externals/images/player/slider_bg.png);
+  background-color: $theme_buttontabs_background_color_active;
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0,$theme_buttontabs_background_color_active),color-stop(1,$theme_border_color));
+    background: -moz-linear-gradient(center top , $theme_buttontabs_background_color_active, $theme_border_color) repeat scroll 0 0 $theme_buttontabs_background_color_active;
+}
+.playlist_header .normal{
+  background-image: url(~/application/modules/Touch/modules/Music/externals/images/player/popout.png);
+}
+.playlist_header .pop_out{
+  background-image: url(~/application/modules/Touch/modules/Music/externals/images/player/normal.png);
+}
+.duration_time .volume_control{
+  background-color: $theme_navigation_bg_color;
+}
+.duration_time .volume_control .volume_control_decoration1,
+.duration_time .volume_control .volume_control_slider_knob{
+  border-left-color: $theme_button_font_color;
+}
+
+/* End Player css*/
+
+/* Tabs */
+.touch_tab_group{
+  border: $theme_topbar_menu_border;
+}
+.touch_tab_group .touch_tab_right,
+.touch_tab_group .touch_tab_middle,
+.touch_tab_group .touch_tab {
+  /*border-color: $theme_border_medium_color;*/
+
+}
+.touch_tab_light {
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0,$theme_widget_bg_color),color-stop(1,$theme_body_background_color));
+    background: -moz-linear-gradient(center top , $theme_body_background_color, $theme_widget_bg_color) repeat scroll 0 0 $theme_body_background_color;
+}
+.touch_tab_group .touch_tab_dark{
+  color: $theme_button_font_color;
+  text-shadow: -0.7px -0.7px $theme_shadow_dark_color;
+  background: -moz-linear-gradient(center top , $theme_link_color, $theme_topbar_menu_background_color) repeat scroll 0 0 $theme_widget_bg_color;
+ background: -webkit-gradient(linear,left top,left bottom,color-stop(0,$theme_link_color),color-stop(1, $theme_topbar_menu_background_color));
+}

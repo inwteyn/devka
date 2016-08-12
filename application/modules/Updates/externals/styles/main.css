@@ -1,0 +1,400 @@
+/* $Id: main.css 2010-07-02 01:29 mirlan $ */
+
+form.subscribe_updates
+{
+	width: 170px;
+	text-align: center;
+}
+
+.layout_user_list_popular1 {
+    clear: both;
+    margin-bottom: 15px;
+    overflow: auto;
+    width: 100%;
+}
+
+.layout_user_list_popular1 > ul {
+  +foreground;
+  +rounded;
+  padding: 5px;
+}
+
+.layout_user_list_popular1 > ul > li {
+    clear: both;
+    overflow: hidden;
+    padding: 3px 5px;
+}
+
+ .select_container #services-label {
+  margin-top: 20px;
+}
+
+.select_container #services-element {
+  float: left;
+}
+
+html[dir="rtl"] .select_container #services-element {
+  float: right;
+}
+
+.mailchimp_container .mailchimp_settings_form {
+  background-color: #E9F4FA;
+  border-radius: 7px 7px 7px 7px;
+  margin-top: 12px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.mailchimp_container .mailchimp_inner_settings_form {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #D7E8F1;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.mailchimp_container .mailchimp_settings_form #generateListName_loading {
+  float: right;
+  margin-right: 240px;
+  margin-top: 27px;
+}
+
+.mailchimp_container .mailchimp_settings_form #getList_ok_icon {
+  float: right;
+  height: 18px;
+  margin-right: 444px;
+  margin-top: 4px;
+  opacity: 0;
+}
+
+ .mailchimp_container .mailchimp_settings_form .form-label {
+  float: left;
+  margin-right: 4px;
+  text-align: right;
+  width: 177px;
+}
+
+html[dir="rtl"] .mailchimp_container .mailchimp_settings_form .form-label {
+  float: right;
+  text-align: left;
+  margin-left: 4px;
+}
+
+ .mailchimp_container .mailchimp_settings_form .form-element {
+  margin-top: 20px;
+}
+
+ .mailchimp_container .mailchimp_settings_form #lists-label {
+  margin-left: 97px;
+}
+
+.mailchimp_container .mailchimp_settings_form #api_key {
+  width: 300px;
+}
+
+.mailchimp_container .mailchimp_settings_form #title {
+  width: 690px;
+}
+
+.mailchimp_container .mailchimp_settings_form #subject {
+  width: 690px;
+}
+
+.mailchimp_container .mailchimp_settings_form #from_email {
+  width: 300px;
+}
+
+.mailchimp_container .mailchimp_settings_form #from_name {
+  width: 300px;
+}
+
+.mailchimp_container .mailchimp_settings_form #submit {
+  margin-top: 14px;
+}
+
+.mailchimp_container .mailchimp_settings_form #lists {
+  width: 305px;
+  float: left;
+}
+
+.mailchimp_container .mailchimp_settings_form .form-description {
+  margin-bottom: 30px;
+}
+
+.mailchimp_container .mailchimp_settings_form #list_name {
+  background-color: #DDDDDD;
+  color: #444444;
+  width: 300px;
+}
+
+.mailchimp_container .mailchimp_settings_form #list_id-wrapper {
+  margin-left: 116px;
+}
+
+html[dir="rtl"] .mailchimp_container .mailchimp_settings_form #list_id-wrapper {
+  float: right;
+  margin-left: 10px;
+}
+
+html[dir="rtl"] .mailchimp_container .mailchimp_settings_form #list_id-element {
+  float: right;
+  margin-right: 58px;
+}
+
+html[dir="rtl"] .mailchimp_container .mailchimp_settings_form #get_list_id-wrapper {
+  float: right;
+}
+
+html[dir="rtl"] .mailchimp_container .mailchimp_settings_form #title-wrapper {
+  float: right;
+}
+
+html[dir="rtl"] .mailchimp_container .mailchimp_settings_form #title-label {
+  margin-top: 20px;
+}
+
+html[dir="rtl"] .mailchimp_container .mailchimp_settings_form #title-element {
+  float: right;
+}
+
+html[dir="rtl"] .mailchimp_container .mailchimp_settings_form #subject-wrapper {
+  margin-top: 65px;
+}
+
+html[dir="rtl"] .mailchimp_container .mailchimp_settings_form #list_id-label {
+  margin-top: 20px;
+}
+
+.mailchimp_container .mailchimp_settings_form #list_id {
+  float: left;
+  background-color: #DDDDDD;
+  color: #444444;
+}
+
+.mailchimp_container .mailchimp_settings_form #get_list_id {
+  float: left;
+}
+
+.mailchimp_container .mailchimp_settings_form #getListID_loading {
+  margin-left: 12px;
+  margin-top: 5px;
+  visibility: hidden;
+}
+
+.sendgrid_container .form-description {
+  margin-bottom: 10px;
+}
+
+.sendgrid_container .form-label {
+  float: left;
+  margin-right: 4px;
+}
+
+.sendgrid_container .form-element {
+  margin-top: 20px;
+}
+
+.sendgrid_container #password-label {
+  margin-left: 3px;
+}
+
+.sendgrid_container #submit {
+  margin-left: 52px;
+  margin-top: 14px;
+}
+
+.socialengine_container {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.sendgrid_container {
+  margin-top: 20px;
+}
+
+.select_container .current_mail_service_text  {
+  font-size: 14px;
+  font-weight: bold;
+  float: left;
+}
+
+html[dir="rtl"] .select_container .current_mail_service_text  {
+  float: right;
+}
+
+.select_container .current_mail_service  {
+  float: left;
+  margin-left: 8px;
+  margin-top: -8px;
+  margin-right: 100px;
+}
+
+html[dir="rtl"] .select_container .current_mail_service  {
+  float: right;
+  margin-left: 100px;
+  margin-right: 10px;
+}
+
+.select_container .ok_icon {
+  height: 18px;
+  margin-left: 12px;
+  opacity: 0;
+  margin-top: 4px;
+}
+
+.select_container #set_mailservice {
+  margin-left: 30px;
+  margin-top: -4px;
+}
+
+html[dir="rtl"] .select_container #set_mailservice {
+  margin-right: 30px;
+}
+
+#TB_window {
+  padding: 10px;
+}
+
+.sendgrid_container .settings_form {
+  background-color: #E9F4FA;
+  border-radius: 7px 7px 7px 7px;
+  margin-top: 12px;
+  overflow: hidden;
+  padding: 10px;
+  width: 300px;
+}
+
+.sendgrid_container .inner_settings_form {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #D7E8F1;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.tasks_container #tasks_description {
+  margin-top: 12px;
+  margin-bottom: 15px;
+}
+
+.detele_task_container .form-description {
+  margin-top: 7px;
+  margin-bottom: 10px;
+}
+
+.tasks_container #tasks_auto_refresh {
+  margin-bottom: 12px;
+}
+
+.delete_selected_subscribers_container {
+  margin: 10px;
+}
+
+.delete_selected_subscribers_container .form-description {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mailchimp_container .sync_settings_form {
+  background-color: #E9F4FA;
+  border-radius: 7px 7px 7px 7px;
+  margin-top: 12px;
+  overflow: hidden;
+  padding: 10px;
+  margin-top: 12px;
+  width: 600px;
+  display: none;
+}
+
+.mailchimp_container .sync_inner_settings_form {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #D7E8F1;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.mailchimp_container .sync_settings_form #mode-element {
+  margin-left: 180px;
+}
+
+.mailchimp_container .sync_settings_form #periodTime-element {
+  margin-left: 180px;
+}
+
+.mailchimp_container .sync_settings_form .form-label {
+  font-weight: bold;
+  float: left;
+}
+
+.mailchimp_container .sync_settings_form .form-label label {
+  font-weight: bold;
+}
+
+.mailchimp_container .sync_settings_form .form-wrapper {
+  border-top: 1px solid #EEEEEE;
+  clear: both;
+  overflow: hidden;
+  padding: 15px 0;
+}
+
+.mailchimp_container .sync_settings_form .form-description {
+  margin-bottom: 14px;
+}
+
+.mailchimp_container .sync_settings_form #synchronise {
+  margin-left: 34px;
+}
+
+.mailchimp_container .sync_settings_form #sync_ok_icon {
+  float: right;
+  height: 18px;
+  margin-right: 250px;
+  margin-top: -40px;
+  opacity: 0;
+}
+
+.mailchimp_container .sync_settings_form #label_sync_time {
+  float: left;
+  font-weight: bold;
+  width: 180px;
+}
+
+.mailchimp_container #export_members {
+  margin-left: 730px;
+  background-color: #868686;
+  border-color: #868686;
+}
+
+.export_members_container #export_question {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.services_container .select_container {
+  margin-top: 40px;
+}
+
+.mailchimp_settings_form #list_name_description {
+  margin-left: 505px;
+  margin-top: -24px;
+  margin-bottom: 30px;
+}
+
+html[dir="rtl"] .mailchimp_settings_form #list_name_description {
+  margin-right: 505px;
+}
+
+.layout_updates_home_subscriber .updates_subscribe_input {
+  color: #999999;
+  float: left;
+  margin: 5px 5px 10px 0;
+  width: 60%;
+  min-width: 160px;
+}
+
+.layout_updates_home_subscriber .updates_subscribe_element_focused {
+  color: #000000;
+}
+
+.layout_updates_home_subscriber .updates_subs_button {
+  font-size: 12px;
+  padding: 3px 2px;
+}

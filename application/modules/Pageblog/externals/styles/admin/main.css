@@ -1,0 +1,4 @@
+ul.admin_home_dashboard_links >li li.page_admin_main_blog a
+{
+    background-image: url(~/application/modules/Pageblog/externals/images/blog.png);
+}

@@ -1,0 +1,1041 @@
+/* $Id: main.css 2010-09-06 16:02 idris $ */
+.page_album_container .ad-gallery{
+    padding: 0;
+
+}
+.pagealbum_loader{
+	float: right;
+  margin-top: 8px;
+  margin-right: 8px;
+}
+
+html[dir="rtl"] .pagealbum_loader{
+  float: left;
+  margin-left: 8px;
+}
+
+/*
+BROWSE ALBUMS, VIEW ALBUM
+Styles for the browse and view album pages.
+*/
+.album_options
+{
+  margin: 5px 0px 12px 0px;
+  overflow: hidden;
+}
+.album_options a
+{
+  margin-right: 15px;
+}
+
+
+
+.icon_photos_new
+{
+  background-image: url(~/application/modules/Pagealbum/externals/images/add.png);
+}
+
+.icon_manage
+{
+    background-image: url(~/application/modules/Pagealbum/externals/images/album_manage.png);
+}
+.icon_settings
+{
+    background-image: url(~/application/modules/Pagealbum/externals/images/album_editinfo.png);
+}
+.icon_delete
+{
+    background-image: url(~/application/modules/Pagealbum/externals/images/album_delete.png);
+}
+/*
+VIEW MY ALBUMS
+Styles for the member's own albums
+management page.
+*/
+ul.albums_manage
+{
+  clear: both;
+  overflow: hidden;
+}
+ul.albums_manage > li
+{
+  overflow: hidden;
+}
+ul.albums_manage > li + li
+{
+  padding-top: 10px;
+  border-top-width: 1px;
+  margin-top: 10px;
+}
+ul.albums_manage .albums_manage_photo
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+html[dir="rtl"] ul.albums_manage .albums_manage_photo
+{
+  float: right;
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+ul.albums_manage .albums_manage_photo img
+{
+  width: auto;
+  margin: 3px;
+  display: block;
+  float:left;
+}
+
+html[dir="rtl"] ul.albums_manage .albums_manage_photo img
+{
+  float:right;
+}
+
+ul.albums_manage .albums_manage_info
+{
+  width: 400px;
+  float: left;
+  overflow: hidden;
+}
+
+html[dir="rtl"] ul.albums_manage .albums_manage_info
+{
+  float: right;
+}
+
+ul.albums_manage .albums_manage_info > a
+{
+  font-weight: bold;
+}
+ul.albums_manage .albums_manage_info_photos
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+ul.albums_manage .albums_manage_info_desc
+{
+  margin-top: 3px;
+}
+ul.albums_manage .albums_manage_options
+{
+  width: 140px;
+  float: right;
+  overflow: hidden;
+  padding-left: 15px;
+}
+
+html[dir="rtl"] ul.albums_manage .albums_manage_options
+{
+  float: left;
+  padding-right: 15px;
+  padding-left: 0;
+}
+
+ul.albums_manage .albums_manage_options > a
+{
+  margin: 2px;
+}
+ul.albums_editphotos
+{
+  width: 600px;
+}
+ul.albums_editphotos > li
+{
+  padding-top: 15px;
+  clear: both;
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+ul.albums_editphotos > li .albums_editphotos_photo
+{
+  float: left;
+  margin-right: 15px;
+  overflow: hidden;
+}
+
+html[dir="rtl"] ul.albums_editphotos > li .albums_editphotos_photo
+{
+  float: right;
+  margin-left: 15px;
+  margin-right: 0;
+}
+
+ul.albums_editphotos > li .albums_editphotos_photo img
+{
+  display: block;
+  margin: 3px;
+  width: auto;
+  float:left;
+}
+
+html[dir="rtl"] ul.albums_editphotos > li .albums_editphotos_photo img
+{
+  float: right;
+}
+
+ul.albums_editphotos > li .albums_editphotos_info
+{
+  overflow: hidden;
+}
+ul.albums_editphotos > li .albums_editphotos_title_input input,
+ul.albums_editphotos > li .album_editphotos_caption_input textarea
+{
+  margin: 2px 0px 6px 0px;
+  width: 25em;
+}
+ul.albums_editphotos > li .album_editphotos_caption_input textarea
+{
+  height: 2.5em;
+}
+ul.albums_editphotos > li .albums_editphotos_label
+{
+  float: left;
+}
+
+html[dir="rtl"] ul.albums_editphotos > li .albums_editphotos_label
+{
+  float: right;
+}
+
+ul.albums_editphotos > li .albums_editphotos_cover
+{
+  float: left;
+}
+
+html[dir="rtl"] ul.albums_editphotos > li .albums_editphotos_cover
+{
+  float: right;
+}
+
+ul.albums_editphotos > li .photo-delete-wrapper
+{
+  float: left;
+  margin-right: 15px;
+}
+
+html[dir="rtl"] ul.albums_editphotos > li .photo-delete-wrapper
+{
+  float: right;
+  margin-left: 15px;
+  margin-right: 0;
+}
+
+ul.albums_editphotos > li .photo-delete-wrapper > label
+{
+  display: block;
+  float: left;
+}
+
+html[dir="rtl"] ul.albums_editphotos > li .photo-delete-wrapper > label
+{
+  float: right;
+}
+
+
+/*
+VIEW PHOTO
+These styles are used on the view photo page within
+an album.
+*/
+div.albums_viewmedia
+{
+  margin: 25px auto 0px auto;
+  max-width: 750px;
+  min-width: 400px;
+  overflow: visible;
+}
+div.albums_viewmedia #media_photo
+{
+  border: 1px solid $theme_photo_border_color;
+  margin: auto;
+  display: block;
+  max-width: 720px;
+}
+div.albums_viewmedia .albums_viewmedia_nav
+{
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+div.albums_viewmedia .albums_viewmedia_nav > div
+{
+  float: left;
+  overflow: visible;
+}
+div.albums_viewmedia .albums_viewmedia_nav > div + div
+{
+  float: none;
+  text-align: right;
+}
+div.albums_viewmedia .albums_viewmedia_nav > div + div > a + a
+{
+  margin-left: 20px;
+}
+div.albums_viewmedia_info
+{
+  +foreground;
+  +rounded;
+  text-align: center;
+  padding: 5px;
+  border: 5px solid $theme_foreground_border_color;
+}
+div.album_viewmedia_container
+{
+  position: relative;
+  display: inline-block;
+}
+div.album_viewmedia_container a:link
+{
+  text-decoration: none;
+}
+div.albums_viewmedia_info p
+{
+  text-align: left;
+}
+div.albums_viewmedia > span + div > a
+{
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+}
+div.albums_viewmedia > span + div > a:link
+{
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+}
+div.albums_viewmedia_info .albums_viewmedia_info_title
+{
+  margin-top: 5px;
+  font-weight: bold;
+}
+div.albums_viewmedia_info .albums_viewmedia_info_caption
+{
+  margin-top: 3px;
+  font-size: .8em;
+}
+div.albums_viewmedia_info .albums_viewmedia_info_title + .albums_viewmedia_info_tags,
+div.albums_viewmedia_info .albums_viewmedia_info_caption + .albums_viewmedia_info_tags
+{
+  margin-top: 15px;
+}
+div.albums_viewmedia_info .albums_viewmedia_info_tags
+{
+  font-size: .8em;
+  margin-top: 5px;
+}
+div.albums_viewmedia_info .albums_viewmedia_info_date
+{
+  font-size: .8em;
+  margin-top: 5px;
+}
+div.albums_viewmedia > div.comments
+{
+  margin-top: 15px;
+}
+span.albums_tag_listcontainer > a
+{
+  font-weight: bold;
+}
+
+
+
+
+/* ACTION TYPE ICONS */
+.activity_icon_comment_pagealbum,
+.activity_icon_comment_pagealbumphoto
+{
+  background-image: url(~/application/modules/Core/externals/images/types/post.png);
+}
+
+
+
+
+
+/* ITEM TYPE ICONS */
+.item_icon_album,
+.item_icon_album_photo
+{
+  background-image: url(~/application/modules/Pagealbum/externals/images/types/album.png);
+}
+
+.activity_icon_pagealbum_photo_new{
+  background-image: url(~/application/modules/Pagealbum/externals/images/activity_album_new.png);
+}
+
+/* ICONS */
+.icon_photos_new
+{
+  background-image: url(~/application/modules/Pagealbum/externals/images/add.png);
+}
+.icon_photos_manage
+{
+  background-image: url(~/application/modules/Pagealbum/externals/images/album_manage.png);
+}
+.icon_photos_settings
+{
+  background-image: url(~/application/modules/Pagealbum/externals/images/album_editinfo.png);
+}
+.icon_photos_delete
+{
+  background-image: url(~/application/modules/Pagealbum/externals/images/album_delete.png);
+}
+
+.pagealbum_photo_box{
+  +rounded(2px);
+	clear: both;
+	display: block;
+	padding: 5px;
+	background-color: $theme_foreground_background_color;
+	float: right;
+}
+
+.pagealbum_photo_box span{
+  float: left;
+  font-size: 11px;
+}
+
+#photo_comments_container {
+  width:600px;
+  margin:auto;
+}
+
+.btn_cont_load_photo_comments {
+  width:660px;
+  margin:auto;
+}
+
+/* GALLERY STYLES */
+.ad-gallery {
+  width: 90%;
+}
+.ad-gallery, .ad-gallery * {
+  margin: auto;
+  padding: 0;
+}
+  .ad-gallery .ad-image-wrapper {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+    .ad-gallery .ad-image-wrapper .ad-loader {
+      position: absolute;
+      z-index: 10;
+      top: 48%;
+      left: 48%;
+      border: 1px solid #CCC;
+    }
+    .ad-gallery .ad-image-wrapper .ad-next {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 25%;
+      height: 100%;
+      cursor: pointer;
+      display: block;
+      z-index: 100;
+    }
+    .ad-gallery .ad-image-wrapper .ad-prev {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 25%;
+      height: 100%;
+      cursor: pointer;
+      display: block;
+      z-index: 100;
+    }
+    .ad-gallery .ad-image-wrapper .ad-prev, .ad-gallery .ad-image-wrapper .ad-next {
+      /* Or else IE will hide it */
+    }
+      .ad-gallery .ad-image-wrapper .ad-prev .ad-prev-image, .ad-gallery .ad-image-wrapper .ad-next .ad-next-image {
+        background: url(~/application/modules/Pagealbum/externals/images/ad_prev.png);
+        width: 30px;
+        height: 30px;
+        display: none;
+        position: absolute;
+        top: 47%;
+        left: 0;
+        z-index: 101;
+      }
+      .ad-gallery .ad-image-wrapper .ad-next .ad-next-image {
+        background: url(~/application/modules/Pagealbum/externals/images/ad_next.png);
+        width: 30px;
+        height: 30px;
+        right: 0;
+        left: auto;
+      }
+    .ad-gallery .ad-image-wrapper .ad-image {
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+      .ad-gallery .ad-image-wrapper .ad-image a img {
+        border: 0;
+      }
+      .ad-gallery .ad-image-wrapper .ad-image .ad-image-description {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        padding: 7px;
+        text-align: left;
+        width: 100%;
+        z-index: 2;
+        background: url(~/application/modules/Pagealbum/externals/images/opa75.png);
+        color: #000;
+      }
+      * html .ad-gallery .ad-image-wrapper .ad-image .ad-image-description {
+        background: none;
+        filter:progid:DXImageTransform.Microsoft.AlphaImageLoader (enabled=true, sizingMethod=scale, src='~/application/modules/Pagealbum/externals/images/opa75.png');
+      }
+        .ad-gallery .ad-image-wrapper .ad-image .ad-image-description .ad-description-title {
+          display: block;
+        }
+  .ad-gallery .ad-controls {
+    height: 20px;
+  }
+    .ad-gallery .ad-info {
+      float: left;
+    }
+    .ad-gallery .ad-slideshow-controls {
+      float: right;
+    }
+
+html[dir="rtl"] .ad-gallery .ad-slideshow-controls {
+  float: left;
+}
+
+html[dir="ltr"] .ad-gallery .ad-slideshow-controls .ad-slideshow-start,
+html[dir="ltr"] .ad-gallery .ad-slideshow-controls .ad-slideshow-stop {
+  padding-left: 5px;
+  cursor: pointer;
+}
+html[dir="rtl"] .ad-gallery .ad-slideshow-controls .ad-slideshow-start,
+html[dir="rtl"] .ad-gallery .ad-slideshow-controls .ad-slideshow-stop {
+  padding-right: 5px;
+  cursor: pointer;
+}
+      .ad-gallery .ad-slideshow-controls .ad-slideshow-countdown {
+        padding-left: 5px;
+        font-size: 0.9em;
+      }
+    .ad-gallery .ad-slideshow-running .ad-slideshow-start {
+      cursor: default;
+    }
+  .ad-gallery .ad-nav {
+    width: 100%;
+    position: relative;
+  }
+    .ad-gallery .ad-forward, .ad-gallery .ad-back {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      z-index: 10;
+    }
+    /* IE 6 doesn't like height: 100% */
+    * html .ad-gallery .ad-forward, .ad-gallery .ad-back {
+      height: 100px;
+    }
+    .ad-gallery .ad-back {
+      cursor: pointer;
+      left: -20px;
+      width: 13px;
+      display: block;
+      background: url(~/application/modules/Pagealbum/externals/images/ad_scroll_back.png) 0px 22px no-repeat;
+    }
+    .ad-gallery .ad-forward {
+      cursor: pointer;
+      display: block;
+      right: -20px;
+      width: 13px;
+      background: url(~/application/modules/Pagealbum/externals/images/ad_scroll_forward.png) 0px 22px no-repeat;
+    }
+    .ad-gallery .ad-nav .ad-thumbs {
+      overflow: hidden;
+      width: 100%;
+    }
+.ad-gallery .ad-thumbs .ad-thumb-list {
+  float: left;
+  width: 9000px;
+  list-style: none;
+}
+
+html[dir="rtl"] .ad-gallery .ad-thumbs .ad-thumb-list {
+  float: right;
+}
+.ad-gallery .ad-thumbs li {
+  float: left;
+  padding-right: 5px;
+}
+html[dir="rtl"] .ad-gallery .ad-thumbs li {
+  float: right;
+  padding-left: 5px;
+  padding-right: 0;
+}
+.ad-gallery .ad-thumbs li a {
+  display: block;
+}
+.ad-gallery .ad-thumbs li a img {
+  border: 3px solid #CCC;
+  display: block;
+  float:left;
+}
+html[dir="rtl"] .ad-gallery .ad-thumbs li a img {
+  float:right;
+}
+.ad-gallery .ad-thumbs li a.ad-active img {
+  border: 3px solid #616161;
+}
+
+.random-main {
+  overflow: hidden;
+}
+.random-main .random-list {
+  display: block;
+  width: 900px;
+}
+.random-list li {
+  float: left;
+  line-height: 0;
+  padding-left: 2.4px;
+}
+a.hePhotoThumb {
+  border: medium none;
+  padding: 0;
+  background: none repeat scroll 0 0 #FFFFFF;
+  display: inline-block;
+  outline: medium none;
+  position: relative;
+  vertical-align: bottom;
+}
+a.hePhotoThumb i{
+  height: 72px;
+  width: 103px;
+  display: block;
+  background-position: center center;
+}
+
+/* Can't do display none, since Opera won't load the images then */
+.ad-preloads {
+  position: absolute;
+  left: -9000px;
+  top: -9000px;
+}
+
+#gallery {
+    padding: 30px;
+    background: $theme_form_background_color;
+    +rounded(8px);
+  }
+  #descriptions {
+    position: relative;
+    height: 50px;
+    background: #EEE;
+    margin-top: 10px;
+    width: 640px;
+    padding: 10px;
+    overflow: hidden;
+  }
+    #descriptions .ad-image-description {
+      position: absolute;
+    }
+      #descriptions .ad-image-description .ad-description-title {
+        display: block;
+      }
+
+#load_photo_comments{
+	font-weight: bold;
+	background-color: $theme_form_background_color;
+	+rounded(4px);
+	padding: 5px;
+	display: block;
+	float: left;
+	clear: both;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+
+.ad-image{
+	cursor: pointer;
+}
+
+.ad-slideshow-start, .ad-slideshow-stop, .ad-slideshow-view {
+  background-color:$theme_topbar_background_color;
+  border:1px solid $theme_foreground_border_color;
+  +rounded(7px);
+  color:$theme_link_color;
+  font-size:11px;
+  margin-right:5px;
+  padding:2px 18px 1px 8px;
+  background-repeat:no-repeat;
+  background-position:center right;
+  cursor:pointer;
+  display:block;
+  float:left;
+}
+
+html[dir="rtl"] .ad-slideshow-start,
+html[dir="rtl"] .ad-slideshow-stop,
+html[dir="rtl"] .ad-slideshow-view {
+  margin-left:5px;
+  margin-right: 0;
+  padding:2px 8px 1px 18px;
+  background-position:center left;
+  float:right;
+}
+
+.ad-slideshow-start {
+  background-image:url(~/application/modules/Pagealbum/externals/images/control_play.png);
+}
+
+.ad-slideshow-stop {
+  background-image:url(~/application/modules/Pagealbum/externals/images/control_stop.png);
+}
+
+.ad-slideshow-view {
+  background-image:url(~/application/modules/Pagealbum/externals/images/control_view.png);
+}
+
+.ad-slideshow-start:HOVER {
+  background-image:url(~/application/modules/Pagealbum/externals/images/control_play_blue.png);
+}
+
+.ad-slideshow-stop:HOVER {
+  background-image:url(~/application/modules/Pagealbum/externals/images/control_stop_blue.png);
+}
+
+.ad-gallery .ad-slideshow-controls .ad-slideshow-countdown,
+.ad-gallery .ad-controls .ad-info {
+  background-color: $theme_topbar_background_color;
+  border: 1px solid $theme_foreground_border_color;
+  +rounded(7px);
+  color: $theme_link_color;
+  font-size: 11px;
+  margin-right: 5px;
+  padding: 2px 5px 1px 5px;
+  cursor: pointer;
+  display: block;
+  float: left;
+}
+
+html[dir="rtl"] .ad-gallery .ad-slideshow-controls .ad-slideshow-countdown,
+html[dir="rtl"] .ad-gallery .ad-controls .ad-info {
+  margin-left: 5px;
+  float: right;
+}
+
+.ad-slideshow-start:HOVER, .ad-slideshow-stop:HOVER, .ad-slideshow-view:HOVER {
+  border-color: #AAAAAA;
+  color: $theme_link_color_hover;
+}
+
+.ad-gallery .ad-controls {
+  height: 25px;
+}
+
+/* IE 7 hack */
+*+html .ad-slideshow-start, *+html .ad-slideshow-stop, *+html .ad-slideshow-view {
+  padding:1px 18px 1px 8px;
+}
+
+*+html .ad-gallery .ad-slideshow-controls .ad-slideshow-countdown,
+*+html .ad-gallery .ad-controls .ad-info {
+  padding:1px 5px;
+}
+
+#page_album_options > h3{
+	float: left;
+}
+
+.pagealbum_view_header{
+	clear: both;
+}
+
+.pagealbum_view_header > span{
+	float: left;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+html[dir="rtl"] .pagealbum_view_header > span{
+  float: right;
+}
+
+.pagealbum_loader_2{
+	float: right;
+	margin-right: 8px;
+}
+
+html[dir="rtl"] .pagealbum_loader_2{
+  float: left;
+  margin-left: 8px;
+}
+
+#page_album_options{
+	min-height: 16px;
+  height: auto !important;
+  height: 16px;
+}
+
+#page_album_container p,
+#page_album_container .pagealbum_view_header,
+#page_album_container .page-misc {
+  padding: 4px;
+}
+
+.notifications_menu .notification_type_post_pagealbum, .notifications .notification_type_post_pagealbum{
+  background-image:url('~/application/modules/Pagealbum/externals/images/activity_album_new.png');
+}
+
+.layout_pagealbum_browse_search,
+.layout_pagealbum_popular_albums,
+.layout_pagealbum_recent_albums
+{
+    margin-bottom: 15px;
+}
+
+.albums_options {
+  padding-left: 5px;
+  margin: 5px 5px 0px 0px;
+  float: right;
+}
+
+.pagealbum_manage_item
+{
+    position: relative;
+    margin: 0px 10px 10px 0px;
+    display: inline-block;
+}
+
+.pagealbum_manage_photo a.thumb_photo
+{
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #DDDDDD;
+  padding: 4px;
+  display: inline-block;
+}
+a.thumb_photo span
+{
+  background-position: center 50%;
+  background-repeat: no-repeat;
+  display: block;
+  height: 106px;
+  width: 142px;
+}
+.pagealbum_manage_photo,
+.pagealbum_manage_info
+{
+  float: left;
+  overflow: hidden;
+}
+
+html[dir="rtl"] .pagealbum_manage_photo,
+html[dir="rtl"] .pagealbum_manage_info
+{
+  float: right;
+}
+
+.pagealbum_manage_info > a
+{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pagealbum_manage_info
+{
+    padding: 3px;
+    margin: 5px 0 0 5px;
+    width: 180px;
+}
+
+html[dir="rtl"] .pagealbum_manage_info
+{
+  margin: 5px 5px 0px 0px;
+}
+
+.pagealbum_manage_info .info
+{
+    color: #999999;
+    font-size:0.8em;
+    margin: 5px 0 0;
+}
+
+.pagealbum_manage_info .options
+{
+    margin-top: 10px;
+}
+
+.pagealbum_manage_info .options a
+{
+    width: 16px;
+    height: 16px;
+    margin-left: 3px;
+    display: block;
+    float: left;
+}
+
+.pagealbum_manage_info .options a.edit
+{
+    background: transparent url(~/application/modules/Pagealbum/externals/images/edit.png) no-repeat scroll center;
+}
+
+.pagealbum_manage_info .options a.delete
+{
+    background: transparent url(~/application/modules/Pagealbum/externals/images/delete.png) no-repeat scroll center;
+}
+
+.pagealbum_manage_info .options a.edit:hover
+{
+    background: transparent url(~/application/modules/Pagealbum/externals/images/edit_hover.png) no-repeat scroll center;
+}
+
+.pagealbum_manage_info .options a.delete:hover
+{
+    background: transparent url(~/application/modules/Pagealbum/externals/images/delete_hover.png) no-repeat scroll center;
+}
+
+html[dir="rtl"] .pagealbum_manage_info .options a
+{
+  margin-right: 3px;
+  margin-left: 0;
+  float: right;
+}
+
+#page_album_navigation {
+    margin-bottom: 1.5em;
+}
+
+ul.pagealbum_thumbs {
+    overflow: hidden;
+}
+
+ul.pagealbum_thumbs > li {
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    height: 175px;
+    overflow: hidden;
+    padding: 0 15px 0 0;
+    text-align: center;
+    width: 18.2%;
+}
+
+ul.pagealbum_thumbs .thumbs_photo {
+    box-shadow: 0 0 2px rgba(51, 51, 51, 0.4);
+    display: block;
+    position: relative;
+    text-align: left;
+}
+
+ul.pagealbum_thumbs .thumbs_photo span {
+    background-position: center 50%;
+    background-repeat: no-repeat;
+    display: block;
+    height: 125px;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+ul.pagealbum_thumbs .hover-caption .content {
+    overflow: hidden;
+    padding: 5px;
+}
+
+ul.pagealbum_thumbs .hover-caption {
+    background-color: #000;
+    bottom: 0;
+    box-sizing: border-box;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    transition: opacity 1s ease 0s;
+    width: 100%;
+}
+
+
+ul.pagealbum_thumbs > li:hover .caption {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -moz-transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+ul.pagealbum_thumbs .hover-caption,
+ul.pagealbum_thumbs .hover-caption div,
+ul.pagealbum_thumbs .caption,
+ul.pagealbum_thumbs .caption div {
+    color:#FFF;
+    font-size: 9pt;
+    text-shadow: #000 1px 1px 0;
+}
+
+ul.pagealbum_thumbs .hover-caption a,
+ul.pagealbum_thumbs .hover-caption a:link
+ul.pagealbum_thumbs .hover-caption a:active,
+ul.pagealbum_thumbs .caption a,
+ul.pagealbum_thumbs .caption a:link
+ul.pagealbum_thumbs .caption a:active {
+    color:#EEE;
+}
+
+ul.pagealbum_thumbs .hover-caption a:hover,
+ul.pagealbum_thumbs .caption a:hover {
+    color:#FFF;
+}
+
+ul.pagealbum_thumbs > li:hover .hover-caption {
+    opacity: 0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    filter: alpha(opacity=90);
+    -moz-transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+ul.pagealbum_thumbs .title {
+    float: left;
+}
+
+ul.pagealbum_thumbs .info {
+    float: right;
+    margin: 0;
+    text-align : inherit;
+    font-weight : normal;
+    width : auto;
+}
+
+ul.pagealbum_thumbs .thumbs_title {
+    display: block;
+    margin: 5px 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+ul.pagealbum_thumbs a.thumbs_photo span:hover {
+    opacity: 1;
+}
+
+#PageRandomPhotos > li {
+    display: inline-block;
+    width: 32%;
+    min-height: 120px;
+}
+
+.page-random-photos-photo {
+    background-position: center 30%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}

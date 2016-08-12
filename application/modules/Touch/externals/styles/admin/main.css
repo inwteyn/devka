@@ -1,0 +1,259 @@
+/* Attention!!! Don't delete this code */
+#configure_css{
+  display: none !important; /* Really important! */
+}
+/* Attention!!! Don't delete this code */
+
+
+/* Touch home */
+.admin_home_left
+{
+  overflow: hidden;
+  float: left;
+  margin-right: 20px;
+  width: 300px;
+}
+.touch.admin_home_left,
+.touch.admin_home_right{
+  width: 200px;
+}
+div.touch.admin_layoutbox{
+  width: auto;
+}
+html[dir="rtl"] .admin_home_left
+{
+  float: right;
+  margin-left: 20px;
+  margin-right: 0px;
+}
+.touch_admin_home_dashboard ul.admin_home_dashboard_links > li {
+  width: 50%;
+}
+
+.touch_admin_home_dashboard ul.admin_home_dashboard_links > li ul {
+  padding-right: 5px;
+}
+
+.touch_admin_home_dashboard ul.admin_home_dashboard_links > li li {
+  padding: 0;
+  padding-left: 7px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  -moz-transition: background-color 0.5s ease-in 0s;
+  -webkit-transition: background-color 0.5s ease-in 0s;
+  -o-transition: background-color 0.5s ease-in 0s;
+}
+.touch_admin_home_dashboard ul.admin_home_dashboard_links > li li:hover {
+  background-color: #C3DEEC;
+}
+.touch_admin_home_dashboard ul.admin_home_dashboard_links > li li a:hover{
+  text-decoration: none;
+
+}
+.touch_admin_home_dashboard ul.admin_home_dashboard_links > li li a{
+  display: block;
+  font-size: 1.2em;
+  line-height: 28px;
+  padding: 8px 7px 9px 40px;
+  background-position: left;
+}
+/* Dashboard icons { */
+.touch_admin_home_dashboard ul.admin_home_dashboard_links > li li a.touch_links_layout {
+  background-image: url(~/application/modules/Touch/externals/images/admin/layout_edit.png);
+}
+.touch_admin_home_dashboard ul.admin_home_dashboard_links > li li a.touch_links_themes {
+  background-image: url(~/application/modules/Touch/externals/images/admin/themes_edit.png);
+}
+.touch_admin_home_dashboard ul.admin_home_dashboard_links > li li a.touch_links_menus {
+  background-image: url(~/application/modules/Touch/externals/images/admin/menus_edit.png);
+}
+.touch_admin_home_dashboard ul.admin_home_dashboard_links > li li a.touch_links_integrations {
+  background-image: url(~/application/modules/Touch/externals/images/admin/integrations_manage.png);
+}
+.touch_admin_home_dashboard ul.admin_home_dashboard_links > li li a.touch_links_stats {
+  background-image: url(~/application/modules/Touch/externals/images/admin/stats.png);
+}
+.touch_admin_home_dashboard ul.admin_home_dashboard_links > li li a.touch_links_performance  {
+  background-image: url(~/application/modules/Touch/externals/images/admin/performance_settings.png);
+}
+.touch_admin_home_dashboard ul.admin_home_dashboard_links > li li a.touch_links_getstarted  {
+  background-image: url(~/application/modules/Touch/externals/images/admin/get_started.png);
+}
+.touch_admin_home_dashboard ul.admin_home_dashboard_links > li li a.touch_links_more_he_plugins  {
+  background-image: url(~/application/modules/Touch/externals/images/admin/he_more.png);
+}
+#global_page_touch-admin-index-index .layout_touch_admin_main_menu h2 {
+  background-image: url(~/application/modules/Touch/externals/images/admin/iphone.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 35px;
+  line-height: 35px;
+}
+.integration_status span{
+  text-transform: lowercase;
+}
+.integration_status_potential span {
+  color:#336699;
+}
+.integration_status_expired span {
+  color:#336699;
+}
+.integration_status_compatible span {
+  color:#529214;
+}
+.integration_status_incompatible span {
+  color:#d12f19;
+}
+/* } Dashboard icons */
+
+
+/* Touch Admin TootTips { */
+.png{
+ position:relative;
+ }
+        .tooltip {
+            outline: none;
+            cursor: help; text-decoration: none;
+            position: relative;
+        }
+        .tooltip span {
+            margin-left: -999em;
+            position: absolute;
+        }
+        .tooltip:hover span {
+          border-radius: 5px 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+          position: absolute;
+          top: 2em;
+          z-index: 99;
+          margin-left: 0;
+          width: 250px;
+          text-transform: none;
+
+        }
+        .tooltip:hover span.left {
+          left: 1em;
+        }
+        .tooltip:hover span.right {
+          right: 1em;
+        }
+        .tooltip:hover span.top {
+
+        }
+        .tooltip:hover span.bottom {
+
+        }
+        .tooltip:hover img {
+            border: 0; margin: -10px 0 0 -55px;
+            float: left; position: absolute;
+        }
+        .tooltip:hover em {
+          font-size: 1.1em;
+          font-weight: bold;
+          display: block;
+          padding: 0.2em 0 0.6em 0;
+        }
+        .classic { padding: 0.8em 1em; }
+        .custom { padding: 0.5em 0.8em 0.8em 2em; }
+        * html a:hover { background: transparent; }
+        .classic {background: #FFFFAA; border: 1px solid #FFAD33; }
+        .critical { background: #FFCCAA; border: 1px solid #FF3334; }
+        .help { background: #9FDAEE; border: 1px solid #2BB0D7; }
+        .info { background-color:#E6EFC2; border:1px solid #C6D880; color:#529214; }
+        .warning { background: #FFFFAA; border: 1px solid #FFAD33; }
+/* } Touch Admin TootTips */
+/* Touch home */
+/* Menu styles { */
+.tabs ul li:hover a
+{
+  background: #fff;
+  padding: 5px 6px 5px 6px;
+  +rounded(4px, false, false, true, true);
+  border: 1px solid #ccc;
+  border-bottom: none;
+}
+
+.layout_touch_admin_main_menu .tabs ul.navigation li{
+  position: relative;
+}
+.layout_touch_admin_main_menu ul ul {
+  left: 0;
+  margin: 5px 0 0;
+  min-width: 120px;
+  padding: 0;
+  position: absolute;
+  display: none;
+  border: 1px solid #aaa;
+  overflow: hidden;
+  border-top-color: transparent;
+  border-radius: 0 0 5px 5px;
+  padding-bottom: 4px;
+  background-color: #fff;
+  z-index: 999999;
+}
+.layout_touch_admin_main_menu ul.navigation > li:hover ul{
+  display: block;
+}
+
+.layout_touch_admin_main_menu ul ul li {
+  display: block;
+}
+/*.layout_touch_admin_main_menu ul ul li:hover {*/
+  /*background-color: #97BBD1;*/
+/*}*/
+
+.layout_touch_admin_main_menu ul.navigation ul li a {
+  display: block;
+  font-weight: bold;
+  letter-spacing: 0;
+  outline: medium none;
+  padding: 5px 7px;
+  text-decoration: none;
+  border: none;
+  border-radius: 0;
+  color: #888;
+  white-space: nowrap;
+
+}
+.layout_touch_admin_main_menu ul.navigation ul li:hover a{
+  color: #444;
+  background-color: #E9F4FA;
+}
+
+/* } Menu styles */
+/* Home Screen Styles { */
+#EditHomeScreen #preview-thumbnail img {
+    display: block;
+    float: left;
+    opacity: 1;
+    overflow: hidden;
+    position: relative;
+    visibility: visible;
+}
+#EditHomeScreen div.preview-thumbnail{
+  width: 59px;
+  height: 60px;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+#EditHomeScreen div.preview-thumbnail div.hs_mask {
+  position: absolute;
+  width: 59px;
+  height: 60px;
+  background-image: url(~/application/modules/Touch/externals/images/admin/hs_mask.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+/* } Home Screen Styles */
+
+/* Form Styles { */
+#global_page_touch-admin-settings-app-icon-set .settings form,
+#global_page_touch-admin-settings-index .settings form,
+#global_page_touch-admin-settings-performance .settings form,
+#global_page_touch-admin-plugin-settings-index .settings form {
+  float: none;
+}
+
+/* } Form Styles */

@@ -1,0 +1,181 @@
+/* $Id: main.css 19.10.13 08:20 jungar $ */
+.form_edit_admin {
+    background-color: #FFFFFF;
+    border: 1px solid;
+    display: none;
+    left: 30%;
+    line-height: 25px;
+    padding: 10px;
+    position: fixed;
+    top: 200px;
+    z-index: 100;
+}
+
+.form_background_admin {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+    display: none;
+    z-index: 10;
+}
+
+.hecontest-admin-form,
+.hecontest-admin-form  .form-element {
+    float: none !important;
+}
+
+.admin-hecontest-edit {
+    width: 16px;
+    height: 16px;
+    background-image: url(~/application/modules/Hecontest/externals/images/edit.png);
+}
+.admin-hecontest-delete {
+    width: 16px;
+    height: 16px;
+    background-image: url(~/application/modules/Hecontest/externals/images/delete.png);
+}
+
+.small-loader {
+    background-image: url(~/application/modules/Hecontest/externals/images/small-loader.gif);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+#hecontest-pages-popup {
+    box-shadow: 0 2px 3px rgba(22, 24, 27, 0.35);
+    position: absolute;
+    background: #fff;
+    min-width: 225px;
+}
+
+#hecontest-pages-popup ul {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+#hecontest-pages-popup ul li {
+    display: block;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 3px 5px 10px 5px;
+
+    font-size: 18px;
+}
+
+#hecontest-pages-popup ul li:hover {
+    background: #eee;
+}
+
+#sponsor {
+    padding-right: 18px;
+}
+
+.admin-hecontest-view-description {
+    float: left;
+    max-width: 70%;
+}
+
+.admin-hecontest-view-description p {
+    text-align: justify;
+}
+
+.admin-hecontest-view-prize-photo {
+    margin-left: 30px;
+    float: right;
+}
+
+.admin-hecontest-view-prize-photo div {
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+.admin-hecontest-view-participants .item:hover {
+    background-color: #eee;
+}
+
+.admin-hecontest-view-participants .item {
+    border-bottom: 1px solid gray;
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 270px;
+    padding: 3px;
+}
+
+.admin-hecontest-view-participants .item img.thumb_normal {
+    max-height: 90px;
+}
+
+.admin-hecontest-view-contest-controls {
+    margin-left: 30px;
+    margin-top: 4px;
+}
+
+.admin-hecontest-view-contest-controls > div {
+    margin-right: 10px;
+}
+
+.admin-hecontest-left {
+    float: left;
+}
+
+.admin-hecontest-right {
+    float: right;
+}
+#participant-details {
+    /*transform: translate(0, -150%);*/
+    transition: transform 0.5s ease 0s;
+    position: fixed;
+    top: 50px;
+    z-index: 202;
+    left: 0;
+    width: 100%;
+}
+#participant-details-wrapper {
+    background-color: #fff;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 45px rgba(0, 0, 0, 0.35);
+    padding: 10px;
+    width: 600px;
+    margin: 0 auto;
+    z-index: 203;
+}
+#participants-screen {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 200
+}
+#participant-img,
+#participant-descr {
+    float: left;
+}
+.participant-img {
+    max-height: 90px;
+}
+#participant-img a {
+    margin-right: 10px;
+    width: 300px;
+    height: 300px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+    display: inline-block;
+}
+#participant-descr {
+}

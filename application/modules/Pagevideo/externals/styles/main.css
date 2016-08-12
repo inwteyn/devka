@@ -1,0 +1,791 @@
+/* $Id: main.css 2010-09-20 15:58 idris $ */
+
+/*
+FEED COMPOSER
+Styles the insert pagevideo part of the feed composer.
+*/
+#compose-pagevideo-body .compose-preview-image
+{
+  float: left;
+  margin-right: 2px;
+  border: 1px solid $theme_photo_border_color;
+}
+#compose-pagevideo-body .compose-preview-info
+{
+  overflow: hidden;
+}
+#compose-pagevideo-body .compose-preview-info a
+{
+  font-weight: bold;
+  display: block;
+  margin-bottom: 2px;
+}
+#compose-pagevideo-body .compose-preview-info > div
+{
+  font-size: .8em;
+}
+
+/*
+BROWSE VIDEOS & FEED ITEMS
+Styles the browse pagevideos page as well as pagevideos embedded
+in the feed.
+*/
+.thumb_video_activity
+{
+  max-height: 160px;
+  max-width: 140px;
+}
+
+.feed_item_attachments .video_thumb_wrapper
+{
+  +rounded(4px);
+  margin-right: 7px;
+  float: left;
+  margin-bottom: 2px;
+  background: #666;
+  padding: 5px 5px 2px;
+  width: auto !important;
+  height: auto !important;
+  max-width: 152px;
+}
+.feed_item_attachments .video_info
+{
+  overflow: hidden;
+}
+.feed_item_attachments .video_info > a
+{
+  font-size: .8em;
+  font-weight: bold;
+}
+.pagevideo_title
+{
+  font-size: .8em;
+  font-weight: bold;
+  display: inline-block;
+  clear: both;
+}
+.feed_item_attachments .video_desc
+{
+  margin-top: 2px;
+  font-size: .8em;
+}
+ul.pagevideos_browse > li
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 20px;
+  height: 220px;
+  max-width: 140px;
+}
+.pagevideo_length
+{
+  +opacity(.7);
+  +rounded(4px, true, true, false, true);
+  display: inline-block;
+  position: absolute;
+  margin: 6px;
+  padding: 3px 5px 3px 5px;
+  background: #000;
+  color: #fff;
+  font-size: .7em;
+}
+
+.pagevideo_thumb_wrapper{
+  margin-bottom: 2px;
+}
+
+html[dir="rtl"] .pagevideo_thumb_wrapper{
+  float: right;
+}
+
+.pagevideo{
+  border-radius: 0;
+  float: left;
+  margin: 5px;
+  position: relative;
+  width: 22%;
+}
+
+html[dir="rtl"] .pagevideo{
+  float: right;
+}
+
+.pagevideos_browse_index_dark{
+  background-color: #3b424e;
+  +rounded(8px);
+  padding: 1px;
+}
+
+.pagevideos_browse_index_light{
+  +rounded(8px);
+  padding: 1px;
+}
+
+.pagevideo_thumb_wrapper img.pagevideo_frame{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.pagevideo_thumb_wrapper a img.thumb_normal{
+  width: 100%;
+  height: auto;
+  max-width: 240px;
+  max-height: 180px;
+  border: none;
+  margin: 0px;
+}
+
+.pagevideo_thumb_wrapper a
+{
+  display: block;
+}
+
+.pagevideo_thumb_wrapper img,
+.pagevideo_thumb_wrapper span.item_nophoto
+{
+  display: block;
+  margin: 5px;
+  border: 1px solid #888;
+}
+
+.pagevideo_author
+{
+  font-size: .8em;
+  display: block;
+}
+
+.pagevideo_stats > span
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+
+.video_length
+{
+  +opacity(.7);
+  +rounded(4px, true, true, false, true);
+  display: inline-block;
+  position: absolute;
+  margin: 6px;
+  padding: 3px 5px 3px 5px;
+  background: #000;
+  color: #fff;
+  font-size: .7em;
+}
+
+
+
+/*
+MANAGE VIDEOS
+Styles the manage pagevideos page.
+*/
+ul.videos_manage > li
+{
+  clear: both;
+  overflow: hidden;
+}
+ul.videos_manage > li + li
+{
+  margin-top: 15px;
+  border-top-width: 1px;
+  padding-top: 15px;
+}
+ul.videos_manage .video_thumb_wrapper
+{
+  +rounded(4px);
+  float: left;
+  margin-bottom: 2px;
+  background: #666;
+}
+
+html[dir="rtl"] ul.videos_manage .video_thumb_wrapper
+{
+  float: right;
+}
+
+ul.videos_manage .video_length
+{
+  +rounded(4px, true, true, false, true);
+  display: inline-block;
+  position: absolute;
+  margin: 15px 7px 7px 6px;
+  padding: 3px 5px 3px 5px;
+  background: #000;
+  color: #fff;
+  font-size: .7em;
+  opacity: .7;
+}
+ul.videos_manage .video_thumb_wrapper:hover
+{
+  background: #777;
+}
+ul.videos_manage .video_thumb_wrapper a
+{
+  display: block;
+}
+ul.videos_manage .video_thumb_wrapper img
+{
+  display: block;
+  margin: 5px;
+  border: 1px solid #888;
+}
+ul.videos_manage .video_info
+{
+  overflow: hidden;
+  padding-left: 10px;
+}
+
+html[dir="rtl"] ul.videos_manage .video_info
+{
+  padding-right: 10px;
+  padding-left: 0;
+}
+
+ul.videos_manage .video_info h3
+{
+  margin-bottom: 0px;
+}
+ul.videos_manage .video_options
+{
+  float: right;
+  width: 120px;
+  padding-left: 15px;
+}
+
+html[dir="rtl"] ul.videos_manage .video_options
+{
+  float: left;
+  padding-right: 15px;
+  padding-left: 0;
+}
+
+ul.videos_manage .video_options a
+{
+  clear: both;
+  margin: 3px 0px 0px 0px;
+  font-size: .8em;
+  padding-top: 1px;
+  height: 16px;
+}
+ul.videos_manage .video_title
+{
+  margin-bottom: 1px;
+  margin-left: -1px;
+}
+ul.videos_manage .video_author
+{
+  font-size: .8em;
+  display: block;
+}
+ul.videos_manage .video_stats
+{
+  margin-top: 2px;
+}
+ul.videos_manage .video_stats > span
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+
+
+
+
+/*
+VIEW VIDEO
+Styles the view pagevideo page, where a single
+pagevideo is shown.
+*/
+div.pagevideo_view h3
+{
+  border-top-width: 1px;
+  padding-top: 7px;
+  margin-bottom: 2px;
+}
+div.pagevideo_view .pagevideo_embed
+{
+  margin: 10px 0px 3px 0px;
+}
+div.pagevideo_view .pagevideo_date
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+div.pagevideo_view .rating
+{
+  margin-top: 7px;
+}
+div.pagevideo_view .comments
+{
+  margin-top: 10px;
+  border-top-width: 1px;
+  padding-top: 10px;
+  float: left;
+}
+
+html[dir="rtl"] div.pagevideo_view .comments
+{
+  float: right;
+}
+
+div.pagevideo_view .comments_options span
+{
+  font-weight: bold;
+  font-size: 1em;
+  color: $theme_font_color_light;
+  margin-bottom: 6px;
+}
+
+/*
+Message VIDEO
+Styles for pagevideos attached to the message page.
+*/
+div.message_attachment .pagevideo_info > a
+{
+  font-size: .8em;
+  font-weight: bold;
+}
+div.message_attachment .pagevideo_info
+{
+  overflow: hidden;
+  padding-left: 10px;
+}
+div.message_attachment .pagevideo_info h3
+{
+  margin-bottom: 0px;
+}
+div.message_attachment .pagevideo_desc
+{
+  margin-top: 2px;
+  font-size: .8em;
+}
+
+/* ACTION TYPE ICONS */
+.activity_icon_comment_pagevideo
+{
+  background-image: url(~/application/modules/Core/externals/images/types/post.png);
+}
+
+/* ITEM TYPE ICONS */
+.item_icon_pagevideo
+{
+  background-image: url(~/application/modules/Pagevideo/externals/images/types/video.png);
+}
+
+/* NOTIFICATION TYPE ICONS */
+.notification_type_pagevideo_processed
+{
+  background-image: url(~/application/modules/Pagevideo/externals/images/new.png);
+}
+
+/*
+ACTIVITY FEED COMPOSER VIDEO
+Used for the attachment composer above the main feed.
+*/
+#compose-pagevideo-activator,
+#compose-pagevideo-menu span
+{
+  background-image: url(~/application/modules/Pagevideo/externals/images/new.png);
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-position: 4px center;
+}
+#compose-pagevideo-form-input
+{
+  width: 300px;
+  margin-top: 5px;
+}
+#compose-pagevideo-form-submit
+{
+  margin-top: 5px;
+  clear: both;
+}
+
+/* ICONS */
+.icon_pagevideo_new
+{
+  background-image: url(~/application/modules/Pagevideo/externals/images/new.png);
+}
+.icon_pagevideo_edit
+{
+  background-image: url(~/application/modules/Pagevideo/externals/images/edit.png);
+}
+.icon_pagevideo_delete
+{
+  background-image: url(~/application/modules/Pagevideo/externals/images/delete.png);
+}
+
+.pagevideo_loader{
+  float: right;
+  margin-top: 8px;
+  margin-right: 8px;
+}
+
+html[dir="rtl"] .pagevideo_loader{
+  float: left;
+  margin-left: 8px;
+}
+
+.youtube_video{
+  width: 560px;
+  height: 340px;
+}
+
+.vimeo_video{
+  width: 640px;
+  height: 360px;
+}
+
+.pagevideo_view .pagevideo_desc{
+  padding: 10px;
+  background-color: $theme_foreground_background_color;
+  +rounded(8px);
+}
+
+html[dir="rtl"] .pagevideo_view .pagevideo_desc{
+  margin-right: 10px;
+  margin-left: 0;
+  float: right;
+}
+
+
+.pagevideo_view div.backlink{
+  float: right;
+}
+
+.pagevideos{
+  float: left;
+}
+
+.pagevideo_comments_link{
+  float: right;
+  font-weight: bold;
+  margin-top: 8px;
+  padding: 5px;
+  font-size: 11px;
+}
+
+html[dir="rtl"] .pagevideo_comments_link{
+  float: left;
+}
+
+.pagevideo_more{
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.pagevideo_details{
+  margin-top: 8px;
+  padding: 8px;
+  float: left;
+  width: 70%;
+  +rounded(8px);
+  +foreground;
+}
+
+html[dir="rtl"] .pagevideo_details{
+  float: right;
+}
+
+#page_video_main_container .videos_manage .video_thumb_wrapper {
+  width: 152px;
+}
+
+.layout_page_hireexperts .feed_item_attachments div.video_thumb_wrapper {
+  width: 152px !important;
+}
+
+#page_video_options > h3{
+	float: left;
+}
+
+.pagevideo_view_header{
+	clear: both;
+}
+
+.pagevideo_view_header > span{
+	float: left;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.pagevideo_loader_2{
+	float: right;
+	margin-right: 8px;
+}
+
+html[dir="rtl"] .pagevideo_loader_2{
+  float: left;
+  margin-left: 8px;
+}
+
+#page_video_options{
+	min-height: 16px;
+  height: auto !important;
+  height: 16px;
+}
+
+/* FANCY */
+.swiff-uploader-box a
+{
+  display: none !important;
+}
+#video-demo-status.hide
+{
+  display: none;
+}
+#video-demo-status
+{
+  width: 420px;
+}
+#video-demo-status > div
+{
+  margin: 15px 0px 0px 0px;
+}
+#video-demo-status > div:first-child
+{
+  margin: 0px 0px 15px 0px;
+}
+#video-demo-status .current-text,
+#video-demo-status .demo-status-overall
+{
+  display: none;
+}
+#video-demo-status .overall-title,
+#video-demo-status .current-title
+{
+  font-size: .7em;
+  text-transform: uppercase;
+}
+#video-demo-status .progress
+{
+  background-position: +50% 0;
+  margin-right: 0.5em;
+  vertical-align: middle;
+  background-image: url(~/externals/fancyupload/assets/progress-bar/progress.gif);
+}
+#video-demo-status .progress-text
+{
+  font-size: 0.9em;
+}
+#video-demo-list
+{
+  display: none;
+  list-style: none;
+  width: 450px;
+  margin-top: 15px;
+  overflow-y: auto;
+  border: 1px solid $theme_foreground_border_color;
+}
+#video-demo-list li.validation-error
+{
+  padding: 8px;
+  font-size: .8em;
+  font-weight: normal;
+  background-color: $theme_body_background_color;
+  background-repeat: no-repeat;
+  background-position: 6px 7px;
+  padding-left: 28px;
+  background-image: url(~/externals/fancyupload/assets/error.png);
+  border-bottom: 1px solid $theme_foreground_border_color;
+  font-weight: bold;
+  cursor: pointer;
+}
+#video-demo-list li.file
+{
+  padding: 8px;
+  font-size: .8em;
+  font-weight: normal;
+  background-color: $theme_body_background_color;
+  background-repeat: no-repeat;
+  background-position: 6px 7px;
+  padding-left: 28px;
+  background-image: url(~/application/modules/Pagevideo/externals/images/types/video_gray.png);
+  background-repeat: no-repeat;
+}
+#video-demo-list li.file + li.file
+{
+  border-top: 1px solid $theme_foreground_border_color;
+}
+#video-demo-list li.file span
+{
+  display: none;
+}
+#video-demo-list li.file-uploading
+{
+  background-image: url(~/externals/fancyupload/assets/loading.gif);
+  background-repeat: no-repeat;
+}
+#video-demo-list li.file-success
+{
+  background-image: url(~/application/modules/Pagevideo/externals/images/types/video.png);
+  background-repeat: no-repeat;
+}
+#video-demo-list li.file .file-name
+{
+  display: block;
+  clear: left;
+  font-weight: bold;
+}
+#video-demo-list li.file .file-size
+{
+  display: none;
+}
+#video-demo-list li.file .file-info
+{
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+#video-demo-list li.file .file-remove
+{
+  clear: right;
+  float: right;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.notifications_menu .notification_type_post_pagevideo, .notifications .notification_type_post_pagevideo{
+  background-image:url('~/application/modules/Pagevideo/externals/images/new.png');
+}
+
+.layout_pagevideo_browse_search,
+.layout_pagevideo_popular_videos,
+.layout_pagevideo_recent_videos
+{
+  margin-bottom: 15px;
+}
+
+
+.pagevideo_browse_item
+{
+  position: relative;
+  margin: 0px 10px 10px 10px;
+  display: inline-block;
+}
+
+.pagevideo_browse_item .pagevideo_image
+{
++rounded(4px);
+    float: left;
+    margin-bottom: 2px;
+    background: #666;
+}
+
+html[dir="rtl"] .pagevideo_browse_item .pagevideo_image
+{
+  float: right;
+}
+
+.pagevideo_image a
+{
+  display: inline-block;
+}
+
+.pagevideo_browse_item .pagevideo_image img
+{
+    display: block;
+    margin: 5px;
+    border: 1px solid #888;
+}
+
+.pagevideo_browse_item .pagevideo_browse_info
+{
+    padding: 3px;
+    margin-left: 5px;
+    width: 180px;
+}
+
+.pagevideo_browse_item .pagevideo_browse_info
+{
+    float: left;
+}
+
+html[dir="rtl"] .pagevideo_browse_item .pagevideo_browse_info
+{
+  float: right;
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+.pagevideo_browse_info .options{
+  right: 0px;
+  top: 0px;
+  margin: 10px;
+}
+
+.pagevideo_browse_info .options a{
+  width: 16px;
+  height: 16px;
+  margin-left: 3px;
+  display: block;
+  float: left;
+}
+
+
+html[dir="ltr"] .pagevideo_browse_info .options a{
+  margin-right: 3px;
+  margin-left: 0;
+  float: right;
+}
+
+.pagevideo_browse_info .options a.edit{
+  background: transparent url(~/application/modules/Pagevideo/externals/images/edit.png) no-repeat scroll center;
+}
+
+.pagevideo_browse_info .options a.edit:hover{
+  background: transparent url(~/application/modules/Pagevideo/externals/images/edit_hover.png) no-repeat scroll center;
+}
+
+.pagevideo_browse_info .options a.delete{
+  background: transparent url(~/application/modules/Pagevideo/externals/images/delete.png) no-repeat scroll center;
+}
+
+.pagevideo_browse_info .options a.delete:hover{
+  background: transparent url(~/application/modules/Pagevideo/externals/images/delete_hover.png) no-repeat scroll center;
+}
+
+#page_video_form_errors{
+  background-color: #FAF7E9;
+  background-image: url("~/application/modules/Core/externals/images/error.png");
+  background-position: 8px 5px;
+  background-repeat: no-repeat;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px 3px 3px 3px;
+  clear: left;
+  float: left;
+  margin: 7px 5px;
+  overflow: hidden;
+  padding: 5px 15px 5px 32px;
+};
+
+html[dir="rtl"] #page_video_form_errors
+{
+  float: right;
+  clear: right;
+  background-position: right center;
+  padding: 5px 32px 5px 15px;
+}
+
+.pagevideo_image a img.thumb_norm{
+  border: none;
+  margin: 5px;
+}
+
+
+
+ul.generic_list_widget a.page_album_widget_photo > img
+{
+  width: 120px;
+  height: 97px;
+}
+
+img.thumb_norm
+{
+  width: 120px;
+  height: 90px;
+}

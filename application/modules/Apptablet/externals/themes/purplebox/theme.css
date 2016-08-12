@@ -1,0 +1,46 @@
+.tablet .ui-page[board="mini"] .component-dashboard {
+  margin-top: -10px;
+}
+
+.tablet .ui-page[board="in"] {
+  border-left: 1px solid #232323;
+  /*box-shadow: 0 0 10px rgba(0,0,0,.8);*/
+}
+
+.tablet .ui-page .board-in-cover {
+  background-color: #000000;
+}
+.tablet .ui-page[board="in"] .board-in-cover {
+  opacity: 0.3;
+}
+
+.tablet .ui-page[board="mini"] {
+  /*box-shadow: 0 0 10px rgba(0, 0, 0, .8);*/
+  border-right: 1px solid #232323;
+}
+
+.tablet .ui-page[board="mini"] .ui-content .component-dashboard {
+  margin: 0 -10px;
+}
+
+.tablet .ui-page[board="mini"] .ui-content {
+  padding: 0 10px;
+}
+
+.ui-header-fixed, .ui-footer-fixed {
+  padding-left: 65px;
+  box-sizing: border-box;
+}
+
+.tablet .component-feed .feedItem .body {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.tablet .composeLink, .tablet .composeLink:hover, .tablet .composeLink:link, .tablet .composeLink:visited {
+  color: #999999 !important;
+}
+
+.tablet .component-feed .feedItem .thumbnail img {
+  border-radius: 0;
+}

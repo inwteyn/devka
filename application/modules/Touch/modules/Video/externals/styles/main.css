@@ -1,0 +1,174 @@
+/* $Id: main.css 2011-04-26 11:18:13 mirlan $ */
+div.video_view h3
+{
+  border-top-width: 1px;
+  padding-top: 7px;
+  margin-bottom: 2px;
+}
+div.video_view .video_embed
+{
+  margin: 10px 0px 3px 0px;
+  text-align: center;
+}
+div.video_view .video_date
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+.video_object object embed,
+.video_embed object embed {
+  width: 100%;
+}
+div.video_view .rating
+{
+  margin-top: 7px;
+}
+.layout_page_video_index_view .layout_core_comments,
+div.video_view .comments
+{
+  margin-top: 10px;
+  border-top-width: 1px;
+  padding-top: 10px;
+}
+.layout_page_video_index_view .layout_core_comments .comments_options span,
+div.video_view .comments_options span
+{
+  font-weight: bold;
+  font-size: 1em;
+  color: $theme_font_color_light;
+  margin-bottom: 6px;
+}
+.video_view_container .video_options a
+{
+  font-weight: bold;
+}
+
+
+
+ul.videos_browse
+{
+  overflow: hidden;
+}
+ul.videos_browse > li
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 20px;
+  height: 180px;
+  max-width: 140px;
+}
+html[dir="rtl"] ul.videos_browse > li
+{
+  float: right;
+  margin-right: 0px;
+  margin-left: 20px;
+}
+.video_length
+{
+  +opacity(.7);
+  +rounded(4px, true, true, false, true);
+  display: inline-block;
+  position: absolute;
+  margin: 6px;
+  padding: 3px 5px 3px 5px;
+  background: #000;
+  color: #fff;
+  font-size: .7em;
+}
+.video_thumb_wrapper
+{
+  +rounded(4px);
+  float: left;
+  margin-bottom: 2px;
+  background: #666;
+}
+html[dir="rtl"] .video_thumb_wrapper
+{
+  float: right;
+}
+.video_thumb_wrapper:hover
+{
+  background: #777;
+}
+.video_thumb_wrapper a
+{
+  display: block;
+}
+.video_thumb_wrapper img,
+.video_thumb_wrapper span.item_nophoto
+{
+  display: block;
+  padding: 5px;
+  border: 1px solid #888;
+  width:100%;
+  margin-left: -5px;
+}
+.video_author
+{
+  font-size: .8em;
+  display: block;
+}
+.video_stats > span
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+
+
+
+
+.feed_item_attachments .video_thumb_wrapper
+{
+  margin-right: 7px;
+  overflow: hidden;
+}
+.feed_item_attachments .video_info
+{
+  overflow: hidden;
+  clear: both;
+}
+.feed_item_attachments .video_info > a
+{
+  font-size: .8em;
+  font-weight: bold;
+}
+.video_title
+{
+  font-size: .8em;
+  font-weight: bold;
+  display: inline-block;
+  clear: both;
+}
+.feed_item_attachments .video_desc
+{
+  margin-top: 2px;
+  font-size: .8em;
+}
+
+/* VIDEO IFRAMES */
+.vimeo_iframe_big
+{
+}
+.vimeo_iframe_small
+{
+}
+.youtube_iframe_big
+{
+}
+.youtube_iframe_small
+{
+}
+.video_thumb
+{
+
+}
+.video_object
+{
+  display: none;
+}
+
+.video_not_supported {
+  color:#F00;
+  font-weight:bold;
+  margin:10px 0;
+}

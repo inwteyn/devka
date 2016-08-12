@@ -1,0 +1,64 @@
+/* $Id: main.css 2011-04-26 11:18:13 mirlan $ */
+
+.layout_touch_group_profile_info
+{
+  overflow: hidden;
+}
+.layout_touch_group_profile_info > ul
+{
+  padding: 10px;
+}
+.layout_touch_group_profile_info > ul > li
+{
+  overflow: hidden;
+}
+.layout_touch_group_profile_info > ul > li + li
+{
+  margin-top: 5px;
+}
+.layout_touch_group_profile_info .group_stats_title > span
+{
+  font-weight: bold;
+  display: block;
+}
+.layout_touch_group_profile_info .group_stats_title > a
+{
+  font-weight: normal;
+}
+.layout_touch_group_profile_info .group_stats_staff
+{
+  margin-top: 8px;
+}
+.layout_touch_group_profile_info .group_stats_info
+{
+  margin-top: 8px;
+}
+.layout_touch_group_profile_info .group_stats_info ul
+{
+  color: $theme_font_color_light;
+}
+
+
+
+/* NOTIFICATION TYPE ICONS */
+.notification_type_group_discussion_response,
+.notification_type_group_discussion_reply
+{
+  background-image: url(~/application/modules/Touch/externals/images/post.png);
+}
+.notification_type_group_invite
+{
+  background-image: url(~/application/modules/Touch/modules/Group/externals/images/member/invite.png);
+}
+.notification_type_group_approve
+{
+  background-image: url(~/application/modules/Touch/modules/Group/externals/images/types/group_request.png);
+}
+.notification_type_group_accepted
+{
+  background-image: url(~/application/modules/Touch/modules/Group/externals/images/types/group.png);
+}
+.notification_type_group_promote
+{
+  background-image: url(~/application/modules/Touch/externals/images/promote.png);
+}

@@ -1,0 +1,427 @@
+#global_page_heemoticon-admin-index-collections table.admin_table {
+    width: 100%;
+}
+
+#global_page_heemoticon-admin-index-collections .settings form,
+#global_page_heemoticon-admin-index-level .settings form,
+#global_page_heemoticon-admin-index-addcollection .settings form,
+#global_page_heemoticon-admin-index-editcollection .settings form {
+    float: none;
+    width: auto;
+    background-color: inherit;
+    padding: 0;
+}
+
+#global_page_heemoticon-admin-index-import-collection .settings form {
+    float: none;
+    width: auto;
+}
+
+#global_page_heemoticon-admin-index-import-collection #Import-wrapper {
+    padding: 0;
+}
+
+#global_page_heemoticon-admin-index-collections .global_form > div,
+#global_page_heemoticon-admin-index-level .global_form > div,
+#global_page_heemoticon-admin-index-addcollection .global_form > div,
+#global_page_heemoticon-admin-index-editcollection .global_form > div,
+#global_page_heemoticon-admin-index-import-collection .global_form > div{
+    float: none;
+    border: medium none;
+    padding: 0;
+}
+
+#global_page_heemoticon-admin-index-collections .settings .form-wrapper,x
+#global_page_heemoticon-admin-index-level .settings .form-wrapper,
+#global_page_heemoticon-admin-index-addcollection .settings .form-wrapper,
+#global_page_heemoticon-admin-index-editcollection .settings .form-wrapper {
+    padding: 5px;
+}
+
+#global_page_heemoticon-admin-index-addcollection #description-wrapper #description-element,
+#global_page_heemoticon-admin-index-editcollection #description-wrapper #description-element {
+    width: 70%;
+}
+
+#global_page_heemoticon-admin-index-collections .tip {
+    position: inherit;
+}
+
+.collections-browse-table .collection-name {
+    width: 200px;
+    max-width: 200px;
+    word-wrap: break-word;
+}
+
+.collections-browse-table .collection-desc {
+    width: 350px;
+    max-width: 350px;
+    word-wrap: break-word;
+}
+
+.collections-browse-table .collection-stickers-count {
+    width: 120px;
+    max-width: 120px;
+    text-align: center;
+}
+
+.uploaded-sticker-block {
+    float: left;
+    position: relative;
+    margin: 0 10px 10px 0;
+}
+
+.stickers-preview-img {
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 140px;
+}
+
+.stickers-preview-img-delete {
+    cursor: pointer;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+}
+
+.stickers-preview-img-delete:hover {
+    color: red;
+}
+
+.stickers-preview-img-cover {
+    cursor: pointer;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+}
+
+.stickers-preview-img-cover:hover, .stickers-preview-img-cover.collection_cover_select {
+    color: deepskyblue;
+}
+
+#add-stickers-button {
+    background-color: #7eb6d5;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 3px;
+    text-align: center;
+    width: 90px;
+}
+
+a.edit-collection-btn:hover,
+a.export-collection-btn:hover,
+a.delete-collection-btn:hover {
+    text-decoration: none;
+}
+
+a.edit-collection-btn > i {
+    color: #00b9f2;
+}
+
+a.export-collection-btn > i {
+    color: #5ba1cd;
+}
+
+a.delete-collection-btn > i {
+    color: #db5c5c;
+}
+
+.admin-collection-icon {
+    width: 32px;
+}
+
+.admin-collection-icon > img {
+    width: 32px;
+    height: 32px;
+}
+
+/* FancyUpload  */
+.swiff-uploader-box a {
+    display: none !important;
+}
+
+#stickers-demo-status.hide {
+    display: none;
+}
+
+#multidelete_form {
+    overflow: auto;
+}
+
+.stickers_form_container #file-label {
+    width: 0;
+}
+
+.stickers_form_container #demo-status {
+    margin-left: 60px;
+}
+
+.stickers_form_container #demo-list {
+    margin-left: 60px;
+}
+
+#stickers-demo-status {
+    width: 420px;
+    margin: 10px auto;
+}
+
+#stickers-demo-status > div {
+    margin: 15px 0 0 0;
+}
+
+#stickers-demo-status > div:first-child {
+    margin: 0 0 15px 0;
+}
+
+#stickers-demo-status .current-text,
+#stickers-demo-status .demo-status-overall {
+    display: none;
+}
+
+#stickers-demo-status .overall-title,
+#stickers-demo-status .current-title {
+    font-size: .7em;
+    text-transform: uppercase;
+}
+
+#stickers-demo-status .progress {
+    background-position: 50% 0;
+    margin-right: 0.5em;
+    vertical-align: middle;
+    background-image: url(~/externals/fancyupload/assets/progress-bar/progress.gif);
+}
+
+#stickers-demo-status .progress-text {
+    font-size: 0.9em;
+}
+
+#stickers-demo-list {
+    display: none;
+    list-style: none;
+    width: 450px;
+    margin: 10px auto;
+    overflow-y: auto;
+    background-color: $ theme_body_background_color;
+    border: 1px solid $ theme_foreground_border_color;
++ rounded(3 px);
+}
+
+#stickers-demo-list li.validation-error {
+    padding: 8px;
+    font-size: .8em;
+    font-weight: normal;
+    background-color: $ theme_body_background_color;
+    background-repeat: no-repeat;
+    background-position: 6px 7px;
+    padding-left: 28px;
+    background-image: url(~/externals/fancyupload/assets/error.png);
+    border-bottom: 1px solid $ theme_foreground_border_color;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#stickers-demo-list li.file {
+    padding: 8px;
+    font-size: .8em;
+    font-weight: normal;
+    background-color: $ theme_body_background_color;
+    background-repeat: no-repeat;
+    background-position: 6px 7px;
+    padding-left: 28px;
+    background-repeat: no-repeat;
+}
+
+#stickers-demo-list li.file + li.file {
+    border-top: 1px solid $ theme_foreground_border_color;
+}
+
+#stickers-demo-list li.file span {
+    display: none;
+}
+
+#stickers-demo-list li.file-uploading {
+    background-image: url(~/externals/fancyupload/assets/loading.gif);
+    background-repeat: no-repeat;
+}
+
+#stickers-demo-list li.file-success {
+    background-repeat: no-repeat;
+}
+
+#stickers-demo-list li.file .file-name {
+    display: block;
+    clear: left;
+    font-weight: bold;
+}
+
+#stickers-demo-list li.file .file-size {
+    display: none;
+}
+
+#stickers-demo-list li.file .file-info {
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+
+#stickers-demo-list li.file .file-remove {
+    clear: right;
+    float: right;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.swiff-uploader-box a {
+    display: none !important;
+}
+
+#stickers-demo-status.hide {
+    display: none;
+}
+
+#stickers-demo-status {
+    width: 420px;
+}
+
+#stickers-demo-status > div {
+    margin: 15px 0 0 0;
+    text-align: center;
+    width: 100%;
+}
+
+#stickers-demo-status > div:first-child {
+    margin: 0 0 15px 0;
+}
+
+#stickers-demo-status .current-text,
+#stickers-demo-status .demo-status-overall {
+    display: none;
+}
+
+#stickers-demo-status .overall-title,
+#stickers-demo-status .current-title {
+    font-size: .7em;
+    text-transform: uppercase;
+}
+
+#stickers-demo-status .progress {
+    background-position: 50% 0;
+    margin-right: 0.5em;
+    vertical-align: middle;
+    background-image: url("~/externals/fancyupload/assets/progress-bar/progress.gif");
+}
+
+#stickers-demo-status .progress-text {
+    font-size: 0.9em;
+}
+
+#stickers-demo-list {
+    display: none;
+    list-style: none;
+    width: 450px;
+    margin-top: 15px;
+    overflow-y: auto;
+    background-color: $ theme_body_background_color;
+    border: 1px solid $ theme_foreground_border_color;
++ rounded(3 px);
+}
+
+#stickers-demo-list li.validation-error {
+    padding: 8px;
+    font-size: .8em;
+    font-weight: normal;
+    background-color: $ theme_body_background_color;
+    background-repeat: no-repeat;
+    background-position: 6px 7px;
+    padding-left: 28px;
+    background-image: url(~/externals/fancyupload/assets/error.png);
+    border-bottom: 1px solid $ theme_foreground_border_color;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#stickers-demo-list li.file {
+    padding: 8px;
+    font-size: .8em;
+    font-weight: normal;
+    background-color: $ theme_body_background_color;
+    background-repeat: no-repeat;
+    background-position: 6px 7px;
+    padding-left: 28px;
+    background-image: url(~/externals/fancyupload/assets/waiting.png);
+    background-repeat: no-repeat;
+}
+
+#stickers-demo-list li.file + li.file {
+    border-top: 1px solid $ theme_foreground_border_color;
+}
+
+#stickers-demo-list li.file span {
+    display: none;
+}
+
+#stickers-demo-list li.file-uploading {
+    background-image: url(~/externals/fancyupload/assets/loading.gif);
+    background-repeat: no-repeat;
+}
+
+#stickers-demo-list li.file-success {
+    background-image: url(~/externals/fancyupload/assets/finished.png);
+    background-repeat: no-repeat;
+}
+
+#stickers-demo-list li.file .file-name {
+    display: block;
+    clear: left;
+    font-weight: bold;
+}
+
+#stickers-demo-list li.file .file-size {
+    display: none;
+}
+
+#stickers-demo-list li.file .file-info {
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+
+#stickers-demo-list li.file .file-info img {
+    margin: 5px 0;
+}
+
+#stickers-demo-list li.file .file-remove {
+    clear: right;
+    float: right;
+    font-weight: bold;
+    overflow: hidden;
+}
+.collection-options {
+    border-collapse: separate;
+    border-spacing: 7px 0;
+}
+
+.collection-options > a {
+    display: table-cell;
+}
+
+.export_collection_contaner {
+  float: right;
+}
+.export_collection_contaner .export-collection-btn{
+  color: #666;
+}
+table.admin_table .collection-type-free, table.admin_table .collection-type-paid {
+  font-weight: bold;
+}
+table.admin_table .collection-type-free {
+  color: #008000;
+}
+table.admin_table .collection-type-paid {
+  color: red;
+}

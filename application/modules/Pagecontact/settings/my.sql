@@ -1,0 +1,1 @@
+INSERT IGNORE INTO `engine4_core_modules` (`name`, `title`, `description`, `version`, `enabled`, `type`) VALUES  ('pagecontact', 'Contacts', '', '4.1.3p2', 1, 'extra') ;

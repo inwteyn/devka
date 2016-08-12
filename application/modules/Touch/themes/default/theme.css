@@ -1,0 +1,570 @@
+/* $Id: theme.css 2011-04-26 11:18:13 mirlan $ */
+@include "constants.css";
+@include "~/application/modules/Touch/themes/modules.css";
+@scan "application/modules" "externals/styles/touch.css" "Touch";
+/*
+GLOBAL FORM ELEMENTS
+Used for most forms throughout the site.
+*/
+button, #iPhone-file-button, .button
+{
+	+rounded(3px);
+  padding: 6px;
+	font-size: 1.1em;
+  border: 1px solid $theme_button_border_color;
+  background-image: url(~/application/modules/Touch/themes/default/images/buttonbg.png);;
+  background-position: 0px 0px;
+	text-shadow: -0.7px -0.7px $theme_shadow_dark_color;
+}
+.tip > span
+{
+  padding: 6px 6px 6px 27px;
+  background-color: #faf6e4;
+  border: 1px solid #e4dfc6;
+}
+.touch_box {
+  margin:5px 0;
+}
+.loader {
+	padding-left: 45px;
+	background-image: url(~/application/modules/Touch/externals/images/ajax_loading.gif);
+	background-repeat:no-repeat;
+	display: inline-block;
+	margin: 5px;
+  line-height: 40px;
+}
+
+.smooth-close{
+	font-size: 0.8em;
+}
+.layout_middle
+{
+	overflow: hidden;
+  vertical-align: top;
+}
+.content_global
+{
+	padding: 3px 0px;
+}
+
+#global_content_loading
+{
+  padding-bottom:15%;
+}
+/*Item List*/
+ul.items{
+  border: 1px solid $theme_border_color;
+  overflow: hidden;
+}
+ul.items > li > .item_body {
+  padding-right: 10px;
+  overflow: hidden;
+}
+ul.items > li > .item_body > .item_stats,
+{
+	font-size: 0.9em;
+	color:$theme_font_color_light;
+}
+
+ul.items > li > .item_body > .item_stats,
+{
+	margin-top: 3px;
+}
+/*Navigation Bar*/
+.touch-navigation #navigation-selector{
+	text-shadow: $theme_shadow_dark_color -0.7px -0.7px;
+	cursor:pointer;
+	background-color:$theme_navigation_background_color;
+	background-image: url(~/application/modules/Touch/themes/default/images/nav_bg.png);
+	background-repeat: repeat-x;
+	padding: 3px .5em;
+    color: $theme_navigation_font_color;
+    border: $theme_navigation_border;
+    font-weight: bold;
+  line-height: 20px;
+  font-size: 17px;
+}
+.touch-navigation .navigation-header{
+	padding: .3em 0;
+  box-shadow: 0 1px 4px rgba(58, 83, 99, 0.6);
+  -webkit-box-shadow: 0 1px 4px rgba(58, 83, 99, 0.6);
+}
+.touch-navigation .navigation-body > div > #navigation-items{
+  box-shadow: 0 1px 4px rgba(58, 83, 99, 0.6);
+  -webkit-box-shadow: 0 1px 4px rgba(58, 83, 99, 0.6);
+  margin: 5px;
+  margin-top: 0;
+}
+
+.touch-navigation #navigation-items{
+	background-color: $theme_body_background_color;
+	border-width: 0 0 2px;
+}
+.touch-navigation #navigation-items .item{
+	margin: 0px 0px 3px;
+}
+
+
+.touch-navigation-paginator{
+	width: 56px;
+}
+#multi-upload li.file
+{
+  background: #fff;
+}
+/* Header */
+.layout_page_header
+{
+  background-color: $theme_topbar_background_color;
+  padding: 0px;
+  border-bottom: $theme_topbar_border;
+  background-position: top center;
+  background: -moz-linear-gradient(center top , #E9F4FA, #CFE5F0) repeat scroll 0 0 #CFE5F0;
+}
+.layout_page_footer
+{
+	overflow: hidden;
+  box-shadow: 0 -1px 4px rgba(58, 83, 99, 0.3);
+  -webkit-box-shadow: 0 1px 4px rgba(58, 83, 99, 0.6); 
+  border-top: 1px solid rgba(58, 83, 99, 0.3);
+  bottom: 0;
+  width: 100%;
+}
+#dashboard{
+}
+.layout_page_footer .layout_main
+{
+  background-color: $theme_widget_bg_color;
+  +foreground;
+  margin: 10px auto 0px auto;
+  margin-top: 0px;
+  padding: 5px;
+  background: -moz-linear-gradient(center top , #E9F4FA, #CFE5F0) repeat scroll 0 0 #CFE5F0;
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#E9F4FA),color-stop(1,#CFE5F0));
+  border-top: 1px solid white;
+}
+.notifications{
+	background-image: url(~/application/modules/Touch/themes/default/images/icons/updates.png);
+	color: $theme_notifications_active_color !important;
+}
+
+.notifications_active{
+	background-image: url(~/application/modules/Touch/themes/default/images/icons/updates_active.png);
+}
+.layout_touch_rss h3,
+.layout_touch_weather h3,
+.layout_touch_clock h3,
+.layout_touch_list_announcements h3,
+.layout_touch_autorecommendations h3,
+.layout_touch_user_list_online h3,
+.layout_touch_user_list_popular h3,
+.layout_touch_user_list_signups h3
+{
+	text-shadow: #fff 1px 1px 0.5px;
+}
+.layout_touch_menu_main
+{
+  width: $theme_topbar_width;
+  margin: 0px auto 0px auto;
+  text-align: center;
+  background-color: $theme_topbar_menu_background_color;
+  border: $theme_topbar_menu_border;
+  border-left: none;
+  border-right: none;
+  box-shadow: 0 1px 4px rgba(58, 83, 99, 0.5);
+  -webkit-box-shadow: 0 1px 4px rgba(58, 83, 99, 0.5);
+}
+.layout_touch_menu_main > ul
+{
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+.layout_touch_menu_main > ul > li
+{
+	background-image: url(~/application/modules/Touch/themes/default/images/topbar_menu_bg.png);
+}
+
+.layout_touch_menu_main > ul > li > a
+{
+	background-color: $theme_topbar_menu_link_background_color;
+	padding: .3em;
+}
+
+.layout_touch_menu_main ul a:link,
+.layout_touch_menu_main ul a:visited
+{
+	border-right: $theme_topbar_menu_border;
+}
+
+.layout_touch_menu_main li.selected
+{
+  background-color: $theme_topbar_menu_background_color_selected;
+	background-image: url(~/application/modules/Touch/themes/default/images/topbar_menu_selected_bg.png);
+  background-position: bottom;
+}
+.layout_touch_dashboard h3{
+	color: #3A94C4;
+}
+.core_dashboard_home > a{
+	background-image: url(~/application/modules/Touch/themes/default/images/dashboard/home.png);
+}
+
+.core_dashboard_profile > a{
+	background-image: url(~/application/modules/Touch/themes/default/images/dashboard/profile.png);
+}
+
+.core_dashboard_messages > a{
+	background-image: url(~/application/modules/Touch/themes/default/images/dashboard/messages.png);
+}
+
+.core_dashboard_updates > a{
+	background-image: url(~/application/modules/Touch/themes/default/images/dashboard/updates.png);
+}
+.core_dashboard_article > a{
+	background-image: url(~/application/modules/Touch/themes/default/images/dashboard/article.png);
+}
+.core_dashboard_members > a{
+	background-image: url(~/application/modules/Touch/themes/default/images/dashboard/members.png);
+}
+
+.core_dashboard_album > a{
+	background-image: url(~/application/modules/Touch/themes/default/images/dashboard/album.png);
+}
+
+.core_dashboard_blog > a{
+	background-image: url(~/application/modules/Touch/themes/default/images/dashboard/blog.png);
+}
+
+.core_dashbaord_classified > a{
+	background-image: url(~/application/modules/Touch/themes/default/images/dashboard/classified.png);
+}
+
+.core_dashboard_event a{
+	background-image: url(~/application/modules/Touch/themes/default/images/dashboard/event.png);
+}
+.core_dashboard_group a{
+	background-image: url(~/application/modules/Touch/themes/default/images/dashboard/group.png);
+}
+.core_dashboard_video a{
+	background-image: url(~/application/modules/Touch/themes/default/images/dashboard/video.png);
+}
+.core_dashboard_search a{
+	background-image: url(~/application/modules/Touch/themes/default/images/dashboard/search.png);
+}
+.core_dashboard_page a{
+	background-image: url(~/application/modules/Touch/themes/default/images/dashboard/pages.png);
+}
+.core_dashboard_music a{
+	background-image: url(~/application/modules/Touch/themes/default/images/dashboard/music.png);
+}
+.core_dashboard_forum a{
+	background-image: url(~/application/modules/Touch/themes/default/images/dashboard/forum.png);
+}
+.core_mini_settings a{
+	background-image: url(~/application/modules/Touch/themes/default/images/dashboard/settings.png);
+}
+
+ul.form-errors > li,
+ul.form-notices > li
+{
+  +rounded;
+  padding: 5px 15px 5px 32px;
+  border: 1px solid #ccc;
+}
+
+html[dir="rtl"] ul.form-errors > li,
+html[dir="rtl"] ul.form-notices > li
+{
+  padding: 5px 32px 5px 15px;
+  background-position: 98% 5px;
+  float: right;
+  clear: right;
+}
+ul.form-errors > li > b,
+ul.form-notices > li > b
+{
+  text-transform: uppercase;
+  font-size: .8em;
+}
+ul.form-errors > li > ul > li,
+ul.form-notices > li > ul > li
+{
+  font-size: .9em;
+}
+ul.form-errors > li {
+  background-color: #faf7e9;
+}
+ul.form-notices > li {
+  background-color: #e9faeb;
+}
+.global_form > div > div
+{
+  border: 2px solid $theme_form_border_color;
+  padding: 10px;
+}
+.global_form input[type=text],
+.global_form input[type=password]
+{
+  font-size: 1.1em;
+}
+.global_form_popup input[type=text],
+.global_form_popup input[type=password]
+{
+  font-size: 1.1em;
+}
+.global_form_box
+{
+	+rounded(3px);
+  +foreground;
+  padding: 3px;
+  width: auto;
+}
+
+
+.global_form_box > div > div{
+	padding: 10px;
+}
+.global_form_box input[type=text],
+.global_form_box input[type=password]
+{
+  font-size: 1.1em;
+}
+.search_result .search_title
+{
+  font-size: 1.1em;
+}
+.search_result .highlighted-text
+{
+  font-weight: bold;
+}
+.comments > ul > li
+{
+  +foreground;
+  background: $theme_widget_bg_color;
+  background-image: none;
+  padding: 2px;
+  border-top: 1px solid $theme_foreground_border_color;
+  overflow: hidden;
+}
+.comments .comments_likes,
+.comments .comments_viewall
+{
+  padding-left: 18px;
+  line-height: 16px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+.comments_likes{
+  background-image: url("~/application/modules/Touch/modules/Activity/externals/images/activity/like.png");
+}
+.comments_viewall{
+  background-image: url("~/application/modules/Touch/externals/images/post.png");
+}
+.tabs > ul > li > a{
+	border-color: $theme_border_color;
+	border-style: solid solid none;
+	border-width: 1px 1px 0;
+	display: block;
+}
+/* ----------------------Custom{--------------------------------------*/
+ul.items > li > .item_body > .item_options {
+  text-align: right;
+  padding-bottom: 4px;
+}
+.item_options {
+  float: right;
+  overflow: hidden;
+}
+[dir="rtl"] .item_options {
+  float: left;
+}
+.item_options a{
+  display: inline-block;
+  +rounded(2px);
+  background-color: $theme_widget_bg_color;
+  border: 1px solid $theme_foreground_border_color;
+  padding: 3px;
+  font-size: .8em;
+  margin-left: 2px;
+}
+[dir="rtl"] .item_options a{
+  margin-left: 0;
+  margin-right: 2px;
+}
+.item_options a.pressed{
+  +rounded;
+  background-color: $theme_navigation_background_color;
+  border: 1px solid $theme_foreground_border_color;
+  padding: 3px;
+}
+#global_header {
+    display: block;
+}
+
+#global_wrapper {
+    text-align: center;
+}
+
+#navigation_expandable{
+  border-left: 2px groove;
+  border-style: groove;
+  display: block;
+  float: right;
+  height: 20px;
+  width: 20px;
+  padding-left: 2px;
+}
+[dir="rtl"] #navigation_expandable{
+  border-right: 2px groove;
+  border-style: groove;
+  border-left: none;
+  float: left;
+  padding-left: 0;
+  padding-right: 2px;
+  background-position: left;
+}
+.collapsed{
+  background:transparent url("~/application/modules/Touch/externals/images/nav_expand.png") right no-repeat;
+}
+.expanded{
+  background:transparent url("~/application/modules/Touch/externals/images/nav_collapse.png") right no-repeat;
+}
+/*---------------------- }Custom --------------------------------------*/
+
+
+
+
+
+/* Player css*/
+/*----------------------=: Common Styles :=-----------------------*/
+.artist_name, .playlist_title, .audio_title, .audio_description, .duration_time {
+  color: $theme_button_font_color;
+}
+.duration_time .volume{
+  border-color: $theme_button_font_color;
+}
+.duration_time .volume div{
+  background-color: $theme_button_font_color;
+}
+/*----------------------=: End Common Styles :=-----------------------*/
+
+.album_art{
+    border-right-color: $theme_navigation_bg_color;
+    color: $theme_buttontabs_background_color_active;
+}
+
+.playlist_info a:link, .playlist_info a:visited{
+  color: $theme_button_font_color;
+}
+.list_item_active .item_icon{
+	background-color: $theme_foreground_border_color;
+}
+.list_item{
+	color: $theme_foreground_background_color;
+	border-left-color: $theme_navigation_bg_color;
+	border-right-color: $theme_navigation_bg_color;
+  background-color: $theme_input_background_color;
+}
+.list_item + .list_item{
+	border-top-color: $theme_foreground_border_color;
+}
+.list_item_active {
+	background-color: $theme_foreground_background_color;
+}
+
+.item_icon{
+	border-right-color: $theme_navigation_bg_color;
+  background-image: url(~/application/modules/Touch/modules/Music/externals/images/player/item_icon1.png);
+  background-color: $theme_widget_bg_color;
+}
+
+.audio_item_body{
+  color: $theme_widget_tl_color;
+}
+
+.item_duration{
+	border-left-color: $theme_navigation_bg_color;
+}
+.player_controls{
+    border-top-color: $theme_navigation_bg_color;
+    border-bottom-color: $theme_navigation_bg_color;
+}
+
+.contol_main, .playlist_header{
+ 	border-bottom-color: $theme_navigation_bg_color;
+  background-image: url(~/application/modules/Touch/modules/Music/externals/images/player/hf_bg.png);
+  background-color: $theme_navigation_bg_color;
+ 	background: -moz-linear-gradient(center top , $theme_navigation_bg_color, $theme_button_background_color) repeat scroll 0 0 $theme_navigation_bg_color;
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0,$theme_navigation_bg_color),color-stop(1,$theme_button_background_color));
+  text-shadow: 1px 1px 0.5px $theme_shadow_dark_color;
+}
+
+.btn_bar{
+    border-right-color: $theme_navigation_bg_color;
+}
+
+.playing {
+  background-image: url(~/application/modules/Touch/modules/Music/externals/images/player/pause.png);
+  background-color: $theme_widget_bg_color;
+}
+.paused {
+  background-image: url(~/application/modules/Touch/modules/Music/externals/images/player/play.png);
+  background-color: $theme_widget_bg_color;
+}
+.duration_time, .player_pop_in_out_btn{
+    border-left-color: $theme_navigation_bg_color;
+}
+.duration_time .time{
+  border-color: $theme_navigation_bg_color;
+}
+.progressbar{
+    background-image: url(~/application/modules/Touch/modules/Music/externals/images/player/progb_bg.png);
+  background-color: $theme_buttontabs_background_color_active;
+
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0,$theme_navigation_bg_color),color-stop(1,$theme_buttontabs_background_color_active));
+    background: -moz-linear-gradient(center top , $theme_navigation_bg_color, $theme_buttontabs_background_color_active) repeat scroll 0 0 $theme_buttontabs_background_color_active;
+}
+.progressbar .progress_value_bar{
+    background-image: url(~/application/modules/Touch/modules/Music/externals/images/player/slider_bg.png);
+  background-color: #CFE5F0;
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0,$theme_widget_bg_color),color-stop(1,$theme_navigation_bg_color));
+    background: -moz-linear-gradient(center top , #CFE5F0, $theme_widget_bg_color) repeat scroll 0 0 #CFE5F0;
+}
+.playlist_header .normal{
+  background-image: url(~/application/modules/Touch/modules/Music/externals/images/player/popout.png);
+}
+.playlist_header .pop_out{
+  background-image: url(~/application/modules/Touch/modules/Music/externals/images/player/normal.png);
+}
+
+.duration_time .volume_control{
+  background-color: $theme_navigation_bg_color;
+}
+.duration_time .volume_control .volume_control_decoration1,
+.duration_time .volume_control .volume_control_slider_knob{
+  border-left-color: $theme_button_font_color;
+}
+
+/* End Player css*/
+/* Tabs */
+.touch_tab_group{
+  border: 1px solid $theme_border_medium_color;
+}
+.touch_tab_group .touch_tab_right,
+.touch_tab_group .touch_tab_middle,
+.touch_tab_group .touch_tab {
+  border-color: $theme_border_medium_color;
+
+}
+.touch_tab_light {
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#CFE5F0),color-stop(1, $theme_body_background_color));
+    background: -moz-linear-gradient(center top , $theme_body_background_color, #CFE5F0) repeat scroll 0 0 $theme_body_background_color;
+  background-color: $theme_body_background_color;
+}
+.touch_tab_dark{
+  color: $theme_button_font_color;
+  text-shadow: -0.7px -0.7px $theme_shadow_dark_color;
+  background: -moz-linear-gradient(center top , $theme_navigation_bg_color, $theme_button_background_color) repeat scroll 0 0 $theme_button_background_color;
+ background: -webkit-gradient(linear, left top,left bottom, color-stop(0, $theme_navigation_bg_color), color-stop(1, $theme_button_background_color));
+  background-image: -o-linear-gradient(top, $theme_navigation_bg_color, $theme_button_background_color);
+  background-color: $theme_button_background_color;
+}

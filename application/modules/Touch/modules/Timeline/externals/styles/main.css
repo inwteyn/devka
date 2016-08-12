@@ -1,0 +1,992 @@
+/* $Id: main.css 2012-02-01 16:58:20 mt.uulu $ */
+
+/* Gives an element a background gradient */
+=gradient($from_color = "#fff", $to_color = "#000", $position = "top")
+{
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($to_color), to($from_color));
+
+  /* Safari 5.1, Chrome 10+*/
+  background: -webkit-linear-gradient($position, $from_color, $to_color);
+
+  /* Firefox 3.6+*/
+  background: -moz-linear-gradient($position, $from_color, $to_color);
+
+  /* IE 10 */
+  background: -ms-linear-gradient($position, $from_color, $to_color);
+
+  /* Opera 11.10+*/
+  background: -o-linear-gradient($position, $from_color, $to_color);
+}
+@constants{
+  tl_content:#global_content .layout_page_timeline_profile_index;
+  tl_widget: #global_page_timeline-profile-widget #global_content;
+  tl_middle: #global_content .layout_page_timeline_profile_index .layout_middle;
+}
+/*CUSTOM MIXINS*/
+
+/*overload styles*/
+.visiblity-hidden {
+  visibility: hidden;
+}
+
+#global_page_timeline-profile-index #global_wrapper,
+#global_page_timeline-profile-widget #global_wrapper
+{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+#global_page_timeline-profile-widget #global_wrapper{
+  padding-top: 20px;
+}
+$tl_middle{
+  background: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative !important;
+  +shadow(0, 0, 0, 0);
+  border: 0;
+  background-color: $theme_foreground_background_color !important;
+}
+$tl_middle > .generic_layout_container{
+  margin: 0;
+}
+$tl_middle > .generic_layout_container + .generic_layout_container{
+  margin-top: 14px;
+}
+
+/*TIMELINE STYLES*/
+$tl_content .tl-top-shadow {
+  height: 0;
+  min-width: 100%;
+  +shadow( 0px, -2px, 3px, 3px, $theme_border_dark_color );
+  position: absolute;
+  top: 0;
+}
+$tl_content .wall-action-item > .wall-privacy-container{
+  margin: 4px 8px;
+}
+$tl_content .tl-block
+{
+  background-color: $theme_body_background_color;
+  +shadow( 0, 0, 2px, 0px );
+}
+
+$tl_content .tl-in-block {
+  +shadow( 0px, 0px, 2px, 0px, $theme_link_color );
+}
+
+$tl_content .tl-in-block img {
+  border: 4px solid $theme_body_background_color;
+}
+
+$tl_content a.active {
+  background-color: $theme_link_color;
+  color: #fff;
+}
+
+$tl_content a.checkin-view-types.active{
+  background-color: transparent;
+}
+/** HEADER BLOCK **/
+$tl_content .tl-right {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  z-index: 999;
+/*display: none;*/
+}
+$tl_content .tl-marker{
+  background-image: url(~/application/modules/Touch/modules/Timeline/externals/images/icons/marker.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $theme_body_background_color;
+  border-radius: 2px 0 0 2px;
+  +shadow( 0, 0, 2px, 0, $theme_link_color);
+  width: 22px;
+  height: 28px;
+  display: block;
+  float: right;
+  border: 1px solid $theme_foreground_background_color;
+  border-right: none;
+}
+$tl_content .tl-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 12px solid $theme_link_color;
+  right: -12px;
+  border-right: none;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
+$tl_content .tl-content {
+  position: relative;
+}
+
+
+/*** Timeline Options ***/
+$tl_content .info .options {
+  float: right;
+}
+
+$tl_content .tl-options ul {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+}
+
+$tl_content .tl-options ul > li {
+  float: left;
+  border: none;
+  padding: 0 !important;
+}
+
+$tl_content .tl-options ul a{
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px;
+}
+
+$tl_content .tl-options ul.main > li+li {
+  border-left: 1px solid $theme_foreground_border_color;
+}
+
+$tl_content .tl-options li.more {
+  position: relative;
+}
+
+$tl_content .tl-options li.more > ul.tl-in-block {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 27px;
+  +rounded( 0 );
+  z-index: 100;
+}
+
+$tl_content .tl-options li.more > ul > li {
+  float: none;
+}
+
+$tl_content .tl-options li.more > ul a {
+  display: block;
+}
+
+/** Timeline Navigation CSS styles **/
+$tl_middle #tl-navigation{
+  margin-top: 20px;
+  display: none
+}
+$tl_content #tl-navigation > div{
+  display: inline-block;
+  padding: 5px;
+  vertical-align: middle;
+  width: 83%;
+}
+$tl_content #tl-navigation > div.photo{
+  width: 7%;
+}
+
+$tl_middle > .layout_touch_container_tabs{
+  width: 85%;
+  padding: 2%;
+  margin: 3px;
+  padding-bottom: 30px;
+  border: 1px solid $theme_foreground_background_color;
+  +shadow( 0px, 1px, 2px, 1px );
+  +rounded( 3px );
+  background-color: $theme_body_background_color;
+}
+
+$tl_middle > .layout_touch_container_tabs
+{
+  display: none
+}
+
+$tl_middle.apps > .generic_layout_container,
+$tl_middle.apps #profile
+{
+  display: none;
+}
+
+$tl_middle.apps > .layout_timeline_header,
+$tl_middle.apps > .layout_touch_container_tabs,
+$tl_middle.apps #tl-navigation
+{
+  display: block;
+}
+$tl_middle.apps #tl-navigation .tl-options li > a{
+  font-weight: normal;
+  padding: 5px 10px;
+}
+$tl_middle.apps #tl-navigation .tl-options li > a.active{
+  /*font-weight: bold;*/
+}
+$tl_middle.apps #tl-navigation li.more.active > ul{
+  display: block;
+}
+
+
+
+/* Cover */
+$tl_content .cover {
+  display: block;
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  position: relative;
+}
+$tl_content #tl-cover > a,
+$tl_content #tl-born > a{
+  text-decoration: none;
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+$tl_content #tl-cover > a{
+  height: 177px;
+}
+$tl_content #tl-born > a{
+  height: 150px;
+}
+$tl_content #tl-cover > a > img,
+$tl_content #tl-born  > a > img
+{
+  border: 0;
+  width: 100%;
+  min-height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+$tl_content #tl-cover > a > img.draggable,
+$tl_content #tl-born > a > img.draggable
+{
+  opacity: 0.5;
+  cursor: move;
+}
+
+$tl_content .cover .cover-edit {
+  position: absolute;
+  right: 50px;
+  bottom: 20px;
+  z-index: 99;
+  display: none !important;
+}
+
+$tl_content .cover.no-cover {
++shadow( 0, 0, 0, 0 );
+  border: none;
+  background-color: $theme_foreground_background_color;
+}
+
+$tl_content .cover.no-cover #tl-cover {
+  /*display: none;*/
+}
+$tl_content .tli.born > div.photo.add #tl-born > a,
+$tl_content .cover.no-cover #tl-cover > a {
+  text-align: center;
+  font-size: 32px;
+  line-height: 150px;
+  opacity: .3;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-transform: capitalize;
+  text-shadow: 0 2px 0 #FFFFFF;
+
+}
+$tl_content .cover.no-cover .cover-edit {
+  bottom: -70px;
+}
+
+$tl_content .cover.no-cover .cover-remove,
+$tl_content .cover.no-cover .cover-reposition {
+  display: none;
+}
+
+$tl_content .tl-options li.more > ul.tl-in-block.cover-options {
+  display: block;
+}
+
+.tl-photos .he_contacts .contacts .photo {
+  height: 90px;
+  width: 130px;
+  overflow: hidden;
+}
+
+.tl-photos .he_contacts .contacts .item {
+  height: 100px;
+}
+
+/* Profile Body */
+$tl_content .profile .info {
+  min-height: 47px;
+  position: relative;
+}
+
+$tl_content .profile .info.tl-block {
+  margin-top: 0;
+  margin-bottom: 2px;
+  z-index: 0;
+}
+
+/** Main Row **/
+$tl_content .profile .main-row {
+  padding: 0 5px 0;
+}
+$tl_content .profile .main-row > div {
+  margin-top: 10px;
+}
+
+$tl_content .profile .main-row > div,
+$tl_content .profile .main-row > div.name > div {
+  display: inline-block;
+}
+
+$tl_content .profile .main-row > div.options {
+  display: block;
+  float: none;
+  clear: both;
+  margin: 5px 0;
+}
+
+$tl_content .profile .main-row > div.name > div {
+  margin: 0 2px;
+}
+
+/*** Profile Photo ***/
+$tl_content .tl-profile-photo{
+  position: relative;
+  min-height: 16px;
+  width: 86px;
+  vertical-align: bottom;
+}
+$tl_content .tl-profile-photo a {
+  display: block;
+  max-height: 128px;
+  max-width: 128px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 6px;
+  border: 3px solid $theme_foreground_background_color;
+}
+
+$tl_content .tl-profile-title h3.like_status_header{
+  font-size: 14px;
+}
+$tl_content .tl-profile-photo a > img {
+  border: none;
+  vertical-align: bottom;
+  width: 100%;
+  max-width: 74px;
+}
+
+/** End of Main Row **/
+
+/** Additional Row **/
+$tl_content .profile .additional-row {
+  /*padding: 0;*/
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+[dir="rtl"] $tl_content .profile .main-row,
+[dir="rtl"] $tl_content .profile .additional-row {
+  margin-right: 20px;
+}
+/** Applications Block **/
+$tl_content .applications {
+  padding: 1px 0 6px;
+  overflow: auto;
+}
+
+$tl_content .applications.active{
+  height: auto;
+}
+
+$tl_content .applications div > .application {
+  display: block;
+  text-decoration: none;
+  margin: 3px 8px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  width: 84px;
+  float: left;
+}
+[dir="rtl"] $tl_content .applications div > .application {
+  float: right;
+}
+
+$tl_content .applications div > .application > div.photo {
+  +rounded( 1.5px );
+  overflow: hidden;
+  border: 1px solid $theme_border_dark_color;
+  height: 56px;
+  background-color: $theme_border_color;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/** Application images **/
+$tl_content .applications div > .application > div.photo.touch-blog-profile-blogs{
+  background-image: url(~/application/modules/Touch/modules/Timeline/externals/images/icons/blog.png);
+}
+$tl_content .applications div > .application > div.photo.touch-profile-forum-posts{
+  background-image: url(~/application/modules/Touch/modules/Timeline/externals/images/icons/forum_post.png);
+}
+$tl_content .applications div > .application > div.photo.touch-profile-checkins{
+  background-image: url(~/application/modules/Touch/modules/Timeline/externals/images/icons/checkin.png);
+}
+$tl_content .applications div > .application > div.photo.touch-album-profile-albums > img,
+$tl_content .applications div > .application > div.photo.touch-video-profile-videos > img,
+$tl_content .applications div > .application > div.photo.about > img
+{
+  min-width: 100%;
+  height: auto;
+}
+
+$tl_content .applications div > .application > div.photo.touch-event-profile-events > img,
+$tl_content .applications div > .application > div.photo.touch-group-profile-groups > img,
+$tl_content .applications div > .application > div.photo.touch-like-profile-likes > img,
+$tl_content .applications div > .application > div.photo.touch-classified-profile-classifieds > img,
+$tl_content .applications div > .application > div.photo.touch-page-profile-pages > img
+{
+  min-width: 50%;
+  min-height: 100%;
+}
+
+
+
+/**Default Application Background **/
+$tl_content .applications div > .application > div.photo > .default{
+  height: 100%;
+  width: 100%;
+  background: url(~/application/modules/Touch/modules/Timeline/externals/images/application.png) center center no-repeat;
+  opacity: 0.3;
+}
+$tl_content .applications div > .application > div.photo span {
+  margin-top: 10px;
+  color: $theme_link_color;
+  display: inline-block;
+  padding-top: 20px;
+}
+
+$tl_content .applications div > .application > div.title {
+  padding: 5px 0;
+  color: $theme_link_color;
+  text-align: center;
+  font-size: 11px;
+}
+$tl_content .applications div > .application > div.title > span{
+  color: $theme_font_color_light;
+  display: inline-block;
+}
+$tl_content .applications div > .application img {
+  margin: 0;
+  padding: 0;
+  border: none;
+  float: left;
+  width: 33.3%;
+  height: 50%;
+  /*height: 38px;*/
+}
+
+$tl_content .applications div .add-app,
+$tl_content .applications div .controller {
+  background-image: url(~/application/modules/Touch/modules/Timeline/externals/images/icons/add.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: $theme_body_background_color;
+  border: 1px solid $theme_border_color;
++rounded( 1px );
++shadow( 2px, 3px, 2px, - 1px );
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+}
+
+$tl_content .applications div > .application.more {
+  position: absolute;
+  right: 0;
+  top: 4px;
+  z-index: 1;
+  width: 3%;
+  margin: 0;
+}
+
+$tl_content .applications div > .application.more > div.photo {
+  width: 100%;
+  border-right: none;
+  float: right;
++rounded( 3px, false, true, true, false );
+}
+
+$tl_content .applications div .controller {
+  top: 25px;
+  left: -12px;
+  height: 16px;
+  padding: 0 3px;
+  +shadow( 1px, 1px, 2px, 1px );
+  color: $theme_link_color;
+  font-weight: bold;
+  background-image: url(~/application/modules/Touch/modules/Timeline/externals/images/icons/show_more.gif);
+  background-position: 100% 25%;
+  background-size: 12px auto;
+  font-size: 11px;
+  width: 25px;
+  text-align: left;
+}
+
+$tl_content .applications div .controller.hide {
+  background-image: url(~/application/modules/Touch/modules/Timeline/externals/images/icons/hide_more.gif);
+}
+
+$tl_content .applications div .controller.loading {
+  background-image: url(~/application/modules/Touch/modules/Timeline/externals/images/icons/loading_small.gif);
+  background-size: 15px auto;
+  background-position: center center;
+}
+
+$tl_content .applications div .controller.loading>span {
+  visibility: hidden;
+}
+
+$tl_content .applications .available-applications {
+  background-color: $theme_body_background_color;
+  position: absolute;
+  z-index: 100;
+  right: -3px;
+  top: 18px;
+  text-align: left;
++shadow( 0px, 2px, 2px, 1px );
++rounded( 3px, false, true );
+  display: none;
+}
+
+$tl_content .applications .available-applications > li {
+  min-width: 110px;
+}
+
+$tl_content .applications .available-applications > li+li {
+  border-top: 1px solid $theme_border_color;
+}
+
+$tl_content .applications .available-applications > li a {
+  padding: 3px 7px;
+  display: block;
+  text-decoration: none;
+}
+
+/*
+TIMELINE BODY
+*/
+$tl_content .wall-streams {
+  display: inline-block;
+  width: 100%;
+  margin-top: 0;
+}
+
+$tl_content .wall-stream {
+  text-align: justify;
+  margin-top: 0;
+}
+$tl_content .wallFeed .wallTextareaContainer{
+  border-width: 0;
+}
+
+$tl_content .tli {
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  border: 1px solid $theme_foreground_background_color;
+  +shadow( 0, 0, 2px, 0, $theme_link_color);
+  margin: 11px 25px 11px 9px;
+  background-color: $theme_body_background_color;
+  min-height: 38px;
+  +rounded(2px);
+}
+$tl_content .wall-social-composer.tli {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+$tl_content .tli + .tli {
+  margin: 0 25px 11px 9px;
+}
+$tl_content .tli:after {
+  clear: both;
+  height: 0;
+  line-height: 0;
+  display: block;
+  font-size: 0;
+  visibility: hidden;
+}
+
+$tl_content .tli > form,
+$tl_content .tli > div {
+  overflow: hidden;
+}
+$tl_content .tli.just_loaded {
+  background-color: $theme_foreground_background_color;
+}
+
+$tl_content .tli .clr {
+  padding: 0;
+}
+$tl_content #activity-feed {
+  padding: 2px 0 0;
+  margin: 0;
+  background: none;
+}
+
+$tl_content .feed_item_header {
+  padding: 10px 10px 3px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid $theme_border_color;
+}
+$tl_content #activity-feed .feed_item_photo img{
+  width: 32px;
+  height: 32px;
+}
+$tl_content #activity-feed .feed_item_date{
+  padding-top: 3px;
+  margin-left: 10px;
+}
+[dir="rtl"] $tl_content #activity-feed .feed_item_date{
+  margin-left: 0;
+  margin-right: 10px;
+}
+$tl_content #activity-feed .feed_item_body {
+  overflow: visible;
+  padding: 10px;
+}
+$tl_content #activity-feed .like_action_container .left{
+  width: 120px;
+}
+$tl_content #activity-feed .like_action_container .left img{
+  max-width: 120px;
+  height: auto;
+}
+$tl_content #activity-feed .like_action_container .right{
+  width: 200px;
+}
+$tl_content #activity-feed .feed_item_options {
+}
+$tl_content #activity-feed .feed_item_options .wall-comments{
+  width: 100%;
+}
+
+$tl_content #activity-feed .feed_item_body > div.feed_item_attachments {
+  clear: both;
+  padding: 0 0;
+}
+
+$tl_content #activity-feed .feed_item_body > div.feed_item_attachments .feed_attachment_album_photo{
+  display: inline-block;
+  max-height: 100px;
+  overflow: hidden;
+}
+$tl_content #activity-feed .feed_item_body > div.feed_item_attachments .feed_attachment_album_photo div,
+$tl_content #activity-feed .feed_item_body > div.feed_item_attachments .feed_attachment_album_photo a{
+  display: block;
+}
+
+$tl_content #activity-feed .feed_item_body > div.feed_item_attachments .feed_attachment_album_photo div {
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+}
+$tl_content #activity-feed .feed_item_body > div.feed_item_attachments img{
+  /*max-width: 122px;*/
+  max-height: 100%;
+}
+$tl_content #activity-feed .feed_item_body > div.feed_item_attachments .music_player{
+  width: 350px;
+}
+$tl_content #activity-feed .feed_item_body > div.feed_item_attachments .music_player_art > img{
+  width: 115px;
+  min-width: 115px;
+}
+$tl_content #activity-feed .feed_item_body > div.feed_item_grouped {
+  padding: 0 10px 10px;
+}
+
+$tl_content #activity-feed .feed_item_body .wall_grouped_feed_item {
+  margin: 0;
+}
+
+$tl_content #activity-feed .comments li {
+  padding-left: 10px;
+}
+
+.layout_active_theme_bamboo #tl-feed li.sep > div
+{
+  background: #D3E7E6 !important;
+}
+
+.layout_active_theme_digita #tl-feed li.sep > div
+{
+  background-image: url(~/application/themes/digita/images/d_bg.jpg) !important;
+  background-position: bottom right !important;
+}
+
+.layout_active_theme_snowbot #tl-feed li.sep > div
+{
+  background: url(~/application/themes/snowbot/images/body_bg.png) #F0F0F0 no-repeat !important;
+  background-position: bottom right !important;
+}
+$tl_content ul.feed > li.utility-getlast{
+  background-color: transparent;
+}
+/** Timeline item starred **/
+/*$tl_content .tli.starred{*/
+  /*clear: both;*/
+  /*float:none;*/
+/*}*/
+
+/** Timeline item born**/
+$tl_content .tli.born > div.info{
+  padding: 5px;
+}
+$tl_content .tli.born > div > div{
+  text-align: center;
+}
+$tl_content .tli.born > div.info > div.date{
+  font-weight: bold;
+  font-size: 14px;
+  color: $theme_font_color_light;
+}
+
+$tl_content .tli.born > div.photo{
+  margin: 3px;
+  border: 1px solid $theme_photo_border_color;
+  background-color: $theme_foreground_background_color;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+$tl_content .tli.born > div.photo #tl-born-edit{
+  top: 50px;
+  position: absolute;
+  right: 10px;
+  display: none;
+}
+$tl_content .tli.born > div.photo ul{
+  text-align: left;
+}
+$tl_content .tli.born > div.photo.add #tl-born{
+  /*display: none;*/
+}
+$tl_content .tli.born > div.photo.add #tl-born-edit{
+  display: block;
+  position: relative;
+  margin-top: 50px;
+  right: auto;
+  top: auto;
+  display: none;
+}
+$tl_content .tli.born > div.photo.add > div > ul{
+  background: none;
+  +shadow(0, 0, 0, 0);
+  border: none;
+  top: 30px;
+}
+$tl_content .tli.born > div.photo.add ul > li.more > ul{
+  top: 35px;
+}
+$tl_content .tli.born > div.photo.add ul > li.more > a{
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+
+
+/** Wall Feed Popup **/
+$tl_content .tl-content > #tl-composer {
+  position: absolute;
+  width: 45%;
+  top: 200px;
+  left: 2.7%;
+  display: none;
+}
+$tl_content .tl-content > #tl-composer .feed {
+  display: none;
+}
+
+$tl_content .tl-content > #tl-composer .wall-streams,
+$tl_content .tl-content > #tl-composer .wall-stream,
+$tl_content .tl-content > #tl-composer .tli {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+$tl_content .tl-content > #tl-composer .wall-compose-date-activator {
+  display: none !important;
+}
+
+$tl_content .tl-content > #tl-composer .wall-compose-date-menu span {
+  display: none !important;
+}
+
+$tl_content .tl-content > #tl-composer .wall-compose-date-body {
+  margin-top: 0 !important;
+  margin-bottom: 10px !important;
+}
+$tl_content .tl-content > #tl-composer .tli {
++shadow( 0, 2px, 8px, 3px );
+  background-color: $theme_body_background_color;
+  border-color: $theme_body_background_color;
+}
+
+/*Dates*/
+#tl-dates {
+  background-color: $theme_widget_bg_color;;
+  border: 1px solid $theme_link_color_hover;
+  border-radius: 3px 3px 3px 3px;
+  +shadow( 0, 0, 2px, 0, $theme_link_color);
+  display: none;
+  float: right;
+  margin-left: 5px;
+  margin-right: 10px;
+  padding: 5px;
+  position: relative;
+  text-shadow: none;
+}
+
+#tl-dates > li {
+  padding: 2px 2px 2px 6px;
+  border-style: groove;
+  border-width: 0;
+  border-color: $theme_widget_bg_color;
+  background-color: $theme_widget_bg_color;
+}
+#tl-dates > li + li{
+  border-width: 2px 0 0 0;
+}
+#tl-dates > li.active {
+  background-color: $theme_foreground_border_color;
+}
+
+#tl-dates li.active > span > a {
+  font-weight: bold;
+  color: $theme_link_color_hover;
+}
+#tl-dates li > span > a {
+  padding: 5px;
+  display: block;
+}
+
+#tl-dates > li .months {
+  display: none;
+}
+
+#tl-dates > li .months a {
+  /*font-weight: normal;*/
+}
+#tl-dates > li ul > li{
+  padding-left: 8px;
+}
+#tl-dates > li ul > li {
+
+}
+
+/*Separator*/
+#tl-feed li.sep.loader {
+    margin-top: -50px;
+    position: absolute;
+}
+#tl-feed li.sep {
+  clear: both;
+  min-height: 35px;
+  border: 0;
+  background: none;
+  padding: 0;
+  /*margin-bottom: 11px;*/
+}
+
+/*#tl-feed li.sep.y*/
+/*{*/
+  /*top: 40px;*/
+  /*margin-bottom: 40px;*/
+/*}*/
+#tl-feed li.sep.le{
+  top: 40px;
+}
+#tl-feed li.sep > div {
+  text-align: center;
+  width: 100%;
+}
+#tl-feed li.sep + li.sep > div > a:link {
+    border-top: none;
+}
+
+#tl-feed li.sep > div > a:link{
+  border-color: $theme_foreground_background_color;
+  border-top: 2px groove;
+  border-bottom: 2px groove;
+}
+
+#tl-feed li.sep > div > a + a{
+  border-top: none;
+}
+#tl-feed li.sep > div > a,
+#tl-feed li.sep > div > span {
+  display: block;
+  padding: 8px 0 12px 0;
+  text-decoration: none;
+  color: $theme_link_color;
+  opacity: 0.7;
+  font-weight: bold;
+  cursor: default;
+  font-size: 22px;
+  text-shadow: 0 1px 0 #FFFFFF;
+  background-color: $theme_foreground_border_color;
+}
+
+#tl-feed li.sep.active > div > a,
+#tl-feed li.sep.active > div > span {
+  font-weight: bolder;
+  cursor: pointer;
+  opacity: 1;
+}
+
+#tl-feed li.sep > div > span > div.text,
+#tl-feed li.sep > div > span > div.wall_icon {
+  display: inline-block;
+}
+
+#tl-feed .wallFeed .utility-viewall .pagination a {
+  background-image: none;
+}
+
+#tl-feed div.loader {
+  display: none;
+}
+
+#tl-feed li.sep > div.loader {
+  display: block;
+}
+
+#tl-feed li.sep > div.loader a {
+  color: transparent;
+  background-color: transparent;
+  text-shadow: none;
+}
+
+$tl_content .tip.private{
+  margin: 30px;
+}

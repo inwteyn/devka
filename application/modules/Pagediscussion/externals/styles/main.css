@@ -1,0 +1,283 @@
+/* $Id: main.css 2010-07-02 01:29 michael $ */
+
+@include "~/application/modules/Core/externals/styles/admin/constants.css";
+
+.pagediscussion_loader, .pagediscussion_loader_2 {
+  float:right;
+  margin-right:8px;
+  margin-top:8px;
+}
+.pagediscussion .create_link {
+  background-image:url("~/application/modules/Pagediscussion/externals/images/post.png");
+  float:right;
+  margin-right:8px;
+}
+.pagediscussion .item .replies {
+  +foreground;
+  +rounded;
+  float: left;
+  overflow: hidden;
+  text-align: center;
+  margin-right: 10px;
+  width: 40px;
+  padding: 7px 10px 7px 10px;
+  color: $theme_font_color_light;
+  font-size: .8em;
+}
+
+html[dir="rtl"] .pagediscussion .item .replies {
+  float: right;
+  margin-right: 0px;
+  margin-left: 10px;
+}
+
+.pagediscussion .item .replies span {
+  display:block;
+  font-size:2em;
+}
+
+.pagediscussion .item .lastreply {
+  float: right;
+  overflow: hidden;
+  width: 250px;
+  margin-left: 10px;
+}
+
+html[dir="rtl"] .pagediscussion .item .lastreply {
+  float: left;
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+.pagediscussion .item .lastreply .date {
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+
+.pagediscussion .item > li {
+  overflow:hidden;
+  padding:7px 7px 7px 0;
+  border-bottom: 1px solid $theme_border_color;
+}
+
+html[dir="rtl"] .pagediscussion .item > li {
+  overflow:hidden;
+  padding:7px 0px 7px 7px;
+  border-bottom: 1px solid $theme_border_color;
+}
+
+.pagediscussion .item .lastreply > a {
+  display:block;
+  float:left;
+}
+
+html[dir="rtl"] .pagediscussion .item .lastreply > a {
+  float:right;
+}
+
+
+.pagediscussion .item .lastreply > a > img {
+  display:block;
+}
+
+.pagediscussion .item .lastreply .info {
+overflow:hidden;
+padding-left:5px;
+}
+
+html[dir="rtl"] .pagediscussion .item .lastreply .info {
+  padding-right:5px;
+  padding-left: 0;
+}
+
+.pagediscussion .item .details {
+  overflow:hidden;
+}
+.pagediscussion .item .details .title {
+  font-size:14pt;
+  letter-spacing:-1px;
+  margin-bottom:5px;
+}
+.pagediscussion .item .details .title .sticky,
+.pagediscussion .item .details .title .closed {
+  background-position:0 0.2em;
+  background-repeat:no-repeat;
+  padding-left:20px;
+}
+.pagediscussion .item .details .title .sticky {
+  background-image:url("~/application/modules/Pagediscussion/externals/images/stick.png");
+}
+.pagediscussion .item .details .title .closed {
+  background-image:url("~/application/modules/Pagediscussion/externals/images/close.png");
+}
+.pagediscussion .item .details .title .sticky.closed {
+  background-image:url("~/application/modules/Pagediscussion/externals/images/stick_closed.png");
+  background-position:0 0.1em;
+}
+.pagediscussion_topic > .title {
+  font-size:17pt;
+  margin:10px 0;
+}
+.pagediscussion_topic_closed
+{
+  background-image: url("~/application/modules/Pagediscussion/externals/images/close.png");
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  color: $theme_font_color_light;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.pagediscussion_topic .options > a {
+  font-size:0.8em;
+  height:16px;
+  margin-right:15px;
+  padding-top:1px;
+  background-position:0 0;
+  background-repeat:no-repeat;
+  display:inline-block;
+  font-weight:bold;
+  padding-left:21px;
+}
+
+html[dir="rtl"] .pagediscussion_topic .options > a {
+  margin-right: 0px;
+  margin-left: 15px;
+  padding-right: 21px;
+  padding-left: 0px;
+  background-position: right center;
+}
+
+.pagediscussion_topic > ul
+{
+  margin: 10px 0 10px 0;
+  overflow: hidden;
+}
+.pagediscussion_topic > ul > li
+{
+  +foreground;
+  overflow: hidden;
+  border-top: 1px solid $theme_foreground_border_color;
+}
+.pagediscussion_topic > ul > li + li
+{
+  margin-top: 5px;
+}
+
+.pagediscussion_topic .photo
+{
+  float: left;
+  overflow: hidden;
+  width: 120px;
+  font-weight: bold;
+  padding: 5px 10px 7px 10px;
+}
+
+html[dir="rtl"] .pagediscussion_topic .photo
+{
+  float: right;
+}
+
+.pagediscussion_topic .photo a + a
+{
+  display: block;
+  margin-top: 2px;
+  clear: both;
+}
+
+.pagediscussion_topic .info
+{
+  padding: 0px 10px 5px 5px;
+  overflow: hidden;
+}
+
+html[dir="rtl"] .pagediscussion_topic .info
+{
+  padding: 0px 5px 5px 10px;
+}
+
+.pagediscussion_topic .info > .details
+{
+  padding: 6px 0px 6px 0px;
+  border-bottom: 1px solid $theme_foreground_border_color;
+}
+.pagediscussion_topic .info > .details > .date
+{
+  font-size: .8em;
+  overflow: hidden;
+  color: $theme_font_color_light;
+}
+.pagediscussion_topic .info > .details > .options
+{
+  margin-top: -2px;
+  float: right;
+  overflow: hidden;
+  text-align: right;
+}
+.pagediscussion_topic .info > .body
+{
+  padding: 5px 0px 5px 0px;
+}
+.pagediscussion_topic .info > .body blockquote
+{
+  border: 1px dashed $theme_border_medium_color;
+  background: $theme_body_background_color;
+  padding: 10px;
+}
+
+.pagediscussion_topic a.back {
+  background-image:url("~/application/modules/Pagediscussion/externals/images/back.png");
+}
+.pagediscussion_topic a.post {
+  background-image:url("~/application/modules/Pagediscussion/externals/images/reply.png");
+}
+.pagediscussion_topic a.watching {
+  background-image:url("~/application/modules/Pagediscussion/externals/images/watch.png");
+}
+.pagediscussion_topic a.unwatching {
+  background-image:url("~/application/modules/Pagediscussion/externals/images/unwatch.png");
+}
+.pagediscussion_topic a.sticky {
+  background-image:url("~/application/modules/Pagediscussion/externals/images/stick.png");
+}
+.pagediscussion_topic a.unsticky {
+  background-image:url("~/application/modules/Pagediscussion/externals/images/unstick.png");
+}
+.pagediscussion_topic a.close {
+  background-image:url("~/application/modules/Pagediscussion/externals/images/close.png");
+}
+.pagediscussion_topic a.unclose {
+  background-image:url("~/application/modules/Pagediscussion/externals/images/unclose.png");
+}
+.pagediscussion_topic a.rename {
+  background-image:url("~/application/modules/Pagediscussion/externals/images/edit.png");
+}
+.pagediscussion_topic a.edit {
+  background-image:url("~/application/modules/Pagediscussion/externals/images/edit.png");
+}
+.pagediscussion_topic a.delete {
+  background-image:url("~/application/modules/Pagediscussion/externals/images/delete.png");
+}
+.pagediscussion_topic a.quote {
+  background-image:url("~/application/modules/Pagediscussion/externals/images/quote.png");
+}
+.activity_icon_page_topic_create,
+.notification_type_page_discussion_response,
+.notification_type_page_discussion_team {
+  background-image:url("~/application/modules/Pagediscussion/externals/images/post.png");
+}
+.activity_icon_page_topic_reply,
+.notification_type_page_discussion_reply {
+  background-image:url("~/application/modules/Pagediscussion/externals/images/reply.png");
+}
+.pagediscussion_topic_closed {
+  background-image: url("~/application/modules/Pagediscussion/externals/images/close.png");
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  color: $theme_font_color_light;
+  display: inline-block;
+  margin-left: 20px;
+}
+.pagediscussion .tab_rename .form-label {
+  width:40px;
+}

@@ -1,0 +1,1 @@
+UPDATE `engine4_core_modules` SET `version` = '4.1.8p7'  WHERE `name` = 'pageblog';

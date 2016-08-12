@@ -1,0 +1,105 @@
+ul.admin_offers {
+  min-width: 800px;
+}
+
+ul.admin_offers > li {
+  padding: 15px 0 15px;
+  overflow: hidden;
+  clear: right;
+  border-top-width: 1px;
+}
+
+html[dir="rtl"] ul.admin_offers > li {
+  clear: left;
+}
+
+.admin_offers .offer_photo > img {
+  width: 48px;
+  height: 48px;
+}
+
+.admin_offers .offer_photo {
+  float: left;
+  margin-right: 8px;
+  overflow: hidden;
+}
+
+html[dir="rtl"] .admin_offers .offer_photo {
+  float: right;
+  margin-right: 0px;
+  margin-left: 8px;
+}
+
+ul.admin_offers .offer_info,
+ul.admin_offers .offer_options {
+  overflow: hidden;
+}
+
+ul.admin_offers .offers_radio {
+  float: left;
+  margin-top: 30px;
+}
+
+html[dir="rtl"] ul.admin_offers .offers_radio {
+  float: right;
+}
+
+form.socialboost_offers {
+  padding: 15px;
+}
+
+.socialboost_admin_loader {
+  float: left;
+  margin-left: 10px;
+  display: none;
+}
+
+html[dir="rtl"] .socialboost_admin_loader {
+  float: right;
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+.socialboost_admin_loader > span {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.socialboost_admin_pagination {
+  margin-left: 15px;
+}
+
+html[dir="rtl"] .socialboost_admin_pagination {
+  margin-left: 0px;
+  margin-right: 15px;
+}
+
+#fieldset-rewards_group {
+  border: 5px solid #EEEEEE;
+  padding: 0 15px;
+}
+
+.rewards-form-preview {
+  text-align: center;
+}
+.rewards-form-preview img {
+  max-width: 150px;
+}
+.rewards-form-preview label,
+.rewards-form-preview span {
+  font-size: 11px;
+  color: gray;
+}
+
+#global_page_social-boost-admin-index-index .global_form label.optional {
+  vertical-align: -webkit-baseline-middle;
+  vertical-align: sub;
+}
+
+#global_page_social-boost-admin-index-index .global_form div.form-element {
+  overflow: visible;
+}
+#global_page_social-boost-admin-index-index .settings div.form-element input[type=text] {
+  width: 350px;
+}

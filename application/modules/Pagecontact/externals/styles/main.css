@@ -1,0 +1,96 @@
+/* $Id: main.css 2011-07-13 16:01 ratbek $ */
+
+.subForm_class div.form-element {
+  float: left;
+  margin-top: 4px;
+}
+
+.subForm_class div.form-wrapper {
+  margin-top: 0px !important;
+  display: inline;
+}
+
+.subForm_class .button_class
+{
+  margin-left: 30px;
+  margin-top: 0;
+}
+
+.textarea_class
+{
+  resize:vertical;
+  width: 300px;
+}
+
+.label_emails
+{
+  margin-top:-26px;
+}
+
+#add_more-label
+{
+  display:none;
+}
+
+#delete-label
+{
+	display:none;
+}
+
+#form-label_id_1
+{
+	display:none;
+}
+
+.subForm_class .form-label {
+  clear: left;
+  color: theme_form_label_font_color; /* #777 */
+  font-size: 0.9em;
+  font-weight: bold;
+  overflow: hidden;
+  padding: 4px 15px 0 2px;
+  text-align: right;
+  width: 30px;
+}
+
+#subForm_0 {
+  margin-top: 30px;
+}
+
+.sender_name_label_class
+{
+  width: 58px;
+}
+
+.sender_email_label_class
+{
+  margin-left: 26px;
+}
+
+.subject_label_class
+{
+  margin-left: 14px;
+}
+
+.message_label_class
+{
+  margin-left: 6px;
+}
+
+.topic_name_class
+{
+  width: 300px;
+}
+
+.subForm_class .description {
+  font-size: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.TinyMCE_decription
+{
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}

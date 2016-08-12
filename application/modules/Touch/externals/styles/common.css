@@ -1,0 +1,1859 @@
+/* Item Types */
+.item_icon_group_album,
+.item_icon_group_photo,
+.item_icon_event_album,
+.item_icon_event_photo,
+.item_icon_album,
+.item_icon_album_photo
+{
+  background-image: url(~/application/modules/Touch/externals/images/new_photo.png);
+}
+.item_icon_announcement
+{
+  background-image: url(~/application/modules/Announcement/externals/images/types/announcement.png);
+}
+
+.item_icon_blog,
+.item_icon_blog_entry
+{
+  background-image: url(~/application/modules/Touch/externals/images/types/blog.png);
+}
+.item_icon_classified
+{
+  background-image: url(~/application/modules/Touch/externals/images/types/classified.png);
+}
+.item_icon_core_link
+{
+  background-image: url(~/application/modules/Core/externals/images/types/core_link.png);
+}
+.wall-menu {
+ display: none !important;
+}
+.wall-stream-type-linkedin {
+  display: none !important;
+}
+.item_icon_event
+{
+  background-image: url(~/application/modules/Touch/modules/Event/externals/images/types/event.png);
+}
+.activity_icon_status,
+.item_icon_group_topic,
+.item_icon_group_post,
+.item_icon_event_topic,
+.item_icon_event_post
+{
+  background-image: url(~/application/modules/Touch/externals/images/post.png);
+}
+.item_icon_group
+{
+  background-image: url(~/application/modules/Touch/modules/Group/externals/images/types/group.png);
+}
+.item_icon_music,
+.item_icon_music_playlist,
+.item_icon_music_song,
+.activity_icon_music_playlist_new
+{
+  background-image: url(~/application/modules/Touch/externals/images/types/music.png);
+}
+.item_icon_network
+{
+  background-image: url(~/application/modules/Network/externals/images/types/network.png);
+}
+.item_icon_video,
+.item_icon_pagevideo
+{
+  background-image: url(~/application/modules/Touch/modules/Pagevideo/externals/images/types/video.png);
+}
+
+
+.item_icon_poll
+{
+  background-image: url(~/application/modules/Touch/externals/images/types/poll.png);
+}
+
+.item_icon_user
+{
+  background-image: url(~/application/modules/User/externals/images/types/user.png);
+}
+
+/* Item Types */
+
+/* common theme styles */
+html
+{
+  min-height: 100%;
+  margin-bottom: 1px;
+  /* overflow-x: hidden; */
+  overflow-y: scroll;
+}
+body
+{
+  background-color: $theme_body_background_color;
+  overflow-x: hidden;
+}
+*
+{
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-style: solid;
+  border-width: 0px;
+  border-color: $theme_border_color;
+}
+table
+{
+  border-collapse: collapse;
+}
+br
+{
+  clear: both;
+}
+ul
+{
+  list-style-type: none;
+}
+a:link,
+a:visited
+{
+  color: $theme_link_color;
+  text-decoration: $theme_link_decoration;
+}
+*
+{
+  font-family: $theme_font_family;
+}
+
+div, td
+{
+  font-size: $theme_font_size;
+  color: $theme_font_color;
+  text-align: $theme_text_align;
+}
+*[dir="rtl"] div,
+*[dir="rtl"] td {
+  direction: rtl;
+  unicode-bidi: embed;
+  text-align: right;
+}
+
+h2,
+h3,
+h4
+{
+  color: $theme_headline_color;
+}
+h2
+{
+  font-size: $theme_headline_size_large;
+}
+h3
+{
+  font-size: $theme_headline_size_medium;
+}
+h4
+{
+  border-bottom: 1px solid $theme_border_color;
+  padding: .3em 0px .1em 0px;
+	color: $theme_font_color_light;
+}
+
+
+/*
+GLOBAL FORM ELEMENTS
+Used for most forms throughout the site.
+*/
+button, #iPhone-file-button, .button
+{
+  font-weight: bold;
+  background-color: $theme_button_background_color;
+  color: $theme_button_font_color;
+  background-repeat: repeat-x;
+}
+
+input[type=text],
+input[type=password],
+input.text,
+textarea
+{
+  +rounded(3px);
+  background-color: $theme_input_background_color;
+  color: $theme_input_font_color;
+  border-width: 1px;
+  border-color: $theme_input_border_colors;
+  padding: 2px;
+  font-size: 10pt;
+  width: 90%;
+  resize: none;
+}
+input[type=checkbox],
+input[type=radio]
+{
+  border: none;
+  padding: 0px;
+  margin: 2px 5px 0px 0px;
+  width: auto;
+  display: block;
+  float: left;
+}
+[dir="rtl"] input[type=checkbox],
+[dir="rtl"] input[type=radio]
+{
+  margin: 2px 0px 0px 5px;
+  float: right;
+}
+input[type=checkbox] + label,
+input[type=radio] + label
+{
+  display: block;
+  cursor: pointer;
+}
+textarea
+{
+  width: 90%;
+  resize: none;
+}
+textarea.codebox
+{
+  width: 95%;
+  min-height: 200px;
+  font-family: courier new, courier, serif;
+}
+select
+{
+  background-color: $theme_input_background_color;
+  color: $theme_input_font_color;
+  border-width: 1px;
+  border-color: $theme_input_border_colors;
+  padding: 1px 0px 1px 1px;
+  font-size: 10pt;
+  max-width: 250px;
+}
+select option
+{
+  padding: 0px 10px 0px 3px;
+}
+a.buttonlink
+{
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  padding-left: 21px;
+  display: inline-block;
+  line-height: 20px
+}
+[dir="rtl"] a.buttonlink
+{
+  background-position: right;
+  padding-right: 21px;
+}
+
+a.buttonlink_right
+{
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding-right: 19px;
+  font-weight: bold;
+  display: inline-block;
+}
+br.multi-text-separator
+{
+  margin-bottom: 8px;
+}
+
+
+/*
+Default Classes
+*/
+.clr{
+	clear: both !important;
+}
+
+.tip
+{
+  overflow: hidden;
+  clear: both;
+	text-align:center;
+	display:block;
+}
+[dir="rtl"] .tip {
+  text-align:center;
+}
+
+.tip > span
+{
+  +rounded;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: 6px 6px;
+  margin-bottom: 15px;
+  background-image: url(~/application/modules/Core/externals/images/tip.png);
+}
+
+
+.hidden{
+	display:none !important;
+}
+
+.description{
+	margin: 5px;
+}
+
+.unread{
+	font-weight:bold;
+	background-color:$theme_unread_background_color;
+}
+
+.loader {
+	padding-right:3px;
+	background-repeat:no-repeat;
+	display: inline-block;
+	margin: 5px;
+}
+
+/*
+GENERAL LAYOUT
+*/
+.generic_layout_container h3
+{
+  margin-bottom: 2px;
+	padding: 4px;
+	font-weight:bold;
+}
+/*
+Global Styles
+*/
+#global_wrapper
+{
+  text-align: center;
+}
+
+.content_global
+{
+	overflow: hidden;
+  width: $theme_content_width;
+  margin: 0px auto 0px auto;
+	min-height: 210px;
+}
+
+#global_content_loading
+{
+  width: 100%;
+  text-align:center;
+  min-height:100px;
+  padding-top:15%;
+}
+
+
+.global-form-posting{
+	min-height:20px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url(~/application/modules/Core/externals/images/loading.gif);
+	display:block;
+}
+
+
+/*Item List*/
+ul.items{
+  margin:3px;
+}
+
+ul.items > li {
+	display:block;
+	overflow: hidden;
+	padding: 8px;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+ul.items >li + li{
+	border-top: 1px solid $theme_border_color !important;
+}
+
+ul.items > li.thumbs{
+	float:left;
+	border:0px;
+	padding:0px;
+	margin:0px;
+}
+
+[dir="rtl"] ul.items > li.thumbs{
+  float: right;
+}
+ul.items > li > .item_photo {
+	float: left;
+	font-size: 0;
+	line-height: 0;
+	margin-right: 7px;
+	overflow: hidden;
+	display:block;;
+}
+[dir="rtl"] ul.items > li > .item_photo {
+   float: right;
+   margin-right: 0;
+   margin-left: 7px;
+}
+ul.items > li > .item_photo img{
+  width: 48px;
+}
+
+ul.items .thumbs_photo
+{
+  display: inline-block;
+  border: 1px solid $theme_photo_border_color;
+  padding: 3px;
+  vertical-align: bottom;
+}
+
+ul.items .thumbs_photo > span
+{
+  display: block;
+  width: 60px;
+  height: 50px;
+  background-position: center 50%;
+  background-repeat: no-repeat;
+}
+
+ul.items > li > .item_body {
+  padding-right: 10px;
+  overflow: hidden;
+}
+[dir="rtl"] ul.items > li > .item_body {
+  padding-right: 0;
+  padding-left: 10px;
+}
+ul.items > li > .item_body > .item_title {
+	font-weight: bold;
+}
+
+ul.items > li > .item_body > .item_date{
+	font-size: 0.9em;
+	color:$theme_font_color_light;
+}
+
+ul.items > li > .item_body > .item_options{
+	margin-top: 3px;
+}
+ul.items > li > .item_body > .item_stats{
+ float: left;
+}
+
+.items .buttonlink{
+	padding-left:18px;
+	background-repeat: no-repeat;
+	background-position:center left;
+}
+[dir="rtl"] .items .buttonlink{
+  padding-left:0;
+  padding-right:18px;
+ 	background-position:center right;
+}
+ul.items > li > .item_body > .item_options > a.buttonlink{
+	font-weight: normal;
+	margin-top: 3px;
+	padding: 1px 20px 3px;
+}
+.touch-navigation #navigation-selector{
+	cursor:pointer;
+	padding: 3px .5em;
+    color: $theme_navigation_font_color;
+    border: $theme_navigation_border;
+    font-weight: bold;
+}
+[dir="rtl"] .touch-navigation #navigation-selector {
+  background-position: left;
+}
+.touch-navigation #navigation-selector a {
+    color: $theme_navigation_font_color;
+    font-weight: bold;
+}
+.touch-navigation .navigation-header{
+	+foreground;
+	+rounded();
+	display: block;
+}
+
+.touch-navigation .navigation-body{
+	position: relative;
+	width:100%;
+}
+
+.touch-navigation #navigation-items{
+	z-index:999;
+}
+[dir="rtl"] .touch-navigation #navigation-items .item > a > span,
+[dir="rtl"] .touch-navigation #navigation-selector > span > span{
+  display: inline-block;
+}
+.touch-navigation .navigation-body > div{
+	width:100%;
+  z-index:999;
+  position: relative !important;
+}
+
+.touch-navigation .navigation-body > div > #navigation-items{
+	position:static;
+	z-index:999;
+}
+
+.touch-navigation #navigation-items{
+	border-style: solid;
+	border-color: $theme_border_dark_color;
+}
+.touch-navigation #navigation-items .item{
+	border-top: 1px solid $theme_border_color;
+}
+
+.touch-navigation #navigation-items .item a{
+	display: block;
+	padding: 5px;
+}
+
+.touch-navigation #navigation-items .active{
+	font-weight:bold;
+}
+
+.touch-navigation-paginator{
+	float:right;
+	display:block;
+}
+[dir="rtl"] .touch-navigation-paginator{
+  float:left;
+}
+
+.touch-navigation-paginator > .paginator-navigation{
+	margin:0px;
+	padding: 0px;
+	display:inline-block;
+	float:left;
+}
+
+#profile_options > ul > li{
+  margin-top:5px;
+}
+/*Multi Uploader*/
+#multi-upload
+{
+  display: none;
+  list-style: none;
+  max-width: 350px;
+  margin-top: 15px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+}
+#multi-upload li.file
+{
+  padding: 8px 8px 8px 28px;
+  font-size: .8em;
+  font-weight: normal;
+  background-repeat: no-repeat;
+  background-position: 6px 7px;
+  background-repeat: no-repeat;
+}
+#multi-upload li.file + li.file
+{
+  border-top: 1px solid #ccc;
+}
+#multi-upload li.file span
+{
+  display: none;
+}
+#multi-upload li.file-success
+{
+  background-image: url(~/application/modules/Touch/externals/images/file-finished.png);
+  background-repeat: no-repeat;
+}
+#multi-upload li.file .file-name
+{
+  display: block;
+  clear: left;
+  font-weight: bold;
+}
+
+#multi-upload li.file .file-remove
+{
+  clear: right;
+  float: right;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.touch_add_item {
+  border-top-style: solid;
+  border-top-width: 1px;
+  margin-top: 10px;
+  padding: 10px 0;
+}
+
+
+.touch_new_event {
+  background-image: url(~/application/modules/Touch/externals/images/new_event.png);
+}
+.touch_new_photo {
+  background-image: url(~/application/modules/Touch/externals/images/new_photo.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Header */
+.layout_page_header
+{
+  text-align: center;
+  clear: both;
+}
+
+.layout_page_header .layout_main
+{
+  width: $theme_topbar_width;
+  text-align: right;
+  margin: 0px auto 0px auto;
+}
+
+/* Footer */
+.layout_page_footer
+{
+  clear: both;
+  text-align: center;
+  overflow: hidden;
+}
+.layout_page_footer .layout_main
+{
+  /*width: $theme_footer_width;*/
+  text-align: left;
+  overflow: hidden;
+}
+.layout_page_footer select
+{
+  font-size: 1em;
+}
+
+
+.layout_touch_menu_footer
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+
+/*WIDGETS*/
+
+/*Main Header*/
+.layout_touch_main_header
+{
+	padding: 5px;
+}
+
+.layout_touch_main_header .header_left{
+	padding: 2px 1px 1px 5px;
+}
+
+.layout_touch_main_header .header_right{
+	padding: 2px 5px 1px 1px;
+}
+[dir="rtl"] .layout_touch_main_header .header_right{
+  padding: 2px 1px 1px 5px;
+}
+
+.layout_touch_main_header .site-logo {
+	width: 100%;
+	overflow-x:hidden;
+	text-align:center;
+}
+.layout_touch_main_header .layout_touch_menu_logo{
+	text-align:center;
+}
+.notifications_active{
+	font-weight:bold !important;
+	color: $theme_notifications_active_color !important;
+}
+/*
+SITE LOGO WIDGET
+*/
+.layout_touch_menu_logo
+{
+  font-size:1.8em;
+  font-weight: bold;
+  margin: 0px auto 5px auto;
+  text-align: left;
+  overflow: hidden;
+	padding: 0px 2px;
+}
+
+/*
+MINI MENU + SEARCH WIDGET
+Shows the mini menu and search widget
+*/
+.layout_touch_menu_mini
+{
+  width: $theme_topbar_minimenu_width;
+  margin: 0px auto 0px auto;
+  overflow: hidden;
+}
+.layout_touch_menu_mini > div > ul
+{
+  overflow: hidden;
+  background: $theme_topbar_minimenu_background_color;
+  padding: .1em;
+  border-top: none;
+	float:right;
+}
+.layout_touch_menu_mini > div > ul > li
+{
+  float: left;
+  overflow: hidden;
+	vertical-align:top;
+}
+.layout_touch_menu_mini > div > ul > li > a{
+  background: none;
+	display: block;
+}
+
+/*
+MAIN MENU WIDGET
+*/
+#touch_menu_mini_menu > ul > li
+{
+  margin-left: .1em;
+}
+.layout_touch_menu_main
+{
+  overflow: hidden;
+}
+.layout_touch_menu_main > ul
+{
+  width: $theme_topbar_menu_width;
+  margin: 0px auto 0px auto;
+  padding: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.layout_touch_menu_main > ul > li
+{
+  float: left;
+  font-size: $theme_topbar_menu_link_size;
+  background-repeat: repeat-x;
+	width: 25%;
+	text-align:center;
+}
+[dir="rtl"] .layout_touch_menu_main > ul > li
+{
+  float: right;
+}
+
+.layout_touch_menu_main > ul > li > a
+{
+	display:block;
+	font-weight:600;
+}
+
+.layout_touch_menu_main ul a:link,
+.layout_touch_menu_main ul a:visited
+{
+  color: $theme_topbar_menu_link_color;
+  text-decoration: $theme_topbar_menu_link_decoration;
+}
+
+
+
+
+
+/*
+DASHBOARD
+*/
+.layout_touch_dashboard h3{
+	font-size: 1.7em;
+	text-shadow: 1px 1px 0.5px $theme_shadow_dark_color;
+}
+
+.dashboard{
+	display: block;
+	text-align: center;
+	overflow: hidden;
+}
+
+.dashboard-items{
+	clear: both;
+  text-align: center;
+}
+
+.dashboard-items > li{
+	display: inline-block;
+	overflow: hidden;
+	font-size: 0.8em;
+	margin: 7px 5px;
+	height: 90px;
+	vertical-align:top;
+}
+
+.dashboard-items > li > a{
+	text-align: center;
+	background-position: center top;
+	padding: 60px 5px 5px 5px;
+	width: 50px;
+	height:25px;
+	display: block;
+}
+
+.menu_core_dashboard > a{
+	background-position:center top;
+	background-repeat:no-repeat;
+}
+/*
+PROFILE WIDGETS
+*/
+.layout_touch_profile_widgets{
+	padding: 3px;
+	margin: 3px 0px;
+	display: block;
+	clear: both;
+}
+
+.profile-left, .profile-right{
+	overflow: hidden;
+}
+
+.profile-left{
+	padding-right:7px;
+	float:left;
+}
+
+/*
+Profile Options
+*/
+/*Porfile Fields*/
+.layout_touch_user_profile_fields{
+	margin-bottom: 5px;
+}
+
+.profile_fields > ul > li > span{
+	font-weight:bold;
+	font-size: 0.9em;
+}
+.profile_fields > ul > li > span + span{
+	font-weight:normal;
+}
+
+/*Profile Info*/
+.profile_info{
+	font-size: 0.9em;
+}
+
+.profile_info > li > .type{
+	font-weight:bold;
+}
+
+
+
+/*
+GLOBAL FORM RESPONSES
+Used to show feedback from form submissions, i.e.
+error/result messages.
+*/
+ul.form-errors,
+ul.form-notices
+{
+  margin: 0px 0px 20px 0px;
+  overflow: hidden;
+}
+* + ul.form-errors,
+* + ul.form-notices
+{
+  margin-top: 20px;
+}
+ul.form-errors > li,
+ul.form-notices > li
+{
+  margin: 7px 5px 7px 5px;
+  background-repeat: no-repeat;
+  background-position: 8px 5px;
+  float: left;
+  clear: left;
+  overflow: hidden;
+}
+ul.form-errors > li {
+  background-image: url(~/application/modules/Core/externals/images/error.png);
+}
+ul.form-notices > li {
+  background-image: url(~/application/modules/Core/externals/images/notice.png);
+}
+/*
+LARGE BOX FORM
+These styles are for large forms that are given an exclusive page.
+They are not intended for smaller forms that are embedded elsewhere.
+Examples: Signup form, member settings form, etc.
+*/
+/* form container */
+.global_form
+{
+  clear: both;
+  overflow: hidden;
+}
+/* external form border */
+.global_form > div
+{
+  overflow: hidden;
+  margin: 0px auto 0px auto;
+}
+/* internal form border */
+.global_form > div > div
+{
+	+rounded();
+  background-color: $theme_form_background_color;
+}
+/* form headline */
+.global_form div.form-wrapper-heading
+{
+  font-weight: bold;
+  border-bottom: 1px solid $theme_foreground_border_color_light;
+  height: 1em;
+  margin-bottom: 10px;
+}
+.global_form div.form-wrapper-heading > span
+{
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  padding: 4px 6px 4px 0px;
+  background: $theme_form_background_color;
+	color: $theme_headline_color
+}
+.global_form div.form-wrapper + div.form-wrapper-heading
+{
+  margin-top: 5px;
+}
+/* form instructions (after title) */
+.global_form > div > div > h3 + p
+{
+  padding: 2px;
+  margin-top: 2px;
+  width: 80%;
+}
+/* add some space above form elements if title/instructions precede */
+.global_form > div > div > h3 + div,
+.global_form > div > div > h3 + p + div
+{
+  margin-top: 5px;
+}
+/* container for form label/element rows */
+.global_form > div > div
+{
+  overflow: hidden;
+}
+/* container row for a label (left) and element (right) */
+.global_form div.form-wrapper
+{
+  clear: both;
+  overflow: hidden;
+}
+/* left-side element label container */
+.global_form div.form-label
+{
+  overflow: hidden;
+  clear: left;
+  font-size: .9em;
+  color: $theme_form_label_font_color;
+}
+/* right-side form element container */
+.global_form div.form-element
+{
+  width: 100%;
+  overflow: hidden;
+  clear: none;
+	margin-bottom:3px;
+}
+/* all paragraphs of text in the form */
+.global_form div > p
+{
+  width: 80%;
+  padding-bottom: 5px;
+}
+/* paragraphs of text that come after an input element */
+.global_form div > input + p
+{
+  margin-top: 3px;
+  font-size: 7pt;
+}
+/* all text inputs in form */
+.global_form input[type=text],
+.global_form input[type=password]
+{
+  padding: 6px;
+  width: 90%;
+}
+/* only for text inputs that come after other text inputs */
+/* i.e. for when there is a vertical list of text inputs */
+.global_form input[type=text] + input[type=text]
+{
+  display: block;
+  margin-top: 5px;
+}
+/* all checkboxes and radios in form */
+.global_form input[type=checkbox],
+.global_form input[type=radio]
+{
+  clear: left;
+}
+/* for clickable labels that appear to the right side of elements */
+/* such as checkboxes or radios */
+.global_form input + label
+{
+  float: left;
+  display: block;
+  margin-top: 0px;
+  margin-left: 2px;
+	font-size: 0.7em;
+}
+[dir="rtl"] .global_form input + label{
+  float: right;
+  margin-left: 0;
+  margin-right: 2px;
+}
+/* all select boxes in form */
+.global_form select
+{
+  padding: 5px;
+  font-size: .9em;
+  width: 90%;
+}
+/* all textareas in form */
+.global_form textarea
+{
+  padding: 5px;
+  font-size: 10pt;
+	width: 90%;
+  height: 70px;
+}
+.global_form p.description {
+  margin: 3px 0px 10px 0px;
+  padding: 0px;
+	font-size:0.7em
+}
+.global_form #submit-element
+{
+  margin-bottom: 0px;
+}
+.global_form button[type=submit]
+{
+  margin-right: 3px;
+}
+
+/*Global Share Fomr*/
+.sharebox_form #body-label{
+	height:0px;
+}
+
+.sharebox
+{
+  +foreground;
+  background: $theme_widget_bg_color;
+  padding: 5px;
+  overflow: hidden;
+	margin: 5px 0px;
+}
+.sharebox_photo
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 8px;
+}
+.sharebox_photo img
+{
+  border: 1px solid $theme_photo_border_color;
+  max-width: 120px;
+  max-height: 120px;
+}
+.sharebox_title
+{
+  font-weight: bold;
+}
+.sharebox_description
+{
+  font-size: .8em;
+  margin-top: 3px;
+}
+
+
+/*Global Popup*/
+.global_form_popup
+{
+  clear: both;
+  overflow: hidden;
+}
+/* external form border */
+.global_form_popup > div
+{
+  overflow: hidden;
+  margin: 0px auto 0px auto;
+}
+/* internal form border */
+.global_form_popup > div > div
+{
+  border: 2px solid $theme_form_border_color;
+  padding: 5px;
+  background-color: $theme_form_background_color;
+}
+/* form headline */
+.global_form div.form-wrapper-heading
+{
+  font-weight: bold;
+  border-bottom: 1px solid $theme_foreground_border_color_light;
+  height: 1em;
+  margin-bottom: 10px;
+}
+.global_form div.form-wrapper-heading > span
+{
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  padding: 4px 6px 4px 0px;
+  background: $theme_form_background_color;
+	color: $theme_headline_color
+}
+.global_form_popup div.form-wrapper + div.form-wrapper-heading
+{
+  margin-top: 5px;
+}
+/* form instructions (after title) */
+.global_form_popup > div > div > h3 + p
+{
+  padding: 2px;
+  margin-top: 2px;
+  width: 80%;
+}
+/* add some space above form elements if title/instructions precede */
+.global_form_popup > div > div > h3 + div,
+.global_form_popup > div > div > h3 + p + div
+{
+  margin-top: 5px;
+}
+/* container for form label/element rows */
+.global_form_popup > div > div
+{
+  overflow: hidden;
+}
+/* container row for a label (left) and element (right) */
+.global_form_popup div.form-wrapper
+{
+  clear: both;
+  overflow: hidden;
+}
+/* left-side element label container */
+.global_form_popup div.form-label
+{
+  overflow: hidden;
+  clear: left;
+  font-size: .9em;
+  color: $theme_form_label_font_color;
+}
+
+/* right-side form element container */
+.global_form_popup div.form-element
+{
+  width: 100%;
+  overflow: hidden;
+  clear: none;
+	margin-bottom:3px;
+}
+
+/* all paragraphs of text in the form */
+.global_form_popup div > p
+{
+  width: 80%;
+  padding-bottom: 5px;
+}
+/* paragraphs of text that come after an input element */
+.global_form_popup div > input + p
+{
+  margin-top: 3px;
+  font-size: 7pt;
+}
+/* all text inputs in form */
+.global_form_popup input[type=text],
+.global_form_popup input[type=password]
+{
+  padding: 5px;
+  width: 90%;
+}
+/* only for text inputs that come after other text inputs */
+/* i.e. for when there is a vertical list of text inputs */
+.global_form_popup input[type=text] + input[type=text]
+{
+  display: block;
+  margin-top: 5px;
+}
+/* all checkboxes and radios in form */
+.global_form_popup input[type=checkbox],
+.global_form_popup input[type=radio]
+{
+  clear: left;
+}
+/* for clickable labels that appear to the right of elements */
+/* such as checkboxes or radios */
+.global_form_popup input + label
+{
+  float: left;
+  display: block;
+  margin-top: 0px;
+  margin-left: 2px;
+}
+
+/* all select boxes in form */
+.global_form_popup select
+{
+  padding: 1px 0px 1px 1px;
+  font-size: .9em;
+  max-width: 80px;
+}
+/* all textareas in form */
+.global_form_popup textarea
+{
+  padding: 5px;
+  font-size: 10pt;
+	width: 90%;
+  min-height: 20px;
+}
+.global_form_popup p.description {
+  margin: 3px 0px 5px 0px;
+  padding: 0px;
+}
+.global_form_popup #submit-element
+{
+  margin-bottom: 0px;
+}
+.global_form_popup button[type=submit]
+{
+  margin-right: 3px;
+}
+
+
+/*
+SMALL BOX FORM
+These styles are for small box forms, such
+as the login box found by default on the main
+index page. Form names and inputs are stacked
+vertically (not floated) to fit into small-width
+content areas.
+*/
+.global_form_box .form-wrapper + .form-wrapper
+{
+  margin-top: 2px;
+}
+.global_form_box .form-label
+{
+  padding: 0px;
+  width: auto;
+  float: none;
+  clear: both;
+  margin: 0px;
+}
+.global_form_box label
+{
+  text-align: left;
+  display: block;
+  font-size: .8em;
+  margin-bottom: 2px;
+	margin-top: 5px;
+}
+.global_form_box .form-element
+{
+  overflow: hidden;
+}
+
+.global_form_box input[type=text],
+.global_form_box input[type=password]
+{
+  padding: 5px;
+  width: 90%;
+}
+
+
+/*
+SEARCH PAGE
+Used to style the main search page.
+*/
+#searchform
+{
+  float: left;
+  clear: both;
+  padding: 5px;
+	width: 90%;
+}
+#searchform input[type=text]
+{
+  width: 100%;
+	margin-bottom: 3px;
+}
+#searchform #query-label
+{
+  display: none;
+}
+#searchform #query-wrapper
+{
+  float: left;
+  overflow: hidden;
+  padding: 3px;
+}
+#searchform #submit-label
+{
+  display: none;
+}
+#searchform #submit-wrapper
+{
+  float: left;
+  overflow: hidden;
+  margin-left: 1px;
+}
+.search_result
+{
+  overflow: hidden;
+  width: 92%;
+  margin-top: 3px;
+  border-top-width: 1px;
+  padding-top: 3px;
+}
+.search_result .search_photo
+{
+  display: block;
+  float: left;
+  overflow: hidden;
+  margin-right: 7px;
+}
+.search_result .search_icon
+{
+  display: block;
+  float: left;
+  overflow: hidden;
+  width: 48px;
+  margin-right: 7px;
+}
+.search_result img
+{
+  margin: auto;
+  display: block;
+}
+.search_result .search_info
+{
+  display: block;
+  overflow: hidden;
+}
+.search_result .search_title
+{
+  /* font-weight: bold; */
+}
+.search_result .highlighted-text
+{
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/*
+COMMENTS
+These styles are used everywhere comments appear.
+*/
+.comments
+{
+  overflow: hidden;
+}
+.comments > ul
+{
+  overflow: hidden;
+}
+.comments > ul > li
+{
+  border: none;
+  overflow: hidden;
+}
+.comments .comments_author a
+{
+  font-weight: bold;
+  margin-right: 2px;
+}
+.comments .comments_author_photo
+{
+  float: left;
+  overflow: hidden;
+}
+[dir="rtl"] .comments .comments_author_photo
+{
+  float: right;
+}
+.comments .comments_author_photo img
+{
+  display: block;
+}
+.comments .comments_options
+{
+  color: $theme_font_color_light;
+  margin-bottom: 6px;
+}
+[dir="rtl"] .comments .comments_options span {
+  display: inline-block;
+}
+.comments .comments_comment_options > a
+{
+  font-size: .8em;
+  margin-top: 5px;
+  overflow: hidden;
+}
+.comments .comments_info
+{
+  font-size: .8em;
+  padding-top: 2px;
+  padding-left: 5px;
+  overflow: hidden;
+}
+[dir="rtl"] .comments .comments_info{
+  padding-left: 0;
+  padding-right: 5px;
+}
+.comments .comments_date
+{
+  font-size: .8em;
+  margin-top: 3px;
+  color: $theme_font_color_light;
+  overflow: hidden;
+}
+.comments .comments_likes,
+.comments .comments_viewall
+{
+  padding-left: 18px;
+  line-height: 16px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  font-size: .8em;
+}
+[dir="rtl"] .comments .comments_likes,
+[dir="rtl"] .comments .comments_viewall
+{
+  padding-left: 0;
+  padding-right: 18px;
+  background-position: right center;
+}
+.comments .comments_likes a,
+.comments .comments_viewall a
+{
+  font-weight: bold;
+}
+.comments > form
+{
+  +foreground;
+  background-image: none;
+  border: none;
+  padding: 5px 10px 5px 5px;
+  border-top: 1px solid $theme_foreground_border_color;
+}
+.comments > form > textarea
+{
+  width: 100%;
+}
+.comments > form > button
+{
+  display: block;
+  margin-top: 7px;
+}
+
+/*
+TABS (TAB STYLE, NON-DEFAULT)
+*/
+.tabs > ul{
+	list-style-type: circle;
+}
+
+.tabs > ul > li{
+	font-size: 1em;
+	font-weight:600;
+}
+
+.tabs > ul > li.content{
+	font-weight:normal;
+	padding: 7px;
+}
+
+.tabs > ul > li > a{
+	display:block;
+	padding: 8px;
+	padding-left: 10px;
+	color: $theme_font_color_light;
+}
+
+.tabs > ul > li.active > a{
+	background-color: $theme_active_color;
+	color: $theme_font_color;
+}
+
+.tabs > ul > li > a >img{
+	float:right;
+	vertical-align:baseline;
+}
+
+.layout_touch_container_tabs{
+	/*margin-top: 5px;*/
+}
+
+
+/*
+POPUP FORM
+These are used to style popup (i.e. smoothbox) forms.
+Also used to style popup response messages, etc.
+*/
+.global_form_popup
+{
+  overflow: hidden;
+}
+
+.global_form_popup #submit-wrapper,
+.global_form_popup #cancel-wrapper
+{
+  float: left;
+  overflow: hidden;
+}
+.global_form_popup #buttons-wrapper
+{
+  margin-top: 5px;
+}
+.global_form_popup #buttons-wrapper button
+{
+  margin-right: 4px;
+}
+html[dir="rtl"] .global_form_popup #buttons-wrapper button
+{
+  margin-right: 0px;
+  margin-left: 4px;
+}
+.global_form_popup_message
+{
+  display: block;
+  padding: 1em;
+  text-align: center;
+  font-weight: bold;
+}
+/*Search Field*/
+.filter_text{
+	width: 100%;
+}
+
+.filter_text #search{
+	padding: 3px;
+}
+
+.filter_submit{
+	padding-left: 10px;
+	padding-top: 3px;
+}
+html[dir="rtl"] .filter_submit{
+  padding-left: 0;
+  padding-right: 10px;
+}
+.filter_default_value{
+	color: $theme_font_color_light !important;
+}
+
+.filter_text_container {
+  +rounded(3px);
+  background-color: $theme_input_background_color;
+  color: $theme_input_font_color;
+  border-width: 1px;
+  border-color: $theme_input_border_colors;
+  padding: 2px;
+  font-size: 10pt;
+  resize: none;
+}
+.filter_text_container input {
+  background:none;
+  border:none;
+  height: 15px;
+  width:100% !important;
+}
+.filter_text_container a {
+  display:block;
+  width:21px;
+  height:21px;
+  background:transparent url("~/application/modules/Touch/externals/images/search.png") center no-repeat;
+}
+
+/* common theme styles */
+
+
+/*MooTouch CSS {*/
+.indicator {
+  background:rgba(0,0,0,0.4);
+  -webkit-border-radius:5px;
+  position:absolute;
+  opacity:0;
+}
+  .indicator.showing {
+    opacity:1;
+  }
+.y-axis-indicator {
+  width:5px;
+  min-height:10px;
+  top:0px;
+  right:5px;
+  margin:5px 0;
+}
+.x-axis-indicator {
+  bottom:5px;
+  margin:0 5px;
+  height:5px;
+}
+/*}MooTouch CSS*/
+
+/* Corrections { */
+#filter_form, .touch-navigation .navigation-header{
+  border-radius: 0 !important;
+
+}
+img.main, img.thumb_normal, img.thumb_profile, img.thumb_icon{
+  display: block;
+}
+#touch_profile_photo, .user_home_photo{
+  margin-left: 8px;
+  margin-right: 3px;
+}
+#touch_profile_photo{
+  width: 82px;
+  overflow: hidden;
+}
+#touch_profile_photo > div div{
+  display: none; !important;
+}
+.layout_touch_container_columns{
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+/* } Corrections */
+/* css3 Effects {*/
+.content_global_effect{
+  -moz-transition: -moz-transform 0.3s ease-out 0;
+  -webkit-transition:-webkit-transform 0.3s ease-out 0;
+  -o-transition:-webkit-transform 0.3s ease-out 0;
+  height: 480px;
+}
+
+.content_global_hide {
+  -moz-transform: scale(0.90);
+  -webkit-transform: scale(0.90);
+  -o-transform: scale(0.90);
+  opacity: 0;
+  box-shadow: 0 1px 4px rgba(58, 83, 99, 1);
+  display:none;
+}
+/* }css3 Effects*/
+
+/*language{*/
+.touch_lang_4_js{
+ display: none !important;
+}
+/*}language*/
+
+.wall-mobile {
+    background-image: url("~/application/modules/Touch/modules/Wall/externals/images/mobile.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 10px;
+    margin-left: 5px;
+    padding-left: 16px;
+}
+.touch_tab_group .touch_tab_right,
+.touch_tab_group .touch_tab_middle,
+.touch_tab_group .touch_tab {
+  height: 24px;
+  overflow: hidden;
+  border-radius: 0 !important;
+}
+.touch_tab_group .touch_tab_right +.touch_tab_right,
+.touch_tab_group .touch_tab_middle +.touch_tab_middle,
+.touch_tab_group .touch_tab +.touch_tab {
+  border-left: none;
+}
+.touch_tab_group .touch_tab_right{
+  border-right: none;
+}
+
+.touch_tab_group .touch_tab_right,
+.touch_tab_group .touch_tab_middle,
+.touch_tab_group .touch_tab {
+  float: left;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5px;
+}
+
+.touch_tab_group .touch_tab + .touch_tab{
+}
+
+.touch_tab_group .touch_tab_right {
+  float: right;
+}
+
+.touch_tab_group .touch_tab_middle {
+  float: none;
+  border-right: 1px solid;
+}
+
+/*Requirement Styles*/
+.touch_not_support ul.form-errors li{
+  float: none;
+}
+
+/* Image Zoom Styles (ImageZoom.js){ */
+.touch_zoom_image_a_active > img,
+.touch_zoom_image_a_inactive > img{
+  -moz-transition: padding, margin, width, height, top, left, opacity;
+  -webkit-transition: padding, margin, width, height, top, left, opacity;
+  -o-transition: padding, margin, width, height, top, left, opacity;
+
+  -moz-transition-duration: .3s;
+  -webkit-transition-duration: .3s;
+  -o-transition-duration: .3s;
+
+  -moz-transition-delay: .1s;
+  -webkit-transition-delay: .1s;
+  -o-transition-delay: .1s;
+
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+}
+.touch_zoom_image_a_inactive > img{
+ /*opacity: 0;*/
+}
+.touch_zoom_image_a_inactive{
+}
+.touch_zoom_image_a_active{
+  display: block;
+}
+.touch_zoom_image_a_active > img{
+  padding:5px;
+  top: 0;
+  left: 0;
+  max-width: 96%;
+  max-height: 96%;
+  position: absolute;
+
+}
+/* }Image Zoom Styles (ImageZoom.js) */
+
+/* Profile Settings Styles { */
+h3.edit_profile_headline,
+h3.settings_headline{
+  font-weight: normal;
+  padding: 5px;
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+[dir="rtl"] h3.edit_profile_headline,
+[dir="rtl"] h3.settings_headline{
+  padding: 5px;
+  padding-right: 25px;
+  background-position: right;
+}
+h3.settings_headline{
+  background-image: url("~/application/modules/Touch/externals/images/settings.png");
+}
+h3.edit_profile_headline{
+  background-image: url("~/application/modules/Touch/externals/images/profile_edit.png");
+}
+/* } Profile Settings Styles */
+.profile_fields > ul, .profile_fields > h4{
+  overflow: hidden;
+}
+.profile_fields > ul{
+  padding: 0 5px;
+}
+.profile_fields > h4{
+  background-color: $theme_widget_bg_color;
+  border-color: $theme_foreground_border_color;
+  border-width: 1px 0 1px 0;
+  border-style: solid;
+  text-shadow: 0.7px 0.7px $theme_body_background_color;
+  padding: 0 0 0 5px;
+}
+.profile_fields > ul > li, .profile_fields > h4{
+  line-height: 20px;
+}
+.profile_fields > ul > li > span{
+  font-weight:bold;
+ 	font-size: 0.9em;
+  width: 35%;
+  float: left;
+  overflow: hidden;
+  display: block;
+}
+[dir="rtl"] .profile_fields > ul > li > span{
+  float: right;
+}
+.profile_fields > ul > li > span + span{
+  font-weight:normal;
+  width: 65%;
+}
+.wall_share_button{
+  height: 34px;
+  padding: 5px;
+}
+/* Captcha Styles { */
+#captcha-wrapper{
+  border: 1px solid #DDDDDD;
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: 0 0 1px #DDDDDD;
+  margin-top: 5px;
+
+}
+#captcha-wrapper .label,
+#captcha-wrapper .description {
+  padding: 5px 0;
+}
+#captcha-element{
+  padding: 5px;
+  border-top: 1px solid #ddd;
+}
+#captcha-wrapper img {
+  max-width: 400px;
+  width: -moz-available;
+}
+#captcha-input{
+  border-radius: 3px 0 0 3px;
+  width: auto;
+  float: left;
+}
+#captcha-element > .captcha-refresh{
+  border-radius: 0 3px 3px 0;
+  padding: 5px;
+  padding-left: 25px;
+  background-image: url("~/application/modules/Touch/externals/images/refresh_btn_icon.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+  height: 18px;
+}
+/* } Captcha Styles */
+div > span.not_touch_integrated{
+  background-color: #FBE3E4;
+  border: 2px solid #FBC2C4;
+  color: #D12F19;
+  display: block;
+  padding: 8px 5px;
+}
+
+#home_url> img{
+  max-width: 200px;
+  width: 100%;
+}
+body .dashboard-items > li {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

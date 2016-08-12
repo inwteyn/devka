@@ -1,0 +1,24 @@
+.cometchat .list_item .ui-li-thumb{
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background-position: top center;
+    top: 42px;
+}
+.cometchat .ui-btn-inner .ui-link-inherit{
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+    color: #222!important;
+}
+.cometchat .list_item{
+    background-image: none!important;
+    border-bottom: 1px solid #aaa;
+    background-color: transparent;
+    border-top: none;
+}
+.cometchat .list_item .ui-link-inherit{
+    padding-left: 70px!important;
+}
+.cometchat .list_item .ui-icon-arrow-r{
+    display: none;
+}

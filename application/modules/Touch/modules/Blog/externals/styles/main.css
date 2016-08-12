@@ -1,0 +1,56 @@
+/* $Id: main.css 2011-04-26 11:18:13 mirlan $ */
+/*Blogs*/
+ul.categories > li > a{
+	padding: 2px;
+	display: block;
+}
+
+/*Layout Content*/
+.layout_content{
+	padding: 0.5em;
+	vertical-align: top;
+}
+
+.layout_content .description{
+	font-size: 0.9em;
+}
+
+/*Success content*/
+.success{
+	padding: 20px;
+	text-align: center;
+	width:100%;
+}
+
+.success .messages{
+	padding: 5px;
+	text-align:center;
+}
+
+.success .button{
+	padding: 2px;
+	font-weight: bold;
+	text-align:center;
+}
+
+/*Error content*/
+.error{
+	padding: 20px;
+	text-align: center;
+	width:100%;
+}
+
+.error .messages{
+	padding: 5px;
+	text-align:center;
+}
+
+.error .button{
+	padding: 2px;
+	font-weight: bold;
+	text-align:center;
+}
+
+.blog_categories a.active{
+  font-weight:bold;
+}

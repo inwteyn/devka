@@ -1,0 +1,88 @@
+/* $Id: page_print.css 2012-09-04 16:02 ratbek $ */
+
+@include "~/application/modules/Core/externals/styles/admin/constants.css";
+
+.print_offer_preview {
+  clear: both;
+  padding: 15px;
+}
+
+.print_offer_title {
+  border-bottom-style: solid;
+  font-size: 20px;
+  font-weight: bold;
+  overflow: auto;
+  padding: 5px;
+  text-align: center;
+}
+
+.print_offer_body {
+  margin-top: 10px;
+  overflow: hidden;
+  padding: 10px;
+  border: 1px dashed #ccc;
+}
+
+.print_offer_body .offer_item {
+  border: 1px solid transparent;
+  float: left;
+  width: 97%;
+  margin: 3px 4px 30px 3px;
+  padding: 2px;
+}
+
+.print_offer_body .offer_photo {
+  max-height: 200px;
+  max-width: 230px;
+  min-height: 200px;
+  min-width: 230px;
+  text-align: center;
+  float: left;
+  margin-right: 14px;
+}
+
+.print_offer_body .offer_photo img {
+  border: none;
+  height: 200px;
+  width: 100%;
+}
+
+.print_offer_body .offer_info {
+  padding: 0 5px;
+  float: left;
+  width: 305px;
+}
+
+.print_offer_body .offer_info span {
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.print_offer_body .offer_title {
+  margin-bottom: 12px;
+}
+
+.print_offer_body .offer_title h3 {
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  font-size: 11pt;
+  font-weight: bold;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+
+.print_offer_body .offer_how_to_get {
+  background: none repeat scroll 0 0 $theme_foreground_background_color;
+  border: 1px solid $theme_foreground_border_color;
+  border-radius: 3px 3px 3px 3px;
+  margin-top: 10px;
+  padding: 6px;
+  width: 305px;
+  float: left;
+}
+
+.print_offer_body .offer_how_to_get div {
+  font-size: 0.8em;
+  padding-bottom: 4px;
+}
+

@@ -1,0 +1,1138 @@
+
+.pageevent_navigation > .navigation {
+  float:left;
+}
+
+[dir="rtl"] .pageevent_navigation > .navigation {
+  float:right;
+}
+
+.pageevent_navigation > .pageevent_loader {
+  float:right;
+  margin-right:8px;
+  margin-top:8px;
+}
+#loader_pageevent{
+    background: url("~/application/modules/Pageevent/externals/images/loader.gif") no-repeat scroll center center rgba(0, 0, 0, 0.5);
+    z-index: 5000;
+    position: fixed;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5000;
+
+}
+.datepicker_container input {
+  background: url("~/application/modules/Pageevent/externals/images/calendar.png") no-repeat scroll right center transparent;
+  padding-left: 10px !important;
+  width: 145px !important;
+}
+
+.wall-compose-pageevent-activator,
+.wall-compose-pageevent-menu span {
+
+}
+a.wall-compose-pageevent-activator:hover,
+a.wall-compose-pageevent-activator.is_active{
+    color: #E09200;
+}
+.wall-social-composer #pageevent-composer-create-form {
+    background-color: #FFFFFF;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 45px rgba(0, 0, 0, 0.35);
+    display: none;
+    min-width: 550px;
+    position: fixed;
+    top: 50px;
+    transform: translate(0px, -150%);
+    transition: transform 0.5s ease 0s;
+    z-index: 202;
+}
+
+.pageevent_list .item {
+  border-top-width:1px;
+  margin:4px 0;
+  padding: 10px 0;
+}
+.pageevent_list .item:first-child {
+  border:none;
+  padding-top:0;
+}
+.pageevent_list .item .details {
+  font-size:9pt;
+  margin-bottom:3px;
+  color: $theme_font_color_light;
+}
+.pageevent_list .photo {
+  float:left;
+  width:50px;
+}
+[dir="rtl"] .pageevent_list .photo {
+  float:right;
+}
+.pageevent_list .title {
+  font-size: 10pt;
+  font-weight: bold;
+  margin-bottom:3px;
+}
+.pageevent_list .event_info {
+  margin:0 10px;
+  float:left;
+  width: 620px;
+}
+[dir="rtl"] .pageevent_list .event_info {
+  float:right;
+}
+.pageevent_list .options {
+  float:right;
+}
+[dir="rtl"] .pageevent_list .options {
+  float:left;
+}
+.pageevent_event .content {
+  float:left;
+  margin-left: 35px;
+  width:500px;
+}
+
+[dir="rtl"] .pageevent_event .content {
+  float:right;
+}
+.pageevent_event .sidebar {
+  float: left;
+  width:250px;
+}
+[dir="rtl"] .pageevent_event .sidebar {
+  float: left;
+}
+.pageevent_event .sidebar > .photo {
+  margin-bottom:10px;
+}
+.pageevent_list .options {
+  text-align:right;
+}
+.pageevent_list .options a {
+  margin:0 3px;
+}
+.pageevent_event > .content > .title {
+  font-size:11pt;
+  font-weight:bold;
+  margin: 12px 0;
+}
+.pageevent_event > .content > .header {
+  border-bottom-width: 1px;
+  margin-bottom: 12px;
+  padding-bottom: 5px;
+}
+.pageevent_event > .sidebar .header {
+  border-bottom-width: 1px;
+  margin-bottom: 12px;
+  padding-bottom: 5px;
+}
+.pageevent_event > .content > .header > span {
+  font-size: 14px;
+  font-weight: bold;
+}
+[dir="rtl"] .pageevent_event > .content > .header > span {
+  float: right;
+}
+.pageevent_event .header .options {
+  float:right;
+}
+[dir="rtl"] .pageevent_event .header .options {
+  float: left;
+}
+.pageevent_event .content .options .item {
+  float: left;
+  margin: 0 2px;
+}
+[dir="rtl"] .pageevent_event .content .options .item {
+  float: right;
+}
+.pageevent_event .content .options .item span {
+  line-height: 22px;
+}
+.pageevent_event .content .options .item button {
+  padding:3px;
+}
+.pageevent_event .content .options .item button.active {
+  background-color:$theme_button_background_color_hover;
+  background-image:none;
+  margin-left: 3px;
+}
+.pageevent_event .event_info .item .label {
+  font-weight:bold;
+  width: 65px;
+  float:left;
+}
+[dir="rtl"] .pageevent_event .event_info .item .label {
+  float:right;
+}
+.pageevent_event .event_info .item .value {
+  margin-left:10px;
+  float:left;
+}
+[dir="rtl"] .pageevent_event .event_info .item .value {
+  float:right;
+}
+.pageevent_event .description {
+  margin:10px 0;
+}
+
+
+.pageevent_event .members .item {
+  float: left;
+  overflow: hidden;
+  padding: 2px;
+  text-align: center;
+  width: 55px;
+  height:90px;
+}
+[dir="rtl"] .pageevent_event .members .item {
+  float: right;
+}
+
+.pageevent_event .members .item a {
+  display:block;
+}
+.pageevent_event .header .title {
+  float:left;
+}
+[dir="rtl"] .pageevent_event .header .title {
+  float:right;
+}
+.pageevent_event .header .viewall {
+  float:right;
+}
+.pageevent_event .header .viewall a {
+  display:block;
+}
+.pageevent_event .members {
+  margin-top: 15px;
+  width:240px;
+}
+.pageevent_event .members .user_info {
+  font-size: 11px;
+  text-align:center;
+}
+
+
+.pageevent .cancel {
+  background-image:url("~/application/modules/Pageevent/externals/images/cancel.png");
+}
+.pageevent .accept {
+  background-image:url("~/application/modules/Pageevent/externals/images/accept.png");
+}
+.pageevent .reject {
+  background-image:url("~/application/modules/Pageevent/externals/images/reject.png");
+}
+.pageevent .edit {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  color: #00b9f2;
+  display: block;
+  float: left;
+  font-size: 1em;
+  line-height: 15px;
+  margin-right: 3px;
+  text-align: center;
+  width: 60px;
+  text-decoration: none;
+}
+.pageevent .remove {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  color: #00b9f2;
+  display: block;
+  float: left;
+  font-size: 1em;
+  line-height: 15px;
+  text-align: center;
+  width: 60px;
+  margin-right: 3px;
+  text-decoration: none;
+}
+.pageevent .invite {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  color: #00b9f2;
+  display: block;
+  float: left;
+  font-size: 1em;
+  line-height: 15px;
+  text-align: center;
+  margin-right: 3px;
+  width: 60px;
+  text-decoration: none;
+}
+.pageevent .waiting {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  color: #00b9f2;
+  display: block;
+  float: left;
+  font-size: 1em;
+  line-height: 15px;
+  text-align: center;
+  width: 60px;
+  margin-right: 3px;
+  text-decoration: none;
+}
+.pageevent .back {
+  background-image:url("~/application/modules/Pageevent/externals/images/back.png");
+}
+.pageevent .join {
+  background-image:url("~/application/modules/Pageevent/externals/images/join.png");
+}
+.pageevent .leave {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  color: #00b9f2;
+  display: block;
+  float: left;
+  margin-right: 3px;
+  font-size: 1em;
+  line-height: 15px;
+  text-align: center;
+  width: 60px;
+  text-decoration: none;
+}
+.notification_type_pageevent_invite {
+  background-image:url("~/application/modules/Pageevent/externals/images/invite.png");
+}
+.notification_type_pageevent_accepted {
+  background-image:url("~/application/modules/Pageevent/externals/images/accept.png");
+}
+.notification_type_pageevent_approved {
+  background-image:url("~/application/modules/Pageevent/externals/images/accept.png");
+}
+
+.activity_icon_pagevent_create {
+  background-image:url("~/application/modules/Pageevent/externals/images/event.png");
+}
+.activity_icon_pagevent_join {
+  background-image:url("~/application/modules/Pageevent/externals/images/join.png");
+}
+
+.icon_pageevent_photo_new {
+  background-image:url("~/application/modules/Pageevent/externals/images/upload.png");
+}
+
+.icon_pageevent_delete {
+  background-image:url("~/application/modules/Pageevent/externals/images/delete.png");
+}
+.icon_pageevent_edit{
+  background-image:url("~/application/modules/Pageevent/externals/images/edit.png");
+}
+
+.icon_pageevent_leave{
+  background-image:url("~/application/modules/Pageevent/externals/images/leave.png");
+}
+
+.pageevent_calendar .calendar {
+  float:left;
+}
+.pageevent_calendar .item {
+  border-width:1px;
+  border-top-width:0;
+  padding: 5px;
+}
+.pageevent_calendar .item:first-child {
+  border-top-width:1px;
+}
+.pageevent_calendar .calendar .container {
+  +foreground;
+  padding: 3px;
+  width:45px;
+}
+.pageevent_calendar .calendar .container .day {
+  background-color: $theme_body_background_color;
+  font-size: 13pt;
+  text-align: center;
+}
+.pageevent_calendar .calendar .container .month {
+  font-size: 13pt;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.pageevent_calendar .event_info {
+  float:left;
+  margin-left:5px;
+  overflow:hidden;
+}
+.layout_left .pageevent_calendar .event_info {
+  width:95px;
+}
+.layout_middle .pageevent_calendar .event_info {
+  width:650px;
+}
+.pageevent_calendar .event_info .title {
+  font-size: 10pt;
+  font-weight: bold;
+}
+.pageevent_calendar .event_info .where {
+  margin: 2px 0;
+}
+
+
+.pageevent_waiting .item {
+  float: left;
+  height: 70px;
+  margin-left: 10px;
+  overflow: hidden;
+  width: 225px;
+}
+.pageevent_waiting .photo {
+  float: left;
+  padding: 3px;
+  text-align: center;
+}
+.pageevent_waiting .username {
+  font-size: 10pt;
+  margin: 5px 0;
+}
+.pageevent_waiting .user_info {
+  float:left;
+  margin-left:5px;
+}
+.pageevent_waiting .header {
+  border-bottom-width: 1px;
+  margin-bottom: 12px;
+}
+.pageevent_waiting .header .title {
+  float: left;
+  font-size: 14pt;
+  margin-bottom: 7px;
+}
+.pageevent_waiting .header .backlink {
+  float:right;
+}
+.pageevent_waiting .header .backlink a{
+  margin-top: 5px;
+}
+.pageevent_waiting .options ul li {
+  float: left;
+  margin-right: 5px;
+}
+
+
+
+
+/* FANCY  */
+.swiff-uploader-box a
+{
+  display: none !important;
+}
+#event-demo-status.hide
+{
+  display: none;
+}
+#event-demo-status
+{
+  width: 420px;
+}
+#event-demo-status > div
+{
+  margin: 15px 0px 0px 0px;
+}
+#event-demo-status > div:first-child
+{
+  margin: 0px 0px 15px 0px;
+}
+#event-demo-status .current-text,
+#event-demo-status .demo-status-overall
+{
+  display: none;
+}
+#event-demo-status .overall-title,
+#event-demo-status .current-title
+{
+  font-size: .7em;
+  text-transform: uppercase;
+}
+#event-demo-status .progress
+{
+  background-position: +50% 0;
+  margin-right: 0.5em;
+  vertical-align: middle;
+  background-image: url(~/externals/fancyupload/assets/progress-bar/progress.gif);
+}
+#event-demo-status .progress-text
+{
+  font-size: 0.9em;
+}
+#event-demo-list
+{
+  display: none;
+  list-style: none;
+  width: 450px;
+  margin-top: 15px;
+  overflow-y: auto;
+	background-color: $theme_body_background_color;
+  border: 1px solid $theme_foreground_border_color;
+	+rounded(3px);
+}
+#event-demo-list li.validation-error
+{
+  padding: 8px;
+  font-size: .8em;
+  font-weight: normal;
+  background-color: $theme_body_background_color;
+  background-repeat: no-repeat;
+  background-position: 6px 7px;
+  padding-left: 28px;
+  background-image: url(~/externals/fancyupload/assets/error.png);
+  border-bottom: 1px solid $theme_foreground_border_color;
+  font-weight: bold;
+  cursor: pointer;
+}
+#event-demo-list li.file
+{
+  padding: 8px;
+  font-size: .8em;
+  font-weight: normal;
+  background-color: $theme_body_background_color;
+  background-repeat: no-repeat;
+  background-position: 6px 7px;
+  padding-left: 28px;
+  background-repeat: no-repeat;
+}
+#event-demo-list li.file + li.file
+{
+  border-top: 1px solid $theme_foreground_border_color;
+}
+#event-demo-list li.file span
+{
+  display: none;
+}
+#event-demo-list li.file-uploading
+{
+  background-image: url(~/externals/fancyupload/assets/loading.gif);
+  background-repeat: no-repeat;
+}
+#event-demo-list li.file-success
+{
+  background-repeat: no-repeat;
+}
+#event-demo-list li.file .file-name
+{
+  display: block;
+  clear: left;
+  font-weight: bold;
+}
+#event-demo-list li.file .file-size
+{
+  display: none;
+}
+#event-demo-list li.file .file-info
+{
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+#event-demo-list li.file .file-remove
+{
+  clear: right;
+  float: right;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.swiff-uploader-box a
+{
+  display: none !important;
+}
+#event_photo-demo-status.hide
+{
+  display: none;
+}
+#event_photo-demo-status
+{
+  width: 420px;
+}
+#event_photo-demo-status .current-text,
+#event_photo-demo-status .demo-status-overall
+{
+  display: none;
+}
+#event_photo-demo-status .overall-title,
+#event_photo-demo-status .current-title
+{
+  font-size: .7em;
+  text-transform: uppercase;
+}
+#event_photo-demo-status .progress
+{
+  background-position: +50% 0;
+  margin-right: 0.5em;
+  vertical-align: middle;
+  background-image: url(~/externals/fancyupload/assets/progress-bar/progress.gif);
+}
+#event_photo-demo-status .progress-text
+{
+  font-size: 0.9em;
+}
+#event_photo-demo-list
+{
+  display: none;
+  list-style: none;
+  width: 450px;
+  margin:5px 0;
+  overflow-y: auto;
+	background-color: $theme_body_background_color;
+  border: 1px solid $theme_foreground_border_color;
+	+rounded(3px);
+}
+#event_photo-demo-list li.validation-error
+{
+  padding: 8px;
+  font-size: .8em;
+  font-weight: normal;
+  background-color: $theme_body_background_color;
+  background-repeat: no-repeat;
+  background-position: 6px 7px;
+  padding-left: 28px;
+  background-image: url(~/externals/fancyupload/assets/error.png);
+  border-bottom: 1px solid $theme_foreground_border_color;
+  font-weight: bold;
+  cursor: pointer;
+}
+#event_photo-demo-list li.file
+{
+  padding: 8px;
+  font-size: .8em;
+  font-weight: normal;
+  background-color: $theme_body_background_color;
+  background-repeat: no-repeat;
+  background-position: 6px 7px;
+  padding-left: 28px;
+  background-image: url(~/externals/fancyupload/assets/waiting.png);
+  background-repeat: no-repeat;
+}
+#event_photo-demo-list li.file + li.file
+{
+  border-top: 1px solid $theme_foreground_border_color;
+}
+#event_photo-demo-list li.file span
+{
+  display: none;
+}
+#event_photo-demo-list li.file-uploading
+{
+  background-image: url(~/externals/fancyupload/assets/loading.gif);
+  background-repeat: no-repeat;
+}
+#event_photo-demo-list li.file-success
+{
+  background-image: url(~/externals/fancyupload/assets/finished.png);
+  background-repeat: no-repeat;
+}
+#event_photo-demo-list li.file .file-name
+{
+  display: block;
+  clear: left;
+  font-weight: bold;
+}
+#event_photo-demo-list li.file .file-size
+{
+  display: none;
+}
+#event_photo-demo-list li.file .file-info
+{
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+#event_photo-demo-list li.file .file-info img
+{
+  margin: 5px 0px;
+}
+#event_photo-demo-list li.file .file-remove
+{
+  clear: right;
+  float: right;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+
+
+.datepicker_vista {
+  position: absolute;
+  font-size: 10px;
+  font-family: Tahoma, sans-serif;
+  color: #000;
+  line-height: normal;
+  width: 172px;
+  height: 135px;
+  padding: 14px;
+  background: url(~/application/modules/Pageevent/externals/images/frame.png) no-repeat;
+  z-index: 10000;
+}
+
+/* header
+********************************************************/
+.datepicker_vista .header {
+  position: relative;
+  height: 15px;
+  margin-bottom: 5px;
+  padding-top: 1px;
+}
+
+.datepicker_vista .header .title {
+  text-align: center;
+  margin: 0 18px 0 18px;
+  color:#444;
+}
+
+.datepicker_vista .header .titleText {
+}
+
+.datepicker_vista .header .previous,
+.datepicker_vista .header .next,
+.datepicker_vista .header .closeButton {
+  position: absolute;
+  cursor: pointer;
+  text-indent: -40px;
+  overflow: hidden;
+  width: 12px;
+  height: 12px;
+  top: 2px;
+  background-image: url(~/application/modules/Pageevent/externals/images/buttons.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+.datepicker_vista .header .previous {
+  left: 4px;
+}
+.datepicker_vista .header .previous:hover {
+  background-position: left bottom;
+}
+.datepicker_vista .header .next {
+  right: 4px;
+  background-position: -13px top;
+}
+.datepicker_vista .header .next:hover {
+  background-position: -13px bottom;
+}
+.datepicker_vista .header .closeButton {
+  display: none;
+  right: 0px;
+  top: 0px;
+  background-position: right top;
+}
+.datepicker_vista .header .closeButton:hover {
+  background-position: right bottom;
+}
+
+/* body
+********************************************************/
+.datepicker_vista .body {
+  position: relative;
+  top: 0px;
+  left: 2px;
+  width: 168px;
+  height: 112px;
+  overflow: hidden;
+}
+
+/* time
+********************************************************/
+.datepicker_vista .time {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 10001
+;
+}
+
+.datepicker_vista .time .hour,
+.datepicker_vista .time .separator,
+.datepicker_vista .time .minutes{
+  border: 1px solid #ccc;
+  background: #fff;
+  width: 50px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  text-align: center;
+  color:#444;
+  padding: 2px;
+}
+
+.datepicker_vista .time .hour input,
+.datepicker_vista .time .minutes input{
+  font-size: 32px;
+}
+
+
+.datepicker_vista .time .hour {
+  left: 15px;
+}
+.datepicker_vista .time .separator {
+  background: transparent;
+  border: 0px;
+  width: 10px;
+  left: 76px;
+}
+
+.datepicker_vista .time .minutes {
+  left: 95px;
+}
+.datepicker_vista .time .ok {
+  position: absolute;
+  top: 65px;
+  width: 136px;
+  left: 15px;
+  font-size: 20px;
+}
+
+/* days-grid
+********************************************************/
+.datepicker_vista .days {
+  z-index: 6;
+}
+.datepicker_vista .days .day {
+  float: left;
+  text-align: center;
+  overflow: hidden;
+  width: 23px;
+  height: 15px;
+  margin: 0 1px 1px 0;
+  color:#444;
+  font-size:12px;
+}
+.datepicker_vista .days .titles {
+  height: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 1px;
+}
+.datepicker_vista .days .day0 {
+  margin-right: 0;
+}
+
+.datepicker_vista .days .week5 .day {
+  margin-bottom: 0;
+}
+
+/* days-colors
+********************************************************/
+.datepicker_vista .days .week .day {
+  cursor: pointer;
+}
+.datepicker_vista .days .week .day:hover {
+  background: url(~/application/modules/Pageevent/externals/images/days.png) left top no-repeat;
+  color: #0084AA;
+}
+
+.datepicker_vista .days .otherMonth {
+  color: #aaa;
+}
+
+.datepicker_vista .days .selected {
+  background: url(~/application/modules/Pageevent/externals/images/days.png) left bottom no-repeat;
+  color: #316879;
+}
+
+/* months-grid
+********************************************************/
+.datepicker_vista .months {
+  z-index: 10001;
+  position: absolute;
+}
+
+.datepicker_vista .months .month {
+  float: left;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 6px;
+  width: 55px;
+  overflow: hidden;
+  height: 21px;
+  margin: 0 1px 1px 0;
+  color:#444;
+  font-size:12px;
+}
+
+.datepicker_vista .months .month3,
+.datepicker_vista .months .month6,
+.datepicker_vista .months .month9,
+.datepicker_vista .months .month12 {
+  margin-right: 0;
+}
+
+.datepicker_vista .months .month10,
+.datepicker_vista .months .month11,
+.datepicker_vista .months .month12 {
+  margin-bottom: 0;
+}
+
+/* months-colors
+********************************************************/
+.datepicker_vista .months .month:hover {
+  background: url(~/application/modules/Pageevent/externals/images/months.png) left top no-repeat;
+  color: #0084AA;
+}
+
+.datepicker_vista .months .selected {
+  background: url(~/application/modules/Pageevent/externals/images/months.png) left bottom no-repeat;
+  color: #316879;
+}
+
+/* years-grid
+********************************************************/
+.datepicker_vista .years .year {
+  float: left;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 6px;
+  width: 32px;
+  overflow: hidden;
+  height: 21px;
+  margin: 0 1px 1px 0;
+  color:#444;
+  font-size:12px;
+}
+
+.datepicker_vista .years .year4,
+.datepicker_vista .years .year9,
+.datepicker_vista .years .year14,
+.datepicker_vista .years .year19 {
+  margin-right: 0;
+}
+
+.datepicker_vista .years .year15,
+.datepicker_vista .years .year16,
+.datepicker_vista .years .year17,
+.datepicker_vista .years .year18,
+.datepicker_vista .years .year19 {
+  margin-bottom: 0;
+}
+
+/* years-colors
+********************************************************/
+.datepicker_vista .years .year:hover {
+  background: url(~/application/modules/Pageevent/externals/images/years.png) left top no-repeat;
+  color: #0084AA;
+}
+
+.datepicker_vista .years .selected {
+  background: url(~/application/modules/Pageevent/externals/images/years.png) left bottom no-repeat;
+  color: #316879;
+}
+
+/* global
+********************************************************/
+.datepicker_vista .unavailable {
+  background: none !important;
+  color: #fbb !important;
+  cursor: default !important;
+}
+
+
+ul.feed .feed_attachment_pageevent > div > a {
+  float:left;
+  margin-right:7px;
+  max-width:175px;
+  overflow: hidden;
+}
+ul.feed .wall-items-pinfeed .feed_attachment_pageevent{
+  padding: 10px;
+  display: inline-block;
+
+}
+ul.feed .feed_attachment_pageevent > div > div {
+  overflow:hidden;
+}
+
+.pageevent_event .content .options .pageevent_rsp_status {
+  margin-left: 3px;
+}
+
+ul.pageevents_profile_tab > li
+{
+  overflow: hidden;
+}
+ul.pageevents_profile_tab > li + li
+{
+  margin-top: 10px;
+  border-top-width: 1px;
+  padding-top: 10px;
+}
+ul.pageevents_profile_tab .pageevents_profile_tab_photo
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 7px;
+}
+html[dir="rtl"] ul.pageevents_profile_tab .pageevents_profile_tab_photo
+{
+  float: right;
+  margin-right: 0px;
+  margin-left: 7px;
+}
+ul.pageevents_profile_tab .pageevents_profile_tab_photo img
+{
+  max-width: 90px;
+}
+ul.pageevents_profile_tab .pageevents_profile_tab_info
+{
+  overflow: hidden;
+}
+ul.pageevents_profile_tab .pageevents_profile_tab_title > a
+{
+  font-weight: bold;
+}
+ul.pageevents_profile_tab .pageevents_profile_tab_members
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+ul.pageevents_profile_tab .pageevents_profile_tab_desc
+{
+  margin-top: 7px;
+}
+
+ul.pageevents_browse .pageevents_members
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+
+#pageevents-upcoming
+{
+  +rounded;
+  +foreground;
+  padding: 7px 10px 10px 10px;
+  margin-bottom:15px;
+}
+#pageevents-upcoming li + li
+{
+  margin-top: 10px;
+  border-top-width: 1px;
+  padding-top: 7px;
+}
+#pageevents-upcoming li > a
+{
+  font-weight: bold;
+  font-size: .8em;
+}
+#pageevents-upcoming .pageevents-upcoming-date
+{
+  font-size: .8em;
+}
+#pageevents-upcoming .pageevents-upcoming-ongoing
+{
+  font-size: .8em;
+}
+
+.notifications_menu .notification_type_post_pageevent, .notifications .notification_type_post_pageevent{
+  background-image:url('~/application/modules/Pageevent/externals/images/event.png');
+}
+
+ul.events_browse > li
+{
+  clear: both;
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+ul.events_browse > li + li
+{
+  padding-top: 15px;
+  border-top-width: 1px;
+}
+ul.events_browse .events_photo
+{
+  float: left;
+  overflow: hidden;
+}
+html[dir="rtl"] ul.events_browse .events_photo
+{
+  float: right;
+}
+ul.events_browse .events_photo img
+{
+  width: 100px;
+  display: block;
+}
+ul.events_browse .events_info
+{
+  padding-left: 10px;
+  overflow: hidden;
+}
+html[dir="rtl"] ul.events_browse .events_info
+{
+  padding-left: 0px;
+  padding-right: 10px;
+}
+ul.events_browse .events_title h3
+{
+  margin: 0px;
+}
+ul.events_browse .events_members
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+ul.events_browse .events_desc
+{
+  margin-top: 5px;
+  clear: both;
+}
+ul.events_browse .events_options
+{
+  float: right;
+  overflow: hidden;
+  width: 120px;
+  padding-left: 15px;
+}
+html[dir="rtl"] ul.events_browse .events_options
+{
+  float: left;
+  padding-left: 0px;
+  padding-right: 15px;
+}
+ul.events_browse .events_options a
+{
+  clear: both;
+  margin: 3px 0px 0px 0px;
+  font-size: .8em;
+  padding-top: 1px;
+  height: 16px;
+}
+
+
+.layout_pageevent_browse_search,
+.layout_pageevent_upcoming,
+.layout_pageevent_popular_events,
+.layout_pageevent_recent_events
+{
+  margin-bottom: 15px;
+}
+
+[dir="rtl"] ul.generic_list_widget .photo {
+  float: right;
+}
+
+[dir="rtl"] ul.generic_list_widget .info {
+  padding: 0 6px 0 0;
+}
+.item_photo_pageevent {
+  width: 100%;
+}
+.tab_view .pageevent_event {
+  margin-top: 10px;
+}
+body .pageevent_event .comments > ul {
+  margin: 0;
+}
+.pageevent_event .sidebar #profile_options {
+  display: inline-block;
+  padding: 5px;
+  width: 100%;
+}
+#profile_options.options a i {
+  display: block;
+}
+#profile_options.options a {
+  margin-top: 10px;
+}

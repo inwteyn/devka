@@ -1,0 +1,53 @@
+/* $Id: main.css 2011-04-26 11:18:13 mirlan $ */
+.notification_type_post_user
+{
+  background-image: url(~/application/modules/Core/externals/images/types/post.png);
+}
+.notification_type_friend_accepted
+{
+  background-image: url(~/application/modules/User/externals/images/friends/accepted.png);
+}
+.notification_type_friend_request
+{
+  background-image: url(~/application/modules/User/externals/images/friends/request.png);
+}
+.notification_type_friend_follow
+{
+  background-image: url(~/application/modules/User/externals/images/friends/accepted.png);
+}
+.notification_type_friend_follow_request
+{
+  background-image: url(~/application/modules/User/externals/images/friends/request.png);
+}
+.notification_type_friend_follow_accepted
+{
+  background-image: url(~/application/modules/User/externals/images/friends/accepted.png);
+}
+.notification_type_tagged
+{
+  background-image: url(~/application/modules/User/externals/images/types/tag.png);
+}
+
+.birthdate-container select:first-child,
+.birthdate-container select:last-child {
+  width:60px;
+}
+.birthdate-container select + select {
+  width:100px;
+}
+#touch_profile_photo, .user_home_photo {
+  +rounded(2px);
+  padding: 4px;
+  background-color: $theme_widget_bg_color;
+  border: 1px solid $theme_foreground_border_color;
+  float: left;
+}
+#thumbnail-controller > a:first-child{
+  display: none;
+}
+.profile-photo-upload {
+  background-image: url("/application/modules/Touch/externals/images/ajax_loading.gif?c=9");
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}

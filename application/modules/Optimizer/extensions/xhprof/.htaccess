@@ -1,0 +1,7 @@
+
+#deny from all
+allow from all
+<IfModule mod_rewrite.c>
+  RewriteEngine Off
+</IfModule>
+

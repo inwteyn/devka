@@ -1,0 +1,26 @@
+.form_headvancedmembers {
+  margin-top: 15px;
+}
+div.form_headvancedmembers div.form-label {
+  margin-right: 30px;
+  float: left;
+  margin-bottom: 10px;
+  padding: 5px 15px 0 2px;
+  width: 160px;
+  text-align: left;
+  min-height: 40px;
+}
+div.form_headvancedmembers div.form-label .optional {
+  font-weight: bold;
+}
+div.form_headvancedmembers #view-wrapper {
+  display: inline-block;
+  width: 450px;
+  text-align: left;
+}
+#save-label{
+  display: none;
+}
+#save-wrapper{
+  clear: both;
+}

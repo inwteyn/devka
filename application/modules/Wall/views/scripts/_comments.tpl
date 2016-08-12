@@ -1,0 +1,253 @@
+<?php
+/**
+ * SocialEngine
+ *
+ * @category   Application_Extensions
+ * @package    Wall
+ * @copyright  Copyright Hire-Experts LLC
+ * @license    http://www.hire-experts.com
+ * @version    $Id: _comments.tpl 18.06.12 10:52 michael $
+ * @author     Michael
+ */
+
+?>
+
+<?php
+$canComment = ( $this->action->getTypeInfo()->commentable &&
+  $this->viewer()->getIdentity() &&
+  Engine_Api::_()->authorization()->isAllowed($this->action->getObject(), null, 'comment') &&
+  !empty($this->commentForm) );
+$editable = Engine_Api::_()->getApi('settings', 'core')->getSetting('hecomment.edit.enabled', true) ? true : false;
+?>
+
+
+<?php if( $this->action->getTypeInfo()->commentable ): // Comments - likes ?>
+
+  <?php
+  $moduleTable = Engine_Api::_()->getDbTable('modules', 'core');
+  $comments = null;
+  $paginator = null;
+
+  if ($this->comment_pagination){
+
+    $select = $this->action->comments()->getCommentSelect('DESC');
+    $select->order('comment_id DESC');
+
+    $paginator = Zend_Paginator::factory($select);
+
+    if (!empty($this->comment_page)){
+      $paginator->setCurrentPageNumber($this->comment_page);
+    }
+    $paginator->setItemCountPerPage(10);
+
+    $comments = array();
+    foreach ($paginator->getCurrentItems() as $item){
+      $comments[] = $item;
+    }
+
+    $comments = array_reverse($comments);
+
+
+  } else {
+    $comments = $this->action->getComments($this->viewAllComments);
+  }
+
+  ?>
+
+  <?php if( $this->action->likes()->getLikeCount() > 0 && (count($this->action->likes()->getAllLikesUsers())>0) ): ?>
+
+    <?php
+    $like_users = array();
+
+    foreach ($this->action->likes()->getAllLikesUsers() as $user){
+      if (Engine_Api::_()->wall()->isOwnerTeamMember($this->action->getObject(), $user)){
+        $page = Engine_Api::_()->wall()->getSubjectPage($this->action->getObject());
+        $like_users[] = $page;
+      } else {
+        $like_users[] = $user;
+      }
+    }
+
+    ?>
+
+    <li class="container-comment_likes">
+      <div></div>
+      <div class="comments_likes">
+        <?php if( $this->action->likes()->getLikeCount() <= 3 || $this->viewAllLikes ): ?>
+          <?php echo $this->translate(array('%s likes this.', '%s like this.', $this->action->likes()->getLikeCount()), $this->wallFluentList($like_users) )?>
+
+        <?php else: ?>
+          <?php echo $this->htmlLink($this->action->getHref(array('action_id' => $this->action->action_id, 'show_likes' => true)),
+            $this->translate(array('%s person likes this', '%s people like this', $this->action->likes()->getLikeCount()), @$this->locale()->toNumber($this->action->likes()->getLikeCount()) )
+          ) ?>
+        <?php endif; ?>
+      </div>
+    </li>
+  <?php endif; ?>
+
+  <?php if ($this->comment_pagination):?>
+
+    <?php if (isset($paginator->getPages()->next)):?>
+      <li class="pagination">
+        <a href="javascript:void(0);" class="comment_next" rev="item_<?php echo $paginator->getPages()->next?>"><?php echo $this->translate('WALL_COMMENT_NEXT')?></a>
+        <div class="count">
+          <?php echo $this->translate('WALL_COMMENT_COUNT', array($paginator->getCurrentPageNumber()*$paginator->getCurrentItemCount(), $paginator->getTotalItemCount()))?>
+        </div>
+      </li>
+    <?php endif;?>
+
+  <?php else :?>
+
+    <?php if( $this->action->comments()->getCommentCount() > 0 ): ?>
+      <?php if( $this->action->comments()->getCommentCount() > 5 && !$this->viewAllComments): ?>
+        <li>
+          <div></div>
+          <div class="comments_viewall">
+            <?php if( $this->action->comments()->getCommentCount() > 2): ?>
+
+              <?php echo $this->htmlLink($this->action->getHref(array('comment_pagination' => true)),
+                $this->translate(array('View all %s comment', 'View all %s comments', $this->action->comments()->getCommentCount()),
+                  @$this->locale()->toNumber($this->action->comments()->getCommentCount()))) ?>
+
+            <?php endif; ?>
+          </div>
+
+        </li>
+      <?php endif; ?>
+
+    <?php endif; ?>
+
+  <?php endif; ?>
+
+
+  <?php if ($comments): ?>
+
+    <?php foreach($comments  as $comment ): ?>
+      <li rev="item-<?php echo $comment->comment_id ?>" class="wall-comment-item" id="comment-<?php echo $comment->comment_id ?>">
+        <div class="comments_author_photo">
+
+
+          <?php if (Engine_Api::_()->wall()->isOwnerTeamMember($this->action->getObject(), $comment->getOwner())): ?>
+
+            <?php echo $this->htmlLink($this->action->getObject()->getHref(),
+              $this->itemPhoto($this->action->getObject(), 'thumb.icon', $this->action->getObject()->getTitle()),
+              array('class' => 'wall_liketips', 'rev' => $this->action->getObject()->getGuid())) ?>
+
+          <?php else :?>
+
+            <?php echo $this->htmlLink($this->item($comment->poster_type, $comment->poster_id)->getHref(),
+              $this->itemPhoto($this->item($comment->poster_type, $comment->poster_id), 'thumb.icon', $this->action->getSubject()->getTitle()),
+              array('class' => 'wall_liketips', 'rev' => $this->item($comment->poster_type, $comment->poster_id)->getGuid())) ?>
+
+          <?php endif ;?>
+
+        </div>
+        <div class="comments_info">
+               <span class='comments_author'>
+
+                 <?php if (Engine_Api::_()->wall()->isOwnerTeamMember($this->action->getObject(), $comment->getOwner())): ?>
+
+                   <?php echo $this->htmlLink($this->action->getObject()->getHref(), $this->action->getObject()->getTitle(), array('class' => 'wall_liketips', 'rev' => $this->action->getObject()->getGuid())); ?>
+
+                 <?php else :?>
+
+                   <?php echo $this->htmlLink($this->item($comment->poster_type, $comment->poster_id)->getHref(), $this->item($comment->poster_type, $comment->poster_id)->getTitle(), array('class' => 'wall_liketips', 'rev' => $this->item($comment->poster_type, $comment->poster_id)->getGuid())); ?>
+
+                 <?php endif ;?>
+
+               </span>
+          <span class="comment_body_<?php echo $comment->comment_id ?>">
+          <?php
+
+          $body_comment = $comment->body;
+          if ($moduleTable->isModuleEnabled('hashtag')) {
+            $url = $this->url(array('module' => 'hashtag', 'controller' => 'index', 'action' => 'search'), 'default', true);
+
+
+            if(count($this->hashtags)>0){
+              foreach($this->hashtags as $tag){
+                if(trim($tag['hashtag'])==""){continue;}
+                if($tag['resource_id'] == $this->action->getIdentity()){
+                  if ($this->name == $tag['hashtag']) {
+                    $body_comment = str_ireplace('#'.$tag['hashtag'], '<a href="javascript:void(0)" class="comment_hashtag" onClick="click_hashtags(\'' . $url . '\',\'' . $tag['hashtag'] . '\',\''.$this->translate("WALL_RECENT").'\',\'\',\''.$this->action->action_id.'\');" title="'.$this->translate('TITLE_LINK_HASHTAG').'" style="font-weight: bold;">' . '#'.$tag['hashtag'] . '</a>', $body_comment);
+                  } else {
+                    $body_comment = str_ireplace('#'.$tag['hashtag'], '<a href="javascript:void(0)" class="comment_hashtag" onClick="click_hashtags(\'' . $url . '\',\'' . $tag['hashtag'] . '\',\''.$this->translate("WALL_RECENT").'\',\'\',\''.$this->action->action_id.'\');" title="'.$this->translate('TITLE_LINK_HASHTAG').' ">' . '#'.$tag['hashtag'] . '</a>', $body_comment);
+                  }
+                }
+              }
+            }
+          }
+
+
+
+          if (Engine_Api::_()->getApi('settings', 'core')->getSetting('wall.content.nl2br', false)):?>
+            <?php echo $this->wallViewMore(nl2br($body_comment)) ?>
+          <?php else : ?>
+            <?php echo $this->wallViewMore($body_comment) ?>
+          <?php endif;?>
+</span>
+
+          <div class="comments_date">
+            <?php echo $this->timestamp($comment->creation_date); ?>
+
+            <?php if( $canComment ):
+              $isLiked = $comment->likes()->isLike($this->viewer());
+              ?>
+              -
+              <?php if( !$isLiked ): ?>
+              <a href="javascript:void(0)" class="comment-like">
+                <?php echo $this->translate('like') ?>
+              </a>
+            <?php else: ?>
+              <a href="javascript:void(0)" class="comment-unlike">
+                <?php echo $this->translate('unlike') ?>
+              </a>
+            <?php endif ?>
+
+            <?php endif ?>
+             - <a href="javascript:void(0)" class="comment-reply" rev="<?php echo $comment->getIdentity()?>">
+                  <?php echo $this->translate('Reply') ?>
+              </a>
+              <?php if ($editable && $this->viewer()->getIdentity() && ($this->viewer()->getIdentity() == $comment->poster_id ) ): ?>
+                  - <a href="javascript:void(0);"
+                       class="comment-edit"><?php echo $this->translate('Edit') ?></a>
+              <?php endif; ?>
+            <?php if ( $this->viewer()->getIdentity() &&
+              (('user' == $this->action->subject_type && $this->viewer()->getIdentity() == $this->action->subject_id) ||
+                ($this->viewer()->getIdentity() == $comment->poster_id) ||
+                $this->activity_moderate ) ): ?>
+              - <a href="javascript:void(0);" class="comment-remove"><?php echo $this->translate('Delete')?></a>
+            <?php endif; ?>
+            <?php if( $comment->likes()->getLikeCount() > 0 ): ?>
+              - <a href="<?php echo $this->url(array('controller' => 'items', 'fn' => 'like', 'm' => 'wall', 'subject' => $comment->getGuid()), 'wall_extended', true) ?>" class="comments_comment_likes smoothbox" >
+                <?php echo $this->translate(array('%s likes this', '%s like this', $comment->likes()->getLikeCount()), @$this->locale()->toNumber($comment->likes()->getLikeCount())) ?>
+              </a>
+            <?php endif ?>
+
+          </div>
+        </div>
+        <div class="comment-form-reply" id="comment-form-reply_<?php echo $comment->getIdentity()?>" style="display: none">
+        <?php
+        echo $this->commentFormReply
+          ->setActionIdentity($this->action->action_id,$comment->getIdentity())
+          ->setAttrib('style', 'display:block;')
+          //->setUploadPhotoButton($this->action->action_id)
+          ->render();
+
+        ?>
+          <div id="preview_comment_attach_wall">
+            <div class="comment_attach_loading_wall"
+                 id="comment_attach_loading_wall<?php echo $this->action->action_id.'_'.$comment->getIdentity().'_0'; ?>"></div>
+            <div class="comment_attach_preview_image_wall"
+                 id="comment_attach_preview_image_wall<?php echo $this->action->action_id.'_'.$comment->getIdentity().'_0'; ?>"></div>
+          </div>
+        </div>
+          <?php $this->comment = $comment; echo $this->render('_commentsReply.tpl');?>
+
+      </li>
+    <?php endforeach; ?>
+
+  <?php endif;?>
+
+<?php endif; ?>
+

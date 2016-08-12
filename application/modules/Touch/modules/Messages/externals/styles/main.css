@@ -1,0 +1,5 @@
+/* $Id: main.css 2011-04-26 11:18:13 mirlan $ */
+.notification_type_message_new
+{
+  background-image: url(~/application/modules/Messages/externals/images/send.png);
+}

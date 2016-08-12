@@ -1,0 +1,355 @@
+/* $Id: main.css 2011-04-26 11:18:13 mirlan $ */
+/* Messages */
+.he_message_container {
+  position: fixed;
+  top: 0;
+	right:0;
+  z-index:100;
+}
+
+.he_message_container .he_close {
+  background: url(~/application/modules/Hecore/externals/images/close_btn_small.png) no-repeat  50% 50%;
+  width: 16px;
+  height: 16px;
+  display: block;
+  float: right;
+}
+
+.he_message_container .he_msg_text, .he_message_container .he_msg_error, .he_message_container .he_msg_notice {
+  width: 200px;
+	display:block;
+  padding: 5px;
+  color: #FFFFFF;
+  font-size:13px;
+  font-weight:bold;
+  text-align:center;
+  margin:2px;
+  z-index:105;
+}
+
+.he_message_container span, .he_message_container span a {
+  font-weight:bold;
+}
+
+.he_message_container .he_msg_text {
+  background-color: #4CA33D;
+  border: 1px solid #428F35;
+}
+
+.he_message_container .he_msg_error {
+  background-color: #E33C3C;
+  border: 1px solid #EF0000;
+}
+
+.he_message_container .he_msg_notice {
+  border: 1px solid #E4C224;
+  background: #FFE04F;
+}
+
+/*Contacts*/
+.he_contacts .contact_checkbox {
+  width: 60px;
+  height: 25px;
+  padding-left: 21px;
+  padding-top: 2px;
+  background: white url(~/application/modules/Hecore/externals/images/he_contacts_checkbox.gif) no-repeat;
+  background-position: 1px -3px;
+  display: block;
+  clear: left;
+  float: left;
+  font-size: 11px;
+}
+
+.he_contacts .check_all, .he_contacts .check_all_disabled {
+  cursor: pointer;
+  float: left;
+  height: 16px;
+  text-align: left;
+}
+
+.he_contacts .check_all_disabled {
+  color: #bfbfbf;
+  cursor: auto;
+}
+
+.he_contacts .he_before_check {
+  background-position: 1px -28px;
+}
+
+.he_contacts .he_checked {
+  background-position: 1px -53px;
+}
+
+.he_contacts .he_before_uncheck {
+  background-position: 1px -78px;
+}
+
+.he_contacts {
+  padding: 5px;
+}
+
+.he_contacts img.thumb_icon {
+  padding: 2px;
+}
+
+#he_contacts_loading {
+  background:transparent url(~/application/modules/Hecore/externals/images/he_contacts_loading.gif) no-repeat scroll center center;
+  height:50px;
+  opacity:0.6;
+  width:50px;
+	border:none;
+	margin:75px 0;
+}
+
+.he_contacts .contacts, .he_contacts .emails {
+  border: 1px solid #ddd;
+  margin: 0 auto;
+  padding: 6px;
+	position:relative;
+	display:block
+}
+
+.he_contacts .contacts {
+  overflow:hidden;
+}
+
+.he_contacts .emails {
+  border-top: none;
+  padding: 8px 6px 10px;
+}
+
+.he_contacts .label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  text-align: left;
+}
+.he_contacts .btn {
+  margin: 8px 0 0 15px;
+  text-align: left;
+  width: 200px;
+}
+.he_contacts .info {
+  color: #999;
+  font-weight: normal;
+}
+
+#he_list {
+  height: 276px;
+  overflow-y: auto;
+}
+
+.he_contacts .contacts a.active{
+  text-decoration: none;
+  +foreground;
+  +rounded(3px);
+}
+
+.contacts .pagination {
+	margin-top:5px;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  padding: 5px;
+  +foreground;
+  +rounded;
+}
+
+.he_contacts .contacts a.disabled{
+  display: block;
+  height: 62px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  outline:none;
+  +opacity(.5);
+}
+
+.he_contacts .contacts .item{
+  display: block;
+  height: 60px;
+  margin-left: 2px;
+  margin-bottom: 2px;
+  overflow: hidden;
+  outline:none;
+  border: 1px solid transparent;
+	border-bottom-color:$theme_border_color;
+}
+
+.he_contacts .contacts .active .photo .inner {
+  background: url(~/application/modules/Hecore/externals/images/he_contacts_checked_i.gif) no-repeat bottom left;
+  display: block;
+  height: 14px;
+  width: 13px;
+  position: relative;
+  top: -17px;
+  border: 1px solid $theme_foreground_border_color;
+  border-left-style:none;
+  border-top-style:solid;
+  border-right-style:solid;
+  border-bottom-style:none;
+  background-color:$theme_foreground_background_color;
+}
+.he_contacts .contacts .photo {
+  display: block;
+  float: left;
+  margin: 5px 5px 0;
+  height: 54px;
+  width: 54px;
+}
+.he_contacts .contacts .name {
+  display: block;
+  margin-top: 5px;
+  overflow: hidden;
+  width: 77px;
+  font-size:0.8em;
+}
+.he_contacts .more, .he_contacts .more_disabled {
+  background: url(~/application/modules/Hecore/externals/images/he_contacts_more.png) no-repeat right;
+  cursor: pointer;
+  float: right;
+  padding-right: 20px;
+  height: 16px;
+  text-align: right;
+}
+.he_contacts .more_disabled {
+  background: url(~/application/modules/Hecore/externals/images/he_contacts_more_disabled.png) no-repeat right;
+  color: #bfbfbf;
+  cursor: auto;
+}
+
+.he_contacts .options{
+  padding: 5px 0 5px 5px;
+  margin: 10px 0px;
+  height: 20px;
+  +foreground;
+}
+
+.he_contacts .options div.select_btns{
+  float: left;
+  width: 40%;
+}
+
+.he_contacts .options div.contacts_filter{
+  margin-right: 10px;
+  float: right;
+
+}
+
+.contacts_filter input.list_filter {
+  font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+  font-size: 11px;
+  color: #777777;
+  background: transparent;
+  border-style: none;
+	padding:3px;
+	float:left;
+}
+
+.contacts_filter div.list_filter_cont {
+	height:20px;
+  width: 100%;
+  border: 1px solid #BDC7D8;
+  background-color:#FFFFFF;
+  padding: 0px;
+  +rounded(3px);
+}
+
+.contacts_filter a.list_filter_btn {
+  background: #FFFFFF url(~/application/modules/Hecore/externals/images/search.png) no-repeat scroll 3px 4px;
+  height:16px;
+  padding:2px;
+	margin:0px;
+  width:18px;
+	float:left;
+}
+
+.select_btns{
+  padding-top: 2px;
+}
+
+.select_btns a {
+  color: #3B5998;
+  font-size: 11px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 3px;
+  padding:3px 5px 3px 7px;
+}
+
+.select_btns a.active{
+  +rounded;
+  color: #FFF;
+  background-color: #3B5998;
+}
+
+#no_result{
+  color: #999;
+}
+
+.visible{
+  display: block !important;
+}
+
+.hidden{
+  display: none !important;
+}
+
+.uiSearchInput {
+  background:#FFFFFF none repeat scroll 0 0;
+  border-color:#6484B4 #899BC1 #899BC1;
+  border-style:solid;
+  border-width:1px;
+  display:inline-block;
+}
+
+.uiSearchInput span {
+  border-color: #EDEDED -moz-use-text-color -moz-use-text-color;
+  border-style: solid none none;
+  border-width: 1px 0 0;
+  display: inline-block;
+  padding: 1px 0 2px;
+  position: relative;
+}
+
+.uiSearchInput input {
+  border-color:-moz-use-text-color #E5E5E5 -moz-use-text-color -moz-use-text-color;
+  border-style:none solid none none;
+  border-width:0 1px 0 0;
+  margin:0 22px 0 5px;
+  outline-style: none;
+  outline-width: medium;
+  padding:1px 5px 2px 0;
+  width:190px;
+}
+
+.uiSearchInput button {
+  background: transparent url(~/application/modules/Hecore/externals/images/list_filter_btn.png) no-repeat scroll 0 0px;
+  border:0 none;
+  cursor: pointer;
+  display: block;
+  float: right;
+  height: 19px;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 22px;
+  z-index: 2;
+}
+
+#select_all_contacs{
+	width: 20px;
+}
+
+.header_title {
+  +rounded();
+  +foreground;
+  padding:8px 0px;
+  margin-bottom:5px;
+}
+
+.header_title p.title {
+  font-weight:bold;
+  font-size: 12px;
+  margin-left:5px;
+}

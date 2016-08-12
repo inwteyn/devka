@@ -1,0 +1,100 @@
+/* $Id: main.css 2011-04-26 11:18:13 mirlan $ */
+.photo_view_container{
+  +foreground;
+  background-color: $theme_widget_bg_color;
+  padding: 10px;
+  text-align:center;
+}
+[dir="rtl"] .photo_view_container{
+  text-align:center;
+}
+
+.photo_view_container .photo{
+  text-align:center;
+  max-width:100%;
+  overflow: hidden;
+}
+
+.photo_view_container .photo a{
+  display: block;
+}
+
+.photo_view_container .photo a img{
+  max-width: 100%
+}
+.album_photo_left, .album_photo_right{
+  padding: 4px;
+  font-size: 0.8em;
+}
+
+[dir="rtl"] .album_photo_right,
+.album_photo_left{
+  float:left;
+}
+
+[dir="rtl"] .album_photo_left,
+.album_photo_right{
+  float:right;
+}
+
+#loading_photo{
+  width: 0px !important;
+  height:0px !important;
+  display:inline !important;
+}
+
+.navigation-paginator #navigation-selector, .navigation-paginator #navigation-items{
+  margin-right:62px ! important;
+}
+[dir="rtl"] .navigation-paginator #navigation-selector,
+[dir="rtl"] .navigation-paginator #navigation-items{
+  margin-right:0 ! important;
+  margin-left:62px ! important;
+}
+
+
+
+ul.albums_editphotos
+{
+  width: 100%;
+}
+ul.albums_editphotos > li
+{
+  padding-top: 5px;
+  clear: both;
+  overflow: hidden;
+  padding-bottom: 5px;
+}
+ul.albums_editphotos > li .albums_editphotos_photo
+{
+  float: left;
+  margin-right: 5px;
+  overflow: hidden;
+}
+ul.albums_editphotos > li .albums_editphotos_photo img
+{
+  display: block;
+  margin: 1px;
+  max-height: 120px;
+  max-width:100px;
+}
+ul.albums_editphotos > li .albums_editphotos_info
+{
+  overflow: hidden;
+}
+ul.albums_editphotos > li .albums_editphotos_title_input input,
+ul.albums_editphotos > li .album_editphotos_caption_input textarea
+{
+  margin: 2px 0px;
+  width: 15em;
+}
+ul.albums_editphotos > li .album_editphotos_caption_input textarea
+{
+  height: 1.5em;
+}
+
+ul.albums_editphotos > li .photo-delete-wrapper > label
+{
+  display: block;
+}
+

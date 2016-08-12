@@ -1,0 +1,68 @@
+
+div#nContentlink {
+    float: right;
+}
+
+i#link_ok {
+    color: #4CAF50;
+}
+i#link_not_ok {
+    color: #F44336;
+}
+.advnotification-wrapper {
+  box-shadow: 0 0 8px #555;
+  border-radius: 4px;
+  background-color: #fff;
+  max-width: 270px;
+  padding: 10px;
+  position: fixed;
+  left: 30px;
+  bottom: 30px;
+
+  z-index: 10;
+}
+
+.advnotification-wrapper .image {
+  float: left;
+}
+
+.advnotification-wrapper .content {
+  max-width: 190px;
+  float: left;
+  margin-left: 10px;
+}
+
+.advnotification-wrapper .content span:first-child {
+  font-weight: bold;
+}
+
+.advnotification-wrapper .close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.advnotification-wrapper .close i {
+  color: #afbfd8;
+  font-size: 12px;
+}
+
+.advnotification-wrapper .time-strip {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.advnotification-wrapper .time-strip span.time {
+  font-size: 12px;
+}
+
+.advnotification-wrapper-fake:first-child {
+  font-weight: bold;
+}
+
+.advnotification-wrapper-fake {
+  text-decoration: none !important;
+  color: $theme_font_color !important;
+  cursor: default !important;
+}

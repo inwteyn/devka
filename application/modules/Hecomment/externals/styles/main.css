@@ -1,0 +1,99 @@
+body #hecomments.comments > ul {
+    margin: auto;
+}
+
+#hecomments.comments {
+    width: auto;
+}
+
+.hecomment-form-class {
+    overflow: hidden;
+}
+
+.hecomment-form-class > * {
+    float: left;
+}
+#hecomments .comments_body a:hover,
+.hecomment-form-class a:hover {
+    text-decoration: none;
+}
+
+.hecomment-form-class #file_button_container-element .hei.hei-camera,
+.hecomment-form-class #smile_composer_comment-wrapper .hei-smile-o{
+    position: inherit;
+    margin: auto;
+    top: auto;
+    right: auto;
+}
+
+body .hecomment-form-class.comments > form > textarea {
+    width: 400px;
+}
+
+.hecomment-form-class > textarea#body {
+    margin: 5px 0 0;
+    height: 22px;
+    max-height: 22px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 0;
+    padding-left: 4px;
+    padding-top: 4px;
+    resize: none;
+}
+
+.hecomment-form-class > #smile_composer_comment-wrapper {
+    margin: 8px 0 0 -50px;
+}
+
+.hecomment-form-class > #file_button_container-wrapper {
+    margin: 8px 0 0 -25px;
+}
+
+.hecomment-form-class > button {
+    margin: 0 0 0 10px;
+}
+
+.hecomment-form-class .cancel_edit_in_hecomment {
+    cursor: pointer;
+    margin: 10px 0 0 5px;
+}
+
+.hecomment-attached-link-body {
+    margin: 10px 0 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.hecomment-link-preview-image {
+    float: left;
+    max-width: 22%;
+}
+
+.comments_info .hecomment-link-preview-image > img {
+    max-width: 97%;
+}
+
+.hecomment-link-preview-info {
+    float: left;
+    max-width: 78%;
+}
+
+#hecomments_attachments_preview-label {
+    display: none;
+}
+
+#wpPhotoViewer .hecomment-form-class > button {
+    float: right;
+    margin: 5px 10px 0 0;
+}
+/*---------------------------------*/
+.comments_reply .hecomment_reply_comments_hide_button {
+  margin-top: 10px;
+  text-decoration: none;
+}
+.comments_reply .hecomment_reply_comments_show_button {
+  margin: 7px 0 0 9px;
+  display: block;
+  text-decoration: none;
+}

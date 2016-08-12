@@ -1,0 +1,80 @@
+<?php
+/**
+ * SocialEngine
+ *
+ * @category   Application_Extensions
+ * @package    Touch
+ * @copyright  Copyright Hire-Experts LLC
+ * @license    http://www.hire-experts.com
+ * @version    $Id: browse.tpl 2011-04-26 11:18:13 mirlan $
+ * @author     Mirlan
+ */
+
+
+?>
+<?php if( count($this->navigation) > 0 ): ?>
+	<?php
+		// Render the menu
+		echo $this->navigation()
+			->menu()
+			->setContainer($this->navigation)
+			->setPartial(array('navigation/index.tpl', 'touch'))
+			->render();
+	?>
+<?php endif; ?>
+
+<div id="navigation_content">
+	<div	class="search">
+		<?php echo $this->paginationControl(
+				$this->paginator,
+				null,
+				array('pagination/filter.tpl', 'touch'),
+				array(
+					'search'=>$this->formFilter->getElement('search')->getValue(),
+					'filter_default_value'=>$this->translate('TOUCH_Search Events'),
+					'filterUrl'=>$this->url(array('filter' => $this->filter), 'event_general', true)
+				)
+		); ?>
+	</div>
+
+	<div id="filter_block">
+	<?php if( $this->paginator->getTotalItemCount() > 0 ): ?>
+
+    <ul class='items'>
+      <?php foreach( $this->paginator as $event ): ?>
+        <li>
+          <div class="item_photo">
+            <?php echo $this->htmlLink($event->getHref(), $this->itemPhoto($event, 'thumb.normal'), array('class' => 'touchajax')) ?>
+          </div>
+          <div class="item_body">
+            <div class="events_title">
+              <?php echo $this->htmlLink($event->getHref(), $this->touchSubstr($event->getTitle()), array('class' => 'touchajax'))?>
+            </div>
+            <div class="item_date">
+              <?php echo $this->locale()->toDateTime($event->starttime) ?>
+            </div>
+          </div>
+          <?php echo $this->touchEventRate('event', $event->getIdentity())?>
+        </li>
+      <?php endforeach; ?>
+    </ul>
+
+	<?php else: ?>
+
+    <div class="tip">
+      <span>
+      <?php if( $this->filter != "past" ): ?>
+        <?php echo $this->translate('Nobody has created an event yet.') ?>
+        <?php if( $this->canCreate ): ?>
+          <?php echo $this->translate('Be the first to %1$screate%2$s one!', '<a href="'.$this->url(array('action'=>'create'), 'event_general').'" class="touchajax">', '</a>'); ?>
+        <?php endif; ?>
+      <?php else: ?>
+        <?php echo $this->translate('There are no past events yet.') ?>
+      <?php endif; ?>
+      </span>
+    </div>
+
+	<?php endif; ?>
+	</div>
+</div>
+

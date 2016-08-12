@@ -1,0 +1,352 @@
+div#page_document_container {
+    top: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+div#page_document_navigation {
+    width: auto;
+    height: 32px;
+    background-color: #fff;
+    display: inline-block;
+}
+
+
+/* $Id: main.css 2011-09-01 13:17:53 kirill $ */
+
+@include "~/application/modules/Core/externals/styles/admin/constants.css";
+
+.hidden {
+  display: none;
+}
+
+#page_document_create_form * #submit-label {
+  width: 0px;
+  padding: 0px;
+}
+
+#page_document_create_form * #submit-element, #page_document_create_form * #auth_comment-wrapper {
+  margin-top: 10px;
+}
+
+.page_document_options {
+  padding: 5px;
+}
+
+.pagedocument h3 {
+  margin: 0;
+}
+
+.pagedocument-info {
+  font-size: 8pt;
+  color: $theme_font_color_light;
+}
+
+.pagedocument-description {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ul.pagedocument .document_entrylist_entry_date {
+  font-size: 8pt;
+  margin-bottom: 5px;
+  color: $theme_font_color_light;
+}
+
+ul.pagedocument .document_entrylist_entry_body {
+  line-height: 1.5em;
+  padding: 5px 5px 5px 0px;
+}
+
+ul.pagedocument .document_entrylist_entry_body img {
+  max-width: 100%;
+}
+
+ul.pagedocument .document_entrylist_entry_body + .buttonlink {
+  margin-top: 5px;
+}
+
+ul.pagedocument + .comments {
+  padding-top: 10px;
+}
+
+div.documents_gutter .documents_gutter_photo > img {
+  width: 98%;
+  display: block;
+}
+
+div.documents_gutter .documents_gutter_name {
+  display: block;
+  font-weight: bold;
+  margin: 3px 0px 15px 0px;
+}
+
+div.documents_gutter .buttonlink {
+  padding-top: 2px;
+  padding-bottom: 1px;
+}
+
+div.documents_gutter h4 {
+  margin: 20px 0px 5px 0px;
+  text-transform: uppercase;
+}
+
+div.documents_gutter > ul > li {
+  margin-bottom: 2px;
+}
+
+div.documents_gutter ul.documents_gutter_options > li {
+  font-size: .8em;
+  margin: 3px 0px 3px 0px;
+}
+
+ul.documents_browse {
+  clear: both;
+}
+
+ul.documents_browse > li {
+  clear: both;
+  padding: 0px 0px 15px 0px;
+}
+
+ul.documents_browse > li + li {
+  border-top-width: 1px;
+  padding-top: 15px;
+}
+
+ul.documents_browse > li .documents_browse_info {
+  padding-left: 10px;
+  overflow: hidden;
+}
+
+ul.documents_browse > li .documents_browse_thumb {
+  float: left;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+ul.documents_browse > li .documents_browse_info_title {
+  font-weight: bold;
+}
+
+ul.documents_browse > li .documents_browse_info_date {
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+
+ul.documents_browse > li .documents_browse_info_blurb {
+  margin-top: 5px;
+}
+
+.pagedocument_loader {
+  float: right;
+  margin-top: 8px;
+  margin-right: 8px;
+}
+
+#document-submit {
+  margin-top: 5px;
+}
+
+#page_document_options > h3 {
+  float: left;
+}
+
+.pagedocument_loader_2 {
+  float: right;
+  margin-right: 8px;
+}
+
+.icon_pagedocument_photo_new {
+  background-image:url("~/application/modules/Pagedocument/externals/images/upload.png");
+}
+
+#page_document_options {
+  min-height: 16px;
+  height: auto !important;
+  height: 16px;
+}
+
+#demo-status-pagedocument.hide {
+  display: none;
+}
+
+#demo-status-pagedocument {
+  width: 420px;
+}
+
+#demo-status-pagedocument .current-text,
+#demo-status-pagedocument .demo-status-overall {
+  display: none;
+}
+
+#demo-status-pagedocument .overall-title,
+#demo-status-pagedocument .current-title {
+  font-size: .7em;
+  text-transform: uppercase;
+}
+
+#demo-status-pagedocument .progress {
+  background-position: +50% 0;
+  margin-right: 0.5em;
+  vertical-align: middle;
+  background-image: url(~/externals/fancyupload/assets/progress-bar/progress.gif);
+}
+
+#demo-status-pagedocument .progress-text {
+  font-size: 0.9em;
+}
+
+#demo-list-pagedocument {
+  display: none;
+  list-style: none;
+  width: 450px;
+  margin:5px 0;
+  overflow-y: auto;
+  background-color: $theme_body_background_color;
+  border: 1px solid $theme_foreground_border_color;
+  +rounded(3px);
+}
+
+#demo-list-pagedocument li.validation-error {
+  padding: 8px;
+  font-size: .8em;
+  font-weight: normal;
+  background-color: $theme_body_background_color;
+  background-repeat: no-repeat;
+  background-position: 6px 7px;
+  padding-left: 28px;
+  background-image: url(~/externals/fancyupload/assets/error.png);
+  border-bottom: 1px solid $theme_foreground_border_color;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#demo-list-pagedocument li.file {
+  padding: 8px;
+  font-size: .8em;
+  font-weight: normal;
+  background-color: $theme_body_background_color;
+  background-repeat: no-repeat;
+  background-position: 6px 7px;
+  padding-left: 28px;
+  background-image: url(~/externals/fancyupload/assets/waiting.png);
+  background-repeat: no-repeat;
+}
+
+#demo-list-pagedocument li.file + li.file {
+  border-top: 1px solid $theme_foreground_border_color;
+}
+
+#demo-list-pagedocument li.file span {
+  display: none;
+}
+
+#demo-list-pagedocument li.file-uploading {
+  background-image: url(~/externals/fancyupload/assets/loading.gif);
+  background-repeat: no-repeat;
+}
+
+#demo-list-pagedocument li.file-success {
+  background-image: url(~/externals/fancyupload/assets/finished.png);
+  background-repeat: no-repeat;
+}
+
+#demo-list-pagedocument li.file .file-name {
+  display: block;
+  clear: left;
+  font-weight: bold;
+}
+
+#demo-list-pagedocument li.file .file-size {
+  display: none;
+}
+
+#demo-list-pagedocument li.file .file-info {
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+
+#demo-list-pagedocument li.file .file-info img {
+  margin: 5px 0px;
+}
+
+#demo-list-pagedocument li.file .file-remove {
+  clear: right;
+  float: right;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.pagedocument-conversion {
+  color: orange;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.pagedocument-error {
+  color: red;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.pagedocument-view-conversion {
+  color: orange;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.pagedocument-view-error {
+  color: red;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#document_description-element > #document_description_parent > #document_description_tbl {
+  max-width: 453px;
+}
+
+#page_document_create_form #file-wrapper > #file-element > #demo-position {
+  float: left;
+}
+
+.notifications_menu .notification_type_post_pagedocument, .notifications .notification_type_post_pagedocument {
+  background-image:url('~/application/modules/Pagedocument/externals/images/document.png');
+}
+
+.pagedocument-categories-widget {
+  margin-bottom: 10px;
+  +rounded;
+  +foreground;
+  padding: 8px;
+  clear: both;
+  text-align: left;
+}
+
+.pagedocument-categories-widget a {
+  padding: 3px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 10pt;
+  color: $theme_topbar_minimenu_link_color;
+  +rounded(3px);
+}
+
+.pagedocument-categories-widget .active {
+  text-decoration: none;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: $theme_buttontabs_background_color_active;
+  color: $theme_buttontabs_font_color_active;
+  +rounded(5px);
+}
+
+.pagedocument-categories-widget a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: $theme_buttontabs_background_color_active;
+  color: $theme_buttontabs_font_color_active;
+  +rounded(5px);
+}

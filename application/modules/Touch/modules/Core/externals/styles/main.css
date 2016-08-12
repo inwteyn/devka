@@ -1,0 +1,407 @@
+/* $Id: main.css 2011-04-26 11:18:13 mirlan $ */
+/*Main Styles*/
+#global_dashboard{
+	display:none;
+}
+
+
+/*Global Icons*/
+.icon_back
+{
+  background-image: url(~/application/modules/Core/externals/images/back.png);
+}
+.icon_previous
+{
+  background-image: url(~/application/modules/Core/externals/images/previous.png);
+}
+.icon_next
+{
+  background-image: url(~/application/modules/Core/externals/images/next.png);
+}
+.icon_comments
+{
+  background-image: url(~/application/modules/Core/externals/images/comments.png);
+}
+.icon_viewmore
+{
+  background-image: url(~/application/modules/Core/externals/images/viewmore.png);
+}
+.icon_clearlist
+{
+  background-image: url(~/application/modules/Core/externals/images/clear.png);
+}
+.icon_activity_post
+{
+  background-image: url(~/application/modules/Activity/externals/images/post.png);
+}
+.icon_report
+{
+  background-image: url(~/application/modules/Core/externals/images/report.png);
+}
+
+.loader
+{
+	background-image: url(~/application/modules/Touch/externals/images/ajax_loading.gif);
+  background-repeat: no-repeat;
+  display: inline-block;
+  line-height: 40px;
+  margin: 5px;
+  padding-left: 45px;
+}
+[dir="rtl"] .loader{
+  background-position: right;
+  padding-right: 45px;
+  padding-left: 3px;
+}
+
+
+/*Widget Styles*/
+.generic_layout_container h3{
+	font-weight:bold;
+  text-align: center;
+}
+
+.layout_touch_rss,
+.layout_touch_weather,
+.layout_touch_clock,
+.layout_touch_list_announcements,
+.layout_touch_autorecommendations,
+.layout_touch_user_list_online,
+.layout_touch_user_list_popular,
+.layout_touch_user_list_signups
+{
+	+rounded();
+	background-color: $theme_widget_bg_color;
+	margin-top: 20px;
+	padding: 3px;
+}
+
+.layout_touch_rss h3,
+.layout_touch_weather h3,
+.layout_touch_clock h3,
+.layout_touch_list_announcements h3,
+.layout_touch_autorecommendations h3,
+.layout_touch_user_list_online h3,
+.layout_touch_user_list_popular h3,
+.layout_touch_user_list_signups h3
+{
+	text-shadow: $theme_shadow_dark_color 1px 1px 0.5px;
+	color: $theme_widget_tl_color;
+	padding: 4px;
+}
+
+.layout_touch_rss .items,
+.layout_touch_weather .items,
+.layout_touch_clock .items,
+.layout_touch_list_announcements .items,
+.layout_touch_autorecommendations .items,
+.layout_touch_user_list_online .items,
+.layout_touch_user_list_popular .items,
+.layout_touch_user_list_signups .items
+{
+	+rounded();
+	background-color: $theme_widget_bd_color;
+}
+
+.quicklinks{
+  text-align:center;
+  font-weight:bold;
+  padding: 10px;
+}
+
+.quicklinks span{
+  display: block;
+  font-size: 1.4em;
+}
+
+.touch_weather{
+  padding:10px;
+}
+
+.touch_weather .weather_ch_location{
+  font-weight:bold;
+  font-size: 13px;
+}
+
+/*Photo Box*/
+#global_photo_box{
+	background-color:#000;
+  position:absolute;
+  z-index:999;
+	display:none;
+	width:100%;
+	min-height:100%;
+}
+
+
+#global_photo_box #photo_box_header{
+  position: absolute;
+  z-index: 1001;
+  top:3px;
+  left:3px;
+}
+
+#global_photo_box .photo-navigators{
+  position: absolute;
+  z-index: 1001;
+	width: 100%;
+	bottom:0;
+}
+
+#global_photo_box #photo_box_header a{
+	color:#fff;
+  font-size:1em;
+	font-weight:bold;
+  text-shadow: 2px 1px 1px #000;
+  padding: 6px;
+}
+
+#global_photo_box .photo-loading{
+	display:none;
+	position:absolute;
+	z-index:1002;
+	top: 5px;
+	text-align:center;
+	width:100%;
+
+}
+
+#global_photo_box .photo-body{
+  text-align:center;
+  vertical-align:middle;
+	position:absolute;
+	width:100%;
+	z-index:1000;
+}
+
+
+#global_photo_box .photo-body img{
+	max-width:100%;
+}
+
+
+#global_photo_box .photo-middle,
+#global_photo_box .photo-prev,
+#global_photo_box .photo-next{
+	display:inline-block;
+	padding:0px;
+	margin:0px;
+}
+
+#global_photo_box .photo-prev,
+#global_photo_box .photo-next{
+	background-repeat:no-repeat;
+	width:50px;
+}
+
+#global_photo_box .photo-prev{
+	background-image: url(~/application/modules/Touch/externals/images/prev.png);
+	background-position: center center;
+}
+[dir="rtl"] #global_photo_box .photo-prev{
+  background-image: url(~/application/modules/Touch/externals/images/next.png);
+}
+
+#global_photo_box .photo-next{
+	background-image: url(~/application/modules/Touch/externals/images/next.png);
+	background-position: center center;
+}
+[dir="rtl"] #global_photo_box .photo-next{
+  background-image: url(~/application/modules/Touch/externals/images/prev.png);
+}
+
+
+/*Smooth Box*/
+#global_smooth_box{
+	z-index:999;
+	top:0;
+	left:0;
+	position:absolute;
+	display:none;
+	width:100%;
+	height:100%;
+}
+
+#global_smooth_box .smooth-close{
+	position: absolute;
+	z-index:1001;
+  right: 12px;
+  top: 12px;
+}
+[dir="rtl"] #global_smooth_box .smooth-close{
+  left: 12px;
+  right: auto;
+}
+
+#global_smooth_box .smooth-body{
+	position:absolute;
+	z-index:1000;
+	padding:1%;
+	width:98%;
+	text-align:center;
+}
+
+#global_smooth_box #smooth-loading{
+	position: absolute;
+	z-index:999;
+	top:48%;
+	left: 45%;
+}
+
+.confirm-text{
+	display:none;
+}
+
+
+
+
+
+
+
+/*
+RATING ICONS
+Used wherever icons are shown for rating things.
+*/
+.rating
+{
+  clear: both;
+  overflow: hidden;
+}
+/* small icons */
+.rating_star_generic
+{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-repeat: no-repeat;
+  font-size: 1px;
+  cursor: default;
+}
+.rating_star,
+.rating_star_half
+{
+  background-image: url(~/application/modules/Core/externals/images/star.png);
+}
+.rating_star_disabled
+{
+  background-image: url(~/application/modules/Core/externals/images/star_disabled.png);
+}
+.rating_star_half
+{
+  background-image: url(~/application/modules/Core/externals/images/star_half.png);
+  width: 4px;
+}
+html[dir="rtl"] .rating_star_half
+{
+  background-image: url(~/application/modules/Core/externals/images/star_half_rtl.png);
+}
+/* big icons */
+.rating_star_big_generic
+{
+  float: left;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  font-size: 1px;
+  cursor: pointer;
+}
+
+.rating_star_big
+{
+  background-image: url(~/application/modules/Core/externals/images/star_big.png);
+}
+.rating_star_big_half
+{
+  background-image: url(~/application/modules/Core/externals/images/star_big_half.png);
+}
+.rating_star_big_disabled
+{
+  background-image: url(~/application/modules/Core/externals/images/star_big_disabled.png);
+}
+
+/* text */
+.rating_text
+{
+  float: left;
+  display: inline-block;
+  height: 16px;
+  color: #aaa;
+  font-size: .8em;
+  line-height: .8em;
+  cursor: pointer;
+  margin-left: 5px;
+  padding-top: .4em;
+  cursor: default;
+}
+ul.touch_inline {
+  overflow:hidden;
+  clear:both;
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+ul.touch_inline > li {
+  padding:0;
+  margin:0;
+  float:left;
+  margin-right:5px;
+}
+
+
+
+
+/*
+ANNOUNCEMENTS WIDGET
+*/
+.layout_touch_list_announcements .announcements_title
+{
+  font-weight: bold;
+}
+.layout_touch_list_announcements .announcements_info
+{
+  margin-bottom: 10px;
+}
+.layout_touch_list_announcements .announcements_author
+{
+  font-size: .8em;
+}
+.layout_touch_list_announcements .announcements_date
+{
+  font-size: .8em;
+}
+.layout_touch_list_announcements .announcements_body
+{
+}
+
+
+
+/*
+MODE SWITCHER
+*/
+.mode-switcher{
+	width: 100%;
+	padding: 5px 0px;
+	text-align:center;
+	font-size:1.1em;
+}
+.mode-switcher a{
+  display: block;
+}
+.mode-switcher a.standard{
+  float: left;
+}
+.mode-switcher a.mobile{
+  float: right;
+  margin-right: 10px;
+}
+[dir="rtl"] .mode-switcher a.standard{
+  float: right;
+}
+[dir="rtl"] .mode-switcher a.mobile{
+  float: left;
+  margin-right: 10px;
+}
+.tip {
+  margin-top:10px;
+}

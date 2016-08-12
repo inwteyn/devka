@@ -1,0 +1,121 @@
+/* $Id: fancyupload.css 2010-09-20 15:57 idris $ */
+
+.swiff-uploader-box a
+{
+  display: none !important;
+}
+#video-demo-status.hide
+{
+  display: none;
+}
+#video-demo-status
+{
+  width: 420px;
+}
+#video-demo-status > div
+{
+  margin: 15px 0px 0px 0px;
+}
+#video-demo-status > div:first-child
+{
+  margin: 0px 0px 15px 0px;
+}
+#video-demo-status .current-text,
+#video-demo-status .demo-status-overall
+{
+  display: none;
+}
+#video-demo-status .overall-title,
+#video-demo-status .current-title
+{
+  font-size: .7em;
+  text-transform: uppercase;
+}
+#video-demo-status .progress
+{
+  background-position: +50% 0;
+  margin-right: 0.5em;
+  vertical-align: middle;
+  background-image: url(~/externals/fancyupload/assets/progress-bar/progress.gif);
+}
+#video-demo-status .progress-text
+{
+  font-size: 0.9em;
+}
+#video-demo-list
+{
+  display: none;
+  list-style: none;
+  width: 450px;
+  margin-top: 15px;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+}
+#video-demo-list li.validation-error
+{
+  padding: 8px;
+  font-size: .8em;
+  font-weight: normal;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-position: 6px 7px;
+  padding-left: 28px;
+  background-image: url(~/externals/fancyupload/assets/error.png);
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  cursor: pointer;
+}
+#video-demo-list li.file
+{
+  padding: 8px;
+  font-size: .8em;
+  font-weight: normal;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-position: 6px 7px;
+  padding-left: 28px;
+  background-image: url(~/externals/fancyupload/assets/waiting.png);
+  background-repeat: no-repeat;
+}
+#video-demo-list li.file + li.file
+{
+  border-top: 1px solid #ccc;
+}
+#video-demo-list li.file span
+{
+  display: none;
+}
+#video-demo-list li.file-uploading
+{
+  background-image: url(~/externals/fancyupload/assets/loading.gif);
+  background-repeat: no-repeat;
+}
+#video-demo-list li.file-success
+{
+  background-image: url(~/externals/fancyupload/assets/finished.png);
+  background-repeat: no-repeat;
+}
+#video-demo-list li.file .file-name
+{
+  display: block;
+  clear: left;
+  font-weight: bold;
+}
+#video-demo-list li.file .file-size
+{
+  display: none;
+}
+#video-demo-list li.file .file-info
+{
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+#video-demo-list li.file .file-remove
+{
+  clear: right;
+  float: right;
+  font-weight: bold;
+  overflow: hidden;
+}

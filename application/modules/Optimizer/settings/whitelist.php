@@ -1,0 +1,95 @@
+<?php
+
+// List files which allowed to minify by our library
+// Some files doesn't supports this method
+
+$whitelist = array(
+  '/externals/chootools/chootools.js',
+  '/application/modules/Core/externals/scripts/core.js',
+  '/application/modules/User/externals/scripts/core.js',
+  '/application/modules/Activity/externals/scripts/core.js',
+  '/application/modules/Communityad/externals/scripts/core.js',
+  '/application/modules/Donation/externals/scripts/core.js',
+  '/application/modules/Inviter/externals/scripts/core.js',
+  '/application/modules/Like/externals/scripts/remote.js',
+  '/application/modules/Like/externals/scripts/core.js',
+  /*'/application/modules/Mp3music/externals/scripts/m2bmusic_class.js',*/
+  '/externals/smoothbox/smoothbox4.js',
+  /*  '/application/modules/Mp3music/externals/scripts/music_function.js',
+    '/application/modules/Mp3music/externals/scripts/mediaelement-and-player.min.js',
+    '/application/modules/Mp3music/externals/scripts/mp3music.js',*/
+  '/application/modules/Offers/externals/scripts/offers.js',
+  '/application/modules/Rate/externals/scripts/Rate.js',
+  '/application/modules/Seaocore/externals/scripts/core.js',
+  '/application/modules/Socialstore/externals/scripts/core.js',
+  '/application/modules/Store/externals/scripts/manager.js',
+  '/application/modules/Ynaffiliate/externals/scripts/core.js',
+  '/application/modules/Hebadge/externals/scripts/core.js',
+  /*'/application/modules/Photoviewer/externals/scripts/PhotoViewer.min.js',*/
+  '/externals/moolasso/Lasso.js',
+  '/externals/moolasso/Lasso.Crop.js',
+  '/externals/moolasso/Lasso.Crop.js',
+  '/externals/autocompleter/Autocompleter.js',
+  '/externals/autocompleter/Autocompleter.Local.js',
+  '/externals/autocompleter/Autocompleter.Request.js',
+  '/externals/tagger/tagger.js',
+  '/application/modules/Seaocore/externals/scripts/seaomooscroll/SEAOMooVerticalScroll.js',
+  '/application/modules/Seaocore/externals/scripts/tagger/tagger.js',
+  '/application/modules/Seaocore/externals/scripts/lightbox/fixWidthLightBox.js',
+  '/application/modules/Store/externals/scripts/core.js',
+  '/application/modules/Page/externals/scripts/core.js',
+  '/application/modules/Like/externals/scripts/core.js',
+  '/application/modules/Hecore/externals/scripts/core.js',
+  '/application/modules/Hecore/externals/scripts/imagezoom/core.js',
+  '/application/modules/Hetips/externals/scripts/core.js',
+  /*  '/application/modules/Mp3music/externals/scripts/jquery.js',
+    '/application/modules/Mp3music/externals/scripts/noconflict.js',
+    '/application/modules/Mp3music/externals/scripts/jquery-ui.js',
+    '/application/modules/Mp3music/externals/scripts/slimScroll.js',*/
+  /*  '/application/modules/Photoviewer/externals/scripts/jquery.mousewheel.js',
+    '/application/modules/Photoviewer/externals/scripts/jquery.jscrollpane.min.js',*/
+  '/externals/autocompleter/Observer.js',
+  '/application/modules/Optimizer/externals/scripts/head.min.js',
+  '/application/modules/Optimizer/externals/scripts/core.js',
+  '/application/modules/Wall/externals/scripts/core.js',
+  '/application/modules/Wall/externals/webcam/webcam.js',
+  '/externals/fancyupload/Swiff.Uploader.js',
+  '/externals/fancyupload/Fx.ProgressBar.js',
+  '/externals/fancyupload/FancyUpload2.js',
+  '/application/modules/Timeline/externals/scripts/composer_date.js',
+  '/application/modules/Wall/externals/scripts/composer_photo.js',
+  //'/application/modules/Wall/externals/scripts/composer_link.js', // TODO breaks on regular expressions
+  '/application/modules/Wall/externals/autocompleter/Autocompleter.js',
+  '/application/modules/Wall/externals/autocompleter/Autocompleter.Local.js',
+  '/application/modules/Wall/externals/autocompleter/Autocompleter.Request.js',
+  '/application/modules/Wall/externals/autocompleter/Observer.js',
+  '/application/modules/Wall/externals/scripts/composer_tag.js',
+  /*'/application/modules/Mp3music/externals/scripts/core.js',*/
+  /*'/application/modules/Mp3music/externals/scripts/player.js',*/
+  '/application/modules/Wall/externals/scripts/composer_mp3music.js',
+  '/application/modules/Wall/externals/scripts/composer_video.js',
+  '/application/modules/Wall/externals/scripts/composer_smile.js',
+  '/externals/flowplayer/flashembed-1.0.1.pack.js',
+  '/externals/mdetect/mdetect.min.js',
+  '/application/modules/Core/externals/scripts/composer.js',
+  '/application/modules/Album/externals/scripts/composer_photo.js',
+  /*'/application/modules/Core/externals/scripts/composer_link.js',*/ // TODO breaks on regular expressions
+  '/application/modules/Core/externals/scripts/composer_tag.js',
+  /*'/application/modules/Mp3music/externals/scripts/composer_music.js',*/
+  '/application/modules/Question/externals/scripts/composer_question.js',
+  '/application/modules/Video/externals/scripts/composer_video.js',
+  '/application/modules/Timeline/externals/scripts/manager.js',
+  '/application/modules/Timeline/externals/scripts/listener.js',
+  '/application/modules/Timeline/externals/scripts/core.js',
+  '/externals/swfobject/swfobject.js',
+  '/application/modules/Hegift/externals/scripts/core.js',
+  '/application/modules/Hegift/externals/standalone/audio-player.js',
+  '/application/modules/Timeline/externals/scripts/cover.js',
+  '/application/modules/Timeline/externals/scripts/timeline.js',
+  '/application/modules/Timeline/externals/scripts/born.js',
+  '/application/modules/Timeline/externals/scripts/wall_core.js',
+  '/application/modules/Hequestion/externals/scripts/core.js',
+  '/application/modules/Store/externals/scripts/mini.js',
+  '/application/modules/Suggest/externals/scripts/core.js',
+  /*'/application/modules/Chat/externals/scripts/core.js'*/
+);

@@ -1,0 +1,104 @@
+/*END_VERTICAL*/
+.highlight_vetrical span{
+-webkit-background-size: cover!important;
+height: 165px!important;
+width: 100% !important;
+}
+
+.highlight_vetrical>.highlight_horizontal_list {
+  box-shadow: 0 0 0!important;
+  float: left;
+  display: inline-block;
+  text-align: center;
+  width: 220px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+ul.highlight_vetrical{
+  height: 100%;
+  overflow: hidden;
+  float: left;
+}
+/*END_VERTICAL*/
+.highlight_left {
+    float: left;
+}
+ul.highlight_horizontal {
+    height: auto;
+    overflow: hidden;
+    float: left;
+}
+.highlight_member_info {
+    float: left;
+    margin-left: 5px;
+    width: 115px;
+}
+.highlight_horizontal_list {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    float: left;
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 6px;
+    margin-bottom: 40px;
+    text-align: center;
+    width: 114px;
+}
+li.highlight_horizontal_list span{
+    background-color: #444;
+    background-position: center 50%;
+    background-size: auto 140px;
+    -moz-background-size: auto 140px;
+    -o-background-size: auto 140px;
+    -webkit-background-size: auto 140px;
+    background-repeat: no-repeat;
+    display: block;
+    height: 140px;
+    width: 115px;
+}
+.highlight_horizontal_list .profile_url {
+    position: relative;
+    text-align: center;
+}
+.highlight_horizontal_list .profile_url a{
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%)  repeat scroll 0 0 transparent; /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))) repeat scroll 0 0 transparent; /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%) repeat scroll 0 0 transparent; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%) repeat scroll 0 0 transparent; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%) repeat scroll 0 0 transparent; /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%) repeat scroll 0 0 transparent; /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ) repeat scroll 0 0 transparent; /* IE6-9 */
+
+
+    color: #FFFFFF;
+    font-weight: bold;
+    left: 0;
+    padding: 20px 0 4px;
+    position: absolute;
+    right: 0;
+    text-shadow: 1px 1px 0 #424242;
+    top: -40px;
+    /*z-index: 100;*/
+    height: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.profile_url .additional_info {
+    padding: 5px 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    height: 14px;
+    overflow: hidden;
+}
+.add-me-here {
+    float: right;
+    position: relative;
+    top: -30px;
+    right: 5px;
+}
+.highlight_cost_description{
+    margin: 10px 3px;
+}
+.generic_layout_container +.layout_highlights_highlight_vertical{
+    margin-top: 15px;
+}

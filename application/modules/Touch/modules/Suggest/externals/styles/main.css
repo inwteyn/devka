@@ -1,0 +1,128 @@
+/* $Id: main.css 2011-04-26 11:18:13 mirlan $ */
+
+ul.items > li .check,
+ul#he_contacts_list li > div.check {
+  float: left;
+  display: block;
+  width: 16px;
+  margin: 13px 2px;
+}
+
+.suggest-widget-container .item_body .item_options a.buttonlink{
+  float: right;
+  font-size: 11px;
+  font-weight:bold !important;
+}
+[dir="rtl"] .suggest-widget-container .item_body .item_options a.buttonlink{
+  float: left;
+}
+.suggest-widget-container .item_body .item_title {
+  font-size: 11px;
+  font-weight:normal !important;
+}
+
+.suggest-widget-container .item_body .item_date {
+  font-size: 10px !important;
+}
+
+.btn {
+  margin: 10px;
+}
+
+.suggest-object .photo,
+.suggest-object .info,
+.suggest-object .info .title,
+.suggest-object .info .title a,
+.suggest-object .info .options,
+.suggest-object .info .options .join,
+.suggest-object .info .options .like,
+.suggest-object .info .options .friend {
+  float: left;
+}
+
+.suggest-object .photo,
+.suggest-object .info {
+  padding: 5px;
+}
+
+.suggest-object .info {
+  width: 260px;
+}
+
+.suggest-object .info .title > a {
+  font-weight: bold;
+}
+
+.suggest-object .info .description,
+.suggest-object .info .options {
+  margin-top: 5px;
+}
+
+.suggest-object .info .description {
+  font-size: 11px;
+  color: $theme_font_color_light;
+}
+
+.suggest-object .info .options * {
+  display: block;
+  float: left;
+}
+
+.suggest-object .info .options .or {
+  padding: 7px 10px;
+  color: $theme_font_color_light;
+}
+
+.suggest-object .info .options .cancel .disabled {
+  background-color: $theme_font_color_light;
+}
+
+.suggest-object .info .options .cancel .disabled:hover {
+  background-color: $theme_button_background_color_hover;
+}
+
+.suggest-object .info .title > a {
+  margin: 5px 5px 0px 0px;
+}
+
+.suggest_header{
+  margin-left: 10px;
+}
+
+.suggest_desc{
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.suggest-container {
+  position: relative;
+}
+
+.suggest-container .suggest-item {
+  width: 95%;
+  float: left;
+  margin: 10px 0px 0px 10px;
+}
+
+.suggest-container .suggest-item .suggest-list {
+  height: auto;
+}
+
+.suggest-container .suggest-item .suggest-list .suggest-object {
+  width: 100%;
+  border-bottom: 1px solid $theme_form_border_color;
+}
+
+.suggest-container .suggest-item .suggest-title {
+  font-weight: bold;
+  font-size: 11px;
+  padding: 5px;
+  border-bottom: 1px solid $theme_font_color;
+  margin-bottom: 8px;
+}
+
+.suggest-view-all{
+  margin-top:10px;
+  margin-left: 10px;
+  font-weight:bold;
+}

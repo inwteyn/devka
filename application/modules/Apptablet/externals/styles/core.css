@@ -1,0 +1,124 @@
+@-webkit-keyframes board-in {
+	0% {
+	  /*-webkit-transform:rotate(0deg);*/
+    /*transform: translate(0);*/
+    opacity: 0;
+	}
+	1% {
+	  /*-webkit-transform:rotate(360deg);*/
+    /*transform: translate(255);*/
+    opacity: .2;
+  }
+  100% {
+      opacity: .2;
+  }
+}
+.tablet .ui-page[board="in"] {
+  display: block;
+  transform: translate(255px);
+  -moz-transform: translate(255px);
+  -webkit-transform: translate3d(255px, 0, 0) scale3d(1, 1, 1.1);
+  -o-transform: -o-translate(255px);
+  -webkit-perspective:1000;
+  -webkit-backface-visibility: hidden;
+
+  z-index: 10;
+  position: fixed;
+  /*height: 100%;*/
+}
+
+.tablet .ui-page .board-in-cover {
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 200;
+  opacity: 0;
+  /*-webkit-transition: opacity 4s ease-in-out;*/
+
+}
+
+.tablet .ui-page[board="in"] .board-in-cover {
+  display: block;
+  /*-webkit-animation: board-in 100s;*/
+}
+
+.tablet .ui-page {
+  left: 65px;
+  right: 0;
+  width: auto;
+  box-sizing: border-box;
+  -moz-box-sizing: padding-box;
+  -moz-transition: -moz-transform 0.4s ease 0s;
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+}
+
+.tablet .ui-content {
+  max-width: 100% !important;
+}
+.tablet .ui-page[board="true"] {
+  width: 320px;
+}
+
+.tablet .ui-page.dashboard-page  .ui-listview > .ui-li:first-child {
+  display: none;
+}
+
+.tablet .ui-page.dashboard-page {
+  left: 0;
+  border-left: none;
+}
+
+.tablet .ui-page[board="mini"] {
+  display: block;
+  width: 65px;
+  overflow: hidden;
+  position: fixed;
+  z-index: 110;
+  height: 100%;
+}
+
+.tablet .ui-page[board="mini"] .ui-content,
+.tablet .ui-page[board="mini"] .ui-content .component-dashboard {
+  height: 100%;
+}
+
+.tablet .ui-page[board="mini"] .ui-content {
+  overflow-x: hidden;
+  overflow-y: -moz-hidden-unscrollable;
+}
+
+.tablet .ui-page[board="mini"] .ui-content::-webkit-scrollbar {
+  display: none;
+}
+
+.tablet .ui-page[board="mini"] .ui-content .component-dashboard .ui-listview {
+  margin: 0;
+  overflow: hidden;
+}
+
+.tablet .ui-page[board="mini"] .ui-header,
+.tablet .ui-page[board="mini"] .ui-footer {
+  display: none;
+}
+
+.tablet .ui-page[board="mini"] .component-itemSearch {
+  display: none;
+}
+
+.tablet .ui-page[board="mini"]  .ui-listview > .ui-li:first-child {
+  display: block;
+}
+
+.tablet .ui-page[board="mini"] .ui-content .component-dashboard {
+  width: 65px;
+}
+
+.tablet .ui-page[board="mini"] .component-dashboard .ui-li .ui-btn-inner a.ui-link-inherit {
+  padding-left: 4em;
+}
+
+.tablet .ui-header .ui-btn-left {
+  left: 10px;
+  top: 5;
+}

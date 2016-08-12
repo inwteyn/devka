@@ -1,0 +1,1 @@
+INSERT IGNORE INTO `engine4_core_modules` (`name`, `title`, `description`, `version`, `enabled`, `type`) VALUES  ('autologin', 'Auto login', 'Auto login in your demo site', '4.0.0p1', 1, 'extra') ;

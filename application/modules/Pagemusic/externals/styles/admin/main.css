@@ -1,0 +1,4 @@
+ul.admin_home_dashboard_links >li li.page_admin_main_music a
+{
+   background-image: url(~/application/modules/Pagemusic/externals/images/music.png);
+}

@@ -1,0 +1,36 @@
+#global_page_avatarstyler-index-index #fieldset-images .form-wrapper {
+  float: left;
+  clear: none;
+  margin-right: 10px;
+}
+#global_page_avatarstyler-index-index #fieldset-images .form-wrapper input {
+  max-width: 300px;
+  cursor: default;
+}
+
+a.round_button {
+    display:block;
+    width:30px;
+    height:30px;
+    line-height:30px;
+    border-radius: 50%;
+    text-align:center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+
+
+    text-decoration: none !important;
+    background-color: rgba(0,0,0,0.5) !important;
+    color: #fff !important;
+}
+/*.loading{*/
+    /*position: absolute; width: 100%; height: 100%; background: url('spinner.gif') no-repeat center center;*/
+/*}*/
+.zagr {
+
+    margin: auto;
+    position: absolute;
+    cursor: wait;
+}

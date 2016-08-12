@@ -1,0 +1,33 @@
+#global_page_apptablet-admin-themes-index .admin_theme_editor_edit_wrapper
+{
+  width: 900px;
+}
+
+.apptablet_admin_theme_buttons
+{
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+.apptablet_admin_theme_buttons > .button
+{
++rounded(3px);
+  padding: 5px;
+  font-weight: bold;
+  border: none;
+  background-color: #868686;
+  border: 1px solid #777777;
+  color: #fff;
+  background-image: url(~/application/modules/Core/externals/images/buttonbg.png);
+  background-repeat: repeat-x;
+  background-position: 0px 1px;
+  font-family: tahoma, verdana, arial, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.apptablet_admin_theme_buttons > .button.active
+{
+  background-color: #619dbe;
+  border: 1px solid #50809b;
+}

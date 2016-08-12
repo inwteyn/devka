@@ -1,0 +1,8 @@
+.hecomment_advancedcomments_settings .settings form > div {
+    width: 92%;
+    padding: 25px;
+}
+
+.hecomment_advancedcomments_settings .settings form > div > div {
+    padding: 5px;
+}

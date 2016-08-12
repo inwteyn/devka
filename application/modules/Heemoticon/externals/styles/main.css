@@ -1,0 +1,537 @@
+.store_smile_item {
+  border: 1px solid $theme_border_color;
+  float: left;
+  margin: 5px;
+  padding: 8px;
+  width: 45%;
+  height: 120px;
+  position: relative;
+}
+.store_smile_item > img {
+  max-height: 70px;
+}
+.smile_store_content button {
+  float: right;
+  font-size: 14px;
+  margin: 5px;
+  padding: 3px 5px;
+  position: relative;
+}
+.sticers_icons {
+  height: 85px;
+  width: 100%;
+}
+
+.emoticon-title {
+  float: left;
+  font-size: 15px;
+  font-weight: bold;
+  height: 35px;
+  margin: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 145px;
+}
+
+.emoticon-icons {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-origin: padding-box;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  float: left;
+  height: 80px;
+  width: 80px;
+  margin-right: 4px;
+}
+.smile_store_header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 570px;
+}
+.contaner_smile_store{
+  width: 570px;
+}
+.smile_store_content{
+  overflow: hidden;
+}
+.smile_store_content .sticers_icons{
+  cursor: pointer;
+}
+.smile_tabs_scroll {
+  height: 45px;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  width: 202px;
+  background: $theme_input_background_color;
+  float: left;
+}
+.smile_tabs_scroll .tabs_smiles {
+  display: inline-block;
+  position: relative;
+  padding: 0px;
+  vertical-align: middle;
+}
+
+.smiles_NEW > img {
+  background-size: contain;
+  max-height: 80px;
+  max-width: 70px;
+  min-height: 55px;
+  min-width: 60px;
+}
+
+.smile_tabs_scroll .tabs_smiles > a {
+  height: 45px;
+  width: 42px;
+  vertical-align: middle;
+  display: inline-block;
+  text-align: center;
+}
+
+.smile_tabs_scroll .tabs_smiles img {
+  max-height: 30px;
+  max-width: 30px;
+  margin-top: 10px;
+  vertical-align: middle;
+}
+
+.smiles_contaner {
+
+}
+
+.smiles_contaner .wall_data_comment {
+  background-color: $theme_input_background_color;
+  border: 1px solid $theme_border_color;
+  border-radius: 5px;
+  float: none;
+  height: 272px;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 290px;
+}
+
+#wall_emoticon_contaner {
+  background: $theme_input_background_color none repeat scroll 0 0;
+  border: 1px solid $theme_border_color;
+  border-radius: 3px;
+  margin-top: 15px;
+  position: absolute;
+  right: 657px;
+  top: 1279px;
+  z-index: 999;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+.smiles_contaner div.wall_data_comment {
+  border: medium none;
+
+  border-radius: 0px;
+  padding-top: 5px;
+}
+.header-smiles-contaner a.smile_right_scroll {
+  display: inline-block;
+  height: 45px;
+  border-right:1px solid $theme_border_color ;
+  border-left:1px solid $theme_border_color ;
+  text-align: center;
+  width: 30px;
+  color: $theme_form_label_font_color;
+}
+.smile_right_scroll:hover {
+  background: rgba(0,0,0,0.1);
+}
+.header-smiles-contaner a.smile_right_scroll i {
+  color: $theme_form_label_font_color;
+  display: inline-block;
+  font-size: 20px;
+  text-decoration: none;
+  margin-top: 15px;
+  vertical-align: middle;
+}
+.header-smiles-contaner  a.smile_left_scroll i {
+  color: $theme_form_label_font_color;
+  display: inline-block;
+  font-size: 20px;
+  text-decoration: none;
+  margin-top: 15px;
+  vertical-align: middle;
+}
+.header-smiles-contaner a.smile_left_scroll {
+  display: inline-block;
+  height: 45px;
+  border-right:1px solid $theme_border_color ;
+  text-align: center;
+  width: 30px;
+  color: $theme_form_label_font_color;
+}
+.smile_left_scroll:hover {
+  background: rgba(0,0,0,0.1);
+}
+.header-smiles-contaner  a.add-icon-smiles {
+  color: $theme_form_label_font_color;
+  float: right;
+  font-size: 20px;
+  height: 45px;
+  text-align: center;
+  text-decoration: none;
+  width: 40px;
+  position: relative;
+
+}
+a.add-icon-smiles:hover {
+  background: rgba(0,0,0,0.1);
+}
+.header-smiles-contaner  a.add-icon-smiles i {
+  color: $theme_form_label_font_color;
+  display: inline-block;
+  font-size: 20px;
+  text-decoration: none;
+  margin-top: 15px;
+  vertical-align: middle;
+}
+.tabs_smiles {
+  transition: right 1s ease 0s;
+}
+div.wall-tips {
+  z-index: 99998;
+}
+.tabs_smiles a i {
+  color: $theme_form_label_font_color;
+  font-size: 20px;
+  margin-right: 10px;
+}
+#addEmoticonContaner > #main_content_smiles_view {
+  display: inline-block;
+}
+
+#main_content_smiles_view .tabs_smiles {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+}
+#main_content_smiles_view .tabs_smiles .hei.hei-chevron-left {
+  margin-top: 10px;
+  position: relative;
+  top: 10px;
+  vertical-align: middle;
+  color: rgba(0, 0, 0, 0.6);
+}
+#main_content_smiles_view .tabs_smiles > a {
+  display: inline-block;
+  height: 40px;
+  vertical-align: middle;
+}
+#main_content_smiles_view .tabs_smiles > button {
+  float: right;
+  margin: 5px;
+}
+ul.feed .comments a.smiles_NEW img {
+  height: auto;
+  width: auto;
+  max-height: 200px;
+  max-width: 200px;
+}
+.emoticon_loader_ajax {
+  text-align: center;
+  width: 305px;
+  background: $theme_input_background_color;
+  height: 310px;
+}
+#wall_emoticon_contaner .wall_arrow_container {
+  height: 0px;
+  position: relative;
+  width: 305px;
+  top: -17px;
+}
+#wall_emoticon_contaner .wall_arrow {
+  background-color: $theme_input_background_color;
+  border-color: $theme_border_color transparent transparent $theme_border_color;
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  height: 16px;
+  margin: 0;
+  position: absolute;
+  right: 12px;
+  box-shadow: -5px 0 10px -6px rgba(0, 0, 0, 0.5);
+  top: 8px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  width: 16px;
+}
+.loader_smiles_ajax{
+  -moz-animation: spin 0.75s infinite linear;
+  -webkit-animation: spin 0.75s infinite linear;
+  animation: spin 0.75s infinite linear;
+
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+
+  border-color: #677e87 #677e87 #677e87 rgba(103, 126, 135, 0.2);
+  border-image: none;
+  border-radius: 36px;
+  border-style: solid;
+  border-width: 2px;
+  display: block;
+  height: 32px;
+  width: 32px;
+  margin: 0 auto;
+  margin-top: 45%;
+}
+#wall_emoticon_contaner .loader_smiles_ajax{
+  animation: 0.75s linear 0s normal none infinite running spin;
+  border-color: #677e87 #677e87 #677e87 rgba(103, 126, 135, 0.2);
+  border-image: none;
+  border-radius: 36px;
+  border-style: solid;
+  border-width: 2px;
+  display: block;
+  height: 32px;
+  left: 152px;
+  margin-left: -18px;
+  margin-top: -18px;
+  position: absolute;
+  top: 166px;
+  transform: rotate(360deg);
+  width: 32px;
+}
+.loader_smiles_ajax_load_news{
+  -moz-animation: spin 0.75s infinite linear;
+  -webkit-animation: spin 0.75s infinite linear;
+  animation: spin 0.75s infinite linear;
+
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+
+  border-color: #677e87 #677e87 #677e87 rgba(103, 126, 135, 0.2);
+  border-image: none;
+  border-radius: 36px;
+  border-style: solid;
+  border-width: 2px;
+  display: block;
+  height: 32px;
+  width: 32px;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#main_content_smiles_view #standart li {
+  margin: 10px;
+}
+#main_content_smiles_view #standart{
+  margin: 0 auto;
+  width: 550px;
+}
+#main_content_smiles_view .smiles_contaner{
+  overflow: hidden;
+  width: 570px;
+}
+.return_to_all_collection{
+  float: left;
+  margin-top: 12px;
+}
+.collection_title_from_view {
+  display: inline-block;
+  margin: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+#main_content_smiles_view .tabs_smiles{
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 0 10px;
+  text-align: center;
+}
+.main_contaner_smiles .wall_data_comment .smiles_NEW {
+  display: inline-block;
+  height: 70px;
+  overflow: hidden;
+  width: 70px;
+}
+#main_content_smiles_view  .main_contaner_smiles .smiles_NEW {
+  display: inline-block;
+  height: 70px;
+  overflow: hidden;
+  width: 70px;
+}
+.loader_smiles_ajax_load_smile{
+  -moz-animation: spin 0.75s infinite linear;
+  -webkit-animation: spin 0.75s infinite linear;
+  animation: spin 0.75s infinite linear;
+
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+
+  border-color: #677e87 #677e87 #677e87 rgba(103, 126, 135, 0.2);
+  border-image: none;
+  border-radius: 36px;
+  border-style: solid;
+  border-width: 2px;
+  display: block;
+  height: 32px;
+  width: 32px;
+  margin: 0 auto;
+}
+.addEmoticonContaner{
+  background: $theme_input_background_color none repeat scroll 0 0;
+}
+.smile_tabs_scroll .tabs_smiles > .active {
+  background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
+}
+
+.scrollbar {
+  width: 21px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0.5;
+  visibility: visible;
+}
+
+.scrollbar .knob {
+  background: #666;
+  width: 5px;
+  height: 50px;
+  margin: 0 7px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  -moz-opacity: 0.75;
+  opacity: 0.75;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+}
+
+.scrollbar .knob:hover {
+  -moz-opacity: 1;
+  opacity: 1;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+/* End Scrollbar CSS */
+.close_heemoticon_contaner {
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  font-size: 17px;
+  height: 15px;
+  line-height: 1;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 15px;
+}
+.close_heemoticon_contaner .hei-times {
+  line-height: 1;
+  vertical-align: top;
+  width: 15px;
+  height: 15px;
+}
+
+.main_contaner_smiles .sticker-description {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 10px;
+  position: initial;
+  width: 100%;
+  background-color: $theme_foreground_background_color;
+}
+.stickers-description-photo {
+  float: left;
+  margin-right: 10px;
+  max-width: 200px;
+}
+.stickers-description-text {
+  display: inline-block;
+  float: left;
+  padding: 5px;
+  width: 300px;
+}
+.stickers-description-photo img{
+  max-width: 180px;
+  min-width: 110px;
+}
+
+.collection_desk_from_view {
+  margin: 5px;
+}
+.stickers-description-text > button {
+  margin: 5px;
+}
+
+#standart a.smiles_standart {
+  display: inline-block;
+  min-height: 25px;
+}
+.header-smiles-contaner {
+  border-bottom: 1px solid $theme_border_color;
+}
+
+.header_title_heemoticon {
+  display: inline-block;
+  font-family: "Helvetica Neue",Helvetica,Arial,"lucida grande",tahoma,verdana,arial,sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  height: auto;
+  margin-top: 40px;
+  text-align: center;
+  width: 100%;
+}
+.header_description_heemoticon {
+  display: inline-block;
+  font-family: "Helvetica Neue",Helvetica,Arial,"lucida grande",tahoma,verdana,arial,sans-serif;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.header_content_heemoticon {
+  height: 200px;
+  margin: 0 auto;
+  overflow: hidden;
+  opacity: 0.8;
+  position: relative;
+  width: 320px;
+}
+.header_title_heemoticon .hei-shopping-cart {
+  font-size: 30px;
+  margin-right: 10px;
+}
+.heemoticon_author {
+  font-weight: normal;
+  overflow: hidden;
+  width: 130px;
+}
+.contaner_smile_store .collection_price {
+  background-color: red;
+  color: #fff;
+  font-size: 10pt;
+  font-weight: bold;
+  opacity: 0.85;
+  padding: 5px;
+  position: absolute;
+  right: 5px;
+}
+.stickers-description-text > button:disabled{
+  background-color: slategray;
+  cursor: default;
+
+}
+.stickers-description-text .warning-not-enough-credits{
+  float: left;
+  color: red;
+}
+.stickers-description-text .warning-not-enough-credits.display-none{
+  display: none;
+}

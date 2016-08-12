@@ -1,0 +1,702 @@
+.page-music-browse-container{
+  padding: 5px;
+}
+
+div.page-music-browse-item-cover a span.jewelcase{
+  left: 0;
+  height: 134px;
+  width: 141px;
+  border: 1px solid #cccccc;
+  background-position: center center;
+  background-size: contain;
+}
+
+span.jewelcase{
+  background-position:left top;
+  background-repeat:no-repeat;
+  display:block;
+  left:0;
+  position:absolute;
+  top:0;
+}
+
+.playlist-cover a{
+  position: relative;
+  display: block;
+}
+
+.page-music-browse-item-cover a{
+  width: 144px;
+  height: 135px;
+}
+
+img.pagemusic_art{
+  display: block;
+  position: absolute;
+  border: none;
+}
+
+.page-music-browse-item-cover a img.pagemusic_art{
+  clip:rect(0pt, 126px, 126px, 0pt);
+  left:11px;
+}
+
+.page-music-browse-item{
+  position: relative;
+  float: left;
+  margin: 0px 10px 10px 0px;
+  width: 345px;
+  height: 150px;
+}
+
+html[dir="rtl"] .page-music-browse-item{
+  float: right;
+}
+
+.page-music-browse-item-cover,
+.page-music-browse-item-info{
+  float: left;
+}
+
+html[dir="rtl"] .page-music-browse-item-cover,
+html[dir="rtl"] .page-music-browse-item-info{
+  float: right;
+}
+
+.page-music-browse-item-info a{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.page-music-browse-item-info{
+  padding: 3px;
+  margin-left: 10px;
+  width: 180px;
+}
+
+html[dir="rtl"] .page-music-browse-item-info{
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+p.options{
+	margin-top: 10px;
+	font-size: 11px;
+}
+
+p.stats{
+  color:#696969;
+  font-size: 10px;
+  margin: 3px 0 0;
+}
+
+p.label{
+  color:#696969;
+  font-size:10px;
+  margin:5px 0 0;
+}
+
+.icon_music_art_new{
+  background-image: url(~/application/modules/Pagemusic/externals/images/music_art_work.png);
+}
+
+.pagemusic_loader{
+	float: right;
+	margin-top: 8px;
+	margin-right: 8px;
+}
+
+html[dir="rtl"] .pagemusic_loader{
+  float: left;
+  margin-left: 8px;
+}
+
+.pagemusic_loader_2{
+	float: right;
+	margin-right: 8px;
+}
+
+html[dir="rtl"] .pagemusic_loader_2{
+  float: left;
+  margin-left: 8px;
+}
+
+.page-music-view-item{
+	position: relative;
+}
+
+.page-music-view-item .options{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	margin: 10px;
+}
+
+.page-music-view-item .options a{
+	width: 16px;
+	height: 16px;
+	margin-left: 3px;
+	display: block;
+	float: left;
+}
+
+.page-music-view-item .options a.edit{
+	background: transparent url(~/application/modules/Pagemusic/externals/images/edit.png) no-repeat scroll center;
+}
+
+.page-music-view-item .options a.edit:hover{
+	background: transparent url(~/application/modules/Pagemusic/externals/images/edit_hover.png) no-repeat scroll center;
+}
+
+.page-music-view-item .options a.delete{
+	background: transparent url(~/application/modules/Pagemusic/externals/images/delete.png) no-repeat scroll center;
+}
+
+.page-music-view-item .options a.delete:hover{
+	background: transparent url(~/application/modules/Pagemusic/externals/images/delete_hover.png) no-repeat scroll center;
+}
+
+.page-music-edit-playlist-cover a,
+.page-music-view-item-cover a{
+  width: 194px;
+  height: 184px;
+}
+
+.page-music-edit-playlist-cover a img.pagemusic_art,
+.page-music-view-item-cover a img.pagemusic_art{
+  clip: rect(0pt, 174px, 174px, 0pt);
+  left: 15px;
+  top: 5px;
+}
+
+div.page-music-edit-playlist-cover a span.jewelcase,
+div.page-music-view-item-cover a span.jewelcase{
+  background-image: url(~/application/modules/Pagemusic/externals/images/jewelcase_mega.png);
+  left: 0;
+  height: 184px;
+  width: 194px;
+}
+
+.page-music-edit-playlist-cover,
+.page-music-view-item-cover{
+  float: left;
+}
+
+.page-music-view-item-info {
+	float: left;
+	margin-left: 20px;
+	width: 500px;
+}
+
+.page-music-view-item-info a.title{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.page-music-view-item-info .stats,
+.page-music-view-item-info .label{
+	font-size: 11px;
+}
+
+.page-music-view-item-info p.options a{
+	font-weight: bold;
+}
+
+.page-music-view-songs{
+	margin-top: 10px;
+	padding: 10px;
+	background-color: $theme_foreground_background_color;
+	border: 1px solid $theme_foreground_border_color;
+	+rounded(10px);
+}
+
+.tracklist tbody tr.song td,
+.tracklist thead tr.thead td{
+	padding: 5px;
+	font-size: 11px;
+}
+
+.tracklist tbody tr.song td.listeners{
+	text-align: center;
+}
+
+.tracklist thead tr.thead{
+	font-weight: bold;
+	border-bottom: 1px solid $theme_foreground_border_color;
+}
+
+table.tracklist tbody tr.song:nth-child(2n){
+	background-color: $theme_foreground_background_color;
+}
+
+#page_music_options > h3{
+	float: left;
+}
+
+.page-music-browse-item-info .options{
+	margin-top: 10px;
+}
+#page_music_container .options a,
+.page-music-browse-item-info .options a{
+	width: 16px;
+	height: 16px;
+	margin-left: 3px;
+	display: block;
+	float: left;
+}
+
+html[dir="rtl"] #page_music_container .options a,
+html[dir="rtl"] .page-music-browse-item-info .options a{
+  margin-right: 3px;
+  margin-left: 0;
+  float: right;
+}
+
+#page_music_container .options a.edit,
+.page-music-browse-item-info .options a.edit{
+	background: transparent url(~/application/modules/Pagemusic/externals/images/edit.png) no-repeat scroll center;
+}
+
+#page_music_container .options a.edit:hover,
+.page-music-browse-item-info .options a.edit:hover{
+	background: transparent url(~/application/modules/Pagemusic/externals/images/edit_hover.png) no-repeat scroll center;
+}
+
+#page_music_container .options a.delete,
+.page-music-browse-item-info .options a.delete{
+	background: transparent url(~/application/modules/Pagemusic/externals/images/delete.png) no-repeat scroll center;
+}
+#page_music_container .options a.delete:hover,
+.page-music-browse-item-info .options a.delete:hover{
+	background: transparent url(~/application/modules/Pagemusic/externals/images/delete_hover.png) no-repeat scroll center;
+}
+
+div.share_wrapper a.smoothbox,
+div.play_wrapper .play_btn{
+	background-color: #339BCB;
+	padding: 6px;
+	font-size: 11px;
+	+rounded(3px);
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+}
+
+div.play_wrapper .play_btn{
+	padding-left: 18px;
+	background: #339BCB url(~/application/modules/Pagemusic/externals/images/play.png) no-repeat scroll 3px center;
+	float: left;
+}
+
+span.misc_info{
+	color: #AAAAAA;
+}
+
+.page-music-view-comments{
+	margin-top: 10px;
+}
+
+#page_music_options{
+	min-height: 16px;
+  height: auto !important;
+  height: 16px;
+}
+
+.page-music-activity .page-music-info{
+	padding: 5px;
+}
+
+.page-music-activity .page-music-embed{
+	padding: 5px;
+}
+
+div.playlist_share_wrapper{
+	float: left;
+	margin-top: 10px;
+}
+
+div.playlist_share_wrapper a.smoothbox{
+	background: #339BCB;
+	padding: 7px 5px 5px 5px;
+	font-size: 12px;
+	+rounded(3px);
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	height: 16px;
+	font-weight: bold;
+}
+
+.activity_icon_pagemusic_playlist_new
+{
+	background-image: url(~/application/modules/Pagemusic/externals/images/music.png);
+}
+
+/* FANCY  */
+.swiff-uploader-box a
+{
+  display: none !important;
+}
+#music-demo-status.hide
+{
+  display: none;
+}
+#music-demo-status
+{
+  width: 420px;
+}
+#music-demo-status > div
+{
+  margin: 15px 0px 0px 0px;
+}
+#music-demo-status > div:first-child
+{
+  margin: 0px 0px 15px 0px;
+}
+#music-demo-status .current-text,
+#music-demo-status .demo-status-overall
+{
+  display: none;
+}
+#music-demo-status .overall-title,
+#music-demo-status .current-title
+{
+  font-size: .7em;
+  text-transform: uppercase;
+}
+#music-demo-status .progress
+{
+  background-position: +50% 0;
+  margin-right: 0.5em;
+  vertical-align: middle;
+  background-image: url(~/externals/fancyupload/assets/progress-bar/progress.gif);
+}
+#music-demo-status .progress-text
+{
+  font-size: 0.9em;
+}
+#music-demo-list
+{
+  display: none;
+  list-style: none;
+  width: 450px;
+  margin-top: 15px;
+  overflow-y: auto;
+	background-color: $theme_body_background_color;
+  border: 1px solid $theme_foreground_border_color;
+	+rounded(3px);
+}
+#music-demo-list li.validation-error
+{
+  padding: 8px;
+  font-size: .8em;
+  font-weight: normal;
+  background-color: $theme_body_background_color;
+  background-repeat: no-repeat;
+  background-position: 6px 7px;
+  padding-left: 28px;
+  background-image: url(~/externals/fancyupload/assets/error.png);
+  border-bottom: 1px solid $theme_foreground_border_color;
+  font-weight: bold;
+  cursor: pointer;
+}
+#music-demo-list li.file
+{
+  padding: 8px;
+  font-size: .8em;
+  font-weight: normal;
+  background-color: $theme_body_background_color;
+  background-repeat: no-repeat;
+  background-position: 6px 7px;
+  padding-left: 28px;
+  background-image: url(~/application/modules/Pagemusic/externals/images/music_gray.png);
+  background-repeat: no-repeat;
+}
+html[dir="rtl"] #music-demo-list li.file
+{
+  background-position: right center;
+  padding-right: 28px;
+  padding-left: 0;
+}
+#music-demo-list li.file + li.file
+{
+  border-top: 1px solid $theme_foreground_border_color;
+}
+#music-demo-list li.file span
+{
+  display: none;
+}
+#music-demo-list li.file-uploading
+{
+  background-image: url(~/externals/fancyupload/assets/loading.gif);
+  background-repeat: no-repeat;
+}
+#music-demo-list li.file-success
+{
+  background-image: url(~/application/modules/Pagemusic/externals/images/music.png);
+  background-repeat: no-repeat;
+}
+#music-demo-list li.file .file-name
+{
+  display: block;
+  clear: left;
+  font-weight: bold;
+}
+html[dir="rtl"] #music-demo-list li.file .file-name
+{
+  clear: right;
+}
+#music-demo-list li.file .file-size
+{
+  display: none;
+}
+#music-demo-list li.file .file-info
+{
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+#music-demo-list li.file .file-remove
+{
+  clear: right;
+  float: right;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+html[dir="rtl"] #music-demo-list li.file .file-remove
+{
+  clear: left;
+  float: left;
+}
+.swiff-uploader-box a
+{
+  display: none !important;
+}
+#music_art-demo-status.hide
+{
+  display: none;
+}
+#music_art-demo-status
+{
+  width: 420px;
+}
+#music_art-demo-status > div
+{
+  margin: 15px 0px 0px 0px;
+}
+#music_art-demo-status > div:first-child
+{
+  margin: 0px 0px 15px 0px;
+}
+#music_art-demo-status .current-text,
+#music_art-demo-status .demo-status-overall
+{
+  display: none;
+}
+#music_art-demo-status .overall-title,
+#music_art-demo-status .current-title
+{
+  font-size: .7em;
+  text-transform: uppercase;
+}
+#music_art-demo-status .progress
+{
+  background-position: +50% 0;
+  margin-right: 0.5em;
+  vertical-align: middle;
+  background-image: url(~/externals/fancyupload/assets/progress-bar/progress.gif);
+}
+#music_art-demo-status .progress-text
+{
+  font-size: 0.9em;
+}
+#music_art-demo-list
+{
+  display: none;
+  list-style: none;
+  width: 450px;
+  margin-top: 15px;
+  overflow-y: auto;
+	background-color: $theme_body_background_color;
+  border: 1px solid $theme_foreground_border_color;
+	+rounded(3px);
+}
+#music_art-demo-list li.validation-error
+{
+  padding: 8px;
+  font-size: .8em;
+  font-weight: normal;
+  background-color: $theme_body_background_color;
+  background-repeat: no-repeat;
+  background-position: 6px 7px;
+  padding-left: 28px;
+  background-image: url(~/externals/fancyupload/assets/error.png);
+  border-bottom: 1px solid $theme_foreground_border_color;
+  font-weight: bold;
+  cursor: pointer;
+}
+#music_art-demo-list li.file
+{
+  padding: 8px;
+  font-size: .8em;
+  font-weight: normal;
+  background-color: $theme_body_background_color;
+  background-repeat: no-repeat;
+  background-position: 6px 7px;
+  padding-left: 28px;
+  background-image: url(~/externals/fancyupload/assets/waiting.png);
+  background-repeat: no-repeat;
+}
+
+html[dir="rtl"] #music_art-demo-list li.file
+{
+  background-position: right 7px;
+  padding-right: 28px;
+  padding-left: 0;
+}
+
+#music_art-demo-list li.file + li.file
+{
+  border-top: 1px solid $theme_foreground_border_color;
+}
+#music_art-demo-list li.file span
+{
+  display: none;
+}
+#music_art-demo-list li.file-uploading
+{
+  background-image: url(~/externals/fancyupload/assets/loading.gif);
+  background-repeat: no-repeat;
+}
+#music_art-demo-list li.file-success
+{
+  background-image: url(~/externals/fancyupload/assets/finished.png);
+  background-repeat: no-repeat;
+}
+#music_art-demo-list li.file .file-name
+{
+  display: block;
+  clear: left;
+  font-weight: bold;
+}
+html[dir="rtl"] #music_art-demo-list li.file .file-name
+{
+  clear: right;
+}
+#music_art-demo-list li.file .file-size
+{
+  display: none;
+}
+#music_art-demo-list li.file .file-info
+{
+  display: block;
+  clear: both;
+  overflow: hidden;
+  text-align: center;
+}
+
+#music_art-demo-list li.file .file-info img
+{
+  margin: 5px 0px;
+}
+
+#music_art-demo-list li.file .file-remove
+{
+  clear: right;
+  float: right;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+html[dir="rtl"] #music_art-demo-list li.file .file-remove
+{
+  clear: left;
+  float: left;
+}
+
+.icon_music_new{
+  background-image: url(~/application/modules/Pagemusic/externals/images/music_upload.png);
+}
+
+ul.feed .feed_attachment_playlist > div > a {
+  float:left;
+  margin-right:7px;
+  max-width:140px;
+}
+
+ul.feed .feed_attachment_playlist > div > div {
+  overflow:hidden;
+}
+
+.activity_icon_comment_playlist {
+  background-image: url(~/application/modules/Core/externals/images/types/post.png);
+}
+
+/*
+FEED ITEMS
+Styles event attachments in the feed.
+*/
+.feed_attachment_playlist > div
+{
+  overflow: hidden;
+}
+.feed_attachment_playlist > div > a
+{
+  display: inline-block;
+  float: left;
+  margin-right: 7px;
+}
+.feed_attachment_playlist > div > a > img
+{
+  display: block;
+  max-width: 120px;
+  max-height: 120px;
+}
+.feed_attachment_playlist > div > div
+{
+  overflow: hidden;
+}
+
+.notifications_menu .notification_type_post_pagemusic, .notifications .notification_type_post_pagemusic{
+  background-image:url('~/application/modules/Pagemusic/externals/images/music.png');
+}
+
+.layout_pagemusic_browse_search,
+.layout_pagemusic_popular_playlists,
+.layout_pagemusic_recent_playlists
+{
+  margin-bottom: 15px;
+}
+
+html[dir="rtl"] ul.generic_list_widget .photo
+{
+  float: right;
+}
+
+html[dir="rtl"] ul.generic_list_widget .info
+{
+  padding: 0px 6px 0px 0px;
+}
+
+html[dir="rtl"] .page-music-browse-item-info .options a{
+  margin-right: 3px;
+  margin-left: 0;
+  float: right;
+}
+
+.pagemusic-playlist-item {
+  float: left;
+  margin-right: 10px;
+}
+
+.pagemusic-playlist-item a img {
+  width: 100px;
+}
+
+.pagemusic-playlist-item span.label {
+  font-size: 11px;
+}
+#wrapper .audiojs {
+  margin-top: 0 !important;
+}

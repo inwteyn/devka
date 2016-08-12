@@ -1,0 +1,40 @@
+/* $Id: main.css 2011-09-28 15:18 ratbek $ */
+.pagefaq_container_class
+{
+  padding-bottom: 10px;
+}
+
+.pagefaq_question_class
+{
+  padding: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  color: $theme_link_color; /* #5f93b4; */
+  background-image: url("~/application/modules/Touch/modules/Pagefaq/externals/images/rightarrow.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 10px auto;
+  margin-left: 5px;
+  padding-left: 0px;
+}
+.pagefaq_question_class a{
+
+  padding-left: 15px;
+  line-height: 20px;
+}
+
+.rightarrow
+{
+  background-image: url("~/application/modules/Touch/modules/Pagefaq/externals/images/rightarrow.png");
+}
+
+.downarrow
+{
+  background-image: url("~/application/modules/Touch/modules/Pagefaq/externals/images/downarrow.png");
+}
+
+.pagefaq_question_class a:hover
+{
+  text-decoration: none;
+}
+

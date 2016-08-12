@@ -1,0 +1,50 @@
+/* $Id: main.css 2011-09-01 13:17:53 kirill $ */
+
+@include "~/application/modules/Core/externals/styles/admin/constants.css";
+
+.page_document_admin-categories-table {
+}
+
+.page_document_admin-categories-list-item {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.admin-pagedocument-nav-button {
+  +foreground;
+  +rounded;
+  border: 1px solid $theme_foreground_border_color;
+  font-size:8pt;
+  padding:3px;
+}
+.admin-pagedocument-nav-button-activ {
+  font-weight:bold;
+}
+
+.pagedocument-category-up {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image:url("~/application/modules/Pagedocument/externals/images/up.png");
+}
+
+.pagedocument-category-down {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image:url("~/application/modules/Pagedocument/externals/images/down.png");
+}
+ul.admin_home_dashboard_links > li li.page_document_settings
+{
+    float: left;
+    margin: 5px;
+    padding: 7px;
+}
+ul.admin_home_dashboard_links >li li.page_admin_main_documents a
+{
+    background-image:url("~/application/modules/Pagedocument/externals/images/document.png");
+}
+ul.admin_home_dashboard_links >li li.page_admin_main_documents_categories a
+{
+  background-image:url("~/application/modules/Pagedocument/externals/images/document.png");
+}

@@ -1,0 +1,261 @@
+/* $Id: datepicker.css 19.10.13 08:20 jungar $ */
+.layout_active_theme_clean .hecontest-datepicker {
+  border: 1px solid #75ACCE !important;
+  box-shadow: 0 1px 13px 5px rgba(0, 0, 0, 0.3) !important;
+}
+.hecontest-datepicker {
+  color: #000000;
+  font-family: Tahoma,sans-serif;
+  font-size: 10px;
+  line-height: normal;
+  padding: 14px;
+  position: absolute;
+  z-index: 5;
+  background-color: #fff;
+}
+/* header
+********************************************************/
+.hecontest-datepicker .header {
+  position: relative;
+  height: 15px;
+  margin-bottom: 5px;
+  padding-top: 1px;
+}
+
+.hecontest-datepicker .header .title {
+  text-align: center;
+  margin: 0 18px 0 18px;
+  /*color:#444;*/
+}
+
+.hecontest-datepicker .header .titleText {
+}
+
+.hecontest-datepicker .header .previous, .hecontest-datepicker .header .next, .hecontest-datepicker .header .closeButton {
+  background-repeat: no-repeat;
+  color: #000000;
+  cursor: pointer;
+  font-size: 14px;
+  height: 12px;
+  line-height: 12px;
+  overflow: hidden;
+  position: absolute;
+  top: 2px;
+  width: 12px;
+}
+
+.hecontest-datepicker .header .previous {
+  left: 4px;
+}
+.hecontest-datepicker .header .previous:hover {
+  background-position: left bottom;
+}
+.hecontest-datepicker .header .next {
+  right: 4px;
+  background-position: -13px top;
+}
+.hecontest-datepicker .header .next:hover {
+  background-position: -13px bottom;
+}
+.hecontest-datepicker .header .closeButton {
+  display: none;
+  right: 0px;
+  top: 0px;
+  background-position: right top;
+}
+.hecontest-datepicker .header .closeButton:hover {
+  background-position: right bottom;
+}
+
+/* body
+********************************************************/
+.hecontest-datepicker .body {
+  position: relative;
+  top: 0px;
+  left: 2px;
+  width: 168px;
+  height: 112px;
+  overflow: hidden;
+}
+
+/* time
+********************************************************/
+.hecontest-datepicker .time {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.hecontest-datepicker .time .hour,
+.hecontest-datepicker .time .separator,
+.hecontest-datepicker .time .minutes{
+  border: 1px solid #ccc;
+  background: #fff;
+  width: 50px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  text-align: center;
+  /*color:#444;*/
+  padding: 2px;
+}
+
+.hecontest-datepicker .time .hour input,
+.hecontest-datepicker .time .minutes input{
+  font-size: 32px;
+}
+
+
+.hecontest-datepicker .time .hour {
+  left: 15px;
+}
+.hecontest-datepicker .time .separator {
+  background: transparent;
+  border: 0px;
+  width: 10px;
+  left: 76px;
+}
+
+.hecontest-datepicker .time .minutes {
+  left: 95px;
+}
+.hecontest-datepicker .time .ok {
+  position: absolute;
+  top: 65px;
+  width: 136px;
+  left: 15px;
+  font-size: 20px;
+}
+
+/* days-grid
+********************************************************/
+.hecontest-datepicker .days {
+  z-index: 6;
+}
+.hecontest-datepicker .days .day {
+  float: left;
+  text-align: center;
+  overflow: hidden;
+  width: 23px;
+  height: 15px;
+  margin: 0 1px 1px 0;
+  /*color:#444;*/
+  font-size:12px;
+}
+.hecontest-datepicker .days .titles {
+  height: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 1px;
+}
+.hecontest-datepicker .days .day0 {
+  margin-right: 0;
+}
+
+.hecontest-datepicker .days .week5 .day {
+  margin-bottom: 0;
+}
+
+/* days-colors
+********************************************************/
+.hecontest-datepicker .days .week .day {
+  border-radius: 2px 2px 2px 2px;
+  cursor: pointer;
+}
+.hecontest-datepicker .days .week .day:hover {
+  background-color: #7EB6D5;
+  color: #FFFFFF;
+}
+.hecontest-datepicker .days .otherMonth {
+  color: #aaa;
+}
+
+.hecontest-datepicker .days .selected {
+  background-color: #3498DB;
+  color: #FFFFFF;
+}
+/* months-grid
+********************************************************/
+.hecontest-datepicker .months .month {
+  float: left;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 6px;
+  width: 55px;
+  overflow: hidden;
+  height: 21px;
+  margin: 0 1px 1px 0;
+  /*color:#444;*/
+  font-size:12px;
+}
+
+.hecontest-datepicker .months .month3,
+.hecontest-datepicker .months .month6,
+.hecontest-datepicker .months .month9,
+.hecontest-datepicker .months .month12 {
+  margin-right: 0;
+}
+
+.hecontest-datepicker .months .month10,
+.hecontest-datepicker .months .month11,
+.hecontest-datepicker .months .month12 {
+  margin-bottom: 0;
+}
+
+/* months-colors
+********************************************************/
+.hecontest-datepicker .months .month:hover {
+  color: #0084AA;
+}
+
+.hecontest-datepicker .months .selected {
+  color: #316879;
+}
+
+/* years-grid
+********************************************************/
+.hecontest-datepicker .years .year {
+  float: left;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 6px;
+  width: 32px;
+  overflow: hidden;
+  height: 21px;
+  margin: 0 1px 1px 0;
+  /*color:#444;*/
+  font-size:12px;
+}
+
+.hecontest-datepicker .years .year4,
+.hecontest-datepicker .years .year9,
+.hecontest-datepicker .years .year14,
+.hecontest-datepicker .years .year19 {
+  margin-right: 0;
+}
+
+.hecontest-datepicker .years .year15,
+.hecontest-datepicker .years .year16,
+.hecontest-datepicker .years .year17,
+.hecontest-datepicker .years .year18,
+.hecontest-datepicker .years .year19 {
+  margin-bottom: 0;
+}
+
+/* years-colors
+********************************************************/
+.hecontest-datepicker .years .year:hover {
+  color: #0084AA;
+}
+
+.hecontest-datepicker .years .selected {
+  color: #316879;
+}
+
+/* global
+********************************************************/
+.hecontest-datepicker .unavailable {
+  background: none !important;
+  color: #fbb !important;
+  cursor: default !important;
+}

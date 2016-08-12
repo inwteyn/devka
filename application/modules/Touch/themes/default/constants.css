@@ -1,0 +1,151 @@
+/* $Id: constants.css 2011-04-26 11:18:13 mirlan $ */
+@constants
+{
+  theme_topbar_width: 100%;
+  theme_topbar_minimenu_width: 100%;
+  theme_topbar_menu_width: 100%;
+  theme_footer_width: 100%;
+  theme_content_width: 100%;
+  theme_body_background_color: #fff;
+
+  theme_topbar_background_color: #E9F4FA;
+  theme_topbar_menu_background_color: #79b4d4;
+  theme_topbar_menu_background_color_selected: #6DA7C7;
+  theme_topbar_menu_link_color: #fff;
+  theme_topbar_menu_link_decoration: none;
+  theme_topbar_menu_link_size: 1em;
+  theme_topbar_menu_link_background_color: transparent;
+  theme_topbar_minimenu_background_color: transparent;
+  theme_topbar_minimenu_border: none;
+  theme_topbar_border: 0px solid transparent;
+
+  theme_font_family: tahoma,arial,verdana,sans-serif;
+  theme_font_size: 14px;
+  theme_font_color: #555;
+  theme_font_color_light: #999;
+  theme_text_align: left;
+  theme_link_color: #5f93b4;
+  theme_link_decoration: none;
+  theme_headline_color: #717171;
+  theme_headline_size_large: 1.5em;
+  theme_headline_size_medium: 1.3em;
+  theme_layout_header_font_size: 1.2em;
+
+  theme_border_color: #eaeaea;
+  theme_border_medium_color: #ddd;
+  theme_border_dark_color: #bbb;
+  theme_active_color:#E9F4FA;
+
+  theme_foreground_border_color: #d0e2ec;
+  theme_foreground_border_color_light: #d7e8f1;
+  theme_foreground_background_color: #e9f4fa;
+
+  theme_input_background_color: #fff;
+  theme_input_font_color: #555;
+  theme_input_border_colors: #999 #ccc #ccc #999;
+  theme_button_background_color: #5f93b4;
+  theme_button_font_color: #fff;
+  theme_button_border_color: #50809b;
+
+  theme_photo_border_color: #ddd;
+
+  theme_form_border_color: #ddecf3;
+  theme_form_background_color: #f4f9fb;
+  theme_form_label_font_color: #777;
+
+
+  /*MINE*/
+  theme_widget_bg_color: #E9F4FA;
+  theme_widget_tl_color: #5f93b4;
+	theme_widget_bd_color: #fff;
+
+  theme_shadow_dark_color: #4B4B4B;
+  theme_shadow_light_color: #aaa;
+
+	theme_navigation_bg_color: #8BBEDA;
+	theme_navigation_background_color: #8BBEDA;
+	theme_navigation_border: 1px solid #6BA6C6;
+	theme_navigation_font_color: #fff;
+
+	theme_photo_box_background_color: #000;
+	theme_photo_box_header_font_color: #fff;
+	theme_photo_box_header_font_size: .9em;
+
+	theme_notifications_active_color: #fff;
+	theme_unread_background_color: #e9f4fa;
+  theme_buttontabs_font_color_active: #fff;
+  theme_buttontabs_background_color_active: #55677a;
+
+}
+
+img.thumb_normal
+{
+  max-width: 60px;
+	max-height: 70px;
+}
+
+img.thumb_profile{
+	max-width: 80px;
+	max-height: 120px;
+}
+
+img.thumb_icon{
+  width: 48px;
+  height: 48px;
+}
+
+img.main,
+img.thumb_normal,
+img.thumb_profile,
+img.thumb_icon{
+  border: 1px solid $theme_photo_border_color;
+}
+
+
+/* Gives an element a background and/or border */
+=foreground{
+  background-color: $theme_foreground_background_color;
+  border: 1px solid $theme_foreground_border_color;
+  background-image: url(~/application/modules/Core/externals/images/foreground_bg.png);
+  background-repeat: repeat-x;
+}
+
+/* Gives an element a drop shadow */
+=shadow($offset_x = 0, $offset_y = 0, $blur_radius = 0, $spread_radius = 0, $shadow_color = "#aaa"){
+  -moz-box-shadow: $offset_x $offset_y $blur_radius $spread_radius $shadow_color;
+  -webkit-box-shadow: $offset_x $offset_y $blur_radius $spread_radius $shadow_color;
+  box-shadow: $offset_x $offset_y $blur_radius $spread_radius $shadow_color;
+}
+
+/* Gives an element rounded corners. */
+=rounded($radius = 3px, $hidecorner1 = false, $hidecorner2 = false, $hidecorner3 = false, $hidecorner4 = false)
+{
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+
+  @if($hidecorner1 == true)
+  {
+    -moz-border-radius-topleft: 0px;
+    -webkit-border-top-left-radius: 0px;
+    border-radius-topleft: 0px;
+  }
+  @if($hidecorner2 == true)
+  {
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-right-radius: 0px;
+    border-radius-topright: 0px;
+  }
+  @if($hidecorner3 == true)
+  {
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    border-radius-bottomright: 0px;
+  }
+  @if($hidecorner4 == true)
+  {
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    border-radius-bottomleft: 0px;
+  }
+}

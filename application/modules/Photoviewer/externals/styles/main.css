@@ -1,0 +1,15 @@
+
+#wpPhotoViewer .layout_page_photoviewer_index_comments {
+  background-color: $theme_topbar_background_color !important;
+}
+.comments .comments_info {
+    padding-right: 15px;
+    word-wrap: break-word;
+}
+
+.layout_page_photoviewer_index_comments .he_rate_cont {
+  background: transparent none repeat scroll 0 0;
+}
+.layout_page_photoviewer_index_comments .layout_rate_widget_rate > h3 {
+  display: none;
+}

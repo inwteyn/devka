@@ -1,0 +1,236 @@
+
+li.photo_viewer {
+    list-style-type: none;
+}
+
+.generic_layout_container.layout_pageinstagram_random_instagram {
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,.12);
+    padding: 1.5em;
+    width: 100%;
+}
+
+
+/*Instagram style*/
+button.btn_check_all {
+    background-color: #84BD68;
+    border: 0;
+    padding: 6px 15px;
+}
+
+
+.no_check{
+    opacity: 0.5;
+    width: 195px;
+    margin: 5px;
+    float: left;
+    cursor: pointer;
+}
+span.check_img {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+    display: none;
+}
+
+span.delete_img {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 0px 0px 0 9px;
+    position: absolute;
+    cursor: pointer;
+    font-size: 6px;
+    right: -5px;
+    padding: 2px;
+    color: #fff;
+}
+
+
+
+i.hei.hei-check-circle.hei-3x.green {
+    color: #84BD68;
+}
+
+i.hei.hei-check-circle.hei-3x.red {
+    color: #fff;
+}
+
+.red{
+    color: #fff;
+}
+
+button.btn_save_photos {
+    background-color: #84BD68;
+    border: 0;
+    padding: 6px 15px;
+}
+
+.more_view {
+    background-color: #84BD68;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+}
+span.more_span {
+    display: inline-block;
+    margin: 0 45%;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+
+
+
+
+.more_photos_show_for_users{
+    background-color: #84BD68;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+}
+/*End Instagram style*/
+
+/*PHOTO VIEWER*/
+div#bg_modal {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+    opacity: 0.5;
+    top: 0;
+}
+
+div#modal {
+    width: 60%;
+    background-color: #fff;
+    margin: auto;
+    z-index: 102;
+    position: fixed;
+    top: 10%;
+    left: 20%;
+}
+
+.left_with_photo {
+    display: block;
+    float: left;
+    width: 65%;
+    height: 100%;
+    background-color: #444444;
+}
+
+
+.right {
+    display: block;
+    width: 35%;
+    float: left;
+}
+
+.user_info_instagram {
+    display: block;
+    width: 85%;
+    float: left;
+    padding: 5px 10px;
+}
+
+.x_close {
+    display: block;
+    width: 18px;
+    float: left;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 17px;
+    cursor: pointer;
+}
+
+.image_instagram {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+img.src_instagram {
+    width: 100%;
+}
+
+
+img.profile_img {
+    width: 70px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+    border: 3px solid #39B27E;
+}
+
+span.name_profile {
+    display: block;
+    padding-top: 15px;
+    padding-left: 104px;
+}
+
+.description_instagram {
+    color: #66666F;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-top: 10px;
+    display: block;
+    padding-right: 20px;
+    width: 90%;
+    word-wrap: break-word;
+}
+
+
+
+.header_photo {
+    background-color: #000000;
+    height: 60px;
+    position: absolute;
+    width: 65%;
+    opacity: 0.5;
+}
+
+.after_head {
+    position: absolute;
+    width: 65%;
+    height: 65px;
+}
+
+
+.inner_block {
+    margin: 0 auto;
+    width: 130px;
+    height: 65px;
+}
+
+.inner_block {
+    margin: 0 auto;
+    width: 230px;
+    height: 50px;
+    padding-top: 10px;
+    color: #fff;
+}
+
+span.like_instagram_count {
+    font-size: 30px;
+    padding: 0 5px;
+}
+
+input#user_instagram {
+    width: 170px;
+}
+
+span.comment_instagram_count {
+    font-size: 30px;
+    padding: 0 5px;
+}
+
+
+div#content_instagram {
+    display: inline-block;
+}
+/*END PHOTO VIEWER*/
