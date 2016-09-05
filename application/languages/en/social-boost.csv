@@ -1,0 +1,49 @@
+"SOCIALBOOST_FACEBOOK_FORM_TITLE"; "Facebook Integration"
+"SOCIALBOOST_FACEBOOK_FORM_DESCRIPTION"; "SocialBoots plugin allows your members to Share your Network to Facebook. To do so, create an Application through the <a target='_blank' href='http://www.facebook.com/developers/apps.php'>Facebook Developers</a> page."
+
+"SOCIALBOOST_FACEBOOK_FORM_ENABLED"; "Enabled Integration"
+"SOCIALBOOST_TWITTER_FORM_ENABLED"; "Enabled Integration"
+
+"SOCIALBOOST_FACEBOOK_CLIENT_ID"; "Facebook App ID"
+"SOCIALBOOST_FACEBOOK_CLIENT_ID_DESCRIPTION"; ""
+
+"SOCIALBOOST_FACEBOOK_CLIENT_SECRET"; "Facebook App Secret"
+"SOCIALBOOST_FACEBOOK_CLIENT_SECRET_DESCRIPTION"; ""
+
+"SOCIALBOOST_TWITTER_FORM_TITLE"; "Twitter Integration"
+"SOCIALBOOST_TWITTER_FORM_DESCRIPTION"; "SocialBoots plugin allows your members to Share your Network to Twitter. To do so, create an Application through the <a target='_blank' href='https://dev.twitter.com/apps/new'>Twitter Developers</a> page. <b style='font-weight: bold;'>You will need to select 'Read &amp; Write' in order to allow posting to Twitter.</b> Please use the following Callback URL: %1$s</p>"
+
+"SOCIALBOOST_TWITTER_CLIENT_ID"; "Twitter App Consumer Key"
+"SOCIALBOOST_TWITTER_CLIENT_SECRET"; "Twitter App Consumer Secret"
+"SOCIALBOOST_TWITTER_CLIENT_ID_DESCRIPTION"; ""
+"SOCIALBOOST_TWITTER_CLIENT_SECRET_DESCRIPTION"; ""
+
+"SOCIALBOOST_SETTINGS_FORM_TITLE";"SocialBoots Global Settings"
+"SOCIALBOOST_SETTINGS_FORM_DESCRIPTION";"These settings affect all members in your community."
+
+"SOCIALBOOST_REWARDS_FORM_TITLE";"SocialBoots Rewards Settings"
+"SOCIALBOOST_REWARDS_FORM_DESCRIPTION";"SocialBoots Rewards Settings."
+
+"SOCIALBOOST_FACEBOOK_APP_ID_TITLE";"Facebook App ID"
+"SOCIALBOOST_FACEBOOK_APP_ID_DESC";"If you would like Facebook Like button then create an Application through the <a href=""https://developers.facebook.com/apps"" target=""_blank"">Apps</a> page."
+
+
+"Enable subscription to digest newsletters";"Enable subscription to digest newsletters"
+"Days number when Social Boost popup re-appears again";"Days number when Social Boost popup re-appears again"
+"Max Days";"Max Days"
+"If you have not selected any rewarding then it displays only a message above the sharing options, something like this: Love us? Share your love";"If you have not selected any rewarding then it displays only a message above the sharing options, something like this: Love us? Share your love"
+"One member can receive reward only one time";"One member can receive reward only one time"
+"Give credits";"Give credits"
+"Credit Amount";"Credit Amount"
+"Unlock Offers";"Unlock Offers"
+"HE - SocialBoost";"HE - SocialBoost"
+"Like Us";"Like Us"
+"Subscribe";"Subscribe"
+"To Redeem";"To Redeem"
+"Invalid email address.";"Invalid email address."
+"This email address already added.";"This email address already added."
+"Credits are a virtual currency you can use to send virtual gifts to your friends or purchase goods. Read more about the credits <a target='_blank' href='%s'>here</a>";"Credits are a virtual currency you can use to send virtual gifts to your friends or purchase goods. Read more about the credits <a target='_blank' href='%s'>here</a>"
+"%s credits pack!";"%s credits pack!"
+"Thank you very much!";"Thank you very much!"
+"SOCIALBOOST_Settings";"General Settings"
+"SOCIALBOOST_Rewards";"Rewards Settings"

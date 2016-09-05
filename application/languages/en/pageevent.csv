@@ -1,0 +1,188 @@
+# List
+"PAGEEVENT_NOITEMS"; "Nobody has created an event."
+"PAGEEVENT_NOITEMS_CREATE"; " Be the first to <a href='javascript:Pageevent.formEvent();'>create</a> one!"
+"PAGEEVENT_LIST_JOIN"; "Join"
+"PAGEEVENT_LIST_EDIT"; "Edit"
+"PAGEEVENT_LIST_DELETE"; "Delete"
+
+# Form
+
+"PAGEEVENT_CREATE_TITLE"; "Create New Event"
+"PAGEEVENT_CREATE_DESCRIPTION"; ""
+
+"PAGEEVENT_EDIT_TITLE"; "Edit Event"
+"PAGEEVENT_EDIT_DESCRIPTION"; ""
+
+"PAGEEVENT_FORM_TITLE"; "Event Name"
+"PAGEEVENT_FORM_DESCRIPTION"; "Event Description"
+"PAGEEVENT_FORM_STARTTIME"; "Start Time"
+"PAGEEVENT_FORM_ENDTIME"; "End Time"
+"PAGEEVENT_FORM_PHOTO_TITLE"; "Upload Photo"
+"PAGEEVENT_FORM_PHOTO_DESCRIPTION"; "Choose photo from your computer that you want to add to this event."
+"PAGEEVENT_FORM_HOST"; "Host"
+"PAGEEVENT_FORM_LOCATION"; "Location"
+"PAGEEVENT_FORM_APPROVAL"; "People must be invited to RSVP for this event"
+"PAGEEVENT_FORM_INVITE"; "Invited guests can invite other people as well"
+"PAGEEVENT_PHOTO"; "Event Photo"
+
+# Messages
+
+"PAGEEVENT_CREATE_ERROR"; "Some of required fields were not filled or provided incorrect start/end dates for the event. Please <a href='javascript:Pageevent.goForm();'>go back</a> and check the form."
+"PAGEEVENT_CREATE_SUCCESS"; "Event has been created"
+"PAGEEVENT_DATEERROR"; "Please provide correct start and end dates for the event. Please <a href='javascript:Pageevent.goForm();'>go back</a> and check the form."
+"PAGEEVENT_NOTFOUND"; "Event not found. Please <a href='javascript:Pageevent.list();'>go back</a> and try again."
+"PAGEEVENT_NOMEMBERS"; "No Members. <a href='%s'>Go back</a>"
+"PAGEEVENT_EDIT_ERROR"; "Some of required fields were not filled or provided incorrect start/end dates for the event. Please <a href='javascript:Pageevent.goForm();'>go back</a> and check the form."
+"PAGEEVENT_EDIT_SUCCESS"; "Event has been saved"
+"PAGEEVENT_REMOVE_ERROR"; "Event was not deleted. Please reload page and try again. <a href='javascript:Pageevent.list();'>Go back</a>"
+"PAGEEVENT_REMOVE_SUCCESS"; "Event deleted"
+"PAGEEVENT_INVITE_ERROR"; "Invitation failed. Please reload page and try again. <a href='javascript:Pageevent.goView();'>Go back</a>"
+"PAGEEVENT_INVITE_SUCCESS"; "Members have been successfully invited"
+"PAGEEVENT_REQUEST_ERROR"; "Failed. Please reload page and try again"
+"PAGEEVENT_REQUEST_SUCCESS"; "You have accepted invitation to the event"
+
+# Menu Items
+"PAGEEVENT_TABITEM"; "Events"
+"PAGEEVENT_UPCOMING"; "Upcoming Events"
+"PAGEEVENT_PAST"; "Past Events"
+"PAGEEVENT_USER"; "My Events"
+"PAGEEVENT_CREATE"; "Create New Event"
+
+# Delete
+"PAGEEVENT_DELETE_TITLE"; "Delete event?"
+"PAGEEVENT_DELETE_DESCRIPTION"; "Are you sure you want to delete this event?"
+
+# Action Types
+"{actors:$subject:$object} commented on {item:$owner}'s event {var:$link}: {body:$body}";"{actors:$subject:$object} commented on {item:$owner}'s event {var:$link}: {body:$body}"
+"PAGEEVENT_ACTION_CREATE"; "{actors:$subject:$object} posted new event:"
+"PAGEEVENT_ACTION_JOIN"; "{item:$subject} joined the event {var:$link}"
+
+"PAGEEVENT_NOTIFY_ACCEPTED"; "Your request to join the page <a href='{var:$link}'>event</a> has been approved."
+"PAGEEVENT_NOTIFY_APPROVED"; "{item:$subject} has requested to join the page <a href='{var:$link}'>event</a>."
+"PAGEEVENT_NOTIFY_INVITE"; "{item:$subject} has invited you to the page <a href='{var:$link}'>event</a>."
+
+# Action Types: Admin
+"ADMIN_ACTIVITY_TYPE_PAGEVENT_CREATE"; "When a new page event is created"
+"ADMIN_ACTIVITY_TYPE_PAGEVENT_JOIN"; "When someone joins an page event."
+"ADMIN_ACTIVITY_TYPE_COMMENT_PAGEEVENT";"When someone comment in Page Event"
+
+# Action Types: Privacy
+"_ACTIVITY_ACTIONTYPE_PAGEVENT_CREATE"; "New page events"
+"_ACTIVITY_ACTIONTYPE_PAGEVENT_JOIN"; "Joining an page event"
+
+# Action Types: Notifications
+"ACTIVITY_TYPE_PAGEEVENT_ACCEPTED"; "When my request to attend an event is approved."
+"ACTIVITY_TYPE_PAGEEVENT_APPROVED"; "When member accepts request to attend an event."
+"ACTIVITY_TYPE_PAGEEVENT_INVITE"; "When I'm invited to attend an event."
+"ACTIVITY_TYPE_POST_PAGEEVENT";"When people post event on my page."
+
+# Other
+"PAGEVENT_ONWER"; "%1$s's Event"
+"PAGEEVENT_ATTENDING"; "Attending"
+"PAGEEVENT_MAYBEATTENDING"; "Maybe Attending"
+"PAGEEVENT_NOTATTENDING"; "Not Attending"
+"PAGEEVENT_EDIT"; "Edit Event"
+"PAGEEVENT_DELETE"; "Delete Event"
+"PAGEEVENT_INVITE"; "Invite Guests"
+"PAGEEVENT_INVITE_TITLE";"Invite Friends"
+"PAGEEVENT_APPROVE"; "Approve"
+"PAGEEVENT_REJECT"; "Reject"
+"PAGEEVENT_WHERE"; "Where"
+"PAGEEVENT_MAP"; "Map"
+"PAGEEVENT_WATINGS"; "Waiting Members"
+"PAGEEVENT_VIEWALL"; "View all"
+"PAGEEVENT_INVITE_CANCEL"; "Cancel Invite"
+"PAGEEVENT_WAITING"; "Waiting Members"
+"PAGEEVENT_BACK"; "Back To Event"
+"PAGEEVENT_MEMBER_WAITING"; "You on waiting..."
+"PAGEEVENT_CANCEL"; "Cancel Request"
+"ITEM_TYPE_PAGEEVENT"; "Page Event"
+"PAGEVENT_SHOW"; "Show Details &raquo;"
+"pageevent"; "event"
+"PAGEEVENT_REQUEST_INVITE"; "Request Invite"
+"PAGEEVENT_LEAVE"; "Leave Event"
+"PAGEEVENT_INVITE_DISABLED"; "Already invited"
+"PAGEEVENT_CREATED";"created this event on page"
+"PAGEEVENT_IS_CREATED";"This event is created on page"
+
+
+# Members
+"PAGEEVENT_MEMBERS_ATTENDING"; "Attending Members (%s)"
+"PAGEEVENT_MEMBERS_MAYBE_ATTENDING"; "Maybe Attending Members (%s)"
+"PAGEEVENT_MEMBERS_NOT_ATTENDING"; "Not Attending Members (%s)"
+"PAGEEVENT_MEMBERSBOX_ATTENDING"; "Attending Members"
+"PAGEEVENT_MEMBERSBOX_MAYBE_ATTENDING"; "Maybe Attending Members"
+"PAGEEVENT_MEMBERSBOX_NOT_ATTENDING"; "Not Attending Members"
+
+
+# Notify Event Accepted
+"_EMAIL_NOTIFY_EVENT_ACCEPTED_TITLE";"Page Event Approved"
+"_EMAIL_NOTIFY_EVENT_ACCEPTED_DESCRIPTION";"This email is sent to the member when they are approved to join an page event."
+"_EMAIL_NOTIFY_EVENT_ACCEPTED_SUBJECT";"You have been approved to join the page event [object_title]"
+"_EMAIL_NOTIFY_EVENT_ACCEPTED_BODY";"[header]
+
+You have been approved to join the page event ""[object_title]"". Please click the following link to view it:
+
+http://[host][object_href]
+
+[footer]"
+
+# Notify Event Approved
+"_EMAIL_NOTIFY_EVENT_APPROVED_TITLE";"Page Event Approved"
+"_EMAIL_NOTIFY_EVENT_APPROVED_DESCRIPTION";"This email is sent to the member when they are approved to join an page event."
+"_EMAIL_NOTIFY_EVENT_APPROVED_SUBJECT";"You have been approved to join the page event [object_title]"
+"_EMAIL_NOTIFY_EVENT_APPROVED_BODY";"[header]
+
+You have been approved to join the page event ""[object_title]"". Please click the following link to view it:
+
+http://[host][object_href]
+
+[footer]"
+
+
+# Notify Event Invite
+"_EMAIL_NOTIFY_EVENT_INVITE_TITLE";"Page Event Invitation"
+"_EMAIL_NOTIFY_EVENT_INVITE_DESCRIPTION";"This email is sent to someone when they are invited to an page event."
+"_EMAIL_NOTIFY_EVENT_INVITE_SUBJECT";"You have been invited to join the page event [object_title]"
+"_EMAIL_NOTIFY_EVENT_INVITE_BODY";"[header]
+
+You have been invited to join the page event ""[object_title]"". Please click the following link to view it:
+
+http://[host][object_href]
+
+[footer]"
+
+"Event Calendar";"Event Calendar"
+"_ACTIVITY_ACTIONTYPE_COMMENT_PAGEEVENT";"Comments on page event"
+
+"on page ";"on page "
+"Profile Page Events";"Profile Page Events"
+"Popular Page Events";"Popular Page Events"
+"Page Events Browse Search";"Page Events Browse Search"
+"Page Events";"Page Events"
+"Page Event Browse Menu";"Page Event Browse Menu"
+"All Events Browse Search";"All Events Browse Search"
+"All Events";"All Events"
+"PageEvents";"PageEvents"
+"%s pageevent invite";"%s pageevent invite"
+"Everyone's Events";"Everyone's Events"
+"Only My Friends' Events";"Only My Friends' Events"
+"My Friend's Events";"My Friend's Events"
+"Browse Event";"Browse Event"
+"My Event";"My Event"
+"Search Event:";"Search Event:"
+"This page displays a page events";"This page displays a page events"
+"Page Event Manage";Page Event Manage"
+"This page displays a viewers pageevents";"This page displays a viewers pageevents"
+"Who can see this event?";"Who can see this event?"
+"Displays the page's events.";"Displays the page's events."
+"Displays the page's event calendar.";"Displays the page's event calendar."
+"Unite Events";"Unite Events"
+"Display events from Pages in common Events section?";"Display events from Pages in common Events section?"
+"Events Per Page";"Events Per Page"
+"How many events will be shown per page?";"How many events will be shown per page?"
+"Page Event Plugin";""
+"PAGEEVENT_SETTINGS_TITLE";"Page-Events Extension"
+"PAGEEVENT_SETTINGS_DESCRIPTION";"If you would like display events from Pages in common Events section(SocialEngine Events plugin) then just enable `Unite Events` setting below. In this case all events will be displayed on Browse Events page according to privacy of each event.<br />
+You still can edit widgets on Events pages - Admin Panel > Layout > Layout Editor > All Events Browse page."
+

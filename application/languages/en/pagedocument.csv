@@ -1,0 +1,183 @@
+"ADMIN_ACTIVITY_TYPE_COMMENT_PAGEDOCUMENT";"When people comment on my document."
+"ADMIN_ACTIVITY_TYPE_PAGEDOCUMENT_NEW";"When people post a new document in my page."
+"ACTIVITY_TYPE_POST_PAGEDOCUMENT";"When people create a new document in my page."
+
+# Menus
+"pagedocument_Admin settings";"Document Settings"
+"pagedocument_Documents";"Documents"
+# Menus
+
+# Form Edit
+
+"pagedocument_Form Edit Form Title";"Edit document details"
+"pagedocument_Form Edit Form Description";"Below you can edit your document details."
+
+"pagedocument_Form Edit title";"Document Title"
+
+"pagedocument_Form Edit description";"Document Description"
+
+"pagedocument_Form Edit category";"Category"
+
+"pagedocument_Form Edit file";"Browse and choose a file for your document. Allowed file types: pdf, txt, ps, rtf, epub, odt, odp, ods, odg, odf, sxw, sxc, sxi, sxd, doc, ppt, pps, xls, docx, pptx, ppsx, xlsx."
+
+"pagedocument_Form Edit tags";"Tags (Keywords)"
+"pagedocument_Form Edit tags description";"Separate tags with commas."
+
+"pagedocument_Form Edit submit";"Save Document"
+# Form Edit
+
+# Form Create
+
+"pagedocument_Form Create Form Title";"Post a new Document"
+
+"pagedocument_Form Create Form Description";"Please fulfill fields below and configure privacy of your document."
+
+"pagedocument_Form Create title";"Document Title"
+
+"pagedocument_Form Create description";"Document Description"
+
+"pagedocument_Form Create category";"Category"
+
+"pagedocument_Form Create file";"Browse and choose a file for your document. Allowed file types: pdf, txt, ps, rtf, epub, odt, odp, ods, odg, odf, sxw, sxc, sxi, sxd, doc, ppt, pps, xls, docx, pptx, ppsx, xlsx, tif, tiff."
+
+"pagedocument_Form Create tags";"Tags (Keywords)"
+"pagedocument_Form Create tags description";"Separate tags with commas."
+
+"pagedocument_Form Create secure";"Secure iPaper Document"
+"pagedocument_Form Create secure 1";"Make iPaper document secure. Do not allow embedding on other sites."
+"pagedocument_Form Create secure 0";"Do not make iPaper document secure. Allow embedding on other sites."
+
+"pagedocument_Form Create download";"Allow Document Download"
+"pagedocument_Form Create download allow";"Yes, allow document download."
+"pagedocument_Form Create download disallow";"No, do not allow document download."
+
+"pagedocument_Form Create submit";"Create Document"
+# Form Create
+
+
+# Form Admin Global
+
+"pagedocument_Form Global Form Title";"Global Settings"
+"pagedocument_Form Global Form Title Api";"Settings Api"
+"pagedocument_Form Global Form Description";"These settings affect all members in your community. You need to register at <a href='https://console.developers.google.com/flows/enableapi?apiid=drive' target='_blank' >Google</a> for using this extension."
+
+"pagedocument_Form Global api key label";"Google API client id"
+"pagedocument_Form Global api key description";"The Google client id API."
+
+
+
+
+"pagedocument_Form Global api key label_client_secret";"Google API client secret"
+"pagedocument_Form Global api key description_client_secret";"The Google client secret API."
+
+
+
+
+"pagedocument_Form Global api key label_redirect_uris";"Google API client redirect uris"
+"pagedocument_Form Global api key description_redirect_uris";"The Google client redirect uris API."
+
+
+
+
+"pagedocument_Form Global api key label_secret";"Google API Key"
+"pagedocument_Form Global api key description_secret";"The Google API Key for active your website after save all settings."
+
+
+
+
+"pagedocument_Form Global secret key label";"Scribd Secret Key"
+"pagedocument_Form Global secret key description";"The Scribd Secret Key for your website. [Please visit the FAQ section to see how to obtain these credentials.]"
+
+"pagedocument_Form Global visibilty label";"Visibility for documents"
+"pagedocument_Form Global visibilty description";"Documents visible only on this website will be private and available only on your website, whereas the ones which will be public on Scribd.com will be available to everyone on Scribd.(Note : This setting will only apply to new documents created and not to the existing documents on the site.)"
+"pagedocument_Form Global visibilty private";"Only on this website"
+"pagedocument_Form Global visibilty public";"Public on Scribd.com"
+
+"pagedocument_Form Global documents label";"Documents Per Page"
+"pagedocument_Form Global documents description";"Enter the number of documents to be shown per page on the Documents listing pages. (Enter a number between 1 and 999)"
+
+"pagedocument_Form Global document width label";"Width"
+"pagedocument_Form Global document width description";"Document width on view page"
+
+"pagedocument_Form Global document height label";"Height"
+"pagedocument_Form Global document height description";"Document height on view page"
+
+"pagedocument_Form Global submit";"Save Changes"
+# Form Admin Global
+
+
+# Form Admin Categories
+
+"pagedocument_Form Delete Category Description";"Are you sure that you want to delete this category? It will not be recoverable after this operation."
+
+"pagedocument_Form Categories Form Title";"Categories Settings"
+"pagedocument_Form Categories Form Description";"If you want to allow your users to categorize their documents, create the categories below. If you have no categories, your users will not be given the option of assigning a document category."
+
+"pagedocument_Form Categories name";"Category Name"
+"pagedocument_Form Categories order";"Category Order"
+
+"pagedocument_Form Categories submit";"Add Category"
+"pagedocument_Form Categories delete";"Delete"
+"pagedocument_Form Categories cancel";"cancel"
+"pagedocument_Form Categories edit";"Edit Category"
+"Categories";"Categories"
+"Add New Category";"Add New Category"
+# Form Admin Categories
+
+
+
+"pagedocument_Delete Document";"Delete Document"
+"pagedocument_Delete_confirmation";"Are you sure you want to delete this document?"
+
+
+"pagedocument_Document in processing";"This document is in processing now."
+"pagedocument_Document error";"An error was occured."
+
+"pagedocument_No permissions";"You have no permissions for this action."
+"pagedocument_Not found";"This document not found. Possibly, it was deleted or forbidden."
+
+"pagedocument_Error";"An error has occured."
+
+"pagedocument_Changes saved";"Changes were saved successfully."
+"pagedocument_Document created";"Document was created successfully."
+"pagedocument_Document deleted";"Document was deleted."
+"pagedocument_User delete forbidden";"You are not allowed to delete documents."
+
+"pagedocument_Posted";"Posted %s"
+"pagedocument_Views";"%s views"
+
+"pagedocument_No documents";"Nobody has created a document yet."
+
+"pagedocument_No user documents";"You have not a document yet."
+"pagedocument_Post document";"You can %1$spost%2$s one now."
+
+"pagedocument_Browse Documents";"Browse Documents"
+"pagedocument_Manage Documents";"Manage Documents"
+"pagedocument_Create Document";"Create Document"
+
+"pagedocument_Select document";"Select document you would like to upload"
+
+"pagedocument_Limit_is_exeeded";"Documents limit is exceeded"
+"pagedocument_Scribd_credentials_need";"Scribd credentials is needed for this action"
+"pagedocument_Form filling error";"Please, fill all fields"
+
+"pagedocument_Category";"Category: %s"
+"pagedocument_Uncategorized";"Uncategorized"
+"pagedocument_All categories";"All categories"
+
+"pagedocument_...";"..."
+"pagedocument_edit";"edit"
+"pagedocument_delete";"delete"
+"Documents";"Documents"
+"pagedocument_Upload";"Upload Document"
+"pagedocument_Admin title";""
+"Global";"Global"
+"Displays the page's documents.";"Displays the page's documents."
+"Document Settings";""
+"pagedocument_Admin_categories";"Document Categories"
+
+"PAGEDOCUMENT_ACTION_NEW";"{actors:$subject:$object} posted new document entry {var:$link}: {body:$body}"
+
+"_ACTIVITY_ACTIONTYPE_COMMENT_PAGEDOCUMENT";"When Someone Comments Pagedocument"
+"_ACTIVITY_ACTIONTYPE_PAGEDOCUMENT_NEW";"When Someone Creates Pagedocument"
+"pagedocument_Download";"Download"

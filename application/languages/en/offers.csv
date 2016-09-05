@@ -1,0 +1,547 @@
+"HE_OFFERS";"HE - Offers"
+"OFFERS_PageOffers";"This page contains an active offers"
+"percent";"%"
+"%s coupons"; "%s coupons"
+"OFFERS_Plugin";"Offers Plugin"
+"OFFERS_form_go_back";"go back"
+"unlimit coupons";"Unlimited coupons"
+"OFFERS_country";"Country"
+"OFFERS_state";"State"
+"OFFERS_city";"City"
+"OFFERS_address";"Address"
+"OFFERS_phone";"Phone"
+"OFFERS_website";"Website"
+"OFFERS_Offers";"Offers"
+"OFFERS_Credits";"Credits"
+"Offers_Details";"Offers Details"
+"OFFERS_Popular";"Most Popular Offers"
+"OFFERS_Recent";"Recent Offers"
+"OFFERS_Hot";"Hot Offers"
+"OFFERS_Contacts";"Contacts"
+"OFFERS_Participants";"Participants"
+"OFFERS_Create New Offer";"Create New Offer"
+"OFFERS_ADMIN_CREATE_DESCRIPTION";"You can add new offer here"
+"OFFERS_ADMIN_MANAGE_DESCRIPTION";"Browse created and choose appropriate offers, using a filter criteria. You can enable, disable or delete offers. Please note that disabled offers are not shown on Browse Offers page and widgets."
+"OFFERS_Title";"Title"
+"OFFERS_Price";"Offer Price"
+"OFFERS_Discount";"Discount"
+"OFFERS_Coupons Count";"Coupons Count"
+"OFFERS_Description";"Description"
+"OFFERS_Options";"Options"
+"OFFERS_Owner";"Owner"
+"OFFERS_Creation_date";"Creation date"
+"OFFERS_Start Time";"Start Time"
+"OFFERS_Start Time";"Start Time"
+"OFFERS_End Time";"End Time"
+"OFFERS_Photo";"Photo"
+"OFFERS_Type";"Type"
+"OFFERS_Paid";"Paid"
+"OFFERS_Free";"Free"
+"OFFERS_Condition";"Condition"
+"OFFERS_Time Limit";"Time Limit"
+"OFFERS_Unlimit";"Unlimited"
+"OFFERS_Limit";"Limit"
+"OFFERS_Coupons Count. Please complete this field - it is required.";"Coupons Count. Please complete this field - it is required."
+"OFFERS_Start Time. Please select a date from the calendar and set a time.";"Start Time. Please select a date from the calendar and set a time."
+"OFFERS_End Time. Please select a date from the calendar and set a time.";"End Time. Please select a date from the calendar and set a time."
+"OFFERS_coupons_code_incorrect""Current code is already used by other offers"
+"OFFERS_Coupons Code";"Coupons Code"
+"UPDATES_Generate Code";"Generate Code"
+"OFFERS_offers";"Offers"
+"OFFERS_offers_browse";"Browse Offers"
+"OFFERS_offers_manage";"My Offers"
+"OFFERS_offer_view";"Get Offer"
+"OFFERS_ADMIN_EDIT_DESCRIPTION";"Description"
+"OFFERS_View Offers";"View Offers"
+"OFFERS_Create Offer";"Create Offer"
+"OFFERS_Edit";"Edit Offer"
+"OFFERS_edit_contacts";"Edit Contacts"
+"OFFERS_Your changes have been saved. You can go back to %s";"Your changes have been saved. You can go back to %s"
+"OFFERS_There are no pages";"There are no pages"
+"OFFERS_There are no offers";"There are no offers"
+"OFFERS_Offer was successfully created.";"Offer was successfully created."
+"OFFERS_Changes were successfully saved.";"Changes were successfully saved."
+"OFFERS_Manage Photos";"Manage Photos"
+"OFFERS_Back";"Back"
+"OFFERS_Add photos";"Add photos"
+"OFFERS_Edit photos";"Edit photos"
+"OFFERS_Main Photo";"Main Photo"
+"OFFERS_pageoffers_add_photo";"Add Photo"
+"OFFERS_pageoffers_clear_list";"Clear List"
+"OFFERS_pageoffers_upload_description";"Chose images on your computer to upload it in this offer album"
+"OFFERS_pageoffers_save_photos";"Save photos"
+"OFFERS_pageoffers_create_title_empty";"Title of the empty. Please complete this field - it is required.<br/>"
+"OFFERS_pageoffers_create_discount_empty";"Discount of the empty. Please complete this field - it is required.<br/>"
+"OFFERS_pageoffers_create_description_empty";"Description of the empty. Please complete this field - it is required.<br/>"
+"OFFERS_pageoffers_create_coupons_code_empty";"Coupons count of the empty. Please complete this field - it is required.<br/>"
+"OFFERS_PAGEOFFERS_CREATE_DESCRIPTION";"Compose your new coupon below, then click ""Post Entry"" and offer will be posted in the list of Offers"
+"OFFERS_pageoffers_create_go_back";"go back"
+"OFFERS_pageoffers_File Upload";"Add Photo"
+"OFFERS_pageoffers_UPLOAD_DESCRIPTION";"Chose images on your computer to upload it in this offer album "
+"OFFERS_pageoffers_form_time_limit_desc";"Distribution of coupon is limited by time"
+"OFFERS_pageoffers_form_redeem_time_limit_desc";"Action of coupon will be limited by time"
+"OFFERS_CATEGORIES_DESCRIPTION";"Below using a provided feature you can create, edit and delete the categories."
+"OFFERS_Categories";"Categories"
+"OFFERS_Add New Category";"Add New Category"
+"OFFERS_Are you sure you want to delete this offer?";"Are you sure you want to delete this offer?"
+"OFFERS_Are you sure you want to delete the selected offers?";"Are you sure you want to delete the selected offers?"
+"OFFERS_Are you sure you want to disable this particular offer?";"Are you sure you want to disable this particular offer?"
+"OFFERS_Are you sure you want to enable this particular offer?";"Are you sure you want to enable this particular offer?"
+"OFFERS_Start Time larger than End Time";"Start Time larger than End Time"
+"OFFERS_Item Price";"Item Price"
+"OFFERS_Edit_description";"Edit your entry below, then click "Save" to publish the entry on your offer."
+"OFFERS_upcoming_offers";"Upcoming Offers"
+"OFFERS_past_offers";"Past Offers"
+"OFFERS_mine";"Mine"
+"OFFERS_manage_offers";"Manage Offers"
+"OFFERS_create_offer";"Create Offer"
+"OFFERS_create_price_item_desc";"The price of goods or services"
+"OFFERS_edit_offer";"Edit Offer"
+"OFFERS_delete_offer";"Delete Offer"
+"OFFERS_Delete";"Delete"
+"OFFERS_Delete_selected";"Delete Selected"
+"OFFERS_share_offer";"Share this offer"
+"OFFERS_manage_photos";"Manage Photos"
+"OFFERS_add_photos";"Add photos"
+"OFFERS_contacts_offer";"Edit Contacts Details"
+"OFFERS_create_success";"The offer is created successfully"
+"OFFERS_add_contacts_success";"Contacts recorded"
+"OFFERS_Disable";"Disable"
+"OFFERS_Enable";"Enable"
+"OFFERS_Untitled";"Untitled"
+"OFFERS_Category";"Category"
+"OFFERS_Transactions";"Transactions"
+"OFFERS_view_offer";"View Offer"
+"OFFERS_Choose products";"Select products"
+"OFFERS_Select Products";"Select"
+"OFFERS_pageoffers_create";"create one?"
+"OFFERS_pageoffers_create %s";"Why don't you %s"
+
+"OFFERS_offer_price";"Price: "
+"OFFERS_offer_price_free";"Free"
+"OFFERS_offer_available";"Available: "
+"OFFERS_offer_discount";"Discount: "
+"OFFERS_offer_coupon_code";"Code: "
+"OFFERS_offer_time_left";"Time left: "
+"OFFERS_offer_redeem";"Redeem: "
+"OFFERS_offer_presented_by";"Present by: "
+"OFFERS_offer_last_day";"Last Day"
+"OFFERS_offer_products";"Add the following products to your cart and get the discount:"
+"OFFERS_offer_enlarge";"Enlarge"
+"OFFERS_offer_time_left_expired";"Time of receipt of the coupon has expired"
+"OFFERS_offer_time_is_up";"Time of expired"
+"OFFERS_offer_no_relevant";"This coupon is no longer relevant"
+"OFFERS_offer_not_left";"Coupons are not left"
+"OFFERS_offer_delete";"Delete Entry"
+"OFFERS_offer_deleted";"Offer has been deleted"
+"OFFERS_offer_desc_delete";"Are you sure you want to delete this offer entry?"
+"OFFERS_offer_btn_delete";"Delete"
+"OFFERS_offer_show_all";"Show all"
+"OFFERS_offer_show_less";"Show less"
+"OFFERS_offer_disabled";"This offer is disabled"
+"OFFERS_coupons";"coupons"
+
+"OFFERS_form_limit_time_error";"Please provide correct start and end dates for the offer."
+"OFFERS_form_limit_redeem_time_error";"Please provide correct start and end redeem dates for the offer."
+"OFFERS_form_title_empty";"Title of the empty."
+"OFFERS_form_discount_empty";"Discount of the empty."
+"OFFERS_form_discount_incorrect";"The value entered is incorrect discount "
+"OFFERS_form_description_empty";"Description of the empty."
+"OFFERS_form_coupons_count_incorrect";"Posted incorrect number of coupons."
+"OFFERS_form_coupons_code_empty";"Coupons code of the empty."
+"OFFERS_form_error_limit_time";"Please provide correct start and end dates for the offer."
+"OFFERS_form_error_redeem_time";"Please provide correct start and end redeem dates for the offer."
+"OFFERS_form_select_type_code";"Select the method for generating a coupon code"
+"OFFERS_form_unique_code_for_user";"Create a unique code for each recipient"
+"OFFERS_form_offer_code";"Use the same key for all"
+"OFFERS_form_oftype_free_help";"Like a free coupons, t-shirts"
+"OFFERS_form_oftype_paid_help";"Like spend $20 to get $5 off"
+"OFFERS_form_oftype_reward_help";"Provide a deal to members for social sharing, likes, suggests, photo/video uploads"
+"OFFERS_form_oftype_store_help";"Like purchase t-shirts, shorts and glasses and get 30% discount"
+"OFFERS_form_create_new_offer";"Create New Offer"
+"OFFERS_form_description";""
+"OFFERS_admin_manage_offer_edit";""
+
+"OFFERS_form_title";"Title"
+"OFFERS_form_type";"Type"
+"OFFERS_form_item_price";"Offer Price"
+"OFFERS_form_price";"Offer Price"
+"OFFERS_form_time_limit";"Limit Time"
+"OFFERS_form_time_limit_desc";"Yes, the offer is limited by time and will expire. <span style='font-weight:bold;'>Limit Time</span> is a period of receiving a coupon."
+"OFFERS_form_limit";"Limit"
+"OFFERS_form_unlimit";"Unlimited"
+"OFFERS_form_start_time";"Start Time"
+"OFFERS_form_end_time";"End Time"
+"OFFERS_form_redeem_time_limit_desc";"Yes, the offer is limited by time and will expire. <span style='font-weight:bold;'>Redeem</span> is period of validity of coupon."
+"OFFERS_form_redeem_time";"Redeem"
+"OFFERS_form_redeem_start_time";"Start Time"
+"OFFERS_form_redeem_end_time";"End Time"
+"OFFERS_form_discount";"Discount"
+"OFFERS_form_coupons_count";"Available Count"
+"OFFERS_form_coupons_count_desc";"Yes, coupons count are limited"
+"OFFERS_form_coupons_code";"Coupon Code"
+"OFFERS_form_coupons_code_desc";"Yes, generate unique coupon code"
+"OFFERS_form_description";"Description"
+"OFFERS_form_category";"Category"
+"OFFERS_form_coupons_code";"Coupon Code"
+"OFFERS_form_generate_code";"Generate Code"
+"OFFERS_form_post";"Create"
+"OFFERS_form_cancel";"cancel"
+"OFFERS_form_paid";"Paid"
+"OFFERS_form_paid_desc";"Increase your sales by providing a paid offer which is purchased by members to get the deal."
+"OFFERS_form_free";"Free"
+"OFFERS_form_free_desc";"Get a high impact for your business by providing a free offer which can be get easily by anyone."
+"OFFERS_form_reward";"Rewarding"
+"OFFERS_form_reward_desc";"Reward members for their loyalty to your business. "
+"OFFERS_form_store";"Store"
+"OFFERS_form_store_desc";"Provide discounts for bulk purchases of your products."
+"OFFERS_form_reward";"Requirements"
+"OFFERS_form_price_item_desc";"The price of the product (service) for which this offer is available"
+"OFFERS_form_products";"Products"
+"OFFERS_form_products_desc";"The offer is provided and discount is automatically applied as soon as a customer adds the products to his cart:"
+"OFFERS_form_add_products";"Add Products"
+"OFFERS_form_select_products_empty";"Please select one or more products."
+"OFFERS_form_require";"Requirements"
+"OFFERS_form_require_desc";"Set up terms for members to receive the deal:"
+"OFFERS_form_require_empty";"Please select one or more requires."
+"OFFERS_form_allow_credit_desc";"Do you want to allow users to buy coupons for credits"
+"OFFERS_form_allow_credit";"Allow to sell coupons for credits"
+"Your offer system is currently working %s credit.";"Your offer system is currently working %s credit."
+
+"OFFERS_form_edit_offer";"Edit Offer"
+"OFFERS_form_edit_description";"Edit your entry below, then click ""Create"" to publish the entry on your offer"
+"OFFERS_form_edit_add_photos_description";"Add Photos"" to select one or more photos from your computer. After you have selected the photos, they will begin to upload right away. When your upload is finished, click the button below your photo list to save them to your classified listing.";"Click ""Add Photos"" to select one or more photos from your computer. After you have selected the photos, they will begin to upload right away. When your upload is finished, click the button below your photo list to save them to your offer."
+"OFFERS_form_validate_desc";"Description of the empty. Please complete this field - it is required."
+
+"OFFERS_All Categories";"All Categories"
+"OFFERS_Redeem";"Redeem:"
+"OFFERS_Presented by";"Presented by:"
+"OFFERS_edit_success %s";"Changes have been successfully saved. %s"
+"OFFERS_Purchase Offer";"Purchase Offer"
+"OFFERS_Upcoming";"Upcoming"
+"OFFERS_Past";"Past"
+"OFFERS_Print Offer";"Print Offer"
+"Suggest To Friends";"Suggest To Friends"
+"OFFERS_change_status_coupon";"Mark As %s Offer"
+"OFFERS_Purchase Offer Gateways Description";"Please select payment option using which you will pay, you will be taken to a secure checkout area where you can fulfil your financial information."
+"OFFERS_Status";"Status:"
+"OFFERS_Expired";"Expired"
+"OFFERS_expired";"expired"
+"OFFERS_unlimit";"Unlimited"
+"OFFERS_Accept Offer";"Accept Offer"
+"OFFERS_Count users";"Count users:"
+
+
+"OFFERS_REQUIRE_FRIEND";"Make friendship with %1$s members"
+"OFFERS_REQUIRE_COMMENT";"Write %1$s comments"
+"OFFERS_REQUIRE_LOGIN";"Login to site %1$s times"
+"OFFERS_REQUIRE_STATUS";"Post %1$s status updates"
+"OFFERS_REQUIRE_PHOTO";"Upload %1$s photos"
+"OFFERS_REQUIRE_BLOG";"Post %1$s blog entries"
+"OFFERS_REQUIRE_EVENT";"Attend in %1$s events"
+"OFFERS_REQUIRE_GROUP";"Join to %1$s groups"
+"OFFERS_REQUIRE_FORUM";"Submit %1$s wall posts"
+"OFFERS_REQUIRE_CLASSIFIED";"Create %1$s classifieds"
+"OFFERS_REQUIRE_INVITE";"Send invite to %1$s members"
+"OFFERS_REQUIRE_REFERRAL";"Invite more friends and get %1$s referrals"
+"OFFERS_REQUIRE_POLL";"Create %1$s polls"
+"OFFERS_REQUIRE_POLLPASSED";"Pass %1$s polls"
+"OFFERS_REQUIRE_MUSIC";"Upload %1$s music songs"
+"OFFERS_REQUIRE_VIDEO";"Upload %1$s videos"
+"OFFERS_REQUIRE_CHECKIN";"Check-in %1$s times"
+"OFFERS_REQUIRE_LIKE";"Like %1$s members"
+"OFFERS_REQUIRE_LIKEME";"Let %1$s members Like you"
+"OFFERS_REQUIRE_LIKEPAGE";"Let %1$s members Like %2$s"
+"OFFERS_REQUIRE_QUIZ";"Create %1$s quizzes"
+"OFFERS_REQUIRE_QUIZPASSED";"Pass %1$s quizzes"
+"OFFERS_REQUIRE_RATE";"Rate %1$s items"
+"OFFERS_REQUIRE_REVIEW";"Leave %1$s reviews on pages"
+"OFFERS_REQUIRE_PAGEREVIEW";"Leave a review on the page %1$s"
+"OFFERS_REQUIRE_PAGESUGGEST";"Suggest the page %1$s to %2$s friends"
+"OFFERS_REQUIRE_STORE";"Post %1$s products in your store"
+"OFFERS_REQUIRE_STOREORDER";"Purchase %1$s products"
+"OFFERS_REQUIRE_SUGGEST";"Suggest %1$s items to your friends"
+"OFFERS_REQUIRE_PAGEDOCUMENT";"Post %d document in page"
+"OFFERS_REQUIRE_PAGEBLOG";"Create %d blog in page"
+"OFFERS_REQUIRE_PLAYLIST";"Post %d songs in playlist page"
+"OFFERS_REQUIRE_PAGEVIDEO";"Post %d video in page"
+"OFFERS_REQUIRE_PAGEALBUM";"Post %d albums in page"
+
+"OFFERS_FORM_REQUIRE_LABEL";"Requirements:"
+"OFFERS_CREATE_REQUIRE_FRIEND";"Friends count"
+"OFFERS_CREATE_REQUIRE_COMMENT";"Comments count"
+"OFFERS_CREATE_REQUIRE_LOGIN";"Logins count"
+"OFFERS_CREATE_REQUIRE_STATUS";"Status updates count"
+"OFFERS_CREATE_REQUIRE_PHOTO";"Uploaded photos count"
+"OFFERS_CREATE_REQUIRE_BLOG";"Blog entries count"
+"OFFERS_CREATE_REQUIRE_EVENT";"Event memberships count"
+"OFFERS_CREATE_REQUIRE_GROUP";"Group memberships count"
+"OFFERS_CREATE_REQUIRE_FORUM";"Forum posts count"
+"OFFERS_CREATE_REQUIRE_CLASSIFIED";"Classifieds count"
+"OFFERS_CREATE_REQUIRE_INVITE";"Invites count"
+"OFFERS_CREATE_REQUIRE_REFERRAL";"Referrals count(actual signups)"
+"OFFERS_CREATE_REQUIRE_POLL";"Polls count"
+"OFFERS_CREATE_REQUIRE_POLLPASSED";"Passed polls count"
+"OFFERS_CREATE_REQUIRE_MUSIC";"Music songs count"
+"OFFERS_CREATE_REQUIRE_VIDEO";"Videos count"
+"OFFERS_CREATE_REQUIRE_CHECKIN";"Check-ins count"
+"OFFERS_CREATE_REQUIRE_LIKE";"I liked members count"
+"OFFERS_CREATE_REQUIRE_LIKEPAGE";"Like Page"
+"OFFERS_CREATE_REQUIRE_LIKEME";"Members liked me count"
+"OFFERS_CREATE_REQUIRE_QUIZ";"Quiz count"
+"OFFERS_CREATE_REQUIRE_QUIZPASSED";"Passed quiz count"
+"OFFERS_CREATE_REQUIRE_RATE";"Rates count"
+"OFFERS_CREATE_REQUIRE_REVIEW";"Page reviews count"
+"OFFERS_CREATE_REQUIRE_STORE";"Posted store products count"
+"OFFERS_CREATE_REQUIRE_STOREORDER";"Purchases from store count"
+"OFFERS_CREATE_REQUIRE_SUGGEST";"Suggestions count"
+"OFFERS_CREATE_REQUIRE_PLAYLIST";"Music songs count"
+"OFFERS_CREATE_REQUIRE_PAGEVIDEO";"Videos count"
+"OFFERS_CREATE_REQUIRE_PAGEDOCUMENT";"Page Document count"
+"OFFERS_CREATE_REQUIRE_PAGEALBUM";"Uploaded albums count"
+"OFFERS_CREATE_REQUIRE_PAGEBLOG";"Page Blog entries count"
+"OFFERS_CREATE_REQUIRE_ENABLE";"Enable store requirements?"
+
+"OFFERS_Available Offers";"Available Offers"
+
+"OFFERS_FOLLOW_Follow_Offer";"Follow Offer"
+"OFFERS_FOLLOW_Followed";"Followed"
+"OFFERS_FOLLOW_BTN_Follow";"Follow"
+"OFFERS_FOLLOW_DESCRIPTION_FOLLOWED";"You have already followed this offer."
+"OFFERS_FOLLOW_The offer has been followed successfully.";"The offer has been followed successfully."
+
+"_EMAIL_OFFERS_FOLLOW_TEMPLATE_TITLE";"Offers Follow Notification"
+"_EMAIL_OFFERS_FOLLOW_TEMPLATE_DESCRIPTION";"This email is used when user follow offer and do all requirements."
+"_EMAIL_OFFERS_FOLLOW_TEMPLATE_SUBJECT";"All Requirements have been done"
+"_EMAIL_OFFERS_FOLLOW_TEMPLATE_BODY";"Hello [recipient_name],
+This message has been sent you, because you followed offer [offer_name].
+You have done all requirements for this offer.
+Now you can accept this offer. Please click the following link to view the offer:
+[link]
+----------------------------------------
+Best Regards,
+Social Network Administration"
+
+"_EMAIL_OFFERS_EXPIRATION_TEMPLATE_TITLE";"Offers Expire Notification"
+"_EMAIL_OFFERS_EXPIRATION_TEMPLATE_DESCRIPTION";"This email is used to notify when user's offer is expiring."
+"_EMAIL_OFFERS_EXPIRATION_TEMPLATE_SUBJECT";"Your offer is expiring"
+"_EMAIL_OFFERS_EXPIRATION_TEMPLATE_BODY";"Hello [recipient_name],
+This message has been sent you, because your offer [offer_name] is expiring.
+Until the end of the period [days] [hours] left.
+Please click the following link to view the offer:
+[link]
+----------------------------------------
+Best Regards,
+Social Network Administration"
+
+"OFFERS_%s day";"%s day";"%s days"
+"OFFERS_%s hour";"%s hour";"%s hours"
+"OFFERS_%s minute";"%s minute";"%s minutes"
+
+"OFFERS_Make As Favorite";"Make As Favorite"
+"OFFERS_Make As Simple";"Make As Simple"
+"OFFERS_FAVORITE_DESCRIPTION_ACTIVE";"This offer is favorite. You can make it as simple offer."
+"OFFERS_FAVORITE_BTN_Make as Favorite";"Make as Favorite"
+"OFFERS_FAVORITE_BTN_Make as Simple";"Make as Simple"
+"OFFERS_FAVORITE_TITLE";"Favorite Offer"
+"OFFERS_FAVORITE_DESCRIPTION";"You can make this offer as favorite."
+"OFFERS_FAVORITE_The offer has been made as favorite successfully";"The offer has been made as favorite successfully"
+"OFFERS_FAVORITE_The offer has been made as simple successfully";"The offer has been made as simple successfully"
+
+"OFFERS_Email";"Email"
+"OFFERS_BTN_Send Offer";"Send Offer"
+"OFFERS_EMAIL_TITLE";"Send Offer to an Email"
+"OFFERS_EMAIL_DESCRIPTION";"You can send this offer by email to your friends. Addresses should be separated by commas, like email@domain.com, email2@domain.com."
+"OFFERS_Email Address";"Email:"
+"OFFERS_%s is not valid email address, please correct and try again.";"'%s' is not valid email address, please correct and try again."
+
+"_EMAIL_OFFERS_EMAIL_TEMPLATE_TITLE";"Send Offer"
+"_EMAIL_OFFERS_EMAIL_TEMPLATE_DESCRIPTION";"This message is sent with offer on pointed email addresses."
+"_EMAIL_OFFERS_EMAIL_TEMPLATE_SUBJECT";"You have got offer"
+"_EMAIL_OFFERS_EMAIL_TEMPLATE_BODY";"[header]
+
+Hello [recipient_email].
+This message has been sent you by [sender_name] < [sender_email] >.
+
+[email_content]
+----------------------------------------
+Best Regards,
+Social Network Administration
+
+[footer]"
+
+"OFFERS_EMAIL_The offer has been sent successfully";"The offer has been sent successfully"
+
+
+# mail templates
+
+
+# offers_subscription_active
+"_EMAIL_OFFERS_SUBSCRIPTION_ACTIVE_TITLE";"Subscription Activated"
+"_EMAIL_OFFERS_SUBSCRIPTION_ACTIVE_DESCRIPTION";"This is the email that gets sent to a member when their subscription is activated."
+"_EMAIL_OFFERS_SUBSCRIPTION_ACTIVE_SUBJECT";"Your subscription is now active."
+"_EMAIL_OFFERS_SUBSCRIPTION_ACTIVE_BODY";"[header]
+
+Thank you for subscribing to offer! Your subscription is now active.
+
+[subscription_title]
+[subscription_description]
+[subscription_terms]
+
+You may follow the link below to sign in.
+
+[object_link]
+
+[footer]"
+
+# offers_subscription_expired
+"_EMAIL_OFFERS_SUBSCRIPTION_EXPIRED_TITLE";"Subscription Expired"
+"_EMAIL_OFFERS_SUBSCRIPTION_EXPIRED_DESCRIPTION";"This is the email that gets sent to a member when their subscription expires."
+"_EMAIL_OFFERS_SUBSCRIPTION_EXPIRED_SUBJECT";"Your subscription has expired."
+"_EMAIL_OFFERS_SUBSCRIPTION_EXPIRED_BODY";"[header]
+
+Your subscription has expired.
+
+[subscription_title]
+[subscription_description]
+[subscription_terms]
+
+Please follow the link below to renew your subscription.
+
+[object_link]
+
+[footer]"
+
+# offers_subscription_overdue
+"_EMAIL_OFFERS_SUBSCRIPTION_OVERDUE_TITLE";"Subscription Overdue"
+"_EMAIL_OFFERS_SUBSCRIPTION_OVERDUE_DESCRIPTION";"This is the email that gets sent to a member when their subscription is overdue."
+"_EMAIL_OFFERS_SUBSCRIPTION_OVERDUE_SUBJECT";"Your subscription is overdue."
+"_EMAIL_OFFERS_SUBSCRIPTION_OVERDUE_BODY";"[header]
+
+Your subscription is overdue because of a failed or missed payment.
+
+[subscription_title]
+[subscription_description]
+[subscription_terms]
+
+Please follow the link below to renew your subscription.
+
+[object_link]
+
+[footer]"
+
+# offers_subscription_pending
+"_EMAIL_OFFERS_SUBSCRIPTION_PENDING_TITLE";"Subscription Pending"
+"_EMAIL_OFFERS_SUBSCRIPTION_PENDING_DESCRIPTION";"This is the email that gets sent to a member when their subscription is pending."
+"_EMAIL_OFFERS_SUBSCRIPTION_PENDING_SUBJECT";"Your subscription is pending."
+"_EMAIL_OFFERS_SUBSCRIPTION_PENDING_BODY";"[header]
+
+Thank you for subscribing to our social network! Your subscription is
+pending, awaiting completion of the transaction. Your membership will be
+activated soon; we will notify you by email when it is ready.
+Thank you for your patience.
+
+[subscription_title]
+[subscription_description]
+[subscription_terms]
+
+[footer]"
+
+# offers_subscription_refunded
+"_EMAIL_OFFERS_SUBSCRIPTION_REFUNDED_TITLE";"Subscription Refunded"
+"_EMAIL_OFFERS_SUBSCRIPTION_REFUNDED_DESCRIPTION";"This is the email that gets sent to a member when their subscription is refunded."
+"_EMAIL_OFFERS_SUBSCRIPTION_REFUNDED_SUBJECT";"Your subscription has been refunded."
+"_EMAIL_OFFERS_SUBSCRIPTION_REFUNDED_BODY";"[header]
+
+Your subscription has been refunded and is no longer active.
+
+[subscription_title]
+[subscription_description]
+[subscription_terms]
+
+You may follow the link below to sign in.
+
+[object_link]
+
+[footer]"
+
+
+"OFFERS_%s discount for %s";"%s discount for %s"
+"OFFERS_admin_manage_offer_edit";"edit"
+"{item:$subject} accepted offer {item:$object}";"{item:$subject} accepted offer {item:$object}"
+"{item:$subject} purchased offer {item:$object}";"{item:$subject} purchased offer {item:$object}"
+"{actors:$subject:$object} accepted offer {var:$link}";"{actors:$subject:$object} accepted offer {var:$link}"
+"{actors:$subject:$object} purchased offer {var:$link}";"{actors:$subject:$object} purchased offer {var:$link}"
+"{actors:$subject:$object} posted new offer: {body:$body}";"{actors:$subject:$object} posted new offer: {body:$body}"
+"{item:$subject} posted new offer: {item:$object}";"{item:$subject} posted new offer: {item:$object}"
+
+"OFFERS_Delete Offer Category?";"Delete Offer Category?"
+"OFFERS_Are you sure that you want to delete this category? It will not be recoverable after being deleted.";"Are you sure that you want to delete this category? It will not be recoverable after being deleted."
+"OFFERS_You can not delete this offer, because this offer is default.";"You can not delete this offer, because this offer is default."
+"OFFERS_No upcoming items";"No any active offer has been presented at current time."
+"OFFERS_No past items";" No any expired offer has been presented at current time."
+"OFFERS_No any accepted and active offers";"No any accepted and active offers have been presented at current time."
+"Offers Home";"Offers Home"
+"This page displays all offers";"This page displays all offers"
+"%s offer found";"%s offer found";"%s offers found"
+"OFFERS_With Credits";"Enable Credits in Offers"
+"OFFERS_Only Offers";"Disable Credits in Offers"
+"OFFERS_WITHOUT_CREDIT";"Credits are disabled in Offers section so offers can be purchased only via payment gateways."
+"OFFERS_WITH_CREDIT";"Offers plugin is interacting with Credits plugin at the present time. In case if Credits plugin is enabled in Offers section then offers can be purchased for credits. You can allow creators of offers to activate and sell offers for credits if you complete adjustment below. You can optionally enable selling via credits on Create/Edit."
+"OFFERS_Do you want to let page owners use a credits for offers?";"Do you want to let page owners use a credits for offers?"
+"OFFERS_Credits on Offers";"Allow Page Owners to Sell Offers for Credits?"
+"OFFERS_GATEWAY_ACCOUNT_SETTINGS";"Payments are handled and stored in the social network. You can request withdrawal of your funds which are sent to provided below account on a payment gateway. Please enable the payment gateway using which you would like to get your funds from your account balance."
+"Please put this widget on Offer Profile page.";"Please put this widget on Offer Profile page."
+"Offers";"Offers"
+"You can add photos to your offers here.";"You can add photos to your offers here."
+"OFFERS_pageoffers_Upload Offers:";"Upload a Photo:"
+"Recent Offers";"Recent Offers"
+"This is the view page for a offer";"This is the view page for a offer"
+"Offers Details";"Offers Details"
+"You have already purchased this offer";"You have already purchased this offer"
+"You have already accepted this offer";"You have already accepted this offer"
+"As soon as you will fulfill the following requirements you will be able to get this offer";"As soon as you will fulfill the following requirements you will be able to get this offer"
+"OFFERS_FOLLOW_TITLE";"Follow this Offer"
+"OFFERS_FOLLOW_DESCRIPTION";"You can follow this offer, when you will fulfill all the requirements you will receive a notification (e-mail)"
+"No photos in this offer.";"No photos in this offer."
+"ADMIN_ACTIVITY_TYPE_OFFERREVIEW_NEW";"When someone posts a new Offer Review"
+"ADMIN_ACTIVITY_TYPE_OFFERS_ACCEPT";"When someone accepts a offer"
+"ADMIN_ACTIVITY_TYPE_OFFERS_PURCHASE";"When someone purchases a offer"
+"ADMIN_ACTIVITY_TYPE_OFFER_NEW";"When admin creates a new offer"
+"ADMIN_ACTIVITY_TYPE_PAGE_OFFERS_ACCEPT";"When someone accepts a page-offer"
+"ADMIN_ACTIVITY_TYPE_PAGE_OFFERS_PURCHASE";"When someone purchases a page-offer"
+"ADMIN_ACTIVITY_TYPE_PAGE_OFFER_NEW";"When someone creates a new offer (on Page)"
+"_ACTIVITY_ACTIONTYPE_OFFERREVIEW_NEW";"When someone posts a new Offer Review"
+"_ACTIVITY_ACTIONTYPE_OFFERS_ACCEPT";"When someone accepts a offer"
+"_ACTIVITY_ACTIONTYPE_OFFERS_PURCHASE";"When someone purchases a offer"
+"_ACTIVITY_ACTIONTYPE_OFFER_NEW";"When admin creates a new offer"
+"_ACTIVITY_ACTIONTYPE_PAGE_OFFERS_ACCEPT";"When someone accepts a page-offer"
+"_ACTIVITY_ACTIONTYPE_PAGE_OFFERS_PURCHASE";"When someone purchases a page-offer"
+"_ACTIVITY_ACTIONTYPE_PAGE_OFFER_NEW";"When someone creates a new offer (on Page)"
+"ACTIVITY_TYPE_POST_OFFERREVIEW";"When people post review on my Offer"
+"ACTIVITY_TYPE_SUGGEST_OFFER";"When people suggest to me a offer"
+"ITEM_TYPE_OFFER";"Offers"
+"ITEM_TYPE_OFFERREVIEW";"Offer Review"
+"OFFERS_Discount code is %s";"Discount code is %s"
+"OFFERS_Use";"Use"
+"OFFERS_Used";"Used"
+
+"OFFERS_name_subscribe";"Name"
+"OFFERS_time_acquisition";"Time of acquisition"
+"OFFERS_title_status_coupon";"Status"
+"OFFERS_title_coupon_code";"Coupon Code"
+"OFFERS_option_subscribe";"Option"
+"OFFERS_total_subscribers";"Total subscribers: "
+"OFFERS_Subscribers";"Subscribers"
+"OFFERS_set_featured";"set featured"
+"OFFERS_set_usual";"set usual"
+
+"OFFERS_login_to_get_coupon";"You need to login to get the coupon."
+"OFFERS_Featured_offer";"Featured offer"
+"OFFERS_level";"Member Level Settings"
+"Configure level settings";"These settings are applied on a per member level basis. Start by selecting the member level you want to modify, then adjust the settings for that level below"
+"Accept Offers";"Accept Offers"
+"Do you want to let members to accept offers?";"Do you want to let members to accept offers?"
+"Your member level is not allowed to receive this offer. Please upgrade your member level.";"Your member level is not allowed to receive this offer. Please upgrade your member level."
+"Failed. Please make sure that you have typed correct values.";"Failed. Please make sure that you have typed correct values."
+"OFFERS_ADMIN_POPULAR_DESCRIPTION";"In this section, you can specify the number of purchases Offers to display a badge \"Popular\"."

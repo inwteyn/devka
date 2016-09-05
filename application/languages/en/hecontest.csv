@@ -1,0 +1,80 @@
+"HECONTEST_He Contest";"HE - Contest"
+
+"HECONTEST_There is no such contest.";"There is no such contest."
+"HECONTEST_This Contest Sponsored by:";"This Contest Sponsored by:"
+"HECONTEST_Join form terms";"Join form %s"
+"HECONTEST_upload_photo";"Upload Photo"
+"HECONTEST_Contest Participants";"Contest Participants"
+"HECONTEST_No participants";"There are no participants in this contest."
+"HECONTEST_No participants here";"There are no participants in this contest. Feel free to %s"
+"HECONTEST_Join";"Join"
+"HECONTEST_join";"join"
+"HECONTEST_Already participant";"You have already participated in the contest."
+"HECONTEST_Participants";"Participants"
+"HECONTEST_Feel free to join";"Feel free to join"
+"HECONTEST_Partners";"Partners"
+"HECONTEST_Contact us";"contact us"
+"HECONTEST_Partners text";"Interested in partnership and sponsoring a new contest? Please feel free to %s."
+"HECONTEST_Leader";"Leader"
+"HECONTEST_Winner";"Winner"
+"HECONTEST_Leader text";"%s leads in %s contest."
+"HECONTEST_Winner text";"%s won %s contest."
+"HECONTEST_Sponsored by";"Sponsored by %s"
+"HECONTEST_View Contest";"View Contest"
+"Hecontest_ADMIN_SETTINGS_DESCRIPTION";"Contests Settings Form"
+"HECONTEST_People Liked This";"People Liked This (%s)"
+"HECONTEST_Comments";"Comments"
+"HECONTEST_Comment";"Comment"
+"HECONTEST_View all participants";"View all participants."
+"HECONTEST_Like";"Like"
+"HECONTEST_Unlike";"Unlike"
+"HECONTEST_Liked";"Liked"
+"HECONTEST_No active contest";"There is no active contest."
+"HECONTEST_No recent contest";"There is no contest."
+"HECONTEST_Activate";"Activate"
+"HECONTEST_Deactivate";"Deactivate"
+"HECONTEST_Edit";"Edit"
+"HECONTEST_Delete";"Delete"
+"HECONTEST_Recent context description";"This contest is over. Thank you for your participation and votes! Interested in partnership and sponsoring a new contest? Please feel free to %s"
+"HECONTEST_read more";"read more..."
+"ADMIN_ACTIVITY_TYPE_HECONTEST_BEGINS";"When new contest begins"
+"ADMIN_ACTIVITY_TYPE_HECONTEST_PARTICIPATE";"Whe somebody joins the active contest"
+"ADMIN_ACTIVITY_TYPE_HECONTEST_WIN";"When active contest deactivated"
+"_ACTIVITY_ACTIONTYPE_HECONTEST_BEGINS";"When new contest begins"
+"_ACTIVITY_ACTIONTYPE_HECONTEST_PARTICIPATE";"Whe somebody joins the active contest"
+"_ACTIVITY_ACTIONTYPE_HECONTEST_WIN";"When active contest deactivated"
+"_EMAIL_HECONTEST_APPROVE_TITLE";"Contest photo accepted"
+"_EMAIL_HECONTEST_APPROVE_DESCRIPTION";"This email is sent to member when his submission is accepted for the active contest."
+"_EMAIL_HECONTEST_APPROVE_SUBJECT";"Your photo approved"
+"_EMAIL_HECONTEST_APPROVE_BODY";"Hello [user],
+
+Thank you for your submission! Your photo has been approved and available in [contest_name].
+Feel free to share your submission with your friends and receive more votes.
+
+[contest_link].
+
+[footer]"
+"_EMAIL_HECONTEST_REJECT_TITLE";"Contest photo rejected"
+"_EMAIL_HECONTEST_REJECT_DESCRIPTION";"This email is sent to member when his submission is rejected for the active contest."
+"_EMAIL_HECONTEST_REJECT_SUBJECT";"Your photo rejected"
+"_EMAIL_HECONTEST_REJECT_BODY";"Hello [user],
+
+Thank you for your submission. Unfortunately your submission has been rejected. Please review terms of this contest and re-submit your photo.
+
+[link]
+
+[footer]"
+
+
+
+"Hecontest_ADMIN_LEVEL_SETTINGS_DESCRIPTION";"Member Level Settings"
+"HECONTEST_Allow view contest";"Allow viewing the contest?"
+"HECONTEST_Allow vote in the contest";"Allow voting in the contest?"
+"HECONTEST_Allow participation";"Allow participation in the contest?"
+"HECONTEST_Login";"Login to like!"
+"Hecontest Level Settings";"Contest Level Settings"
+
+"HECONTEST_Recent Participants";"Recent Participants"
+"HECONTEST_Random Participants";"Random Participants"
+"HECONTEST_Top Participants";"Top Participants"
+"HECONTEST_Some descr";"Contest will be finished in"

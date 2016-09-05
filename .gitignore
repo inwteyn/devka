@@ -1,6 +1,5 @@
 # Jetbrains
 .idea/
-/application/languages/
 /application/libraries/
 /application/packages/
 /application/plugins/

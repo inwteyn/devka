@@ -1,0 +1,103 @@
+"You can not view this.";"You are not allowed to view this."
+"Video was not created.";"Failed. Video was not created."
+"Video was successfully created.";"Video was successfully created."
+"Invalid request method";"Invalid request method"
+"Changes were not applied.";"Changes were not applied."
+"Changes successfully applied.";"Changes successfully applied."
+"Video was deleted.";"Video was deleted."
+
+"Delete Video";"Delete Video"
+"Are you sure you want to delete this video?";"Are you sure you want to delete this video?"
+"cancel";"cancel"
+
+"Video Title";"Video Title"
+"Please specify an video title";"Please specify an video title"
+"Video Description";"Video Description"
+
+"Add New Video";"Add New Video"
+"Video Source";"Video Source"
+"Video Link (URL)";"Video Link (URL)"
+"My Computer";"My Computer"
+
+"PAGEVIDEO_UPLOAD_RESULT_DESCRIPTION";"This form is just an example fallback for the unobtrusive behaviour of FancyUpload. If this part is not changed, something must be wrong with your code."
+"Upload a Video:";"Upload a Video:"
+
+"PAGEVIDEO_UPLOAD_DESCRIPTION";"Click ""Add Video"" to select a video from your computer. After you have selected video, click on Post Video at the bottom to begin uploading the file. Please wait while your video is being uploaded. When your upload is finished, your video will be processed - you will be notified when it is ready to be viewed."
+"Add Video";"Add Video"
+"Post Video";"Post Video"
+
+"Nobody has created a video yet.";"Nobody has created a video yet."
+"Be the first to %1$spost%2$s one!";"Be the first to %1$spost%2$s one!"
+
+"Added";"Added"
+"%s comments";"%s comments"
+"%s like";"%s like";"%s likes"
+
+"Your video is in queue to be processed - you will be notified when it is ready to be viewed.";"Your video is in queue to be processed - you will be notified when it is ready to be viewed."
+"Your video is currently being processed - you will be notified when it is ready to be viewed.";"Your video is currently being processed - you will be notified when it is ready to be viewed."
+"Video conversion failed. Please try %1$suploading again%2$s.";"Video conversion failed. Please try %1$suploading again%2$s."
+
+"Video conversion failed. Video format is not supported by FFMPEG. Please try %1$sagain%2$s.";"Video conversion failed. Video format is not supported by FFMPEG. Please try %1$sagain%2$s."
+"Video conversion failed. Audio files are not supported. Please try %1$sagain%2$s.";"Video conversion failed. Audio files are not supported. Please try %1$sagain%2$s."
+"PAGE_CREATION_FAILED_DESC";"Video conversion failed. You may be over the site upload limit.  Try %1$suploading%2$s a smaller file, or delete some files to free up space."
+
+"You do not have any videos.";"You do not have any videos."
+"Get started by %1$sposting%2$s a new video.";"Get started by %1$sposting%2$s a new video."
+"Edit Video";"Edit Video"
+"Delete Video";"Delete Video"
+
+"The video you are looking for does not exist or has not been processed yet.";"The video you are looking for does not exist or has not been processed yet."
+"Back to Videos";"Back to Videos"
+"Posted";"Posted"
+"Filed in";"Filed in"
+"Share";"Share"
+"Report";"Report"
+
+"Page Video Plugin";""
+"pagevideo_NEW_VIDEO_DESCRIPTION_FORM";""
+
+"ITEM_TYPE_PAGEVIDEO";"Page Videos"
+"_ACTIVITY_ACTIONTYPE_COMMENT_PAGEVIDEO";"Comments on page videos"
+"_ACTIVITY_ACTIONTYPE_PAGEVIDEO_NEW";"New video in page"
+"ACTIVITY_TYPE_PAGEVIDEO_PROCESSED";"When a video has been processed."
+"ADMIN_ACTIVITY_TYPE_COMMENT_PAGEVIDEO";"When people comment on my video."
+"ADMIN_ACTIVITY_TYPE_PAGEVIDEO_NEW";"When people upload a video on my page."
+
+"{actors:$subject:$object} posted a new video.";"{actors:$subject:$object} posted a new video."
+"{actors:$subject:$object} commented on {item:$owner}'s video - {var:$link}: {body:$body}"
+
+"PAGEVIDEO_SETTINGS_TITLE";"Page-Videos Extension"
+"PAGEVIDEO_SETTINGS_DESCRIPTION";"If you would like allow members to upload video files from computer then please fulfill FFMPEG settings below. If you are not sure, then please check SocialEngine Videos plugin settings or contact your hosting provider to request path to FFMPEG.<br />
+If you would like display videos from Pages in common Videos section(SocialEngine Videos plugin) then just enable `Unite Videos` setting below. In this case all videos will be displayed on Browse Videos page according to privacy of each video.<br />
+You still can edit widgets on Videos pages - Admin Panel > Layout > Layout Editor > All Videos Browse page."
+
+"Video";"Video"
+"Videos";"Videos"
+"YouTube";"YouTube"
+"Vimeo";"Vimeo"
+"Checking URL...";"Checking URL..."
+"We could not find a video there - please check the URL and try again. If you are sure that the URL is valid, please click %s to continue.";"We could not find a video there - please check the URL and try again. If you are sure that the URL is valid, please click %s to continue."
+"Browse Videos";"Browse Videos"
+"Manage Videos";"Manage Videos"
+"Separate tags with commas.";"Separate tags with commas."
+"Tags (Keywords)";"Tags (Keywords)"
+"A required file was not found, please be patient and we'll fix this.";"A required file was not found, please be patient and we'll fix this."
+"ACTIVITY_TYPE_POST_PAGEVIDEO";"When people post video on my Page"
+"On page ";"On page "
+"PageVideos";"PageVideos"
+"Page Videos Browse Search";"Page Videos Browse Search"
+"Page Videos";"Page Videos"
+"Page Video Browse Menu";"Page Video Browse Menu"
+"All Videos Browse Search";"All Videos Browse Search"
+"All Videos";"All Videos"
+"By ";"By "
+"My Friend's Videos";"My Friend's Videos"
+"Everyone's Videos";"Everyone's Videos"
+"This page displays a page videos";"This page displays a page videos"
+"This page displays a viewers pagevideos";"This page displays a viewers pagevideos"
+"Page Videos Manage";"Page Videos Manage"
+"Displays the page's videos.";"Displays the page's videos."
+"Unite Videos";"Unite Videos"
+"Display videos from Pages in common Videos section?";"Display videos from Pages in common Videos section?"
+"Listings Per Page";"Videos per Page"
+

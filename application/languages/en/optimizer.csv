@@ -1,0 +1,30 @@
+
+# Admin Layout Editor
+"see here"; "see here"
+"Transferring a widget to asynchronous loading increases speed of displaying of page to user. Warning: not all widgets support this method, more %s"; "Asynchronous loading increases page loading speed, so users can interact with the page while the widget is loading. Warning: not all widgets support asynchronous loading, more %s"
+"Load the widget by asynchronously with loading of page"; "Load this widget asynchronously (Optimizer plugin)"
+"Don't use"; "Disable asynchronous loading"
+"Use Ajax"; "Enable asynchronous loading"
+
+"HE - Optimizer"; "HE - Optimizer"
+
+# Admin Settings
+"Install Optimizer"; "Install Optimizer"
+"For correct installing of plugin need replace some files of SE. You can do it below (current files will saved and you can revert their)"; "Optimizer plugin replaces SocialEngine core files to apply speed optimizations. Please click on `Install` button to proceed to these changes. Note: original files will be backed up and you can revert them at anytime."
+"Status"; "Status"
+"Installed"; "Installed"
+"Not Installed"; "Not Installed"
+"Install"; "Install"
+"Revert files before installing"; "Revert original version of files"
+
+"Ajaxable widget"; "Ajaxable widget"
+"Allows to increase loading speed and faster displays content to user by way asynchronous loading of widgets"; "It can asynchronously load the following widgets to increase page loading speed, so users can interact with the page while the widgets are loading."
+"Asynchronous Loading of widgets"; "Load the following widgets asynchronously"
+
+"Minify"; "Minify"
+"Reduces size of js files and their count"; "The plugin unites and minifies javascript files to reduce page loading time and size."
+"Minify enabled"; "Enable minifying"
+
+"You use old version of Timeline plugin. Please update the plugin to last version for correct work"; "You are using an old version of Timeline plugin. Please update to the latest version of Timeline plugin for correct workflow."
+"Select all widgets"; "Select all widgets"
+"Select all"; "Select all"

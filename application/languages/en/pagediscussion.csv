@@ -1,0 +1,179 @@
+
+# Default
+"Discussions"; "Discussions"
+"PAGEDISCUSSION_NOTIFY"; "Send me notifications when other members reply to this topic."
+"PAGEDISCUSSION_NOTFOUND"; "The topic you have attempted to access could not be found. <a href='javascript:Pagediscussion.list();'>Go back</a>"
+"PAGEDISCUSSION_CLOSED"; "This topic has been closed"
+
+# Admin Settings
+"PAGEDISCUSSION_ADMIN_ITEM"; "Page Discussions"
+"PAGEDISCUSSION_ADMIN_TITLE"; "Page-Discussions Extension"
+"PAGEDISCUSSION_ADMIN_DESCRIPTION"; "These settings affect all members in your community."
+"PAGEDISCUSSION_ADMIN_COUNT_TOPIC"; "Topics Per Page"
+"PAGEDISCUSSION_ADMIN_COUNT_POST"; "Posts Per Page"
+
+# Global Search
+"ITEM_TYPE_PAGEDISCUSSION_PAGEPOST"; "Page Post"
+"ITEM_TYPE_PAGEDISCUSSION_PAGETOPIC"; "Page Topic"
+
+# Topic List
+"PAGEDISCUSSION_LASTPOST"; "Last Post"
+"PAGEDISCUSSION_NOTOPIC"; "No topics have been posted in this page yet."
+"PAGEDISCUSSION_NOTOPIC_CREATE"; " Be the first to <a href='javascript:Pagediscussion.create();'>post</a> one!"
+"PAGEDISCUSSION_CREATE"; "Post New Topic"
+
+# Create Topic
+"PAGEDISCUSSION_CREATE_HEADER"; "Post Discussion Topic"
+"PAGEDISCUSSION_CREATE_DESCRIPTION"; ""
+"PAGEDISCUSSION_CREATE_TITLE"; "Title"
+"PAGEDISCUSSION_CREATE_BODY"; "Message"
+"PAGEDISCUSSION_CREATE_SUBMIT"; "Post New Topic"
+
+# Create Post
+"PAGEDISCUSSION_POST_HEADER"; "Reply"
+"PAGEDISCUSSION_POST_DESCRIPTION"; ""
+"PAGEDISCUSSION_POST_BODY"; "Message"
+"PAGEDISCUSSION_POST_SUBMIT"; "Post Reply"
+
+# Rename Topic
+"PAGEDISCUSSION_RENAME_TITLE"; "Title"
+"PAGEDISCUSSION_RENAME_SUBMIT"; "Rename Topic"
+
+# Edit Post
+"PAGEDISCUSSION_EDIT_HEADER"; "Edit Post"
+"PAGEDISCUSSION_EDIT_DESCRIPTION"; ""
+"PAGEDISCUSSION_EDIT_BODY"; "Message"
+"PAGEDISCUSSION_EDIT_SUBMIT"; "Save Changes"
+
+# Confirm delete topic
+"PAGEDISCUSSION_DELETETOPIC_TITLE"; "Delete topic?"
+"PAGEDISCUSSION_DELETETOPIC_DESCRIPTION"; "Are you sure you want to delete this topic?"
+
+# Confirm delete post
+"PAGEDISCUSSION_DELETEPOST_TITLE"; "Delete post?"
+"PAGEDISCUSSION_DELETEPOST_DESCRIPTION"; "Are you sure you want to delete this post?"
+
+# Topic Options
+"PAGEDISCUSSION_OPTIONS_BACK"; "Back to Topics"
+"PAGEDISCUSSION_OPTIONS_POST"; "Post Reply"
+"PAGEDISCUSSION_OPTIONS_UNWATCHING"; "Stop Watching Topic"
+"PAGEDISCUSSION_OPTIONS_WATCHING"; "Watch Topic"
+"PAGEDISCUSSION_OPTIONS_UNSTICKY"; "Remove Sticky"
+"PAGEDISCUSSION_OPTIONS_STICKY"; "Make Sticky"
+"PAGEDISCUSSION_OPTIONS_UNCLOSE"; "Open"
+"PAGEDISCUSSION_OPTIONS_CLOSE"; "Close"
+"PAGEDISCUSSION_OPTIONS_RENAME"; "Rename"
+"PAGEDISCUSSION_OPTIONS_DELETE"; "Delete"
+
+# Post Options
+"PAGEDISCUSSION_POST_EDIT"; "Edit"
+"PAGEDISCUSSION_POST_DELETE"; "Delete"
+"PAGEDISCUSSION_POST_QUOTE"; "Quote"
+
+# Messages
+"PAGEDISCUSSION_CREATE_ERROR"; "Topic was not created. Check form fields and try again or you do not have enough permissions. <a href='javascript:Pagediscussion.create();'>Go back</a>"
+"PAGEDISCUSSION_CREATE_SUCCESS"; "Topic has been created"
+"PAGEDISCUSSION_RENAME_ERROR"; "Topic was not renamed. Check form fields and try again or you do not have enough permissions. <a href='javascript:Pagediscussion.rename();'>Go back</a>"
+"PAGEDISCUSSION_RENAME_SUCCESS"; "Topic renamed"
+"PAGEDISCUSSION_POST_ERROR"; "Post was not created. Check form fields and try again or you do not have enough permissions. <a href='javascript:Pagediscussion.post();'>Go back</a>"
+"PAGEDISCUSSION_POST_SUCCESS"; "Post has been created"
+"PAGEDISCUSSION_EDIT_ERROR"; "Topic was not saved. Check form fields and try again or you do not have enough permissions. <a href='javascript:Pagediscussion.edit();'>Go back</a>"
+"PAGEDISCUSSION_EDIT_SUCCESS"; "Topic has been saved"
+"PAGEDISCUSSION_WATCH_ERROR"; "An error occurred. Check form fields and try again or you do not have enough permissions. <a href='javascript:Pagediscussion.goTopic();'>Go back</a>"
+"PAGEDISCUSSION_WATCH_SUCCESS"; "Topic has been watching"
+"PAGEDISCUSSION_CLOSE_ERROR"; "An error occurred. Check form fields and try again or you do not have enough permissions. <a href='javascript:Pagediscussion.goTopic();'>Go back</a>"
+"PAGEDISCUSSION_CLOSE_SUCCESS"; "This has been closed for posting"
+"PAGEDISCUSSION_STICKY_ERROR"; "An error occurred. Check form fields and try again or you do not have enough permissions. <a href='javascript:Pagediscussion.goTopic();'>Go back</a>"
+"PAGEDISCUSSION_STICKY_SUCCESS"; "Topic has been sticky"
+"PAGEDISCUSSION_DELETETOPIC_ERROR"; "Topic was not deleted. Check form fields and try again or you do not have enough permissions. <a href='javascript:Pagediscussion.goTopic();'>Go back</a>"
+"PAGEDISCUSSION_DELETETOPIC_SUCCESS"; "Topic deleted"
+"PAGEDISCUSSION_DELETEPOST_ERROR"; "Post was not deleted. Check form fields and try again or you do not have enough permissions. <a href='javascript:Pagediscussion.goTopic();'>Go back</a>"
+"PAGEDISCUSSION_DELETEPOST_SUCCESS"; "Post deleted"
+
+
+# Action Types: Action
+"PAGEDISCUSSION_ACTION_REPLAY"; "{actors:$subject:$object} posted a topic {var:$link}: {body:$body}"
+"PAGEDISCUSSION_ACTION_RESPONSE"; "{actors:$subject:$object} replied to a topic {var:$link}: {body:$body}"
+
+
+# Actions Types: My Settings -> Privacy
+"_ACTIVITY_ACTIONTYPE_PAGE_TOPIC_CREATE";"Creating a page discussion topic"
+"_ACTIVITY_ACTIONTYPE_PAGE_TOPIC_REPLY";"Replying to a page discussion topic"
+
+
+# Actions Types: Admin -> Activity Feed Settings
+"ADMIN_ACTIVITY_TYPE_PAGE_TOPIC_REPLY";"When people reply to discussion topics that I replied to."
+"ADMIN_ACTIVITY_TYPE_PAGE_TOPIC_CREATE";"When people reply to discussion topics that I created."
+
+
+# Action Types: My Settings -> Notifications
+"ACTIVITY_TYPE_POST_PAGEDISCUSSION";"When people post in a topic in my page."
+"ACTIVITY_TYPE_PAGE_DISCUSSION_TEAM"; "When people create a topic in my page."
+"ACTIVITY_TYPE_PAGE_DISCUSSION_REPLY";"When people reply to discussion topics that I replied to."
+"ACTIVITY_TYPE_PAGE_DISCUSSION_RESPONSE";"When people reply to discussion topics that I created."
+
+# Define
+"ACTIVITY_TYPE_PAGE_TOPIC_CREATE"; "When a new page topic is created."
+"ACTIVITY_TYPE_PAGE_TOPIC_REPLY"; "When someone replies to a page topic."
+
+# Notification Types
+"PAGEDISCUSSION_NOTIFY_REPLAY";"{item:$subject} has <a href='{var:$href}'>posted</a> on a {item:$object:page topic} you created."
+"PAGEDISCUSSION_NOTIFY_RESPONSE";"{item:$subject} has <a href='{var:$href}'>posted</a> on a {item:$object:page topic} you posted on."
+"PAGEDISCUSSION_NOTIFY_TEAM";"{item:$subject} created a {item:$object:posted} on a {itemParent:$object:page}"
+
+"PAGEDISCUSSION_PLUGIN";""
+"PAGEDISCUSSION_SETTINGS";"Discussion Settings"
+
+# Mail Templates: Notify Reply
+"_EMAIL_NOTIFY_PAGE_DISCUSSION_REPLY_TITLE";"Page Discussion Reply"
+"_EMAIL_NOTIFY_PAGE_DISCUSSION_REPLY_DESCRIPTION";"This email is sent to the member when people reply to discussion topics that the member created."
+"_EMAIL_NOTIFY_PAGE_DISCUSSION_REPLY_SUBJECT";"A member has posted a reply to your topic ""[object_title]"" in the group ""[object_parent_title]"""
+"_EMAIL_NOTIFY_PAGE_DISCUSSION_REPLY_BODY";"[header]
+
+[sender_title] has posted a reply to your topic ""[object_title]"" in the page ""[object_parent_title]"":
+
+""[message]""
+
+Please click the following link to view it:
+
+<a href='http://[host][href]'>http://[host][href]</a>
+
+[footer]"
+
+
+# Mail Templates: Notify Response
+"_EMAIL_NOTIFY_PAGE_DISCUSSION_RESPONSE_TITLE";"Page Discussion Response"
+"_EMAIL_NOTIFY_PAGE_DISCUSSION_RESPONSE_DESCRIPTION";"This email is sent to the member when people reply to discussion topics that the member replied to."
+"_EMAIL_NOTIFY_PAGE_DISCUSSION_RESPONSE_SUBJECT";"A member has posted a reply to the topic ""[object_title]"" you replied to in the group ""[object_parent_title]"""
+"_EMAIL_NOTIFY_PAGE_DISCUSSION_RESPONSE_BODY";"[header]
+
+[sender_title] has posted a reply to the topic ""[object_title]"" you replied to in the page ""[object_parent_title]"":
+
+""[message]""
+
+Please click the following link to view it:
+
+<a href='http://[host][href]'>http://[host][href]</a>
+
+[footer]"
+
+
+# Mail Templates: Notify Team
+"_EMAIL_NOTIFY_PAGE_DISCUSSION_TEAM_TITLE";"Page Discussion Team Notify"
+"_EMAIL_NOTIFY_PAGE_DISCUSSION_TEAM_DESCRIPTION";"This email is sent to the member when people reply to discussion topics that the member replied to."
+"_EMAIL_NOTIFY_PAGE_DISCUSSION_TEAM_SUBJECT";"A member has posted a new page topic ""[object_title]"" in the page ""[object_parent_title]"""
+"_EMAIL_NOTIFY_PAGE_DISCUSSION_TEAM_BODY";"[header]
+
+[sender_title] has posted a new page topic ""[object_title]"" in the page ""[object_parent_title]"":
+
+""[message]""
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]"
+
+"Displays the page's discussions.";"Displays the page's discussions."
+
+

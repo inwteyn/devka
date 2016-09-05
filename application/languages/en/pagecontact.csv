@@ -1,0 +1,39 @@
+"PAGECONTACT_Contact Us";"Contact Us"
+"PAGECONTACT_Are you sure you want to delete the topic?";"Are you sure you want to delete the topic?"
+
+"_EMAIL_PAGECONTACT_TEMPLATE_TITLE";"Page-Contact"
+"_EMAIL_PAGECONTACT_TEMPLATE_SUBJECT";"New message in [page_name] page: [subject]"
+"_EMAIL_PAGECONTACT_TEMPLATE_BODY";"Hello,
+
+This message has been sent by [sender_name] < [sender_email] > in your [page_name] page.
+
+Best Regards,
+Social Network Administration
+
+----------------------------------------
+[message]"
+
+"_EMAIL_PAGECONTACT_TEMPLATE_DESCRIPTION";"This email is used when visitors send message from Contact Form on page."
+
+"PAGECONTACT_Edit your Page contacts";"Contact Form allows you to get sales, support and business requests directly to your email from your page visitors.<br />
+Enter your explanation or any other helpful text in <b>Description</b> field which is displayed above the contact form.<br />
+You can create one or more <b>Topics</b> (Sales, Support, Business Inquires) and separate customers requests by topics: sale questions, support requests and business proposals. Each topic may have own email address."
+"PAGECONTACT_Changes have been saved successfully.";"Changes have been successfully saved."
+"PAGECONTACT_Please full fill empty fields and try again.";"Please fulfil empty fields and try again."
+"PAGECONTACT_It is not valid email address, please correct and try again.";"It is not a valid email address, please correct and try again."
+"PAGECONTACT_Topic field is empty. Please full fill topic and try again.";"Topic field is empty. Please fulfil the topic and try again."
+"PAGECONTACT_Subject field is empty. Please full fill subject and try again.";"Subject field is empty. Please fulfil the subject and try again."
+"PAGECONTACT_Message field is empty. Please fill message and try again.";"Message field is empty. Please fill the message and try again."
+"PAGECONTACT_Message has been sent successfully.";"Message has been sent successfully."
+"PAGECONTACT_User name field is empty. Please full fill user name and try again.";"Full name field is empty. Please fulfil the full name and try again."
+"PAGECONTACT_Email field is empty. Please full fill email and try again.";"Email field is empty. Please fulfil the email and try again."
+
+"PAGECONTACT_Description";"Description"
+"PAGECONTACT_Topic";"Topic Name"
+"PAGECONTACT_Add more";"Add Additional Topic"
+"PAGECONTACT_Emails";"Emails"
+"PAGECONTACT_Full name";"Full name"
+"PAGECONTACT_Email";"Email"
+"PAGECONTACT_Subject";"Subject"
+"PAGECONTACT_Message";"Message"
+"Separate emails with commas.";"Separate emails with commas."
