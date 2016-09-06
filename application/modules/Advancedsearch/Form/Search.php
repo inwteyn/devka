@@ -12,7 +12,7 @@ class Advancedsearch_Form_Search extends Engine_Form {
         'style' => 'padding: 5px 6px 5px 105px;width: 200px;'
       )
     ));
-    $this->addElement('Hidden', 'type', array(asd
+    $this->addElement('Hidden', 'type', array(
       'value' => 1
     ));
   }
