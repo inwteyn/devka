@@ -22,7 +22,7 @@ function getFieldsElements(selector)
 
 function changeFields(element, force)
 {
-  console.log('test 123');
+
     element = $(element);
   // We can call this without an argument to start with the top level fields
   if( !$type(element) ) {

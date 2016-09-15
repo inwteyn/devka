@@ -105,7 +105,7 @@ class Store_ProductsController extends Store_Controller_Action_User
 
     $table = $this->getTable();
 
-      print_die($table);
+
 
       $db = $table->getAdapter();
     $db->beginTransaction();
