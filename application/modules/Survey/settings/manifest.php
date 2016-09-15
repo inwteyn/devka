@@ -3,7 +3,7 @@
   'package' => array(
     'type' => 'module',
     'name' => 'survey',
-    'version' => '4.1.5',
+    'version' => '4.1.5p1',
     'path' => 'application/modules/Survey',
     'title' => 'surveys',
     'description' => 'surveys Plugin',
